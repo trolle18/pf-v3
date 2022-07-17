@@ -1,8 +1,36 @@
-$clr-black: #000;
-$clr-d-grey: #282828;
-$clr-l-grey: #e8e8e8;
-$clr-white: #f8f8f8;
-$clr-acc-yel: #fcb900;
-$clr-acc-gre: #153019;
+$clr_black: #000;
+$clr_black: #282828;
+$clr_l_grey: #e8e8e8;
+$clr_white: #f8f8f8;
+$clr_acc_yel: #fcb900;
+$clr_acc_gre: #153019;
 
-$ff-main: ''
+$txt_light: #f8f8f8;
+$txt_dark: #282828;
+
+$ff_main: 'Montserrat', sans-serif;
+$ff_sec: 'JetBrains Mono', monospace;
+
+
+
+body {
+    margin: 0;
+    font-family: #{$ff_main}, 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: #{$clr_white};
+    background-color: #{$clr_black};
+}
+
+
+.nav-cntr {
+    border: solid red 1px;
+    height: 2em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .nav-links {
+        width: auto;
+    }
+}

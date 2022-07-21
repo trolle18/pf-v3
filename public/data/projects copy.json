@@ -1,0 +1,101 @@
+[
+    {
+        "id": "E184NGJIYL",
+        "title": "Be a hero",
+        "link": "https://beahero.dk/",
+        "repo": "https://github.com/trolle18/beahero",
+        "desc": "For my 2nd semester exam project, I worked along side two fellow students, on the website for ‘Be a hero’. A coaching company started in September 2021, by Benthe, with years of experience in the field. <br/> She already has an established customer base, but needed a responsive website, that gives a quick overview of her, her business, and its services. Furthermore, she needed a logo, and a cover photo for her LinkedIn business page.<br><br> We came up with a simple design that is easy to navigate, it is build with HTML, CSS and Vanilla JS. <br/> The logo is simple, and comes in multiple versions, for scalablility. To go with, I created what we refer to as a ‘cape’. The ‘cape’ is an organic, but clean-cut icon, inspired by a lavender flowerpetal, and a superhero cape.",
+        "short": "For my 2nd semester exam project, I worked along side two fellow students, on the website for ‘Be a hero’. A coaching company started in September 2021, by Benthe, with years of experience in the field. <br/> She already has an established customer base, but needed a responsive website, that gives a quick overview of her, her business, and its services...",
+        "techs": [
+            {"tech": "HTML / CSS"},
+            {"tech": "JavaScript"}
+        ],
+        "build": "<span>HTML / CSS</span> <span>JavaScript</span>",
+        "imgs": [
+            { "img": "data/media/beahero/headlogv2.png" },
+            { "img": "data/media/beahero/mocklap.png" },
+            { "img": "data/media/beahero/mockphone.png" },
+            { "img": "data/media/beahero/log23v2.png" }
+        ]
+
+    },
+
+    {
+        "id": "RA7BU1VBPJ",
+        "title": "TaskRoomies",
+        "link": "https://trolle18.github.io/TaskRoomies/",
+        "repo": "https://github.com/trolle18/TaskRoomies",
+        "desc": "TaskRoomies is a web app for roommates, dorms and other cohabitants. <br/> Its purpose is to provide a clear, easy overview of the shared household chores, and thus remove the stress and mental energy of keeping track of who does what when. <br/> It also comes with a personal list, to keep track of all your personal to-do's and chores. <br/> <br/> Try out the demo in the link above!",
+        "short": "TaskRoomies is a web app for roommates, dorms and other cohabitants. <br/> Its purpose is to provide a clear, easy overview of the shared household chores, and thus remove the stress and mental energy of keeping track of who does what when. <br/> It also comes with a personal list, to keep track of all your personal to-do's and chores...",
+        "techs": [
+            {"tech": "React.JS"},
+            {"tech": "Firebase"}
+        ],
+        "build": "<span>React.JS</span> <span>Firebase</span>", 
+        "imgs": [
+            { "img": "data/media/taskroomies/task-mock.png" },
+            { "img": "data/media/taskroomies/taskroomies-logo1.png" },
+            { "img": "data/media/taskroomies/taskroomies-logo2.png" },
+            { "img": "data/media/taskroomies/task-mock-b1.png" }
+        ]
+    },
+
+    {
+        "id": "2UIFX2ADAH",
+        "title": "City Break Planner",
+        "link": "/",
+        "repo": "https://github.com/SommerCh/city",
+        "desc": " ",
+        "short": " ",
+        "techs": [
+            {"tech": "React.JS"}
+        ],
+        "build": "<span>React.js</span>", 
+        "imgs": [
+            { "img": " " },
+            { "img": " " },
+            { "img": " " },
+            { "img": " " }
+        ]
+    },
+
+    {
+        "id": "KG3679640W",
+        "title": "Generaxion",
+        "link": null,
+        "repo": null,
+        "desc": "During my 2nd semester at the business academy, we were given the task ofcreating and incorporating a job agent prototype, for Generaxion’s job site, for any interested job seekers to use and apply through, and be notified if an open position suiting them were to be published. <br/> <br/> Our goal were to make it easy, user-friendly and simple to use. We also needed to create some eye-catching branding for company’s social media platforms, to promote the job agent and reach possible job seekers.",
+        "short": "During my 2nd semester at the business academy, we were given the task ofcreating and incorporating a job agent prototype, for Generaxion’s job site, for any interested job seekers to use and apply through, and be notified if an open position suiting them were to be published...",
+        "techs": [
+            {"tech": "HTML / CSS"},
+            {"tech": "JavaScript"}
+        ],
+        "build": null,
+        "imgs": [
+            { "img": "data/media/generaxion/fbpost.png" },
+            { "img": "data/media/generaxion/fb-post-zen.png" },
+            { "img": "data/media/generaxion/generaxion-1.png" },
+            { "img": "data/media/generaxion/generaxion-3.png" }
+        ]
+    },
+
+    {
+        "id": "5TM0BTKEYP",
+        "title": "Miscellaneous",
+        "link": null,
+        "repo": null,
+        "desc": "Besides working on projects as a part of my education, I also experiment and do a lot of programming, designing or illustrating in my spare time, which also helps me learn and expand my knowledge.<br><br> These are just few examples of what been working on:<br> A Tic Tac Toe game, some vector illustrations made in illustrator, and an svg, which “draws” when you scroll.",
+        "short": "Besides working on projects as a part of my education, I also experiment and do a lot of programming, designing or illustrating in my spare time, which also helps me learn and expand my knowledge...",
+        "techs": [
+            {"tech": "HTML / CSS"},
+            {"tech": "JavaScript"}
+        ],
+        "build": null,
+        "imgs": [
+            { "img": "data/media/miscellaneous/flat-animals.png" },
+            { "img": "data/media/miscellaneous/svgscroll.png" },
+            { "img": "data/media/miscellaneous/tictactoe-v1.png" },
+            { "img": "data/media/miscellaneous/illpf.png" }
+        ]
+    }
+  ]

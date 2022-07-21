@@ -12,7 +12,7 @@ $ff_main: 'Montserrat', sans-serif;
 $ff_sec: 'JetBrains Mono', monospace;
 
 
-
+/* ---------- GENERAL ---------- */
 body {
     margin: 0;
     font-family: $ff_main, 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',sans-serif;
@@ -23,6 +23,7 @@ body {
 }
 
 
+/* ---------- NAV ---------- */
 .nav-cntr {
     border: solid red 0px;
     height: 2em;
@@ -65,6 +66,7 @@ body {
 }
 
 
+/* ---------- ABOUT SECTION ---------- */
 .about-cntr {
     height: auto;
     width: auto;
@@ -87,7 +89,6 @@ body {
         border: solid red 0px;
         display: flex;
         flex-direction: column;
-
 
         .pf-img-box {
             height: 260px;
@@ -113,9 +114,33 @@ body {
                 background-position: center;
                 background-size: contain;
             }
-
         }
+    }
+}
 
-        
+
+/* ---------- WORK SECTION ---------- */
+.project {
+    border: solid green 0px;
+    height: 200px;
+    width: 100%;
+    margin: 0em 0em 4em 0em;
+    display: flex;
+    flex-direction: row;
+
+    h3 {
+        margin-top: 0;
+    }
+
+    .project-img-cntr {
+        border: solid blue 0px;
+        height: 200px;
+        width: 300px;
+
+        img {
+            height: 200px;
+            width: 300px;
+            object-fit: cover;
+        }
     }
 }

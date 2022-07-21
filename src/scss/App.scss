@@ -1,4 +1,4 @@
-$clr_black: #000;
+$clr_true_black: #000;
 $clr_black: #282828;
 $clr_l_grey: #e8e8e8;
 $clr_white: #f8f8f8;
@@ -15,22 +15,107 @@ $ff_sec: 'JetBrains Mono', monospace;
 
 body {
     margin: 0;
-    font-family: #{$ff_main}, 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',sans-serif;
+    font-family: $ff_main, 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    color: #{$clr_white};
-    background-color: #{$clr_black};
+    color: $clr_white;
+    background-color: $clr_true_black;
 }
 
 
 .nav-cntr {
-    border: solid red 1px;
+    border: solid red 0px;
     height: 2em;
+    width: 100%;
+    margin: 1em auto 1em auto;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    background-color: $clr_true_black;
+
+    .nav-logo {
+        a {
+            text-decoration: none;
+            color: $txt_light;
+            transition: ease-in .2s;
+
+            &:hover {
+                color: $clr_acc_yel;
+            }
+        }
+    }
 
     .nav-links {
-        width: auto;
+        border: solid green 0px;
+        width: 15em;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        a {
+            text-decoration: none;
+            color: $txt_light;
+            transition: ease-in .2s;
+
+            &:hover {
+                color: $clr_acc_yel;
+            }
+        }
+    }
+}
+
+
+.about-cntr {
+    height: auto;
+    width: auto;
+    display: flex;
+
+    .about-txt {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .skill-list {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(140px, 200px));
+    }
+
+    .pf-img-cntr {
+        height: 260px;
+        width: 160px;
+        border: solid red 0px;
+        display: flex;
+        flex-direction: column;
+
+
+        .pf-img-box {
+            height: 260px;
+            width: 160px;
+            border-radius: 10em 10em 0em 0em;
+            background-color: $clr_acc_gre;
+            position: relative;
+        }
+
+        .pf-img {
+            border: solid red 0px;
+            height: auto;
+            width: auto;
+            margin: 0 auto;
+            position: absolute;
+            
+            img {
+                height: 300px;
+                width: 100%;
+                margin: 0 auto;
+                object-fit: cover;
+                bottom: 0;
+                background-position: center;
+                background-size: contain;
+            }
+
+        }
+
+        
     }
 }

@@ -12,7 +12,7 @@ export default function About() {
                         I have always loved creating, and exploring through different types of media. With multimedia designing, there are endless possibilities for me to explore and work through.
                     </span>
 
-                    <div>
+                    <div className="skill-box">
                         <h3>Some of the technologies I have been working with:</h3>
                             <ul className="skill-list">
                                 <li>HTML5 / CSS3</li>

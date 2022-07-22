@@ -8,19 +8,19 @@ export default function About() {
                 <div className="about-txt">
                     <h2>About</h2>
                     <span>
-                        My name is Sofie, I am 24 years old, and currently on my 3rd semester at the Business Academy Aarhus, where I’m studying multimedia design, specializing in frontend development.
+                        My name is Sofie, I am 24 years old, and currently on my 3rd semester at the Business Academy Aarhus, where I’m studying multimedia design, specializing in frontend development. <br/>
                         I have always loved creating, and exploring through different types of media. With multimedia designing, there are endless possibilities for me to explore and work through.
                     </span>
 
                     <div className="skill-box">
-                        <h3>Some of the technologies I have been working with:</h3>
+                        <span>Some of the technologies I have been working with:</span>
                             <ul className="skill-list">
-                                <li>HTML5 / CSS3</li>
-                                <li>React.JS</li>
-                                <li>JavaScript (ES6+)</li>
-                                <li>SCSS / Sass</li>
-                                <li>jQuery</li>
-                                <li>Firebase</li>
+                                <li><span>HTML5 & CSS3</span></li>
+                                <li><span>React.JS</span></li>
+                                <li><span>JavaScript (ES6+)</span></li>
+                                <li><span>SCSS / Sass</span></li>
+                                <li><span>jQuery</span></li>
+                                <li><span>Firebase</span></li>
                                 {/* <li>WordPress</li> */}
                             </ul>
                     </div>

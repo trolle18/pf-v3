@@ -40,27 +40,33 @@ body {
 h1 {
     font-size: $fs_xxl;
     text-transform: uppercase;
+    margin-bottom: .625rem;
 }
 
 h2 {
     font-size: $fs_xl;
     text-transform: uppercase;
+    margin-bottom: .625rem;
 }
 
 h3 {
     font-size: $fs_l;
+    margin-bottom: .625rem;
 }
 
 h4 {
     font-size: $fs_ml;
+    margin-bottom: .625rem;
 }
 
 h5 {
     font-size: $fs_m;
+    margin-bottom: .625rem;
 }
 
-p {
+p, span {
     font-size: $fs_s;
+    margin-bottom: .625rem;
 }
 
 
@@ -144,16 +150,31 @@ p {
     .about-txt {
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
-    }
 
-    .skill-list {
-        margin: 0 0 0 2rem;
-        display: grid;
-        grid-template-columns: repeat(2, minmax(140px, 250px));
+        .skill-box {
+            margin: 0.625rem 0 0 0;
+
+            span {
+                font-weight: 600;
+            }
         
-        li {
-            font-family: $ff_mono;
+            .skill-list {
+                margin: 0.200rem 0 0 2rem;
+                display: grid;
+                grid-template-columns: repeat(2, minmax(140px, 250px));
+                
+                li {
+                    font-family: $ff_mono;
+
+                    &::marker {
+                        color: $clr_acc_yel;
+                    }
+
+                    span {
+                        font-weight: 400;
+                    }
+                }
+            }
         }
     }
 
@@ -198,7 +219,7 @@ p {
 /* ---------- WORK SECTION ---------- */
 .project {
     border: solid green 0px;
-    height: 200px;
+    height: 180px;
     width: 100%;
     margin: 0rem 0rem 4rem 0rem;
     display: flex;
@@ -213,6 +234,7 @@ p {
 
             h3 {
                 margin-top: 0;
+                font-size: $fs_m;
                 text-transform: uppercase;
             }
 
@@ -227,38 +249,100 @@ p {
                         width: auto;
                     }
                 }
-            }          
-            
+            }             
         }
-        
-
 
         .project-build {
             display: flex;
             flex-direction: row;
-            // justify-content: space-between;
 
             span {
-                margin: 0 5px 0 0px;
+                margin: 0 0.625rem 0.625rem 0 ;
                 padding: .2rem .8rem;
                 border-radius: 5px;
-                background-color: $clr_m_grey;
+                background-color: $clr_l_grey;
                 color: $clr_black;
+                font-family: $ff_mono;
                 font-weight: 600;
             }
         }
     }
 
-
     .project-img-cntr {
         border: solid blue 0px;
-        height: 200px;
-        width: 300px;
+        height: 100%;
+        width: 280px;
+        margin: 0 0.625rem 0 0;
 
         img {
-            height: 200px;
-            width: 300px;
+            height: 100%;
+            width: 280px;
             object-fit: cover;
         }
     }
+}
+
+
+/* ---------- FOOTER ---------- */
+.footer-cntr {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .footer-top {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        .footer-logo {
+
+            a {
+                font-family: $ff_mono;
+                text-decoration: none;
+                text-transform: uppercase;
+                color: $txt_light;
+                transition: ease-in .02s;
+
+                &:hover {
+                    color: $clr_acc_yel;
+                }
+            }
+        }
+
+        .footer-links {
+            border: solid green 0px;
+            width: 10rem;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            a {
+                font-family: $ff_mono;
+                text-decoration: none;
+                text-transform: uppercase;
+                color: $txt_light;
+                transition: ease-in .02s;
+
+                &:hover {
+                    color: $clr_acc_yel;
+                }
+
+                // span {
+                //     margin: 0;
+                //     background-color: #fcb900;
+                //     border-radius: 100px;
+                //     height: 100px;
+                //     width: 30px;
+
+                    svg {
+                        height: 1.875rem;
+                        width: auto;
+                    }
+                //}
+                
+            }
+        }
+    }
+
+    
 }

@@ -1,14 +1,18 @@
+import React, {useState, useEffect} from 'react';
 import { AiOutlineGithub, AiOutlineCodepen } from "react-icons/ai";
-import { TiSocialLinkedin } from "react-icons/ti";
-// import { AiFillLinkedin } from "react-icons/ai";
-// import { FaLinkedinIn } from "react-icons/fa";
-// import { RiLinkedinFill } from "react-icons/ri";
-// import { FiGithub } from "react-icons/ri";
-
+import { TiSocialLinkedin } from "react-icons/ti";import { AiOutlineCopyrightCircle } from "react-icons/ai";
 import { FiCoffee, FiHeart } from "react-icons/fi"
 
 
 export default function Footer() {
+    const [date , setDate] = useState();
+    const getYear = () =>  setDate(new Date().getFullYear())
+
+    useEffect(() => {
+        getYear();
+    }, [])
+
+
     return (
         <>
             <section className="footer-cntr">
@@ -27,6 +31,7 @@ export default function Footer() {
                 </div>
                 <div className="footer-btm">
                     <span>Build with <FiHeart/> and <FiCoffee/> by Sofie Trolle </span>
+                    <span className="copy"><AiOutlineCopyrightCircle/> {date}</span>
                 </div>
             </section>
         

@@ -65,7 +65,7 @@ h5 {
 }
 
 p, span {
-    font-size: $fs_s;
+    font-size: $fs_m;
     margin-bottom: .625rem;
 }
 
@@ -194,7 +194,7 @@ p, span {
 
 /* ---------- ABOUT SECTION ---------- */
 .about-cntr {
-    border: solid red 1px;
+    border: solid red 0px;
     height: auto;
     width: 100%;
     margin-bottom: 6.250rem;
@@ -507,9 +507,30 @@ p, span {
 }
 
 
+/* ---------- CONTACT SECTION ---------- */
+.contact-cntr {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    button {
+        width: max-content;
+        margin: 0 auto;
+        padding: 0.5em 1.5em;
+        border: solid $clr_acc_yel 2px;
+        border-radius: 4px;
+        background-color: transparent;
+        color: $clr_acc_yel;
+    }
+}
+
+
+
 /* ---------- FOOTER ---------- */
 .footer-cntr {
-    margin: 10em 0 5em 0;
+    // margin: 10em 0 5em 0;
+    width: 98%;
+    margin: 10em auto 5em auto;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -585,12 +606,35 @@ p, span {
     .footer-btm {
         margin: 2.5em auto 0 auto;
         display: flex;
+        flex-direction: column;
         font-family: $ff_mono;
 
         span {
-            margin: 0;
             color: $clr_m_grey;
             text-align: center;
+            vertical-align: middle;
         }
+
+        .copy {
+
+            svg {
+                height: 14px;
+                width: auto;
+                vertical-align: middle;
+                display: inline-block;
+            }
+        }
+    }
+}
+
+@media (min-width: 600px) {
+    .footer-cntr {
+        width: 90%;
+    }
+}
+
+@media (min-width: 992px) {
+    .footer-cntr {
+        width: 90%;
     }
 }

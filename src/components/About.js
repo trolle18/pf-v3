@@ -27,10 +27,16 @@ export default function About() {
                 </div>
 
                 <div className="pf-img-cntr">
-                    <div className="pf-img-box"></div>
+                    <div className="img-outer-box">
+                        <div className="img-box">
+                            <img src={PfImg} alt="" />
+                        </div>
+                    </div>
+                
+                    {/* <div className="pf-img-box"></div>
                     <div className="pf-img">
                         <img src={PfImg} alt="" />
-                    </div>
+                    </div> */}
                 </div>
                
             </section>

@@ -11,6 +11,7 @@ $txt_dark: #282828;
 
 $ff_sans: 'Montserrat', sans-serif;
 $ff_mono: 'JetBrains Mono', monospace;
+$fs_header: 3.750rem; // header
 $fs_xxl: 2.000rem; // xx-large / h1
 $fs_xl: 1.375rem; // x-large / h2
 $fs_l: 1.250rem;  // large / h3
@@ -32,6 +33,7 @@ body {
     font-family: $ff_sans, 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    scroll-behavior: smooth;
     font-size: 16px;
     color: $clr_white;
     background-color: $clr_black;
@@ -40,13 +42,13 @@ body {
 h1 {
     font-size: $fs_xxl;
     text-transform: uppercase;
-    margin-bottom: .625rem;
+    margin: .625rem 0;
 }
 
 h2 {
-    font-size: $fs_xl;
+    font-size: $fs_xxl;
     text-transform: uppercase;
-    margin-bottom: .625rem;
+    margin: .625rem 0;
 }
 
 h3 {
@@ -92,43 +94,57 @@ p, span {
 .nav-cntr {
     border: solid red 0px;
     height: 2em;
-    width: 98%;
-    margin: 1rem auto 1rem auto;
+    width: 100%;
+    margin: 0 auto;
+    padding: .5em 0 ;
+    position: fixed;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    background-color: $clr_black;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 100;
 
-    .nav-logo {
-        a {
-            font-family: $ff_mono;
-            text-decoration: none;
-            text-transform: uppercase;
-            color: $txt_light;
-            transition: ease-in .02s;
-
-            &:hover {
-                color: $clr_acc_yel;
-            }
-        }
-    }
-
-    .nav-links {
-        border: solid green 0px;
-        width: 15rem;
+    .nav-inner-cntr {
+        width: 90%;
+        margin: 0 auto;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+    
+        .nav-logo {
+            margin: auto 0;
 
-        a {
-            font-family: $ff_mono;
-            text-decoration: none;
-            text-transform: uppercase;
-            color: $txt_light;
-            transition: ease-in .02s;
+            a {
+                font-family: $ff_mono;
+                text-decoration: none;
+                text-transform: uppercase;
+                color: $txt_light;
+                transition: ease-in .02s;
 
-            &:hover {
-                color: $clr_acc_yel;
+                &:hover {
+                    color: $clr_acc_yel;
+                }
+            }
+        }
+
+        .nav-links {
+            border: solid green 0px;
+            width: 15rem;
+            margin: auto 0;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            a {
+                font-family: $ff_mono;
+                text-decoration: none;
+                text-transform: uppercase;
+                color: $txt_light;
+                transition: ease-in .02s;
+
+                &:hover {
+                    color: $clr_acc_yel;
+                }
             }
         }
     }
@@ -136,13 +152,21 @@ p, span {
 
 @media (min-width: 600px) {
     .nav-cntr {
-        width: 90%;
+        width: 100%;
+
+        .nav-inner-cntr {
+            width: 90%;
+        }
     }
 }
 
 @media (min-width: 992px) {
     .nav-cntr {
-        width: 90%;
+        width: 100%;
+
+        .nav-inner-cntr {
+            width: 90%;
+        }
     }
 }
 
@@ -172,6 +196,7 @@ p, span {
 .header-cntr {
     height: 100vh;
     width: 100%;
+    margin: 0 0 1.625rem 0 ;
     display: flex;
     flex-direction: column;
 
@@ -182,6 +207,7 @@ p, span {
 
         h1 {
             margin: .625rem 0;
+            font-size: $fs_header;
         }
 
         span {
@@ -325,7 +351,7 @@ p, span {
             .img-outer-box {
                 height: 250px;
                 width: 200px;
-                top: -2.5rem;
+                top: 2.5rem;
     
                 .img-box {
                     height: auto;

@@ -426,14 +426,18 @@ p, span {
         position: relative;
         display: flex;
         justify-content: center;
+        // object-fit: contain;
+        // overflow: hidden;
 
         .img-outer-box {
             border: solid red 0px;
             height: 220px;
-            width: 150px;
+            width: 130px;
             position: absolute;
             background-color: $clr_acc_gre;
             border-radius: 100px 100px 0 0;
+            object-fit: contain;
+            overflow: hidden;
 
             .img-box {
                 border: solid yellow 0px;
@@ -445,7 +449,7 @@ p, span {
 
                 img {
                     height: auto;
-                    width: 180px;
+                    width: 160px;
                 }
             }
         }
@@ -506,6 +510,8 @@ p, span {
                 height: 250px;
                 width: 200px;
                 top: 2.5rem;
+                object-fit: none;
+                overflow: visible;
     
                 .img-box {
                     height: auto;
@@ -570,6 +576,8 @@ p, span {
                 height: 360px;
                 width: 240px;
                 margin-top: -0.250rem;
+                object-fit:none;
+                overflow:visible;
     
                 .img-box {
                     height: auto;

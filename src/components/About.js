@@ -1,17 +1,18 @@
 import PfImg from "../assets/pf3-iso-copy.png";
+import '../scss/About.scss';
 
 export default function About() {
     return (
         <>
             <section className="about-cntr" id="about">
                
-                <div className="about-txt">
+                {/* <div className="about-txt"> */}
                     <div className="txt-cnt">
-                    <h2>About</h2>
-                    <span>
-                        My name is Sofie, I am 24 years old, and currently on my 3rd semester at the Business Academy Aarhus, where I’m studying multimedia design, specializing in frontend development. <br/>
-                        I have always loved creating, and exploring through different types of media. With multimedia designing, there are endless possibilities for me to explore and work through.
-                    </span>
+                        <h2>About</h2>
+                        <span>
+                            My name is Sofie, I am 24 years old, and currently on my 3rd semester at the Business Academy Aarhus, where I’m studying multimedia design, specializing in frontend development. <br/>
+                            I have always loved creating, and exploring through different types of media. With multimedia designing, there are endless possibilities for me to explore and work through.
+                        </span>
                     </div>
 
                     <div className="skill-box">
@@ -26,10 +27,11 @@ export default function About() {
                                 {/* <li>WordPress</li> */}
                             </ul>
                     </div>
-                </div>
+                {/* </div> */}
 
                 <div className="pf-img-cntr">
-                    <div className="img-outer-box">
+                    <div className="pf-img-outer-cntr">
+                        <div className="img-outer-box"></div>
                         <div className="img-box">
                             <img src={PfImg} alt="" />
                         </div>

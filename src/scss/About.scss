@@ -159,7 +159,52 @@ p, span {
 
     @media (min-width: 600px) {
         .pf-img-cntr {
-            border: solid greenyellow 0px;
+            border: solid greenyellow 1px;
+            height: 100%;
+            width: auto;
+            grid-area: 1 / 4 / 4 / 6;
+            position: relative;
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+    
+            .pf-img-outer-cntr {
+                border: solid violet 1px;
+                height: 100%;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: flex-end;
+    
+                .img-outer-box {
+                    border: solid blue 1px;
+                    height: 250px;
+                    width: 180px;
+                    position: absolute;
+                    background-color: $clr_acc_gre;
+                    border-radius: 100px 100px 0 0;
+                }
+                .img-box {
+                    border: solid red 1px;
+                    height: 275px;
+                    width: 200px;
+                    position: absolute;
+                    display: flex;
+                    justify-content: end;
+    
+                    img {
+                        border: solid yellow 0px;
+                        height: auto;
+                        width: auto;
+                    }
+                } 
+            }
+        }
+    }
+
+    @media (min-width: 992px) {
+        .pf-img-cntr {
+            border: solid greenyellow 1px;
             height: 100%;
             width: auto;
             grid-area: 1 / 4 / 4 / 6;
@@ -169,7 +214,7 @@ p, span {
             justify-content: right;
     
             .pf-img-outer-cntr {
-                border: solid violet 0px;
+                border: solid violet 1px;
                 height: 100%;
                 width: 60%;
                 display: flex;
@@ -177,7 +222,7 @@ p, span {
                 align-items: flex-end;
     
                 .img-outer-box {
-                    border: solid blue 0px;
+                    border: solid blue 1px;
                     height: 80%;
                     width: 50%;
                     position: absolute;

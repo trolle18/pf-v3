@@ -77,17 +77,19 @@ p, span {
     height: auto;
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(5, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     grid-column-gap: 0px;
     grid-row-gap: 0px;
 
     .txt-cnt {
-        grid-area: 1 / 1 / 3 / 4;
+        background-color: rgba(83, 189, 37, 0.3);
+        grid-area: 1 / 1 / 2 / 3;
     }
 
     .skill-box {
-        grid-area: 3 / 1 / 4 / 4;
+        background-color: rgba(125, 189, 87, 0.3);
+        grid-area: 2 / 1 / 3 / 3;
         margin: 0.625rem 0 0 0;
 
         span {
@@ -116,17 +118,18 @@ p, span {
 
     .pf-img-cntr {
         border: solid greenyellow 1px;
-        height: 80%;
+        background-color: rgba(0, 255, 0, .3);
+        height: 60%;
         width: auto;
-        grid-area: 1 / 4 / 4 / 6;
+        grid-area: 1 / 3 / 3 / 4;
         position: relative;
         display: flex;
-        align-items: flex-end;
+        align-items: flex-start;
         justify-content: center;
 
         .pf-img-outer-cntr {
-            border: solid violet 1px;
-            height: 100%;
+            border: solid violet 2px;
+            height: 70%;
             width: 100%;
             display: flex;
             justify-content: center;
@@ -134,7 +137,7 @@ p, span {
 
             .img-outer-box {
                 border: solid blue 1px;
-                height: 80%;
+                height: 40%;
                 width: 90%;
                 position: absolute;
                 background-color: $clr_acc_gre;
@@ -158,11 +161,22 @@ p, span {
     }
 
     @media (min-width: 600px) {
+        .txt-cnt {
+            background-color: rgba(37, 154, 189, 0.3);
+            grid-area: 1 / 1 / 2 / 3;
+        }
+    
+        .skill-box {
+            background-color: rgba(87, 172, 189, 0.3);
+            grid-area: 2 / 1 / 3 / 3;
+        }
+
         .pf-img-cntr {
-            border: solid greenyellow 1px;
+            background-color: rgba(132, 208, 255, 0.2);
+            border: solid green 1px;
             height: 100%;
             width: auto;
-            grid-area: 1 / 4 / 4 / 6;
+            grid-area: 1 / 3 / 3 / 4;
             position: relative;
             display: flex;
             align-items: flex-end;
@@ -177,23 +191,23 @@ p, span {
                 align-items: flex-end;
     
                 .img-outer-box {
-                    border: solid blue 1px;
-                    height: 250px;
-                    width: 180px;
+                    border: solid seagreen 1px;
+                    height: 300px;
+                    width: 210px;
                     position: absolute;
                     background-color: $clr_acc_gre;
                     border-radius: 100px 100px 0 0;
                 }
                 .img-box {
-                    border: solid red 1px;
-                    height: 275px;
-                    width: 200px;
+                    border: solid blueviolet 1px;
+                    height: 100%;
+                    width: auto;
                     position: absolute;
                     display: flex;
                     justify-content: end;
     
                     img {
-                        border: solid yellow 0px;
+                        border: solid orange 0px;
                         height: auto;
                         width: auto;
                     }
@@ -203,34 +217,45 @@ p, span {
     }
 
     @media (min-width: 992px) {
+        .txt-cnt {
+            background-color: rgba(189, 37, 37, 0.3);
+            grid-area: 1 / 1 / 2 / 3;
+        }
+    
+        .skill-box {
+            background-color: rgba(189, 87, 87, 0.3);
+            grid-area: 2 / 1 / 3 / 3;
+        }
+
         .pf-img-cntr {
-            border: solid greenyellow 1px;
+            background-color: rgba(193, 0, 0, .4);
+            border: solid blue 1px;
             height: 100%;
             width: auto;
-            grid-area: 1 / 4 / 4 / 6;
+            grid-area: 1 / 3 / 3 / 4;
             position: relative;
             display: flex;
             align-items: flex-end;
-            justify-content: right;
+            justify-content: center;
     
             .pf-img-outer-cntr {
                 border: solid violet 1px;
                 height: 100%;
-                width: 60%;
+                width: 100%;
                 display: flex;
                 justify-content: center;
                 align-items: flex-end;
     
                 .img-outer-box {
-                    border: solid blue 1px;
-                    height: 80%;
-                    width: 50%;
+                    border: solid lightblue 1px;
+                    height: 300px;
+                    width: 210px;
                     position: absolute;
                     background-color: $clr_acc_gre;
                     border-radius: 100px 100px 0 0;
                 }
                 .img-box {
-                    border: solid red 0px;
+                    border: solid greenyellow 1px;
                     height: 100%;
                     width: auto;
                     position: absolute;
@@ -239,8 +264,8 @@ p, span {
     
                     img {
                         border: solid yellow 0px;
-                        height: 100%;
-                        width: 100%;
+                        height: auto;
+                        width: auto;
                     }
                 } 
             }

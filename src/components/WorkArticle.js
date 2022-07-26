@@ -35,23 +35,28 @@ export default function WorkArticle() {
 
                         <div className="project-txt"> 
                             <div className="project-header">
-                                <h3>{project.title}</h3>
+                                <div className="project-title">
+                                    <h3>{project.title}</h3>
 
-                                <div className="project-links">
-                                    <a href={project.link}> <AiOutlineLink/> </a>
-                                    <a href={project.repo}> <AiOutlineGithub/> </a>
+                                    <div className="project-links">
+                                        <a href={project.link}> <AiOutlineLink/> </a>
+                                        <a href={project.repo}> <AiOutlineGithub/> </a>
+                                    </div>
                                 </div>
-                            </div>
 
-                            <div className="project-build">
-                                {project.build.map((build, i) => {
-                                    return(
-                                        <span>{build.tech}</span>
-                                    )
-                                })}
-                            </div> 
+                                <div className="project-build">
+                                    {project.build.map((build, i) => {
+                                        return(
+                                            <span>{build.tech}</span>
+                                        )
+                                    })}
+                                </div> 
+                            </div>
                 
-                            <span>{project.short}</span>
+                            <div className="project-desc">
+                                <span>{project.short}</span>
+                            </div>
+                            
                         </div>
                     </article>
                 )

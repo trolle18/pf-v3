@@ -43,17 +43,16 @@ export default function WorkArticle() {
                                 </div>
                             </div>
 
-                                    <div className="project-build">
-                                        {project.build.map((build, i) => {
-                                            return(
-                                                <span>{build.tech}</span>
-                                            )
-                                        })}
-                                    </div> 
-                                    
-
-                                    <span>{project.short}</span>
-                                </div>
+                            <div className="project-build">
+                                {project.build.map((build, i) => {
+                                    return(
+                                        <span>{build.tech}</span>
+                                    )
+                                })}
+                            </div> 
+                
+                            <span>{project.short}</span>
+                        </div>
                     </article>
                 )
             })}

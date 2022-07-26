@@ -476,13 +476,21 @@ p, span {
 
     button, a {
         width: max-content;
-        margin: 0 auto;
+        margin: .5em auto;
         padding: 0.5em 1.5em;
         border: solid $clr_acc_yel 2px;
         border-radius: 4px;
         background-color: transparent;
         color: $clr_acc_yel;
+        font-size: $fs_m;
+        text-decoration: none;
         cursor: pointer;
+        transition: .2s;
+
+        &:hover {
+            // filter: drop-shadow(0px 0px 1px $clr_acc_yel);
+	        box-shadow: 0px 0px 4px 1px $clr_acc_yel;
+        }
     }
 }
 
@@ -504,11 +512,25 @@ p, span {
         .footer-l-col {
             display: flex;
             flex-direction: column;
+            
+            .mailto {
+                margin: 1em 0;
+                font-family: $ff_sans;
+                text-decoration: none;
+                text-transform: uppercase;
+                color: $clr_l_grey;
+                font-size: $fs_s;
+                transition: ease-in .02s;
+
+                &:hover {
+                    color: $clr_acc_yel;
+                }
+            }
         
             .footer-logo {
 
-                a {
-                    font-family: $ff_mono;
+                .logo-link {
+                    font-family: $ff_sans;
                     text-decoration: none;
                     text-transform: uppercase;
                     color: $txt_light;

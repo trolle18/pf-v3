@@ -19,9 +19,10 @@ export default function Footer() {
                 <div className="footer-top">
                     <div className="footer-l-col">
                         <div className="footer-logo"> 
-                            <a href="#home">Sofie Trolle</a> 
+                            <a href="#home" className='logo-link'>Sofie Trolle</a> 
                         </div>
-                        <span>sofietrolle@hotmail.com</span>
+                        {/* <span>sofietrolle@hotmail.com</span> */}
+                        <a className='mailto' href="mailto:sofietrolle@hotmail.com">sofietrolle@hotmail.com</a>
                     </div>
                     <div className="footer-links">
                         <a href="##"> <AiOutlineGithub/> </a>

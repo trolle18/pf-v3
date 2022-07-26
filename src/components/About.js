@@ -2,6 +2,24 @@ import PfImg from "../assets/pf-g-iso.webp";
 import '../scss/About.scss';
 
 export default function About() {
+
+    // const cards = document.querySelectorAll(".card")
+    // const observer = new IntersectionObserver( 
+    //     entries => {
+    //         entries.forEach(entry => {
+    //             entry.target.classList.toggle("show", entry.isIntersecting)
+    //             if (entry.isIntersecting) observer.unobserve(entry.target)
+    //         })
+    //     }, 
+    //     {
+    //         // rootMargin: "100px",
+    //         threshold: .5,
+    //     }        
+    // )
+    // cards.forEach(card => {
+    //     observer.observe(card)
+    // })
+
     return (
         <>
             <section className="about-cntr section" id="about">
@@ -11,8 +29,10 @@ export default function About() {
                         <div className="txt-cnt">
                             <h2>About</h2>
                             <span>
-                                My name is Sofie, I am 24 years old, and currently on my 3rd semester at the Business Academy Aarhus, where I’m studying multimedia design, specializing in frontend development. <br/>
-                                I have always loved creating, and exploring through different types of media. With multimedia designing, there are endless possibilities for me to explore and work through.
+                                My name is Sofie, I am 24 years old, and currently on my 3rd semester at the Business Academy Aarhus, 
+                                where I’m studying multimedia design, specializing in frontend development. <br/>
+                                I have always loved creating, and exploring through different types of media. With multimedia designing, 
+                                there are endless possibilities for me to explore and work through.
                             </span>
                         </div>
 

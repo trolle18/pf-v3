@@ -243,18 +243,6 @@ p, span {
     }
 
 
-    /* Animations */
-    .card {
-        opacity: 0;
-        transform: translateY(50px);
-        transition: .2s;
-    }
-
-    .card.show {
-        opacity: 1;
-        transform: translateY(0);
-    }
-
     // .item {
     //     opacity: 0;
     //     transform: translateY(10px);
@@ -486,7 +474,7 @@ p, span {
     flex-direction: column;
     text-align: center;
 
-    button {
+    button, a {
         width: max-content;
         margin: 0 auto;
         padding: 0.5em 1.5em;
@@ -494,6 +482,7 @@ p, span {
         border-radius: 4px;
         background-color: transparent;
         color: $clr_acc_yel;
+        cursor: pointer;
     }
 }
 
@@ -609,4 +598,20 @@ p, span {
     .footer-cntr {
         width: 90%;
     }
+}
+
+
+
+// ----------------------
+
+/* Animations */
+.card {
+    opacity: 0;
+    transform: translateY(0px);
+    transition: .2s;
+}
+
+.card.show {
+    opacity: 1;
+    transform: translateY(0);
 }

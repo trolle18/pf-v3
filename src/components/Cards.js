@@ -1,4 +1,4 @@
-import '../scss/Test.scss';
+// import '../scss/Test.scss';
 
 export default function Cards() {
 

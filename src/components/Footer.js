@@ -21,13 +21,12 @@ export default function Footer() {
                         <div className="footer-logo"> 
                             <a href="#home" className='logo-link'>Sofie Trolle</a> 
                         </div>
-                        {/* <span>sofietrolle@hotmail.com</span> */}
                         <a className='mailto' href="mailto:sofietrolle@hotmail.com">sofietrolle@hotmail.com</a>
                     </div>
                     <div className="footer-links">
-                        <a href="##"> <AiOutlineGithub/> </a>
-                        <a href="##"> <AiOutlineCodepen/> </a>
-                        <a href="##"> <TiSocialLinkedin/> </a>
+                        <a href="https://github.com/trolle18/" target="_blank" rel="noreferrer"> <AiOutlineGithub/> </a>
+                        <a href="https://codepen.io/sofietrolle/" target="_blank" rel="noreferrer"> <AiOutlineCodepen/> </a>
+                        <a href="https://www.linkedin.com/in/sofie-trolle/" target="_blank" rel="noreferrer"> <TiSocialLinkedin/> </a>
                     </div>
                 </div>
                 <div className="footer-btm">

@@ -3,6 +3,7 @@ import './scss/App.scss';
 import HomePage from './pages/HomePage'
 import Nav from './components/Navbar/Nav'
 import Footer from './components/Footer'
+import ScrollToTop from "./components/ScrollToTop";
 
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
                     <Route path="*" element={ <Navigate to="/"/> } />
                 </Routes>
                 <Footer/>
+                <ScrollToTop/>
             </main>
                 
         </>

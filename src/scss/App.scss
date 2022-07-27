@@ -90,6 +90,35 @@ p, span {
 }
 
 
+/* ---------- SCROLL TO TOP BTN ---------- */
+.scrolltop-btn {
+    height: 25px;
+    width: 25px;
+    bottom: 15px;
+    right: 10px;
+    margin: 0 0;
+    padding: 0 0;
+    z-index: 99;
+    display: none;
+    position: fixed;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, .5);
+    border: solid $clr_l_grey 1px;
+    border-radius: 15px;
+
+    svg {
+        height: 12px;
+        width: auto;
+        margin: auto auto;
+        padding: 1px;
+        color: $clr_l_grey;
+        border: solid red 0px;
+        // background-color: rgba(0, 255, 0, .5);
+    }
+}
+
+
+
 /* ---------- PAGE ---------- */
 .page {
     height: 100%;

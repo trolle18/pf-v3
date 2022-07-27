@@ -1,6 +1,7 @@
-// import WorkArticle from "./WorkArticle";
+// import WorkArticles from "./WorkArticles";
 import { useState, useEffect } from "react";
 import { AiOutlineGithub, AiOutlineLink } from "react-icons/ai"
+import { Link } from "react-router-dom";
 
 
 export default function Work() {
@@ -44,32 +45,15 @@ export default function Work() {
     })
 
 
-    // const items = document.querySelectorAll(".item")
-    // const itemObs = new IntersectionObserver( 
-    //     entries => {
-    //         entries.forEach(entry => {
-    //             entry.target.classList.toggle("item-vis", entry.isIntersecting)
-    //             if (entry.isIntersecting) observer.unobserve(entry.target)
-    //         })
-    //     }, 
-    //     {
-    //         // rootMargin: "100px",
-    //         threshold: 1,
-    //     }        
-    // )
-    // items.forEach(item => {
-    //     itemObs.observe(item)
-    // })
-
-
     return (
         <>
             <section className="work-cntr section" id="work">
                 <div className="work-cntr-title">
                     <h2>Work</h2>
                     <span className="sub-title">Here is a few of the projects I have been working on</span>
+                    <Link to="/projects">Se all ...</Link>
                 </div>
-                {/* <WorkArticle/> */}
+                {/* <WorkArticles/> */}
 
                 {projects.map((project, index) => {
                     return (

@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { AiOutlineGithub, AiOutlineLink } from "react-icons/ai"
 
 
-export default function WorkArticle() {
+export default function WorkArticles() {
     const [projects, setProjects] = useState([]);
 
     // Fetch projects from JSON
@@ -23,6 +23,23 @@ export default function WorkArticle() {
         } 
     };
 
+    // const cards = document.querySelectorAll(".card")
+    // const observer = new IntersectionObserver( 
+    //     entries => {
+    //         entries.forEach(entry => {
+    //             entry.target.classList.toggle("show", entry.isIntersecting)
+    //             if (entry.isIntersecting) observer.unobserve(entry.target)
+    //         })
+    //     }, 
+    //     {
+    //         // rootMargin: "100px",
+    //         threshold: .5,
+    //     }        
+    // )
+    // cards.forEach(card => {
+    //     observer.observe(card)
+    // })
+
    
     return (
         <>
@@ -35,7 +52,7 @@ export default function WorkArticle() {
 
                         <div className="project-txt"> 
                             <div className="project-header">
-                                <div className="project-title">
+                                <div className="project-title item">
                                     <h3>{project.title}</h3>
 
                                     <div className="project-links">
@@ -44,16 +61,16 @@ export default function WorkArticle() {
                                     </div>
                                 </div>
 
-                                <div className="project-build">
+                                <div className="project-build item">
                                     {project.build.map((build, i) => {
                                         return(
-                                            <span>{build.tech}</span>
+                                            <span key={i}>{build.tech}</span>
                                         )
                                     })}
                                 </div> 
                             </div>
                 
-                            <div className="project-desc">
+                            <div className="project-desc item">
                                 <span>{project.short}</span>
                             </div>
                             

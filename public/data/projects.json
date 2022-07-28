@@ -1,26 +1,42 @@
 [
     {
-        "id": "E184NGJIYL",
+        "id": 24085003,
         "title": "Be a hero",
         "link": "https://beahero.dk/",
         "repo": "https://github.com/trolle18/beahero",
         "desc": "For my 2nd semester exam project, I worked along side two fellow students, on the website for ‘Be a hero’. A coaching company started in September 2021, by Benthe, with years of experience in the field. <br/> She already has an established customer base, but needed a responsive website, that gives a quick overview of her, her business, and its services. Furthermore, she needed a logo, and a cover photo for her LinkedIn business page.<br><br> We came up with a simple design that is easy to navigate, it is build with HTML, CSS and Vanilla JS. <br/> The logo is simple, and comes in multiple versions, for scalablility. To go with, I created what we refer to as a ‘cape’. The ‘cape’ is an organic, but clean-cut icon, inspired by a lavender flowerpetal, and a superhero cape.",
         "short": "For my 2nd semester exam project, I worked along side two fellow students, on the website for ‘Be a hero’. A coaching company started in September 2021, by Benthe, with years of experience in the field. <br/> She already has an established customer base, but needed a responsive website, that gives a quick overview of her, her business, and its services...",
         "build": [
-            {"tech": "HTML / CSS"},
+            {"tech": "HTML/CSS"},
             {"tech": "JavaScript"}
         ],
         "imgs": [
-            { "img": "data/media/beahero/headlogv2.png" },
-            { "img": "data/media/beahero/mocklap.png" },
-            { "img": "data/media/beahero/mockphone.png" },
-            { "img": "data/media/beahero/log23v2.png" }
+            { 
+                "imgSrc": "/data/media/beahero/headlogv2.png",
+                "imgAlt": "Be A Hero",
+                "imgDesc": "Image description..."
+            },
+            { 
+                "imgSrc": "/data/media/beahero/mocklap.png",
+                "imgAlt": "Be A Hero",
+                "imgDesc": "Image description..."
+            },
+            { 
+                "imgSrc": "/data/media/beahero/mockphone.png",
+                "imgAlt": "Be A Hero",
+                "imgDesc": "Image description..."
+            },
+            { 
+                "imgSrc": "/data/media/beahero/log23v2.png",
+                "imgAlt": "Be A Hero",
+                "imgDesc": "Image description..."
+            }
         ]
 
     },
 
     {
-        "id": "RA7BU1VBPJ",
+        "id": 88656140,
         "title": "TaskRoomies",
         "link": "https://trolle18.github.io/TaskRoomies/",
         "repo": "https://github.com/trolle18/TaskRoomies",
@@ -31,15 +47,31 @@
             {"tech": "Firebase"}
         ],
         "imgs": [
-            { "img": "data/media/taskroomies/task-mock.png" },
-            { "img": "data/media/taskroomies/taskroomies-logo1.png" },
-            { "img": "data/media/taskroomies/taskroomies-logo2.png" },
-            { "img": "data/media/taskroomies/task-mock-b1.png" }
+            { 
+                "imgSrc": "/data/media/taskroomies/task-mock.png",
+                "imgAlt": "Taskroomies",
+                "imgDesc": ""
+            },
+            { 
+                "imgSrc": "/data/media/taskroomies/taskroomies-logo1.png",
+                "imgAlt": "Taskroomies",
+                "imgDesc": ""
+            },
+            { 
+                "imgSrc": "/data/media/taskroomies/taskroomies-logo2.png",
+                "imgAlt": "Taskroomies",
+                "imgDesc": ""
+            },
+            { 
+                "imgSrc": "/data/media/taskroomies/task-mock-b1.png",
+                "imgAlt": "Taskroomies",
+                "imgDesc": ""
+            }
         ]
     },
 
     {
-        "id": "2UIFX2ADAH",
+        "id": 35979751,
         "title": "City Break Planner",
         "link": "/",
         "repo": "https://github.com/SommerCh/city",
@@ -49,48 +81,96 @@
             {"tech": "React.JS"}
         ],
         "imgs": [
-            { "img": " " },
-            { "img": " " },
-            { "img": " " },
-            { "img": " " }
+            { 
+                "imgSrc": "/data/media/citybreakplanner/",
+                "imgAlt": "City break planner",
+                "imgDesc": ""
+            },
+            { 
+                "imgSrc": "/data/media/citybreakplanner/",
+                "imgAlt": "City break planner",
+                "imgDesc": ""
+            },
+            { 
+                "imgSrc": "/data/media/citybreakplanner/",
+                "imgAlt": "City break planner",
+                "imgDesc": ""
+            },
+            { 
+                "imgSrc": "/data/media/citybreakplanner/",
+                "imgAlt": "City break planner",
+                "imgDesc": ""
+            }
         ]
     },
 
     {
-        "id": "KG3679640W",
+        "id": 40637227,
         "title": "Generaxion",
         "link": null,
         "repo": null,
         "desc": "During my 2nd semester at the business academy, we were given the task ofcreating and incorporating a job agent prototype, for Generaxion’s job site, for any interested job seekers to use and apply through, and be notified if an open position suiting them were to be published. <br/> <br/> Our goal were to make it easy, user-friendly and simple to use. We also needed to create some eye-catching branding for company’s social media platforms, to promote the job agent and reach possible job seekers.",
         "short": "During my 2nd semester at the business academy, we were given the task ofcreating and incorporating a job agent prototype, for Generaxion’s job site, for any interested job seekers to use and apply through, and be notified if an open position suiting them were to be published...",
         "build": [
-            {"tech": "HTML / CSS"},
+            {"tech": "HTML/CSS"},
             {"tech": "JavaScript"}
         ],
         "imgs": [
-            { "img": "data/media/generaxion/fbpost.png" },
-            { "img": "data/media/generaxion/fb-post-zen.png" },
-            { "img": "data/media/generaxion/generaxion-1.png" },
-            { "img": "data/media/generaxion/generaxion-3.png" }
+            { 
+                "imgSrc": "/data/media/generaxion/fbpost.png",
+                "imgAlt": "Generaxion",
+                "imgDesc": ""
+            },
+            { 
+                "imgSrc": "/data/media/generaxion/fb-post-zen.png",
+                "imgAlt": "Generaxion",
+                "imgDesc": ""
+            },
+            { 
+                "imgSrc": "/data/media/generaxion/generaxion-1.png",
+                "imgAlt": "Generaxion",
+                "imgDesc": ""
+            },
+            { 
+                "imgSrc": "/data/media/generaxion/generaxion-3.png",
+                "imgAlt": "Generaxion",
+                "imgDesc": ""
+            }
         ]
     },
 
     {
-        "id": "5TM0BTKEYP",
+        "id": 61037089,
         "title": "Miscellaneous",
         "link": null,
         "repo": null,
         "desc": "Besides working on projects as a part of my education, I also experiment and do a lot of programming, designing or illustrating in my spare time, which also helps me learn and expand my knowledge.<br><br> These are just few examples of what been working on:<br> A Tic Tac Toe game, some vector illustrations made in illustrator, and an svg, which “draws” when you scroll.",
         "short": "Besides working on projects as a part of my education, I also experiment and do a lot of programming, designing or illustrating in my spare time, which also helps me learn and expand my knowledge...",
         "build": [
-            {"tech": "HTML / CSS"},
+            {"tech": "HTML/CSS"},
             {"tech": "JavaScript"}
         ],
         "imgs": [
-            { "img": "data/media/miscellaneous/flat-animals.png" },
-            { "img": "data/media/miscellaneous/svgscroll.png" },
-            { "img": "data/media/miscellaneous/tictactoe-v1.png" },
-            { "img": "data/media/miscellaneous/illpf.png" }
+            { 
+                "imgSrc": "/data/media/miscellaneous/flat-animals.png",
+                "imgAlt": "Miscellaneous",
+                "imgDesc": ""
+            },
+            { 
+                "imgSrc": "/data/media/miscellaneous/svgscroll.png",
+                "imgAlt": "Miscellaneous",
+                "imgDesc": ""
+            },
+            { 
+                "imgSrc": "/data/media/miscellaneous/tictactoe-v1.png",
+                "imgAlt": "Miscellaneous",
+                "imgDesc": ""
+            },
+            { 
+                "imgSrc": "/data/media/miscellaneous/illpf.png",
+                "imgAlt": "Miscellaneous",
+                "imgDesc": ""
+            }
         ]
     }
   ]

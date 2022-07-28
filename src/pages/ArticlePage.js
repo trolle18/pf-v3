@@ -1,7 +1,7 @@
 // import { useNavigate } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
-import '../scss/App.scss';
+import '../scss/ArticlePage.scss';
 
 export default function ArticlePage() {
     const [article, setArticle] = useState({});
@@ -23,34 +23,38 @@ export default function ArticlePage() {
         }
     }, [articleId])
 
-    // function getImg(article) {
-    //     if (article.imgs?.length >= 1) {
-    //         return article.imgs[0]?.img;
-    //     } 
-    // };
+    function getImg(article) {
+        if (article.imgs?.length >= 1) {
+            return article.imgs[0]?.imgSrc;
+        } 
+    };
 
 
     return (
         <>
             <section className="page">
-                <div>
+                <div className="page-header">
                     <h2>Article Page</h2>
                     <span className="sub-title">Here is a subtitle</span>
                 </div>
 
                 <article  key={article?.id} className="article">
-                    <div className='article-img-cntr'>
-                        {/* <img src={getImg(article)} alt={article?.title}/> */}
-
-                        {article.imgs?.map((img) => (
-
-                                    <img 
-                                     alt="" src={img.imgSrc}/>
-                            ))}
-                            
+                    <div className="article-header">
+                        <div className='header-img'>
+                            <img src={getImg(article)} alt="" />
+                        </div>  
+                        <h1>{article?.title}</h1>                       
                     </div>
+                   
 
-                    <h1>{article?.title}</h1>
+                    {/* <div className='article-img-cntr'>
+                        {article.imgs?.map((img) => (
+                                <img alt={img.imgAlt} src={img.imgSrc}/>
+                            ))}                            
+                     </div> */}
+
+
+                    {/* <h1>{article?.title}</h1> */}
                     <span>{article?.desc}</span>
 
                 </article>

@@ -1,22 +1,9 @@
-import { useState, useEffect } from "react";
 import { useNavigate } from 'react-router-dom';
 import { AiOutlineGithub, AiOutlineLink } from "react-icons/ai"
 
 
 export default function WorkArticle( {article} ) {
-    // const [projects, setProjects] = useState([]);
     const navigate = useNavigate();
-
-    // Fetch projects from JSON
-    // useEffect(() => {
-    //     async function getData() {
-    //         const response = await fetch("/data/projects.json");
-    //         const data = await response.json();
-    //         setProjects(data);
-    //     }
-    //     getData();
-        
-    // }, []);
 
     // Fetch project imgs from JSON - If there is more than one, display only the first one
     function getImg(article) {
@@ -25,10 +12,13 @@ export default function WorkArticle( {article} ) {
         } 
     };
 
-    // function handleClick() {
-    //     navigate(`/projects/${project.id}`)
-    // }
+    // Navigate to article page 
+    function handleClick() {
+        navigate(`/projects/${article.id}`)
+    }
 
+
+    // Intersection observer
     const cards = document.querySelectorAll(".card")
     const observer = new IntersectionObserver( 
         entries => {
@@ -49,43 +39,34 @@ export default function WorkArticle( {article} ) {
    
     return (
         <>
-            {/* {projects.map((project, index) => {
-                return ( */}
-                    <article key={article.id} className="project card">
-                        <div className="project-img-cntr">
-                            <img src={getImg(article)} alt={article.title}/>  
+            <article key={article.id} className="project card" onClick={handleClick}>
+                <div className="project-img-cntr">
+                    <img src={getImg(article)} alt={article.title}/>  
+                </div>
+
+                <div className="project-txt"> 
+                    <div className="project-header">
+
+                        <div className="project-title item">
+                            <h3>{article.title}</h3>
+                            <div className="project-links">
+                                <a href={article.link}> <AiOutlineLink/> </a>
+                                <a href={article.repo}> <AiOutlineGithub/> </a>
+                            </div>
                         </div>
 
-                        <div className="project-txt"> 
-                            <div className="project-header">
-                                <div className="project-title item">
-                                    <h3>{article.title}</h3>
-
-                                    <div className="project-links">
-                                        <a href={article.link}> <AiOutlineLink/> </a>
-                                        <a href={article.repo}> <AiOutlineGithub/> </a>
-                                    </div>
-                                </div>
-
-                                <div className="project-build item">
-                                    {article.build.map((build, i) => {
-                                        return(
-                                            <span key={i}>{build.tech}</span>
-                                        )
-                                    })}
-                                </div> 
-                            </div>
-                
-                            <div className="project-desc item">
-                                <span>{article.short}</span>
-                            </div>
-                            
-                        </div>
-                    </article>
-
-                {/* )
-            })} */}
-
+                        <div className="project-build item">
+                            {article.build.map((build, i) => {
+                                return( <span key={i}>{build.tech}</span> )
+                            })}
+                        </div> 
+                    </div>
+        
+                    <div className="project-desc item">
+                        <span>{article.short}</span>
+                    </div>
+                </div>
+            </article>
         </>
     )
 };

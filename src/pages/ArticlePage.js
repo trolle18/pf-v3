@@ -1,6 +1,7 @@
-// import { useNavigate } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
+import { AiOutlineGithub, AiOutlineLink } from "react-icons/ai"
+
 import '../scss/ArticlePage.scss';
 
 export default function ArticlePage() {
@@ -43,20 +44,27 @@ export default function ArticlePage() {
                         <div className='header-img'>
                             <img src={getImg(article)} alt="" />
                         </div>  
-                        <h1>{article?.title}</h1>                       
+                        <div className="article-title">
+                            <h1>{article?.title}</h1>
+                            <div className="article-links">
+                                <a href={article.link}> <AiOutlineLink/> </a>
+                                <a href={article.repo}> <AiOutlineGithub/> </a>
+                            </div>
+                        </div>                       
+                    </div>
+
+                    <div className="article-content">
+                        <span>{article?.desc} </span>
+                        {/* <div> */}
+                            {article.imgs?.map((img) => (
+                                    <div className="img-cntr" key={img.imgId}>
+                                        <img alt={img.imgAlt} src={img.imgSrc}/>
+                                    </div>
+                                ))}                            
+                        {/* </div> */}
+                       
                     </div>
                    
-
-                    {/* <div className='article-img-cntr'>
-                        {article.imgs?.map((img) => (
-                                <img alt={img.imgAlt} src={img.imgSrc}/>
-                            ))}                            
-                     </div> */}
-
-
-                    {/* <h1>{article?.title}</h1> */}
-                    <span>{article?.desc}</span>
-
                 </article>
 
             </section>

@@ -17,29 +17,43 @@ export default function ArticlePage() {
 
             const articleData = data.find(item => item.id === articleId); // Get matching article id
             setArticle(articleData);
-            console.log(articleData);
         }
         if (articleId) { // If article id is found, set article data
             getData();
         }
     }, [articleId])
-    console.log(article)
 
+    // function getImg(article) {
+    //     if (article.imgs?.length >= 1) {
+    //         return article.imgs[0]?.img;
+    //     } 
+    // };
 
 
     return (
         <>
             <section className="page">
-                <section className="work-cntr section">
-                    <div className="work-cntr-title">
-                        <h2>Article Page</h2>
-                        <span className="sub-title">Here is a subtitle</span>
-                    </div>
-                </section>
+                <div>
+                    <h2>Article Page</h2>
+                    <span className="sub-title">Here is a subtitle</span>
+                </div>
 
-                <section key={article?.id}>
+                <article  key={article?.id} className="article">
+                    <div className='article-img-cntr'>
+                        {/* <img src={getImg(article)} alt={article?.title}/> */}
+
+                        {article.imgs?.map((img) => (
+
+                                    <img 
+                                     alt="" src={img.imgSrc}/>
+                            ))}
+                            
+                    </div>
+
                     <h1>{article?.title}</h1>
-                </section>
+                    <span>{article?.desc}</span>
+
+                </article>
 
             </section>
         </>

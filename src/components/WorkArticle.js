@@ -8,7 +8,7 @@ export default function WorkArticle( {article} ) {
     // Fetch project imgs from JSON - If there is more than one, display only the first one
     function getImg(article) {
         if (article.imgs?.length >= 1) {
-            return article.imgs[0]?.img;
+            return article.imgs[0]?.imgSrc;
         } 
     };
 

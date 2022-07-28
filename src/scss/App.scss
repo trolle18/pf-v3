@@ -186,7 +186,6 @@ p, span {
 
 /* ---------- ABOUT SECTION ---------- */
 
-    
 
 
 
@@ -528,7 +527,9 @@ p, span {
 /* ---------- FOOTER ---------- */
 .footer-cntr {
     // margin: 10em 0 5em 0;
+    height: auto;
     width: 98%;
+    bottom: 0;
     margin: 10em auto 5em auto;
     display: flex;
     flex-direction: column;
@@ -666,4 +667,21 @@ p, span {
 .card.show {
     opacity: 1;
     transform: translateY(0);
+}
+
+
+
+/* ---------- ARTICLE PAGE ---------- */
+
+.article-img-cntr {
+    border: solid blue 0px;
+    height: 100%;
+    width: 40%;
+    margin: 0 0.625rem 0 0;
+
+    img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
 }

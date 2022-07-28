@@ -1,5 +1,5 @@
 // import { useNavigate } from 'react-router-dom';
-import WorkArticles from '../components/WorkArticles';
+import WorkArticles from '../components/WorkArticle';
 import '../scss/App.scss';
 
 export default function ArticlePage( {project} ) {

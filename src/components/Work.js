@@ -2,10 +2,11 @@
 import { useState, useEffect } from "react";
 import { AiOutlineGithub, AiOutlineLink } from "react-icons/ai"
 import { Link } from "react-router-dom";
+import WorkArticle from "./WorkArticle";
 
 
 export default function Work() {
-    const [projects, setProjects] = useState([]);
+    const [articles, setArticles] = useState([]);
 
 
     // Fetch projects from JSON
@@ -13,36 +14,36 @@ export default function Work() {
         async function getData() {
             const response = await fetch("/data/projects.json");
             const data = await response.json();
-            setProjects(data);
+            setArticles(data);
         }
         getData();
         
     }, []);
 
     // Fetch project imgs from JSON - If there is more than one, display only the first one
-    function getImg(project) {
-        if (project.imgs?.length >= 1) {
-            return project.imgs[0]?.img;
-        } 
-    };
+    // function getImg(article) {
+    //     if (article.imgs?.length >= 1) {
+    //         return article.imgs[0]?.img;
+    //     } 
+    // };
 
 
-    const cards = document.querySelectorAll(".card")
-    const observer = new IntersectionObserver( 
-        entries => {
-            entries.forEach(entry => {
-                entry.target.classList.toggle("show", entry.isIntersecting)
-                if (entry.isIntersecting) observer.unobserve(entry.target)
-            })
-        }, 
-        {
-            // rootMargin: "100px",
-            threshold: .5,
-        }        
-    )
-    cards.forEach(card => {
-        observer.observe(card)
-    })
+    // const cards = document.querySelectorAll(".card")
+    // const observer = new IntersectionObserver( 
+    //     entries => {
+    //         entries.forEach(entry => {
+    //             entry.target.classList.toggle("show", entry.isIntersecting)
+    //             if (entry.isIntersecting) observer.unobserve(entry.target)
+    //         })
+    //     }, 
+    //     {
+    //         // rootMargin: "100px",
+    //         threshold: .5,
+    //     }        
+    // )
+    // cards.forEach(card => {
+    //     observer.observe(card)
+    // })
 
 
     return (
@@ -53,9 +54,15 @@ export default function Work() {
                     <span className="sub-title">Here is a few of the projects I have been working on</span>
                     <Link to="/projects">Se all ...</Link>
                 </div>
-                {/* <WorkArticles/> */}
 
-                {projects.map((project, index) => {
+                {articles.map( (article ) => (
+                    <>
+                        <WorkArticle article={article} key={article.id}/>
+                    </>
+                ))}
+                
+
+                {/* {projects.map((project, index) => {
                     return (
                         <article key={index} className="project card">
                             <div className="project-img-cntr">
@@ -89,7 +96,7 @@ export default function Work() {
                             </div>
                         </article>
                     )
-                })}
+                })} */}
 
             </section>
         

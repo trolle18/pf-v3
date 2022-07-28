@@ -1,5 +1,5 @@
 import Work from '../components/Work';
-import WorkArticles from '../components/WorkArticles';
+import WorkArticle from '../components/WorkArticle';
 import '../scss/App.scss';
 
 export default function ProjectsPage() {
@@ -12,7 +12,7 @@ export default function ProjectsPage() {
                         <h2>Work</h2>
                         <span className="sub-title">Here is a few of the projects I have been working on</span>
                     </div>
-                    <WorkArticles/>
+                    <WorkArticle/>
                 </section>
             </section>
         </>

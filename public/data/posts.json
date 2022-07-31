@@ -1,0 +1,82 @@
+[
+    {
+        "id": 266641,
+        "title": "Post one",
+        "date": "01/01/22",
+        "link": "https://beahero.dk/",
+        "repo": "https://github.com/trolle18/beahero",
+        "desc": "For my 2nd semester exam project, I worked along side two fellow students, on the website for ‘Be a hero’. A coaching company started in September 2021, by Benthe, with years of experience in the field. <br/> She already has an established customer base, but needed a responsive website, that gives a quick overview of her, her business, and its services. Furthermore, she needed a logo, and a cover photo for her LinkedIn business page.<br><br> We came up with a simple design that is easy to navigate, it is build with HTML, CSS and Vanilla JS. <br/> The logo is simple, and comes in multiple versions, for scalablility. To go with, I created what we refer to as a ‘cape’. The ‘cape’ is an organic, but clean-cut icon, inspired by a lavender flowerpetal, and a superhero cape.",
+        "short": "For my 2nd semester exam project, I worked along side two fellow students, on the website for ‘Be a hero’. A coaching company started in September 2021, by Benthe, with years of experience in the field. <br/> She already has an established customer base, but needed a responsive website, that gives a quick overview of her, her business, and its services...",
+        "build": [
+            {"tech": "HTML/CSS"},
+            {"tech": "JavaScript"}
+        ],
+        "imgs": [
+            { 
+                "imgId": 197977,
+                "imgSrc": "/data/media/beahero/headlogv2.png",
+                "imgAlt": "Be A Hero",
+                "imgDesc": "Image description..."
+            },
+            { 
+                "imgId": 657940,
+                "imgSrc": "/data/media/beahero/mocklap.png",
+                "imgAlt": "Be A Hero",
+                "imgDesc": "Image description..."
+            },
+            { 
+                "imgId": 613742,
+                "imgSrc": "/data/media/beahero/mockphone.png",
+                "imgAlt": "Be A Hero",
+                "imgDesc": "Image description..."
+            },
+            { 
+                "imgId": 766792,
+                "imgSrc": "/data/media/beahero/log23v2.png",
+                "imgAlt": "Be A Hero",
+                "imgDesc": "Image description..."
+            }
+        ]
+
+    },
+
+
+    {
+        "id": 727236,
+        "title": "Post two",
+        "date": "01/01/22",
+        "link": "/",
+        "repo": "https://github.com/SommerCh/city",
+        "desc": " ",
+        "short": " ",
+        "build": [
+            {"tech": "React.JS"}
+        ],
+        "imgs": [
+            { 
+                "imgId": 768008,
+                "imgSrc": "/data/media/citybreakplanner/",
+                "imgAlt": "City break planner",
+                "imgDesc": ""
+            },
+            { 
+                "imgId": 284448,
+                "imgSrc": "/data/media/citybreakplanner/",
+                "imgAlt": "City break planner",
+                "imgDesc": ""
+            },
+            { 
+                "imgId": 923433,
+                "imgSrc": "/data/media/citybreakplanner/",
+                "imgAlt": "City break planner",
+                "imgDesc": ""
+            },
+            { 
+                "imgId": 318375,
+                "imgSrc": "/data/media/citybreakplanner/",
+                "imgAlt": "City break planner",
+                "imgDesc": ""
+            }
+        ]
+    }
+  ]

@@ -1,6 +1,5 @@
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
-import { AiOutlineGithub, AiOutlineLink } from "react-icons/ai"
 import '../scss/ArticlePage.scss';
 
 export default function PostArticlePage() {
@@ -15,19 +14,19 @@ export default function PostArticlePage() {
             const response = await fetch("/data/posts.json"); // Fetch data from JSON
             const data = await response.json();
 
-            const postData = data.find(item => item.id === postId); // Get matching article id
+            const postData = data.find(item => item.id === postId); // Get matching id
             setPost(postData);
         }
-        if (postId) { // If article id is found, set article data
+        if (postId) { // If id is found, set data
             getData();
         }
     }, [postId])
 
-    // function getImg(post) {
-    //     if (post.imgs?.length >= 1) {
-    //         return post.imgs[0]?.imgSrc;
-    //     } 
-    // };
+    function getImg(post) {
+        if (post.imgs?.length >= 1) {
+            return post.imgs[0]?.imgSrc;
+        } 
+    };
 
 
     return (
@@ -42,15 +41,12 @@ export default function PostArticlePage() {
                 <article  key={post?.id} className="article">
                     <div className="article-header">
                         <div className='header-img'>
-                            {/* <img src={getImg(post)} alt="" /> */}
+                            <img src={getImg(post)} alt="" />
                         </div>  
                         <div className="article-title">
                             <h1>{post?.title}</h1>
-                            <span>{post.date}</span>
                             <div className="article-links">
                                 <span>{post.date}</span>
-                                {/* <a href={post.link}> <AiOutlineLink/> </a>
-                                <a href={post.repo}> <AiOutlineGithub/> </a> */}
                             </div>
                         </div>                       
                     </div>

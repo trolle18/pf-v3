@@ -201,10 +201,10 @@ p, span {
     }
 
     .project {
-        border: solid green 0px;
+        border: solid rgba(0, 0, 0, 0) 1px;
         height: auto;
         width: 100%;
-        margin: 0rem 0rem 4rem 0rem;
+        margin: .2rem .2rem 4rem 0rem;
         display: flex;
         flex-direction: column;
         cursor: pointer;
@@ -212,9 +212,13 @@ p, span {
         .project-txt {
             border: solid blue 0px;
             width: 100%;
+            padding: .5rem 0;
+            display: flex;
+            flex-direction: column;
             
             .project-title {
                 border: solid yellow 0px;
+                padding: 0 .5rem;
                 display: flex;
                 flex-direction: row;
                 justify-content: space-between;
@@ -245,6 +249,7 @@ p, span {
             }
 
             .project-build {
+                padding: 0 .5rem;
                 display: flex;
                 flex-direction: row;
 
@@ -260,6 +265,10 @@ p, span {
             }
         }
 
+        .project-desc {
+            padding: 0 .5rem;
+        }
+
         .project-img-cntr {
             border: solid blue 0px;
             height: 120px;
@@ -271,20 +280,14 @@ p, span {
                 width: 100%;
                 object-fit: cover;
             }
-        }        
+        }   
+        
+        &:hover {
+            border: solid $clr_l_grey 1px;
+        }
     }
 
 
-    // .item {
-    //     opacity: 0;
-    //     transform: translateY(10px);
-    //     transition: .5s;
-    // }
-
-    // .item.item-vis {
-    //     opacity: 1;
-    //     transform: translateY(0);
-    // }
 
 
     @media (min-width: 600px) {
@@ -297,7 +300,7 @@ p, span {
             flex-direction: row;
     
             .project-txt {
-                border: solid blue 0px;
+                // border: solid blue 0px;
                 width: 60%;
                 margin: auto 0;
                 overflow: hidden;
@@ -305,7 +308,7 @@ p, span {
                 .project-header {
 
                     .project-title {
-                        border: solid yellow 0px;
+                        // border: solid yellow 0px;
                         display: flex;
                         flex-direction: row;
                         justify-content: space-between;
@@ -317,7 +320,7 @@ p, span {
                         }
         
                         .project-links {
-                            border: solid violet 0px;
+                            // border: solid violet 0px;
                             height: 100%;
                             width: auto;
         
@@ -340,7 +343,7 @@ p, span {
                         flex-direction: row;
         
                         span {
-                            border: solid red 0px;
+                            // border: solid red 0px;
                             margin-right: 2rem;
                             color: $clr_acc_yel;
                             font-family: $ff_mono;
@@ -362,7 +365,7 @@ p, span {
 
     
             .project-img-cntr {
-                border: solid blue 0px;
+                // border: solid blue 0px;
                 height: 100%;
                 width: 40%;
                 margin: 0 0.625rem 0 0;
@@ -388,7 +391,7 @@ p, span {
             justify-content: space-between;
     
             .project-txt {
-                border: solid blue 0px;
+                // border: solid blue 0px;
                 width: 60%;
                 overflow: visible;
                 margin: auto 0;
@@ -397,7 +400,7 @@ p, span {
                     margin-bottom: .625em;
                 
                     .project-title {
-                        border: solid yellow 0px;
+                        // border: solid yellow 0px;
                         display: flex;
                         flex-direction: row;
                         justify-content: space-between;
@@ -409,12 +412,12 @@ p, span {
                         }
         
                         .project-links {
-                            border: solid violet 0px;
+                            // border: solid violet 0px;
                             height: 100%;
                             width: auto;
         
                             a {
-                                border: solid red 0px;
+                                // border: solid red 0px;
                                 margin-left: .5em;
                                 text-decoration: none;
                                 color: $clr_l_grey;
@@ -432,7 +435,7 @@ p, span {
                         flex-direction: row;
         
                         span {
-                            border: solid red 0px;
+                            // border: solid red 0px;
                             margin-right: 2rem;
                             color: $clr_acc_yel;
                             font-family: $ff_mono;
@@ -452,7 +455,7 @@ p, span {
             }
     
             .project-img-cntr {
-                border: solid blue 0px;
+                // border: solid blue 0px;
                 height: 100%;
                 width: 40%;
                 margin: 0 0.625rem 0 0;

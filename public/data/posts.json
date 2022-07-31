@@ -2,38 +2,37 @@
     {
         "id": 266641,
         "title": "Post one",
+        "subtitle": "Lorem ipsum dolor sit amet",
         "date": "01/01/22",
-        "link": "https://beahero.dk/",
-        "repo": "https://github.com/trolle18/beahero",
-        "desc": "For my 2nd semester exam project, I worked along side two fellow students, on the website for ‘Be a hero’. A coaching company started in September 2021, by Benthe, with years of experience in the field. <br/> She already has an established customer base, but needed a responsive website, that gives a quick overview of her, her business, and its services. Furthermore, she needed a logo, and a cover photo for her LinkedIn business page.<br><br> We came up with a simple design that is easy to navigate, it is build with HTML, CSS and Vanilla JS. <br/> The logo is simple, and comes in multiple versions, for scalablility. To go with, I created what we refer to as a ‘cape’. The ‘cape’ is an organic, but clean-cut icon, inspired by a lavender flowerpetal, and a superhero cape.",
-        "short": "For my 2nd semester exam project, I worked along side two fellow students, on the website for ‘Be a hero’. A coaching company started in September 2021, by Benthe, with years of experience in the field. <br/> She already has an established customer base, but needed a responsive website, that gives a quick overview of her, her business, and its services...",
-        "build": [
-            {"tech": "HTML/CSS"},
-            {"tech": "JavaScript"}
+        "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi egestas auctor nisl non volutpat. Nullam id sem quis metus luctus ullamcorper. Phasellus bibendum semper leo a faucibus. Praesent vel mauris magna. Phasellus tempor imperdiet urna in finibus. Praesent elit ligula, malesuada a urna ac, posuere consectetur nisi. Morbi eleifend nunc vitae nunc fermentum fringilla. Etiam scelerisque enim et accumsan aliquam. Pellentesque lacinia lobortis turpis, quis imperdiet ante pellentesque sit amet. Praesent tincidunt sit amet purus vitae lobortis. Aliquam quis odio id purus rhoncus euismod. Donec tempor orci vitae scelerisque consequat. Nam sapien odio, pulvinar vel arcu in, posuere congue justo. Sed ligula magna, sollicitudin eu laoreet nec, commodo eu quam. Suspendisse auctor diam diam, et consectetur tortor molestie at. Suspendisse ac sem nec ante consequat finibus. Sed quis nisl ut purus elementum euismod. Donec laoreet in augue non pharetra. Aenean non magna enim. Suspendisse in nibh sed tellus commodo porta eget in velit. Fusce gravida nunc sit amet lacus placerat vestibulum. Mauris quis augue vel massa luctus laoreet a ut lacus. Mauris ut aliquam nunc. Aliquam ullamcorper luctus magna non semper. Morbi sapien arcu, tempor ut libero in, consequat suscipit quam. Nunc congue, enim non ultricies consequat, tortor sapien varius erat, vel ultricies erat dui at risus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nullam id ante sed elit luctus tempor et et sapien. Pellentesque vel tempor urna, quis semper neque. Integer eget lacus nec nisl auctor sagittis.",
+        "short": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi egestas auctor nisl non volutpat. Nullam id sem quis metus luctus ullamcorper. Phasellus bibendum semper leo a faucibus. Praesent vel mauris magna. Phasellus tempor imperdiet urna in finibus. Praesent elit ligula, malesuada a urna ac, posuere consectetur nisi. Morbi eleifend nunc vitae nunc fermentum fringilla. Etiam scelerisque enim et accumsan aliquam.",
+        "tags": [
+            {"tag": "Tag"},
+            {"tag": "Tag"}
         ],
         "imgs": [
             { 
                 "imgId": 197977,
-                "imgSrc": "/data/media/beahero/headlogv2.png",
-                "imgAlt": "Be A Hero",
+                "imgSrc": "/data/media/posts/code-cover1.png",
+                "imgAlt": "Post",
                 "imgDesc": "Image description..."
             },
             { 
                 "imgId": 657940,
-                "imgSrc": "/data/media/beahero/mocklap.png",
-                "imgAlt": "Be A Hero",
+                "imgSrc": "/data/media/posts/code-cover1.png",
+                "imgAlt": "Post",
                 "imgDesc": "Image description..."
             },
             { 
                 "imgId": 613742,
-                "imgSrc": "/data/media/beahero/mockphone.png",
-                "imgAlt": "Be A Hero",
+                "imgSrc": "/data/media/posts/code-cover1.png",
+                "imgAlt": "Post",
                 "imgDesc": "Image description..."
             },
             { 
                 "imgId": 766792,
-                "imgSrc": "/data/media/beahero/log23v2.png",
-                "imgAlt": "Be A Hero",
+                "imgSrc": "/data/media/posts/code-cover1.png",
+                "imgAlt": "Post",
                 "imgDesc": "Image description..."
             }
         ]
@@ -44,37 +43,37 @@
     {
         "id": 727236,
         "title": "Post two",
+        "subtitle": "Lorem ipsum dolor sit amet",
         "date": "01/01/22",
-        "link": "/",
-        "repo": "https://github.com/SommerCh/city",
-        "desc": " ",
-        "short": " ",
-        "build": [
-            {"tech": "React.JS"}
+        "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi egestas auctor nisl non volutpat. Nullam id sem quis metus luctus ullamcorper. Phasellus bibendum semper leo a faucibus. Praesent vel mauris magna. Phasellus tempor imperdiet urna in finibus. Praesent elit ligula, malesuada a urna ac, posuere consectetur nisi. Morbi eleifend nunc vitae nunc fermentum fringilla. Etiam scelerisque enim et accumsan aliquam. Pellentesque lacinia lobortis turpis, quis imperdiet ante pellentesque sit amet. Praesent tincidunt sit amet purus vitae lobortis. Aliquam quis odio id purus rhoncus euismod. Donec tempor orci vitae scelerisque consequat. Nam sapien odio, pulvinar vel arcu in, posuere congue justo. Sed ligula magna, sollicitudin eu laoreet nec, commodo eu quam. Suspendisse auctor diam diam, et consectetur tortor molestie at. Suspendisse ac sem nec ante consequat finibus. Sed quis nisl ut purus elementum euismod. Donec laoreet in augue non pharetra. Aenean non magna enim. Suspendisse in nibh sed tellus commodo porta eget in velit. Fusce gravida nunc sit amet lacus placerat vestibulum. Mauris quis augue vel massa luctus laoreet a ut lacus. Mauris ut aliquam nunc. Aliquam ullamcorper luctus magna non semper. Morbi sapien arcu, tempor ut libero in, consequat suscipit quam. Nunc congue, enim non ultricies consequat, tortor sapien varius erat, vel ultricies erat dui at risus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nullam id ante sed elit luctus tempor et et sapien. Pellentesque vel tempor urna, quis semper neque. Integer eget lacus nec nisl auctor sagittis.",
+        "short": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi egestas auctor nisl non volutpat. Nullam id sem quis metus luctus ullamcorper. Phasellus bibendum semper leo a faucibus. Praesent vel mauris magna. Phasellus tempor imperdiet urna in finibus. Praesent elit ligula, malesuada a urna ac, posuere consectetur nisi. Morbi eleifend nunc vitae nunc fermentum fringilla. Etiam scelerisque enim et accumsan aliquam.",
+        "tags": [
+            {"tag": "Tag"},
+            {"tag": "Tag"}
         ],
         "imgs": [
             { 
                 "imgId": 768008,
-                "imgSrc": "/data/media/citybreakplanner/",
-                "imgAlt": "City break planner",
+                "imgSrc": "/data/media/posts/code-cover1.png",
+                "imgAlt": "Post",
                 "imgDesc": ""
             },
             { 
                 "imgId": 284448,
-                "imgSrc": "/data/media/citybreakplanner/",
-                "imgAlt": "City break planner",
+                "imgSrc": "/data/media/posts/code-cover1.png",
+                "imgAlt": "Post",
                 "imgDesc": ""
             },
             { 
                 "imgId": 923433,
-                "imgSrc": "/data/media/citybreakplanner/",
-                "imgAlt": "City break planner",
+                "imgSrc": "/data/media/posts/code-cover1.png",
+                "imgAlt": "Post",
                 "imgDesc": ""
             },
             { 
                 "imgId": 318375,
-                "imgSrc": "/data/media/citybreakplanner/",
-                "imgAlt": "City break planner",
+                "imgSrc": "/data/media/posts/code-cover1.png",
+                "imgAlt": "Post",
                 "imgDesc": ""
             }
         ]

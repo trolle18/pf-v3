@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { AiOutlineGithub, AiOutlineLink } from "react-icons/ai"
-
+// import { UseBackListener } from "../components/UseBackListener";
 import '../scss/ArticlePage.scss';
 
 export default function ArticlePage() {
@@ -35,6 +35,7 @@ export default function ArticlePage() {
         <>
             <section className="page">
                 <div className="page-header">
+                    {/* <UseBackListener/> */}
                     <h2>Article Page</h2>
                     <span className="sub-title">Here is a subtitle</span>
                 </div>
@@ -56,11 +57,11 @@ export default function ArticlePage() {
                     <div className="article-content">
                         <span>{article?.desc} </span>
                         {/* <div> */}
-                            {article.imgs?.map((img) => (
-                                    <div className="img-cntr" key={img.imgId}>
-                                        <img alt={img.imgAlt} src={img.imgSrc}/>
+                            {/* {article.imgs?.map((imgs) => (
+                                    <div className="img-cntr" key={imgs.imgId}>
+                                        <img alt={imgs.imgAlt} src={imgs.imgSrc}/>
                                     </div>
-                                ))}                            
+                                ))}                             */}
                         {/* </div> */}
                        
                     </div>

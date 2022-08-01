@@ -20,7 +20,8 @@ export default function Contact() {
             <section className="contact-cntr section">
                 <h2 id="contact">Contact</h2>
                 <span>Feel free to send an email, whether you have any questions or just to say hi, and I'll get back to you!</span>
-                <button mailto="sofietrolle@hotmail.com">Get in touch</button>
+                {/* <button mailto="sofietrolle@hotmail.com">Get in touch</button> */}
+                <a href="mailto:sofietrolle@hotmail.com">Get in touch</a>
                 {/* <MailTo mailto="sofietrolle@hotmail.com" label="Get in touch"/> */}
             </section>
         

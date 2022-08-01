@@ -1,20 +1,19 @@
 import { useNavigate } from 'react-router-dom';
-import { AiOutlineGithub, AiOutlineLink } from "react-icons/ai"
 
 
-export default function WorkArticle( {article} ) {
+export default function PostArticle( {post} ) {
     const navigate = useNavigate();
 
-    // Fetch project imgs from JSON - If there is more than one, display only the first one
-    function getImg(article) {
-        if (article.imgs?.length >= 1) {
-            return article.imgs[0]?.imgSrc;
+    // Fetch post imgs from JSON - If there is more than one, display only the first one
+    function getImg(post) {
+        if (post.imgs?.length >= 1) {
+            return post.imgs[0]?.imgSrc;
         } 
     };
 
     // Navigate to article page 
     function handleClick() {
-        navigate(`/projects/${article.id}`)
+        navigate(`/posts/${post.id}`)
     }
 
 
@@ -39,31 +38,31 @@ export default function WorkArticle( {article} ) {
    
     return (
         <>
-            <article key={article.id} className="project card" onClick={handleClick}>
+            <article key={post.id} className="project card" onClick={handleClick}>
                 <div className="project-img-cntr">
-                    <img src={getImg(article)} alt={article.title}/>  
+                    <img src={getImg(post)} alt={post.title}/>  
                 </div>
 
                 <div className="project-txt"> 
                     <div className="project-header">
 
-                        <div className="project-title item">
-                            <h3>{article.title}</h3>
+                        <div className="project-title">
+                            <h3>{post.title}</h3>
                             <div className="project-links">
-                                <a href={article.link}> <AiOutlineLink/> </a>
-                                <a href={article.repo}> <AiOutlineGithub/> </a>
+                                <span>{post.date}</span>
                             </div>
                         </div>
-
-                        <div className="project-build item">
-                            {article.build.map((build, i) => {
-                                return( <span key={i}>{build.tech}</span> )
+                        
+                        <div className="project-build">
+                            <span>{post.subtitle}</span>
+                            {post.tags.map((tags, i) => {
+                                return( <span key={i}>{tags.tag}</span> )
                             })}
                         </div> 
                     </div>
         
-                    <div className="project-desc item">
-                        <span>{article.short}</span>
+                    <div className="project-desc">
+                        <span>{post.short}</span>
                     </div>
                 </div>
             </article>

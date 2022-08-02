@@ -10,7 +10,7 @@ import ProjectsPage from './pages/ProjectsPage';
 import ArticlePage from "./pages/ArticlePage";
 import PostsPage from "./pages/PostsPage";
 import PostArticlePage from "./pages/PostArticlePage";
-import AuthRoutes from "./fireAuth/AuthRoutes";
+import AuthRoutes, { Authin } from "./fireAuth/AuthRoutes";
 
 
 function App() {
@@ -43,7 +43,8 @@ function App() {
                             <Route path="/projects" element={ <ProjectsPage/> } />
                             <Route path="/projects/:id" element={ <ArticlePage/> } />
                             <Route path="/posts" element={ <PostsPage/> } />
-                            <Route path="/posts/:id" element={ <PostArticlePage/> } />                   
+                            <Route path="/posts/:id" element={ <PostArticlePage/> } />  
+                            <Authin/>               
                         </Routes>
                         <Footer/>
                         <ScrollToTop/> 

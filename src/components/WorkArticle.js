@@ -89,9 +89,19 @@ export default function WorkArticle( {article} ) {
             <article key={article.id} className="project card" 
             // onClick={handleClick}
             >
-                <div className="project-img-cntr">
-                    <img src={getImg(article)} alt={article.title}/>  
+                <div className="project-gallery-cntr">
+                    <div className="project-gallery">
+                        {article.imgs.map((imgs, imgId) => {
+                            return( 
+                                <img key={imgId} src={imgs.imgSrc} alt={imgs.ImgAlt}/> 
+                                )
+                        })}
+                    </div>
                 </div>
+                
+                {/* <div className="project-img-cntr">
+                    <img src={getImg(article)} alt={article.title}/>  
+                </div> */}
 
                 <div className="project-txt"> 
                     <div className="project-header">

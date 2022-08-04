@@ -1,0 +1,84 @@
+[
+    {
+        "id": 24085003,
+        "title": "Be a hero",
+        "link": "https://beahero.dk/",
+        "repo": "https://github.com/trolle18/beahero",
+        
+        "descHtml": "For my 2nd semester exam project, I worked along side two fellow students, on the website for ‘Be a hero’. A coaching company started in September 2021, by Benthe, with years of experience in the field. <br/> She already has an established customer base, but needed a responsive website, that gives a quick overview of her, her business, and its services. Furthermore, she needed a logo, and a cover photo for her LinkedIn business page.<br><br> We came up with a simple design that is easy to navigate, it is build with HTML, CSS and Vanilla JS. <br/> The logo is simple, and comes in multiple versions, for scalablility. To go with, I created what we refer to as a ‘cape’. The ‘cape’ is an organic, but clean-cut icon, inspired by a lavender flowerpetal, and a superhero cape.",
+
+        "short": "For my 2nd semester exam project, I worked along side two fellow students, on the website for ‘Be a hero’. A coaching company started in September 2021, by Benthe, with years of experience in the field. <br/> She already has an established customer base, but needed a responsive website, that gives a quick overview of her, her business, and its services...",
+        "build": [
+            {"tech": "HTML/CSS"},
+            {"tech": "JavaScript"}
+        ],
+        "imgs": [
+            { 
+                "imgId": 39011715,
+                "imgSrc": "/data/media/beahero/headlogv2.png",
+                "imgAlt": "Be A Hero",
+                "imgDesc": "Image description..."
+            },
+            { 
+                "imgId": 48359891,
+                "imgSrc": "/data/media/beahero/mocklap.png",
+                "imgAlt": "Be A Hero",
+                "imgDesc": "Image description..."
+            },
+            { 
+                "imgId": 95462026,
+                "imgSrc": "/data/media/beahero/mockphone.png",
+                "imgAlt": "Be A Hero",
+                "imgDesc": "Image description..."
+            },
+            { 
+                "imgId": 68345316,
+                "imgSrc": "/data/media/beahero/log23v2.png",
+                "imgAlt": "Be A Hero",
+                "imgDesc": "Image description..."
+            }
+        ]
+
+    },
+
+    {
+        "id": 88656140,
+        "title": "TaskRoomies",
+        "link": "https://trolle18.github.io/TaskRoomies/",
+        "repo": "https://github.com/trolle18/TaskRoomies",
+
+        "descHtml": "TaskRoomies is a web app for roommates, dorms and other cohabitants. <br/> Its purpose is to provide a clear, easy overview of the shared household chores, and thus remove the stress and mental energy of keeping track of who does what when. <br/> It also comes with a personal list, to keep track of all your personal to-do's and chores. <br/> <br/> Try out the demo in the link above!",
+
+        "short": "TaskRoomies is a web app for roommates, dorms and other cohabitants. <br/> Its purpose is to provide a clear, easy overview of the shared household chores, and thus remove the stress and mental energy of keeping track of who does what when. <br/> It also comes with a personal list, to keep track of all your personal to-do's and chores...",
+        "build": [
+            {"tech": "React.JS"},
+            {"tech": "Firebase"}
+        ],
+        "imgs": [
+            { 
+                "imgId": 12876935,
+                "imgSrc": "/data/media/taskroomies/task-mock.png",
+                "imgAlt": "Taskroomies",
+                "imgDesc": ""
+            },
+            { 
+                "imgId": 71512490,
+                "imgSrc": "/data/media/taskroomies/taskroomies-logo1.png",
+                "imgAlt": "Taskroomies",
+                "imgDesc": ""
+            },
+            { 
+                "imgId": 89077327,
+                "imgSrc": "/data/media/taskroomies/taskroomies-logo2.png",
+                "imgAlt": "Taskroomies",
+                "imgDesc": ""
+            },
+            { 
+                "imgId": 49672184,
+                "imgSrc": "/data/media/taskroomies/task-mock-b1.png",
+                "imgAlt": "Taskroomies",
+                "imgDesc": ""
+            }
+        ]
+    }
+  ]

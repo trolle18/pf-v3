@@ -1,9 +1,9 @@
-import { useNavigate } from 'react-router-dom';
+// import { useNavigate } from 'react-router-dom';
 import { AiOutlineGithub, AiOutlineLink } from "react-icons/ai"
 
 
 export default function WorkArticle( {article} ) {
-    const navigate = useNavigate();
+    // const navigate = useNavigate();
 
     // Fetch project imgs from JSON - If there is more than one, display only the first one
     function getImg(article) {
@@ -12,10 +12,57 @@ export default function WorkArticle( {article} ) {
         } 
     };
 
-    // Navigate to article page 
-    function handleClick() {
-        navigate(`/projects/${article.id}`)
+    // Only render link, if the article link excists
+    function getLink(article) {
+        const isLink = article.link;
+        if(isLink) {
+            return(
+                <a href={article.link}> <AiOutlineLink/> </a>
+            )
+        }
+        else{
+            return(
+                null
+            )
+        }
     }
+
+    // Only render repo, if the article link excists
+    function getRepo(article) {
+        const isRepo = article.repo;
+        if(isRepo) {
+            return(
+                <a href={article.repo}> <AiOutlineGithub/> </a>
+            )
+        }
+        else{
+            return(
+                null
+            )
+        }
+    }
+
+    // Only render build, if the article link excists
+    function getBuild(article) {
+        const isBuild = article.build;
+        if(isBuild) {
+            return(
+                article.build.map((build, i) => {
+                    return( <span key={i}>{build.tech}</span> )
+                })
+            )
+        }
+        else{
+            return(
+                null
+            )
+        }
+    }
+
+    // // Navigate to article page 
+    // function handleClick() {
+    //     navigate(`/projects/${article.id}`)
+    // }
 
 
     // Intersection observer
@@ -39,10 +86,22 @@ export default function WorkArticle( {article} ) {
    
     return (
         <>
-            <article key={article.id} className="project card" onClick={handleClick}>
-                <div className="project-img-cntr">
-                    <img src={getImg(article)} alt={article.title}/>  
+            <article key={article.id} className="project card" 
+            // onClick={handleClick}
+            >
+                <div className="project-gallery-cntr">
+                    <div className="project-gallery">
+                        {article.imgs.map((imgs, imgId) => {
+                            return( 
+                                <img key={imgId} src={imgs.imgSrc} alt={imgs.ImgAlt}/> 
+                                )
+                        })}
+                    </div>
                 </div>
+                
+                {/* <div className="project-img-cntr">
+                    <img src={getImg(article)} alt={article.title}/>  
+                </div> */}
 
                 <div className="project-txt"> 
                     <div className="project-header">
@@ -50,20 +109,18 @@ export default function WorkArticle( {article} ) {
                         <div className="project-title item">
                             <h3>{article.title}</h3>
                             <div className="project-links">
-                                <a href={article.link}> <AiOutlineLink/> </a>
-                                <a href={article.repo}> <AiOutlineGithub/> </a>
+                                {getLink(article)}
+                                {getRepo(article)}
                             </div>
                         </div>
 
                         <div className="project-build item">
-                            {article.build.map((build, i) => {
-                                return( <span key={i}>{build.tech}</span> )
-                            })}
+                            {getBuild(article)}
                         </div> 
                     </div>
         
                     <div className="project-desc item">
-                        <span>{article.short}</span>
+                        <span dangerouslySetInnerHTML={ {__html: article.descHtml} }></span>
                     </div>
                 </div>
             </article>

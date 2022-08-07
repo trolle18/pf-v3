@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import WorkArticle from "./WorkArticle";
 
 
@@ -24,11 +24,11 @@ export default function Work() {
                 <div className="work-cntr-title">
                     <h2>Work</h2>
                     <span className="sub-title">Here is a few of the projects I have been working on</span>
-                    <Link to="/projects">Se all ...</Link>
+                    {/* <Link to="/projects">Se all ...</Link> */}
                 </div>
 
                 {articles.map( (article ) => (
-                    <WorkArticle article={article} key={article.id}/>
+                    <WorkArticle article={article} key={article.id} />
                 ))}
                 
             </section>

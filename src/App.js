@@ -10,15 +10,13 @@ function App() {
 
     return (
         <>
-
             <Nav/>  
             <Routes>
                 <Route path="/" element={ <HomePage/> } />
                 <Route path="*" element={ <Navigate to="/"/> } />
             </Routes>
             <Footer/>
-            <ScrollToTop/> 
-    
+            <ScrollToTop/>     
         </>
     );
 }

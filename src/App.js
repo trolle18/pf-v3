@@ -2,7 +2,7 @@
 import { Routes, Route, Navigate } from "react-router-dom";
 // import { getAuth, onAuthStateChanged } from "firebase/auth";
 import './scss/App.scss';
-import Nav from './components/Navbar/Nav';
+import Nav from './components/Nav';
 import Footer from './components/Footer';
 import ScrollToTop from "./components/ScrollToTop";
 import HomePage from './pages/HomePage';

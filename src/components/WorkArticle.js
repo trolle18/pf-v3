@@ -5,12 +5,12 @@ import { AiOutlineGithub, AiOutlineLink } from "react-icons/ai"
 export default function WorkArticle( {article} ) {
     // const navigate = useNavigate();
 
-    // Fetch project imgs from JSON - If there is more than one, display only the first one
-    function getImg(article) {
-        if (article.imgs?.length >= 1) {
-            return article.imgs[0]?.imgSrc;
-        } 
-    };
+    // // Fetch project imgs from JSON - If there is more than one, display only the first one
+    // function getImg(article) {
+    //     if (article.imgs?.length >= 1) {
+    //         return article.imgs[0]?.imgSrc;
+    //     } 
+    // };
 
     // Only render link, if the article link excists
     function getLink(article) {

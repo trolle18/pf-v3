@@ -1,6 +1,5 @@
-// import { IoMenuOutline } from "react-icons/io5";
-import './Nav.scss'; 
-// import Dropdown from "./Dropdown";
+import '../scss/Nav.scss'; 
+
 
 export default function Nav() {
     

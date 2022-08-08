@@ -82,46 +82,6 @@
     },
 
     {
-        "id": 35979751,
-        "title": "City Break Planner",
-        "link": null,
-        "repo": "https://github.com/SommerCh/city",
-        "descHtml": "<span> </span>",
-        "desc": " ",
-        "shortHtml": "<span> </span>",
-        "short": " ",
-        "build": [
-            {"tech": "React.JS"}
-        ],
-        "imgs": [
-            { 
-                "imgId": 42254383,
-                "imgSrc": "/data/media/citybreakplanner/",
-                "imgAlt": "City break planner",
-                "imgDesc": ""
-            },
-            { 
-                "imgId": 42993508,
-                "imgSrc": "/data/media/citybreakplanner/",
-                "imgAlt": "City break planner",
-                "imgDesc": ""
-            },
-            { 
-                "imgId": 52603756,
-                "imgSrc": "/data/media/citybreakplanner/",
-                "imgAlt": "City break planner",
-                "imgDesc": ""
-            },
-            { 
-                "imgId": 48909926,
-                "imgSrc": "/data/media/citybreakplanner/",
-                "imgAlt": "City break planner",
-                "imgDesc": ""
-            }
-        ]
-    },
-
-    {
         "id": 40637227,
         "title": "Generaxion",
         "link": null,

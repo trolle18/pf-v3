@@ -1,0 +1,165 @@
+// Imports
+@import "variables";
+@import "base";
+
+
+/* ---------- NAV ---------- */
+.nav-cntr {
+    height: 2em;
+    width: 100%;
+    margin: 0 auto;
+    padding: .5em 0;
+    top: 0;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.9);
+    background: linear-gradient( rgba(0, 0, 0, 1) 60%, rgba(0, 0, 0, .4)100%);
+    z-index: 100;
+
+    .nav-inner-cntr {
+        width: 98%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    
+        .nav-logo {
+            margin: auto 0;
+
+            a {
+                font-family: $ff_sans;
+                font-size: $fs_s;
+                text-decoration: none;
+                text-transform: uppercase;
+                color: $txt_light;
+                transition: ease-in .02s;
+
+                &:hover {
+                    color: $clr_acc_yel;
+                }
+            }
+        }
+
+        .nav-links {
+            width: 180px;
+            margin: auto 0;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            a {
+                font-family: $ff_sans;
+                font-size: $fs_xs;
+                text-decoration: none;
+                text-transform: uppercase;
+                color: $txt_light;
+                transition: ease-in .02s;
+
+                &:hover {
+                    color: $clr_acc_yel;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 600px) {
+    .nav-cntr {
+        width: 100%;
+
+        .nav-inner-cntr {
+            width: 90%;
+
+            
+        .nav-logo {
+            margin: auto 0;
+
+            a {
+                font-family: $ff_sans;
+                font-size: $fs_s;
+                text-decoration: none;
+                text-transform: uppercase;
+                color: $txt_light;
+                transition: ease-in .02s;
+
+                &:hover {
+                    color: $clr_acc_yel;
+                }
+            }
+        }
+
+        .nav-links {
+            width: 15rem;
+            margin: auto 0;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            a {
+                font-family: $ff_sans;
+                font-size: $fs_s;
+                text-decoration: none;
+                text-transform: uppercase;
+                color: $txt_light;
+                transition: ease-in .02s;
+
+                &:hover {
+                    color: $clr_acc_yel;
+                }
+            }
+        }
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .nav-cntr {
+        width: 100%;
+
+        .nav-inner-cntr {
+            width: 90%;
+                
+            .nav-logo {
+                margin: auto 0;
+
+                a {
+                    font-family: $ff_sans;
+                    font-size: $fs_s;
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    color: $txt_light;
+                    transition: ease-in .02s;
+
+                    &:hover {
+                        color: $clr_acc_yel;
+                    }
+                }
+            }
+
+            .nav-links {
+                width: 15rem;
+                margin: auto 0;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+
+                a {
+                    font-family: $ff_sans;
+                    font-size: $fs_s;
+
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    color: $txt_light;
+                    transition: ease-in .02s;
+
+                    &:hover {
+                        color: $clr_acc_yel;
+                    }
+                }
+            }
+        }
+    }
+}
+

@@ -3,23 +3,6 @@ import '../scss/About.scss';
 
 export default function About() {
 
-    // const cards = document.querySelectorAll(".card")
-    // const observer = new IntersectionObserver( 
-    //     entries => {
-    //         entries.forEach(entry => {
-    //             entry.target.classList.toggle("show", entry.isIntersecting)
-    //             if (entry.isIntersecting) observer.unobserve(entry.target)
-    //         })
-    //     }, 
-    //     {
-    //         // rootMargin: "100px",
-    //         threshold: .5,
-    //     }        
-    // )
-    // cards.forEach(card => {
-    //     observer.observe(card)
-    // })
-
     return (
         <>
             <section className="about-cntr section" id="about">
@@ -29,8 +12,11 @@ export default function About() {
                         <div className="txt-cnt">
                             <h2>About</h2>
                             <span>
-                                My name is Sofie, I am 24 years old, and currently on my 3rd semester at the Business Academy Aarhus, 
-                                where I’m studying multimedia design, specializing in frontend development. <br/>
+                                My name is Sofie, I am 24 years old, and I am studying multimedia design, 
+                                specializing in frontend development, at Business Academy Aarhus. 
+                                I am currently on my 4th semester, which I will be spending as an intern for AKQA in Aarhus.
+                            </span>
+                            <span>
                                 I have always loved creating, and exploring through different types of media. With multimedia designing, 
                                 there are endless possibilities for me to explore and work through.
                             </span>
@@ -52,7 +38,6 @@ export default function About() {
                                 <li><span>SCSS / Sass</span></li>
                                 <li><span>jQuery</span></li>
                                 <li><span>Firebase</span></li>
-                                {/* <li>WordPress</li> */}
                             </ul>
                     </div>
                 </div>
@@ -62,17 +47,7 @@ export default function About() {
                         <img src={PfImg} className="pf-img" alt="Sofie Trolle"/>
                     </div>
                 </div>
-            
-
-              {/*  <div className="pf-img-cntr">
-                    <div className="pf-img-outer-cntr">
-                         <div className="img-outer-box"></div>
-                        <div className="img-box">
-                            <img src={PfImg} alt="Sofie Trolle" />
-                        </div>
-                    </div>
-                </div> */}
-               
+        
             </section>
         
         </>

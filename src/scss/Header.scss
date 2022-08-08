@@ -1,0 +1,43 @@
+// Imports
+@import "variables";
+@import "base";
+
+
+/* ---------- HEADER SECTION ---------- */
+.header-cntr {
+    height: 100vh;
+    width: 100%;
+    margin: 0 0 1.625rem 0 ;
+    display: flex;
+    flex-direction: column;
+
+    .header-txt {
+        height: auto;
+        width: 80%;
+        margin: auto 0;
+
+        h1 {
+            margin: .625rem 0;
+            font-size: $fs_header;
+        }
+
+        span {
+            font-family: $ff_mono;
+        }
+    }
+
+    @media (min-width: 600px) {
+        .header-txt {
+            height: auto;
+            width: 60%;
+        }
+    }
+
+    @media (min-width: 992px) {
+        .header-txt {
+            height: auto;
+            width: 50%;
+        }
+    }
+}
+

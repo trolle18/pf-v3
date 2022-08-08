@@ -25,3 +25,5 @@ yarn-error.log*
 /src/firebase-config.js
 /src/pages/fireAuth
 /src/fireAuth
+/src/ex
+/public/data/projectsExtra.json

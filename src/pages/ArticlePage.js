@@ -1,7 +1,6 @@
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { AiOutlineGithub, AiOutlineLink } from "react-icons/ai"
-// import { UseBackListener } from "../components/UseBackListener";
 import '../scss/ArticlePage.scss';
 
 export default function ArticlePage() {
@@ -35,7 +34,6 @@ export default function ArticlePage() {
         <>
             <section className="page">
                 <div className="page-header">
-                    {/* <UseBackListener/> */}
                     <h2>Article Page</h2>
                     <span className="sub-title">Here is a subtitle</span>
                 </div>

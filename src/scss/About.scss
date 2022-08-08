@@ -1,83 +1,12 @@
-$clr_black: #000;
-$clr_d_grey: #282828;
-$clr_m_grey: #6e6e6e;
-$clr_l_grey: #cecece;
-$clr_white: #f8f8f8;
-$clr_acc_yel: #fcb900;
-$clr_acc_gre: #153019;
-
-$txt_light: #f8f8f8;
-$txt_dark: #282828;
-
-$ff_sans: 'Montserrat', sans-serif;
-$ff_mono: 'JetBrains Mono', monospace;
-$fs_header: 3.750rem; // header
-$fs_xxl: 2.000rem; // xx-large / h1
-$fs_xl: 1.375rem; // x-large / h2
-$fs_l: 1.250rem;  // large / h3
-$fs_ml: 1.125rem; // medium-large / h4
-$fs_m: 1.000rem; // medium / h5
-$fs_s: 0.875rem; // small / p 
-$fs_xs: 0.750rem; // x-small
-$fs_xxs: 0.625rem; // xx-small
-
-
-/* ---------- GENERAL ---------- */
-* {
-    margin: 0;
-    padding: 0;
-}
-body {
-    margin: 0;
-    padding: 0;
-    font-family: $ff_sans, 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    scroll-behavior: smooth;
-    font-size: 16px;
-    color: $clr_white;
-    background-color: $clr_black;
-}
-
-h1 {
-    font-size: $fs_xxl;
-    text-transform: uppercase;
-    margin: .625rem 0;
-}
-
-h2 {
-    font-size: $fs_xxl;
-    text-transform: uppercase;
-    margin: .625rem 0;
-}
-
-h3 {
-    font-size: $fs_l;
-    margin-bottom: .625rem;
-}
-
-h4 {
-    font-size: $fs_ml;
-    margin-bottom: .625rem;
-}
-
-h5 {
-    font-size: $fs_m;
-    margin-bottom: .625rem;
-}
-
-p, span {
-    font-size: $fs_m;
-    margin-bottom: .625rem;
-}
+// Imports
+@import "variables";
+@import "base";
 
 
 /* ---------- ABOUT SECTION ---------- */
 .about-cntr {
-    border: solid red 0px;
     height: auto;
     width: 100%;
-    // padding: 1em 0 1em 0;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -90,14 +19,13 @@ p, span {
         justify-content: space-between;
 
         .txt-cnt {
-            // background-color: rgba(83, 189, 37, 0.3);
             height: auto;
             width: 60%;
+            display: flex;
+            flex-direction: column;
         }
 
         .mob-img-cntr {
-            border: solid greenyellow 0px;
-            // background-color: rgba(0, 255, 0, .3);
             height: auto;
             width: 40%;
             position: relative;
@@ -107,14 +35,12 @@ p, span {
     
     
             .mob-img-box {
-                border: solid orange 0px;
                 height: auto;
                 width: auto;
                 display: flex;
                 justify-content: end;
     
                 .mob-img {
-                    border: solid yellow 0px;
                     height: 100%;
                     width: 100%;
                 }
@@ -123,8 +49,6 @@ p, span {
     } 
     
     .skill-box {
-        // background-color: rgba(125, 189, 87, 0.3);
-
         span {
             font-weight: 600;
         }
@@ -136,7 +60,6 @@ p, span {
             grid-template-columns: repeat(2, minmax(50%, 100%));
             
             li {
-                border: solid yellow 0px;
                 font-family: $ff_mono;
 
                 &::marker {
@@ -165,7 +88,6 @@ p, span {
 
 @media (min-width:600px) {
     .about-cntr {
-        border: solid blue 0px;
         height: auto;
         max-height: 300px;
         width: 100%;
@@ -187,7 +109,6 @@ p, span {
                 justify-content: space-between;
         
                 .txt-cnt {
-                    // background-color: rgba(119, 255, 255, 0.3);
                     height: auto;
                     width: 100%;
                 }
@@ -206,7 +127,6 @@ p, span {
             } 
             
             .skill-box {
-                // background-color: rgba(87, 184, 189, 0.3);
                 padding: 1.5rem 0 0 0;
 
                 span {
@@ -235,8 +155,6 @@ p, span {
         }
 
         .img-cntr {
-            border: solid greenyellow 0px;
-            // background-color: rgba(0, 132, 255, 0.3);
             height: 100%;
             width: auto;
             display: flex;
@@ -245,13 +163,11 @@ p, span {
     
     
             .img-box {
-                border: solid orange 0px;
                 height: auto;
                 width: auto;
                 display: initial;
     
                 .pf-img {
-                    border: solid yellow 0px;
                     height: 100%;
                     max-height: 300px;
                     width: 100%;
@@ -265,7 +181,6 @@ p, span {
 
 @media (min-width:992px) {
     .about-cntr {
-        border: solid green 0px;
         height: auto;
         max-height: 300px;
         width: 100%;
@@ -287,7 +202,6 @@ p, span {
                 justify-content: space-between;
         
                 .txt-cnt {
-                    // background-color: rgba(255, 119, 119, 0.3);
                     height: auto;
                     width: 100%;
                 }
@@ -306,7 +220,6 @@ p, span {
             } 
             
             .skill-box {
-                // background-color: rgba(189, 87, 87, 0.3);
                 padding: 1.5rem 0 0 0;
 
                 span {
@@ -335,8 +248,6 @@ p, span {
         }
 
         .img-cntr {
-            border: solid greenyellow 0px;
-            // background-color: rgba(255, 0, 0, 0.3);
             height: 100%;
             width: auto;
             display: flex;
@@ -345,13 +256,11 @@ p, span {
     
     
             .img-box {
-                border: solid orange 0px;
                 height: auto;
                 width: auto;
                 display: initial;
     
                 .pf-img {
-                    border: solid yellow 0px;
                     height: 100%;
                     max-height: 300px;
                     width: 100%;

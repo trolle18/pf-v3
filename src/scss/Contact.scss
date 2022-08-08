@@ -1,0 +1,31 @@
+// Imports
+@import "variables";
+@import "base";
+
+
+/* ---------- CONTACT SECTION ---------- */
+.contact-cntr {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    button, a {
+        width: max-content;
+        margin: .5em auto;
+        padding: 0.5em 1.5em;
+        border: solid $clr_acc_yel 2px;
+        border-radius: 4px;
+        background-color: transparent;
+        color: $clr_acc_yel;
+        font-size: $fs_m;
+        text-decoration: none;
+        cursor: pointer;
+        transition: .2s;
+
+        &:hover {
+            // filter: drop-shadow(0px 0px 1px $clr_acc_yel);
+	        box-shadow: 0px 0px 4px 1px $clr_acc_yel;
+        }
+    }
+}
+

@@ -1,4 +1,4 @@
-// import { Link } from "react-router-dom"
+import '../scss/Contact.scss';
 
 export default function Contact() {
 

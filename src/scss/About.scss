@@ -5,10 +5,8 @@
 
 /* ---------- ABOUT SECTION ---------- */
 .about-cntr {
-    border: solid red 0px;
     height: auto;
     width: 100%;
-    // padding: 1em 0 1em 0;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -21,7 +19,6 @@
         justify-content: space-between;
 
         .txt-cnt {
-            // background-color: rgba(83, 189, 37, 0.3);
             height: auto;
             width: 60%;
             display: flex;
@@ -29,8 +26,6 @@
         }
 
         .mob-img-cntr {
-            border: solid greenyellow 0px;
-            // background-color: rgba(0, 255, 0, .3);
             height: auto;
             width: 40%;
             position: relative;
@@ -40,14 +35,12 @@
     
     
             .mob-img-box {
-                border: solid orange 0px;
                 height: auto;
                 width: auto;
                 display: flex;
                 justify-content: end;
     
                 .mob-img {
-                    border: solid yellow 0px;
                     height: 100%;
                     width: 100%;
                 }
@@ -56,8 +49,6 @@
     } 
     
     .skill-box {
-        // background-color: rgba(125, 189, 87, 0.3);
-
         span {
             font-weight: 600;
         }
@@ -69,7 +60,6 @@
             grid-template-columns: repeat(2, minmax(50%, 100%));
             
             li {
-                border: solid yellow 0px;
                 font-family: $ff_mono;
 
                 &::marker {
@@ -98,7 +88,6 @@
 
 @media (min-width:600px) {
     .about-cntr {
-        border: solid blue 0px;
         height: auto;
         max-height: 300px;
         width: 100%;
@@ -120,7 +109,6 @@
                 justify-content: space-between;
         
                 .txt-cnt {
-                    // background-color: rgba(119, 255, 255, 0.3);
                     height: auto;
                     width: 100%;
                 }
@@ -139,7 +127,6 @@
             } 
             
             .skill-box {
-                // background-color: rgba(87, 184, 189, 0.3);
                 padding: 1.5rem 0 0 0;
 
                 span {
@@ -168,8 +155,6 @@
         }
 
         .img-cntr {
-            border: solid greenyellow 0px;
-            // background-color: rgba(0, 132, 255, 0.3);
             height: 100%;
             width: auto;
             display: flex;
@@ -178,13 +163,11 @@
     
     
             .img-box {
-                border: solid orange 0px;
                 height: auto;
                 width: auto;
                 display: initial;
     
                 .pf-img {
-                    border: solid yellow 0px;
                     height: 100%;
                     max-height: 300px;
                     width: 100%;
@@ -198,7 +181,6 @@
 
 @media (min-width:992px) {
     .about-cntr {
-        border: solid green 0px;
         height: auto;
         max-height: 300px;
         width: 100%;
@@ -220,7 +202,6 @@
                 justify-content: space-between;
         
                 .txt-cnt {
-                    // background-color: rgba(255, 119, 119, 0.3);
                     height: auto;
                     width: 100%;
                 }
@@ -239,7 +220,6 @@
             } 
             
             .skill-box {
-                // background-color: rgba(189, 87, 87, 0.3);
                 padding: 1.5rem 0 0 0;
 
                 span {
@@ -268,8 +248,6 @@
         }
 
         .img-cntr {
-            border: solid greenyellow 0px;
-            // background-color: rgba(255, 0, 0, 0.3);
             height: 100%;
             width: auto;
             display: flex;
@@ -278,13 +256,11 @@
     
     
             .img-box {
-                border: solid orange 0px;
                 height: auto;
                 width: auto;
                 display: initial;
     
                 .pf-img {
-                    border: solid yellow 0px;
                     height: 100%;
                     max-height: 300px;
                     width: 100%;

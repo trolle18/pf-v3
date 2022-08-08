@@ -23,7 +23,6 @@
         transition: .2s;
 
         &:hover {
-            // filter: drop-shadow(0px 0px 1px $clr_acc_yel);
 	        box-shadow: 0px 0px 4px 1px $clr_acc_yel;
         }
     }

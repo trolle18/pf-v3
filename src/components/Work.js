@@ -24,7 +24,6 @@ export default function Work() {
                 <div className="work-cntr-title">
                     <h2>Work</h2>
                     <span className="sub-title">Here is a few of the projects I have been working on</span>
-                    {/* <Link to="/projects">Se all ...</Link> */}
                 </div>
 
                 {articles.map( (article ) => (

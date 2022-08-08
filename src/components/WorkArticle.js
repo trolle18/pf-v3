@@ -101,7 +101,8 @@ export default function WorkArticle( {article} ) {
                 
                 {/* <div className="project-img-cntr">
                     <img src={getImg(article)} alt={article.title}/>  
-                </div> */}
+                </div> 
+                */}
 
                 <div className="project-txt"> 
                     <div className="project-header">

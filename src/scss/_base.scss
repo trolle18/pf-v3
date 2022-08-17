@@ -108,8 +108,8 @@ p, span {
     margin: 0 auto;
 
     .section {
-        margin: 1em 0 0 0;
-        padding: 2.5em 0;
+        margin: 1em 0;
+        padding: 2.5em 0 05em 0;
     }
 }
 
@@ -122,7 +122,7 @@ p, span {
 @media (min-width: 992px) {
     .page {
         width: 90%;
-        max-width: 1200px;
+        max-width: 1000px;
     }
 }
 
@@ -255,5 +255,6 @@ p, span {
 @media (min-width: 992px) {
     .footer-cntr {
         width: 90%;
+        max-width: 1200px;
     }
 }

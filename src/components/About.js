@@ -32,6 +32,7 @@ export default function About() {
                     <div className="skill-box">
                         <span>Some of the technologies I have been working with:</span>
                             <ul className="skill-list">
+                            {/* // eslint-disable-next-line */}
                                 <li><span>HTML5 & CSS3</span></li>
                                 <li><span>React.JS</span></li>
                                 <li><span>JavaScript (ES6+)</span></li>

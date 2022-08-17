@@ -22,11 +22,29 @@ export default function PostArticlePage() {
         }
     }, [postId])
 
+
     function getImg(post) {
         if (post.imgs?.length >= 1) {
             return post.imgs[0]?.imgSrc;
         } 
     };
+
+    // Only render build, if the article link excists
+    function getTags(post) {
+        const isTag = post.tags;
+        if(isTag) {
+            return(
+                post.tags.map((tag, i) => {
+                    return( <span key={i}>{post.tag}</span> )
+                })
+            )
+        }
+        else{
+            return(
+                null
+            )
+        }
+    }
 
 
     return (
@@ -34,8 +52,8 @@ export default function PostArticlePage() {
             <section className="page">
                 <div className="page-header">
                     {/* <UseBackListener/> */}
-                    <h2>Article Page</h2>
-                    <span className="sub-title">Here is a subtitle</span>
+                    {/* <h2>Article Page</h2> */}
+                    {/* <span className="sub-title">Here is a subtitle</span> */}
                 </div>
 
                 <article  key={post?.id} className="article">
@@ -48,19 +66,17 @@ export default function PostArticlePage() {
                             <div className="article-links">
                                 <span>{post.date}</span>
                             </div>
-                        </div>                       
+                        </div>    
+                        <div className='subtitle'><span>{post?.subtitle}</span></div>
+                        <div className='tags'>{getTags(post)}</div>            
+                        {/* <div>{post?.week}</div>        */}
                     </div>
 
                     <div className="article-content">
-                        <span>{post?.desc} </span>
-                        {/* <div> */}
-                            {/* {article.imgs?.map((imgs) => (
-                                    <div className="img-cntr" key={imgs.imgId}>
-                                        <img alt={imgs.imgAlt} src={imgs.imgSrc}/>
-                                    </div>
-                                ))}                             */}
-                        {/* </div> */}
-                       
+                        {/* <span dangerouslySetInnerHTML={ {__html: post.descHtml} }></span> */}
+                        <p>
+                            hello
+                        </p>                       
                     </div>
                    
                 </article>

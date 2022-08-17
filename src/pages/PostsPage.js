@@ -24,7 +24,7 @@ export default function PostsPage() {
                         <span className="sub-title">Here is a few of the projects I have been working on</span>
                     </div>
 
-                    {posts.map( (post ) => (
+                    {posts.map( (post) => (
                         <PostArticle post={post} key={post.id}/>
                     ))}
                 </section>

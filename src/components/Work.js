@@ -11,8 +11,7 @@ export default function Work() {
         async function getData() {
             const response = await fetch("/data/projects.json");
             const data = await response.json();
-            setArticles(data); 
-            
+            setArticles(data);             
         }       
         getData();        
     }, []);

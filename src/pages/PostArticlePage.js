@@ -75,7 +75,7 @@ export default function PostArticlePage() {
                     <div className="article-content">
                         {/* <span dangerouslySetInnerHTML={ {__html: post.descHtml} }></span> */}
                         <p>
-                            hello
+                            Mandag d. 8 august
                         </p>                       
                     </div>
                    

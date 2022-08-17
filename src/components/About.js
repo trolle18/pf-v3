@@ -12,7 +12,7 @@ export default function About() {
                         <div className="txt-cnt">
                             <h2>About</h2>
                             <span>
-                                My name is Sofie, I am 24 years old, and I am studying multimedia design, 
+                                My name is Sofie, I am 25 years old, and I am studying multimedia design, 
                                 specializing in frontend development, at Business Academy Aarhus. 
                                 I am currently on my 4th semester, which I will be spending as an intern for AKQA in Aarhus.
                             </span>

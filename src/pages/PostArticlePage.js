@@ -67,7 +67,7 @@ export default function PostArticlePage() {
                                 <span>{post.date}</span>
                             </div>
                         </div>    
-                        <div className='subtitle'><span>{post?.subtitle}</span></div>
+                        <div className='subtitle'><h3>{post?.subtitle}</h3></div>
                         <div className='tags'>{getTags(post)}</div>            
                         {/* <div>{post?.week}</div>        */}
                     </div>
@@ -75,8 +75,21 @@ export default function PostArticlePage() {
                     <div className="article-content">
                         {/* <span dangerouslySetInnerHTML={ {__html: post.descHtml} }></span> */}
                         <p>
-                            Mandag d. 8 august
+                            Mandag d. 8 august kunne jeg endelig skyde min praktikperiode i gang, hos AKQA. Jeg skulle oprindeligt først starte d. 15 august, men fik lov til at starte en uge før med selvstudie, for at få ugerne til at gå mest muligt op.
+                        </p>
+                        <p>
+                            Til mit selvstudie havde jeg forberedt lidt forskelligt materiale som jeg ville kigge på, i form af nogle kurser på Linkedin Learning og Skillshare, samt nogle anbefalede videoer på youtube.
                         </p>                       
+                        <p>
+                            <span>Mandag:</span> React.js + Sass/SCSS <br/>
+                            <span>Tirsdag:</span> Next.js <br/>
+                            <span>Onsdag:</span> Next.js fortsat <br/>
+                            <span>Torsdag:</span> Vue.js <br/>
+                            <span>Fredag:</span> Vue.js fortsat
+                        </p>
+                        <p>
+
+                        </p>
                     </div>
                    
                 </article>

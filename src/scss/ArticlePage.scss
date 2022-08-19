@@ -67,6 +67,29 @@
             width: auto;
         }
 
+        .article-section {
+            width: 100%;
+            margin: .6em 0;
+       
+            .article-box {
+                border: solid $clr_l_grey 1px;
+                margin: 0em .6em .6em 0em;
+                padding: .6em 0.6em;
+                float: left;
+
+                p, span {
+                    margin: 0.625em 0;
+
+                    span {
+                        margin: 0.625rem 0;
+                        font-family: $ff_mono;
+                        color: $clr_l_grey;
+                        font-weight: 600;
+                    }
+                }
+            } 
+        }
+
         .img-cntr {
             border: solid blue 1px;
             height: 160px;

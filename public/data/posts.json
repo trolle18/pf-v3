@@ -16,13 +16,13 @@
         "imgs": [
             { 
                 "imgId": 197977,
-                "imgSrc": "/data/media/posts/share-600.png",
+                "imgSrc": "/data/media/posts/akqalogo.jpeg",
                 "imgAlt": "Post",
                 "imgDesc": "Image description..."
             },
             { 
                 "imgId": 657940,
-                "imgSrc": "/data/media/posts/code-cover1.png",
+                "imgSrc": "/data/media/posts/share-600.png",
                 "imgAlt": "Post",
                 "imgDesc": "Image description..."
             },

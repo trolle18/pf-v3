@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
+import { BsDot } from 'react-icons/bs';
 import '../scss/ArticlePage.scss';
 
 export default function PostArticlePage() {
@@ -52,7 +53,7 @@ export default function PostArticlePage() {
             <section className="page">
                 <div className="page-header">
                     {/* <UseBackListener/> */}
-                    {/* <h2>Article Page</h2> */}
+                    <h2>Article Page</h2>
                     {/* <span className="sub-title">Here is a subtitle</span> */}
                 </div>
 
@@ -75,21 +76,31 @@ export default function PostArticlePage() {
                     <div className="article-content">
                         {/* <span dangerouslySetInnerHTML={ {__html: post.descHtml} }></span> */}
                         <p>
-                            Mandag d. 8 august kunne jeg endelig skyde min praktikperiode i gang, hos AKQA. Jeg skulle oprindeligt først starte d. 15 august, men fik lov til at starte en uge før med selvstudie, for at få ugerne til at gå mest muligt op.
-                        </p>
-                        <p>
+                            Mandag d. 8 august kunne jeg endelig skyde min praktikperiode i gang, hos AKQA. Jeg skulle oprindeligt først starte d. 15 august, men fik lov til at starte en uge før med selvstudie, for at få ugerne til at gå mest muligt op.<br/>
+                        {/* </p>
+                        <p> */}
                             Til mit selvstudie havde jeg forberedt lidt forskelligt materiale som jeg ville kigge på, i form af nogle kurser på Linkedin Learning og Skillshare, samt nogle anbefalede videoer på youtube.
-                        </p>                       
-                        <p>
-                            <span>Mandag:</span> React.js + Sass/SCSS <br/>
-                            <span>Tirsdag:</span> Next.js <br/>
-                            <span>Onsdag:</span> Next.js fortsat <br/>
-                            <span>Torsdag:</span> Vue.js <br/>
-                            <span>Fredag:</span> Vue.js fortsat
-                        </p>
-                        <p>
+                        </p> 
 
+                        <div className='article-section'>
+                            <div className='article-box'>                                            
+                                <p><span>MAN - </span> React.js + Sass/SCSS</p>
+                                <p><span>TIR - </span> Next.js</p>
+                                <p><span>ONS - </span> Next.js fortsat</p>
+                                <p><span>TOR - </span> Vue.js</p>
+                                <p><span>FRE - </span> Vue.js fortsat</p>
+                            </div> 
+
+                            <h4>Selvstudie</h4>
+                            <p>Jeg startede ugen ud med noget React, som jeg har et godt kendskab til i forvejen, samt noget Sass, som jeg kendte lidt til i forvejen. </p>
+                            <p> Derefter brugte jeg tirsdag og onsdag på Next, som jeg ikke havde nogen kendskab til i forvejen, men da det ligner React rigtigt meget, føler jeg hurtigt at jeg forstod det.</p>
+                            <p>Torsdag og Fredag brugte jeg på Vue, som ikke ligner noget programmerings sprog jeg har brugt før, dog virker det umiddelbart simpelt, og jeg føler at jeg let forstod de basale dele af det.</p>    
+                        </div>
+
+                        <p>
+                            Mandag d. 15 august skulle jeg endeligt møde op på kontoret klokken 0830, til min første dag.                       
                         </p>
+
                     </div>
                    
                 </article>

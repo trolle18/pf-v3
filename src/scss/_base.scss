@@ -114,6 +114,29 @@ p, span {
 
     .page-header {
         padding: 4em 0 1em 0;
+
+        a {
+            text-decoration: none;
+            color: $clr_white;
+            display: flex;
+            align-items: center;
+            transition: 0.25s ease;
+
+            svg {
+                margin: 0 .25em 0 0;
+                color: $clr_white;
+                transition: 0.2s ease;
+            }
+
+            &:hover {
+                color: $clr_acc_yel;
+
+                svg {
+                    margin: 0 0 0 .25em;
+                    color: $clr_acc_yel;
+                }
+            }
+        }
     }
 }
 

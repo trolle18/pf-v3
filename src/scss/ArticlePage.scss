@@ -72,9 +72,9 @@
             margin: .6em 0;
        
             .article-box {
-                border: solid $clr_l_grey 1px;
+                border: solid $clr_ml_grey 1px;
                 margin: 0em .6em .6em 0em;
-                padding: .6em 0.6em;
+                padding: .6em 1em;
                 float: left;
 
                 p, span {
@@ -83,7 +83,7 @@
                     span {
                         margin: 0.625rem 0;
                         font-family: $ff_mono;
-                        color: $clr_l_grey;
+                        color: $clr_ml_grey;
                         font-weight: 600;
                     }
                 }
@@ -92,10 +92,11 @@
 
         .img-cntr {
             border: solid blue 0px;
-            height: 160px;
+            height: 130px;
             width: 260px;
-            margin: 0 auto;
-            float: right;
+            margin: auto auto;
+            padding: 0 0 .6em .6em;
+            // float: right;
 
             img {
                 height: 100%;
@@ -107,5 +108,13 @@
                 float: right;
             }
         }    
+    }
+
+    .article-text-section {
+        margin: 0 0 1em 0;
+
+        p {
+            margin: 0 0 0.625em 0;
+        }
     }
 }

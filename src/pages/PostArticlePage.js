@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
-import { BsDot } from 'react-icons/bs';
+import { Link, useParams } from 'react-router-dom';
+import { BiLeftArrowAlt } from 'react-icons/bi'
 import '../scss/ArticlePage.scss';
 
 export default function PostArticlePage() {
@@ -24,11 +24,13 @@ export default function PostArticlePage() {
     }, [postId])
 
 
+    // Get first img
     function getImg(post) {
         if (post.imgs?.length >= 1) {
             return post.imgs[0]?.imgSrc;
         } 
     };
+
 
     // Only render build, if the article link excists
     function getTags(post) {
@@ -52,9 +54,9 @@ export default function PostArticlePage() {
         <>
             <section className="page">
                 <div className="page-header">
-                    {/* <UseBackListener/> */}
-                    <h2>Article Page</h2>
-                    {/* <span className="sub-title">Here is a subtitle</span> */}
+                    <Link to='/posts'><BiLeftArrowAlt/> Posts </Link>
+                    
+                    {/* <h2>Article Page</h2> */}
                 </div>
 
                 <article  key={post?.id} className="article">
@@ -76,10 +78,11 @@ export default function PostArticlePage() {
                     <div className="article-content">
                         {/* <span dangerouslySetInnerHTML={ {__html: post.descHtml} }></span> */}
                         <p>
-                            Mandag d. 8 august kunne jeg endelig skyde min praktikperiode i gang, hos AKQA. Jeg skulle oprindeligt først starte d. 15 august, men fik lov til at starte en uge før med selvstudie, for at få ugerne til at gå mest muligt op.<br/>
-                        {/* </p>
-                        <p> */}
-                            Til mit selvstudie havde jeg forberedt lidt forskelligt materiale som jeg ville kigge på, i form af nogle kurser på Linkedin Learning og Skillshare, samt nogle anbefalede videoer på youtube.
+                            Mandag d. 8 august kunne jeg endelig skyde min praktikperiode i gang, 
+                            hos AKQA. Jeg skulle oprindeligt først starte d. 15 august, 
+                            men fik lov til at starte en uge før med selvstudie, for at få ugerne til at gå mest muligt op.<br/>
+                            Til mit selvstudie havde jeg forberedt lidt forskelligt materiale som jeg ville kigge på, 
+                            i form af nogle kurser på Linkedin Learning og Skillshare, samt nogle anbefalede videoer på youtube.
                         </p> 
 
                         <div className='article-section'>
@@ -92,13 +95,51 @@ export default function PostArticlePage() {
                             </div> 
 
                             <h4>Selvstudie</h4>
-                            <p>Jeg startede ugen ud med noget React, som jeg har et godt kendskab til i forvejen, samt noget Sass, som jeg kendte lidt til i forvejen. </p>
-                            <p> Derefter brugte jeg tirsdag og onsdag på Next, som jeg ikke havde nogen kendskab til i forvejen, men da det ligner React rigtigt meget, føler jeg hurtigt at jeg forstod det.</p>
-                            <p>Torsdag og Fredag brugte jeg på Vue, som ikke ligner noget programmerings sprog jeg har brugt før, dog virker det umiddelbart simpelt, og jeg føler at jeg let forstod de basale dele af det.</p>    
+                            <p>
+                                Jeg startede ugen ud med noget React, som jeg har et godt kendskab til i forvejen, samt noget Sass, 
+                                som jeg kendte lidt til i forvejen. 
+                            </p>
+                            <p> 
+                                Derefter brugte jeg tirsdag og onsdag på Next, som jeg ikke havde nogen kendskab til i forvejen, 
+                                men da det ligner React rigtigt meget, føler jeg hurtigt at jeg forstod det.
+                            </p>
+                            <p>
+                                Torsdag og Fredag brugte jeg på Vue, som ikke ligner noget programmerings sprog jeg har brugt før, 
+                                dog virker det umiddelbart simpelt, og jeg føler at jeg let forstod de basale dele af det.
+                            </p>    
                         </div>
 
                         <p>
-                            Mandag d. 15 august skulle jeg endeligt møde op på kontoret klokken 0830, til min første dag.                       
+                            Mandag d. 15 august klokken 0830, skulle jeg endeligt møde op til min første dag ved AKQA, i Toldboden. 
+                            Jeg stod op klokken 0600 og følte mig frisk, nervøs og spændt på samme tid, på trods af at jeg næsten ikke kunne sove.
+                        </p>
+
+                        {/* <div className='img-cntr'>
+                            <img src={post.imgs[1].imgSrc} alt={post.imgs[1].imgAlt}/>
+                        </div>         */}
+
+                        <p>
+                            Da jeg mødte ind blev jeg taget godt imod, og fik hilst på en masse fra kontoret, heri blandt min mentor. 
+                            Min Mentor viste mig hen til mit skrivebord og hjalp mig med at få sat computeret op, så den havde alt jeg skulle bruge af programmer og logins. 
+                            Derefter fik vi morgenmad i køkkenet, hvor jeg fik hilst på lidt flere fra kontoret. 
+                        </p>
+                        <p>
+                            Hver mandag bliver der holdt et fællesmøde, hvor vi går igennem hvem der arbejder på hvad for ugen. 
+                            Det var spændende at se den lange liste af firmaer som der arbejdes for, samt at høre kort om hvad nogle af projekterne går ud på.<br/><br/>
+                        </p>
+
+                        <h4>Projekt</h4>
+                        <p>
+                            Efter mødet blev jeg introduceret for to andre praktikanter jeg skal arbejde sammen med, og det projekt vi skal arbejde på. 
+                            De sidder på kontoret i København, så vores samarbejde foregår over Teams. <br/><br/>
+                            Vores projekt er et intro-projekt som AKQA har lavet, kaldet "Flight to orbit". Projektet handler om et firma kaldet Space Debris Inc. (SD), i året 2122. <br/>
+                            SD sørger for at hente folks skrald, og skille sig af med det, ved at smide det ud i rummet. Vores opgave er så, at skabe et brand til firmaet, 
+                            samt en web-app med: en landingpage, content page, webshop og admin page. <br/>
+                            Vi har fået rimeligt frie tøjler, og har lov til at tage både kreativ og humoristisk frihed, og indtil videre virker det rigtigt sjovt.
+                        </p>
+                        <p>
+                            Jeg er spændt på at se hvad vi kan få kreeret. De to andre praktikanter, som jeg arbejder med virker begge super dygtige. 
+                            Den ene er en multimediedesigner, specialiserende i frontend ligesom mig, og den anden er en datamatiker. 
                         </p>
 
                     </div>

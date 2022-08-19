@@ -91,10 +91,11 @@
         }
 
         .img-cntr {
-            border: solid blue 1px;
+            border: solid blue 0px;
             height: 160px;
             width: 260px;
-            margin: 0 0.625rem 0 0;
+            margin: 0 auto;
+            float: right;
 
             img {
                 height: 100%;

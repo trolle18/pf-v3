@@ -79,9 +79,11 @@ export default function PostArticlePage() {
                         {/* <div>{post?.week}</div>        */}
                     </div>
 
-                    <div className="article-content">
-                        {/* <span dangerouslySetInnerHTML={ {__html: post.descHtml} }></span> */}
-                        <div className='article-text-section'>
+                    <div className="article-content" 
+                    dangerouslySetInnerHTML={ {__html: post.descHtml} }
+                    >
+
+                        {/* <div className='article-text-section'>
                             <p>
                                 Mandag d. 8 august kunne jeg endelig skyde min praktikperiode i gang, 
                                 hos AKQA. Jeg skulle oprindeligt først starte d. 15 august, 
@@ -149,7 +151,6 @@ export default function PostArticlePage() {
                                 og det projekt vi skal arbejde på. De sidder på kontoret i København, så vores samarbejde foregår over Teams. <br/>
                                 Ud over projektet, har vi i dagligt haft flere møder, afholdt af forskellige personer fra AKQA, som fortæller om firmaet, deres kunder, hvordan de arbejder osv.
                             </p>
-                        {/* </div> */}
 
                             <div className='article-section'>
                                 <div className='article-box'>                                            
@@ -178,7 +179,7 @@ export default function PostArticlePage() {
 
                             </div>
                         
-                        {/* <div className='article-text-section'> */}
+                     
                             <p>
                                 Vi har fået rimeligt frie tøjler, og har lov til at tage både kreativ og humoristisk frihed, 
                                 og indtil videre virker det rigtigt sjovt.
@@ -187,7 +188,7 @@ export default function PostArticlePage() {
                                 Jeg er spændt på at se hvad vi kan få kreeret. De to andre praktikanter, som jeg arbejder med virker begge super dygtige. 
                                 Den ene er en multimediedesigner, specialiserende i frontend ligesom mig, og den anden er en datamatiker. 
                             </p>    
-                        </div>
+                        </div> */}
                         
 
                     </div>

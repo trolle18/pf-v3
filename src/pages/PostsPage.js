@@ -20,11 +20,14 @@ export default function PostsPage() {
             <section className="page">
                 <section className="work-cntr section">
                     <div className="work-cntr-title">
-                        <h2>Posts page</h2>
-                        <span className="sub-title">Here is a few of the projects I have been working on</span>
+                        <h2>Posts</h2>
+                        {/* <span className="sub-title">Here is a few of the projects I have been working on</span> */}
                     </div>
 
-                    {posts.map( (post) => (
+                    {posts
+                    .filter( (post) => post.online.includes('y'))
+                    .sort ( (a, b) => a.value < b.value ? 1 : -1)
+                    .map( (post) => (
                         <PostArticle post={post} key={post.id}/>
                     ))}
                 </section>

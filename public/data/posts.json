@@ -2,14 +2,16 @@
     {
         "id": 266641,
         "lang": "da",
+        "online": "y",
+        "value": 1,
         "title": "Praktikstart",
         "subtitle": "Uge 1 & 2",
         "date": "20/08/22",
         "week": "1 & 2",
         "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi egestas auctor nisl non volutpat. Nullam id sem quis metus luctus ullamcorper. Phasellus bibendum semper leo a faucibus. Praesent vel mauris magna. Phasellus tempor imperdiet urna in finibus. Praesent elit ligula, malesuada a urna ac, posuere consectetur nisi. Morbi eleifend nunc vitae nunc fermentum fringilla. Etiam scelerisque enim et accumsan aliquam. Pellentesque lacinia lobortis turpis, quis imperdiet ante pellentesque sit amet. Praesent tincidunt sit amet purus vitae lobortis. Aliquam quis odio id purus rhoncus euismod. Donec tempor orci vitae scelerisque consequat. Nam sapien odio, pulvinar vel arcu in, posuere congue justo. Sed ligula magna, sollicitudin eu laoreet nec, commodo eu quam. Suspendisse auctor diam diam, et consectetur tortor molestie at. Suspendisse ac sem nec ante consequat finibus. Sed quis nisl ut purus elementum euismod. Donec laoreet in augue non pharetra. Aenean non magna enim. Suspendisse in nibh sed tellus commodo porta eget in velit. Fusce gravida nunc sit amet lacus placerat vestibulum. Mauris quis augue vel massa luctus laoreet a ut lacus. Mauris ut aliquam nunc. Aliquam ullamcorper luctus magna non semper. Morbi sapien arcu, tempor ut libero in, consequat suscipit quam. Nunc congue, enim non ultricies consequat, tortor sapien varius erat, vel ultricies erat dui at risus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nullam id ante sed elit luctus tempor et et sapien. Pellentesque vel tempor urna, quis semper neque. Integer eget lacus nec nisl auctor sagittis.",
         "descHtml": "<div class='article-text-section'><p>Mandag d. 8 august kunne jeg endelig skyde min praktikperiode i gang, hos AKQA. Jeg skulle oprindeligt først starte d. 15 august, men fik lov til at starte en uge før med selvstudie, for at få ugerne til at gå mest muligt op.</p><p>Til mit selvstudie havde jeg forberedt lidt forskelligt materiale som jeg ville kigge på, i form af nogle kurser på Linkedin Learning og Skillshare, samt nogle anbefalede videoer på youtube.</p></div><div class='article-section'><div class='article-box'><p><span>MAN -</span> React.js + Sass/SCSS</p><p><span>TIR -</span> Next.js</p><p><span>ONS -</span> Next.js fortsat</p><p><span>TOR -</span> Vue.js</p><p><span>FRE -</span> Vue.js fortsat</p></div><h4>Selvstudie</h4><p>Jeg startede ugen ud med noget React, som jeg har et godt kendskab til i forvejen, samt noget Sass, som jeg kendte lidt til i forvejen.</p><p>Derefter brugte jeg tirsdag og onsdag på Next, som jeg ikke havde nogen kendskab til i forvejen, men da det ligner React rigtigt meget, føler jeg hurtigt at jeg forstod det.</p><p>Torsdag og Fredag brugte jeg på Vue, som ikke ligner noget programmerings sprog jeg har brugt før, dog virker det umiddelbart simpelt, og jeg føler at jeg let forstod de basale dele af det.</p></div><div class='article-text-section'><h4>Første dag på kontoret</h4><div class='img-cntr'><img src='/data/media/posts/toldboden.png' alt=''></div><p>Mandag d. 15 august klokken 0830, skulle jeg endeligt møde op til min første dag ved AKQA, i Toldboden. Jeg stod op klokken 0600 og følte mig frisk, nervøs og spændt på samme tid, på trods af at jeg næsten ikke kunne sove.</p><p>Da jeg mødte ind blev jeg taget godt imod, og fik hilst på en masse fra kontoret, heri blandt min mentor. Min Mentor viste mig hen til mit skrivebord og hjalp mig med at få sat computeren op, så den havde alt jeg skulle bruge af programmer og logins. Derefter fik vi morgenmad i køkkenet, hvor jeg fik hilst på lidt flere fra kontoret.</p><p>Hver mandag bliver der holdt et fællesmøde, hvor vi går igennem hvem der arbejder på hvad for ugen. Det var spændende at se den lange liste af firmaer som der arbejdes for, samt at høre kort om hvad nogle af projekterne går ud på.</p></div><div class='article-text-section'><h4>Intro & projekt</h4><p>Efter mødet blev jeg introduceret for to andre praktikanter jeg skal arbejde sammen med, og det projekt vi skal arbejde på. De sidder på kontoret i København, så vores samarbejde foregår over Teams.<br>Ud over projektet, har vi i dagligt haft flere møder, afholdt af forskellige personer fra AKQA, som fortæller om firmaet, deres kunder, hvordan de arbejder osv.</p><div class='article-section'><div class='article-box'><p><span>Week 1 -</span> Planning & managing</p><p><span>Week 2 -</span> Design & UX</p><p><span>Week 3 -</span> Markup</p><p><span>Week 4 -</span> Performance & CMS</p><p><span>Week 5 -</span> JS & frameworks, API dev.</p><p><span>Week 6 -</span> Presentation</p></div><p>Vores projekt er et 6-ugers intro-projekt som AKQA har lavet, kaldet ''Flight to orbit''. Projektet handler om et firma kaldet Space Debris Inc. (SD), i året 2122.</p><p>SD sørger for at hente folks skrald, og skille sig af med det, ved at smide det ud i rummet. Vores opgave er så, at skabe et brand til firmaet, samt en web-app med: en landingpage, content page, webshop og admin page.</p><p>I denne uge har vi været i gennem den første uge af projektet, hvor vi har sørge for planlægning og administrationen af projektet. Jeg må indrømme at jeg nok er lidt utålmodig, og jeg glæder mig til at kunne komme i gang med at programmere, men det er også vigtigt at respektere at alt tager sin tid, og ikke skal hundses med.</p></div><p>Vi har fået rimeligt frie tøjler, og har lov til at tage både kreativ og humoristisk frihed, og indtil videre virker det rigtigt sjovt.</p><p>Jeg er spændt på at se hvad vi kan få kreeret. De to andre praktikanter, som jeg arbejder med virker begge super dygtige. Den ene er en multimediedesigner, specialiserende i frontend ligesom mig, og den anden er en datamatiker.</p></div>",
-        "short": "Mandag d. 8 august kunne jeg endelig skyde min praktikperiode i gang, hos AKQA. Jeg skulle oprindeligt først starte d. 15 august, men fik lov til at starte en uge før med selvstudie, for at få ugerne til at gå mest muligt op. Til mit selvstudie havde jeg forberedt lidt forskelligt materiale som jeg ville kigge på, i form af nogle kurser på Linkedin Learning og Skillshare, samt nogle anbefalede videoer på youtube.",
-        "shortHtml": "<p>Mandag d. 8 august kunne jeg endelig skyde min praktikperiode i gang, hos AKQA. Jeg skulle oprindeligt først starte d. 15 august, men fik lov til at starte en uge før med selvstudie, for at få ugerne til at gå mest muligt op.</p><p>Til mit selvstudie havde jeg forberedt lidt forskelligt materiale som jeg ville kigge på, i form af nogle kurser på Linkedin Learning og Skillshare, samt nogle anbefalede videoer på youtube.</p>",
+        "short": "Mandag d. 8 august kunne jeg endelig skyde min praktikperiode i gang, hos AKQA. Jeg skulle oprindeligt først starte d. 15 august, men fik lov til at starte en uge før med selvstudie, for at få ugerne til at gå mest muligt op. Til mit selvstudie havde jeg forberedt lidt forskelligt materiale som jeg ville kigge på...",
+        "shortHtml": "<p>Mandag d. 8 august kunne jeg endelig skyde min praktikperiode i gang, hos AKQA. Jeg skulle oprindeligt først starte d. 15 august, men fik lov til at starte en uge før med selvstudie, for at få ugerne til at gå mest muligt op.</p><p>Til mit selvstudie havde jeg forberedt lidt forskelligt materiale som jeg ville kigge på...</p>",
         "tags": [
             {"tag": null},
             {"tag": null}
@@ -47,14 +49,16 @@
     {
         "id": 727236,
         "lang": "da",
-        "title": "Post two",
-        "subtitle": "Lorem ipsum dolor sit amet",
-        "date": "01/01/22",
-        "week": "",
-        "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi egestas auctor nisl non volutpat. Nullam id sem quis metus luctus ullamcorper. Phasellus bibendum semper leo a faucibus. Praesent vel mauris magna. Phasellus tempor imperdiet urna in finibus. Praesent elit ligula, malesuada a urna ac, posuere consectetur nisi. Morbi eleifend nunc vitae nunc fermentum fringilla. Etiam scelerisque enim et accumsan aliquam. Pellentesque lacinia lobortis turpis, quis imperdiet ante pellentesque sit amet. Praesent tincidunt sit amet purus vitae lobortis. Aliquam quis odio id purus rhoncus euismod. Donec tempor orci vitae scelerisque consequat. Nam sapien odio, pulvinar vel arcu in, posuere congue justo. Sed ligula magna, sollicitudin eu laoreet nec, commodo eu quam. Suspendisse auctor diam diam, et consectetur tortor molestie at. Suspendisse ac sem nec ante consequat finibus. Sed quis nisl ut purus elementum euismod. Donec laoreet in augue non pharetra. Aenean non magna enim. Suspendisse in nibh sed tellus commodo porta eget in velit. Fusce gravida nunc sit amet lacus placerat vestibulum. Mauris quis augue vel massa luctus laoreet a ut lacus. Mauris ut aliquam nunc. Aliquam ullamcorper luctus magna non semper. Morbi sapien arcu, tempor ut libero in, consequat suscipit quam. Nunc congue, enim non ultricies consequat, tortor sapien varius erat, vel ultricies erat dui at risus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nullam id ante sed elit luctus tempor et et sapien. Pellentesque vel tempor urna, quis semper neque. Integer eget lacus nec nisl auctor sagittis.",
-        "descHtml": "<span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi egestas auctor nisl non volutpat. Nullam id sem quis metus luctus ullamcorper. Phasellus bibendum semper leo a faucibus. Praesent vel mauris magna. Phasellus tempor imperdiet urna in finibus. Praesent elit ligula, malesuada a urna ac, posuere consectetur nisi. Morbi eleifend nunc vitae nunc fermentum fringilla. Etiam scelerisque enim et accumsan aliquam. Pellentesque lacinia lobortis turpis, quis imperdiet ante pellentesque sit amet. Praesent tincidunt sit amet purus vitae lobortis. Aliquam quis odio id purus rhoncus euismod. Donec tempor orci vitae scelerisque consequat. Nam sapien odio, pulvinar vel arcu in, posuere congue justo. Sed ligula magna, sollicitudin eu laoreet nec, commodo eu quam. Suspendisse auctor diam diam, et consectetur tortor molestie at. Suspendisse ac sem nec ante consequat finibus. Sed quis nisl ut purus elementum euismod. Donec laoreet in augue non pharetra. Aenean non magna enim. Suspendisse in nibh sed tellus commodo porta eget in velit. Fusce gravida nunc sit amet lacus placerat vestibulum. Mauris quis augue vel massa luctus laoreet a ut lacus. Mauris ut aliquam nunc. Aliquam ullamcorper luctus magna non semper. Morbi sapien arcu, tempor ut libero in, consequat suscipit quam. Nunc congue, enim non ultricies consequat, tortor sapien varius erat, vel ultricies erat dui at risus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nullam id ante sed elit luctus tempor et et sapien. Pellentesque vel tempor urna, quis semper neque. Integer eget lacus nec nisl auctor sagittis.</span>",
-        "short": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi egestas auctor nisl non volutpat. Nullam id sem quis metus luctus ullamcorper. Phasellus bibendum semper leo a faucibus. Praesent vel mauris magna. Phasellus tempor imperdiet urna in finibus. Praesent elit ligula, malesuada a urna ac, posuere consectetur nisi. Morbi eleifend nunc vitae nunc fermentum fringilla. Etiam scelerisque enim et accumsan aliquam.",
-        "shortHtml": "<span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi egestas auctor nisl non volutpat. Nullam id sem quis metus luctus ullamcorper. Phasellus bibendum semper leo a faucibus. Praesent vel mauris magna. Phasellus tempor imperdiet urna in finibus. Praesent elit ligula, malesuada a urna ac, posuere consectetur nisi. Morbi eleifend nunc vitae nunc fermentum fringilla. Etiam scelerisque enim et accumsan aliquam.</span>",
+        "online": "n",
+        "value": 2,
+        "title": "Title",
+        "subtitle": "Subtitle",
+        "date": "10/08/22",
+        "week": "Uge X & X",
+        "desc": "Description",
+        "descHtml": "Description",
+        "short": "Short",
+        "shortHtml": "Short",
         "tags": [
             {"tag": null},
             {"tag": null}
@@ -63,25 +67,70 @@
             { 
                 "imgId": 768008,
                 "imgSrc": "/data/media/posts/code-cover1.png",
-                "imgAlt": "Post",
+                "imgAlt": "",
                 "imgDesc": ""
             },
             { 
                 "imgId": 284448,
                 "imgSrc": "/data/media/posts/code-cover1.png",
-                "imgAlt": "Post",
+                "imgAlt": "",
                 "imgDesc": ""
             },
             { 
                 "imgId": 923433,
                 "imgSrc": "/data/media/posts/code-cover1.png",
-                "imgAlt": "Post",
+                "imgAlt": "",
                 "imgDesc": ""
             },
             { 
                 "imgId": 318375,
                 "imgSrc": "/data/media/posts/code-cover1.png",
-                "imgAlt": "Post",
+                "imgAlt": "",
+                "imgDesc": ""
+            }
+        ]
+    },
+
+    {
+        "id": 837236,
+        "lang": "da",
+        "online": "n",
+        "value": 3,
+        "title": "New title",
+        "subtitle": "Subtitle",
+        "date": "05/08/22",
+        "week": "Uge X & X",
+        "desc": "Description",
+        "descHtml": "Description",
+        "short": "Short",
+        "shortHtml": "Short",
+        "tags": [
+            {"tag": null},
+            {"tag": null}
+        ],
+        "imgs": [
+            { 
+                "imgId": 768008,
+                "imgSrc": "/data/media/posts/code-cover1.png",
+                "imgAlt": "",
+                "imgDesc": ""
+            },
+            { 
+                "imgId": 284448,
+                "imgSrc": "/data/media/posts/code-cover1.png",
+                "imgAlt": "",
+                "imgDesc": ""
+            },
+            { 
+                "imgId": 923433,
+                "imgSrc": "/data/media/posts/code-cover1.png",
+                "imgAlt": "",
+                "imgDesc": ""
+            },
+            { 
+                "imgId": 318375,
+                "imgSrc": "/data/media/posts/code-cover1.png",
+                "imgAlt": "",
                 "imgDesc": ""
             }
         ]

@@ -31,30 +31,6 @@ export default function PostArticlePage() {
         } 
     };
 
-    // function getThisImg(post) {
-    //     if (post.imgs?.length >= 1) {
-    //         return post.imgs[1]?.imgSrc;
-    //     } 
-    // };
-
-
-    // // Only render build, if the article link excists
-    // function getTags(post) {
-    //     const isTag = post.tags;
-    //     if(isTag) {
-    //         return(
-    //             post.tags.map((tag, i) => {
-    //                 return( <span key={i}>{post.tag}</span> )
-    //             })
-    //         )
-    //     }
-    //     else{
-    //         return(
-    //             null
-    //         )
-    //     }
-    // }
-
 
     return (
         <>
@@ -81,9 +57,8 @@ export default function PostArticlePage() {
                         
                     </div>
 
-                    <div className="article-content" 
-                    dangerouslySetInnerHTML={ {__html: post.descHtml} }
-                    ></div>                   
+                    <div className="article-content" dangerouslySetInnerHTML={ {__html: post.descHtml} }></div>    
+                                                
                 </article>
 
             </section>

@@ -22,7 +22,7 @@ export default function Work() {
             <section className="work-cntr section" id="work">
                 <div className="work-cntr-title">
                     <h2>Work</h2>
-                    <span className="sub-title">Here is a few of the projects I have been working on</span>
+                    <p className="sub-title">Here is a few of the projects I have been working on</p>
                 </div>
 
                 {articles.map( (article ) => (

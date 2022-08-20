@@ -13,10 +13,6 @@ html, body {
 }
 
 body {
-    // height: 100vh;
-    // width: 100%;
-    // margin: 0;
-    // padding: 0;
     font-family: $ff_sans, 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -61,7 +57,7 @@ h5 {
 }
 
 p, span {
-    font-size: $fs_m;
+    font-size: $fs_s;
     margin-bottom: .625rem;
 }
 
@@ -106,8 +102,6 @@ p, span {
         margin: auto auto;
         padding: 1px;
         color: $clr_l_grey;
-        border: solid red 0px;
-        // background-color: rgba(0, 255, 0, .5);
     }
 }
 
@@ -174,7 +168,6 @@ p, span {
     height: auto;
     width: 98%;
     bottom: 0;
-    // position: relative;
     padding: 8em 0 1.5em 0;
     margin: 0 auto;
     display: flex;
@@ -225,7 +218,6 @@ p, span {
         }
 
         .footer-links {
-            border: solid green 0px;
             width: auto;
             display: flex;
             flex-direction: row;
@@ -254,7 +246,6 @@ p, span {
                 }
                 
                 svg {
-                    border: solid blue 0px;
                     height: 100%;
                     width: auto;
                     color: $clr_black;

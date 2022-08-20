@@ -11,15 +11,15 @@ export default function About() {
                     <div className="about-txt">
                         <div className="txt-cnt">
                             <h2>About</h2>
-                            <span>
+                            <p>
                                 My name is Sofie, I am 25 years old, and I am studying multimedia design, 
                                 specializing in frontend development, at Business Academy Aarhus. 
                                 I am currently on my 4th semester, which I will be spending as an intern for AKQA in Aarhus.
-                            </span>
-                            <span>
+                            </p>
+                            <p>
                                 I have always loved creating, and exploring through different types of media. With multimedia designing, 
                                 there are endless possibilities for me to explore and work through.
-                            </span>
+                            </p>
                         </div>
 
                         <div className="mob-img-cntr">

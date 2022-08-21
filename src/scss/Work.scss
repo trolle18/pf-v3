@@ -6,7 +6,6 @@
 
 /* ---------- WORK SECTION ---------- */
 .work-cntr {
-
     .work-cntr-title {
         padding: 0 0 .5em 0;
     }
@@ -115,96 +114,40 @@
         }   
     }
     
-    .post {
-        cursor: pointer;
-    }
-
-
 
 
     @media (min-width: 600px) {
         .project {
             height: auto;
-            // width: 100%;
             margin: 1em .2em 6em 0em; 
-            // display: flex;
             flex-direction: row;
     
             .project-txt {
                 width: 60%;
                 margin: auto 0;
-
-                // .project-header {
-                    // .project-title {
-                    //     display: flex;
-                    //     flex-direction: row;
-                    //     justify-content: space-between;
-        
-                    //     h3 {
-                    //         margin-top: 0;
-                    //         font-size: $fs_m;
-                    //         text-transform: uppercase;
-                    //     }
-        
-                    //     .project-links {
-                    //         height: 100%;
-                    //         width: auto;
-                    //     }     
-                    // }
-        
-                    // .project-build {
-                    //     display: flex;
-                    //     flex-direction: row;
-        
-                    //     span {
-                    //         margin-right: 2rem;
-                    //         color: $clr_acc_yel;
-                    //         font-family: $ff_mono;
-                    //         font-weight: 600;
-                    //         font-size: $fs_s;
-                    //         text-transform: uppercase;
-                    //     }
-                    // }
-                // }
-
-                // .project-desc {
-                    // display: -webkit-box;
-                    // -webkit-line-clamp: 5;
-                    // -webkit-box-orient: vertical;
-                    // overflow: hidden;
-                // }
             }
 
             .project-gallery-cntr {
                 height: 100%;
                 width: 50%;
-                // margin: 0 auto;
     
                 .project-gallery {
-                    // height: 100%;
-                    // width: 100%;
-                    // object-fit: cover;
-                    // display: flex;
-                    // flex-direction: row;
-                    // flex-wrap: wrap;
-                    // justify-content: center;
-                    // align-items: center;
-
                     .img-cntr {
                         border: solid yellow 0px;
                         height: 160px;
                         width: 40%;
-                        // object-fit: cover;
-                        // display: flex;
     
                         &:nth-child(2), &:nth-child(3) {
                             object-position: left;
                         } 
                     }
                 }
-            }            
+            }   
+
         }
     }
+
+
 
     @media (min-width: 992px) {
         .project {
@@ -212,114 +155,41 @@
             justify-content: space-between;
     
             .project-txt {
-
                 .project-header {
                     margin-bottom: .625em;
                 
                     .project-title {
-        
                         h3 {
                             margin: 0 0 0.625em 0;
                             font-size: $fs_l;
-                        }
-        
-                        // .project-links {
-        
-                        //     a {
-                        //         margin-left: .5em;
-                        //         text-decoration: none;
-                        //         color: $clr_l_grey;
-                
-                        //         svg {
-                        //             height: 20px;
-                        //             width: auto;
-                        //         }
-                        //     }
-                        // }     
+                        }  
                     }
-        
-                    // .project-build {
-                    //     display: flex;
-                    //     flex-direction: row;
-        
-                    //     span {
-                    //         margin-right: 2rem;
-                    //         color: $clr_acc_yel;
-                    //         font-family: $ff_mono;
-                    //         font-weight: 600;
-                    //         font-size: $fs_s;
-                    //         text-transform: uppercase;
-                    //     }
-                    // }
                 }
-
-                // .project-desc {
-                //     display: initial;
-                //     -webkit-line-clamp: initial;
-                //     -webkit-box-orient: vertical;
-                //     overflow:visible;
-                // }
             }
 
             .project-gallery-cntr {
                 border: solid blue 0px;
                 height: 100%;
                 width: 50%;
-                // margin: 0 auto;
     
                 .project-gallery {
-                    // height: 100%;
-                    // width: 100%;
-                    // object-fit: cover;
-                    // display: flex;
-                    // flex-direction: row;
-                    // flex-wrap: wrap;
-                    // justify-content: center;
-                    // align-items: center;
-
                     .img-cntr {
                         border: solid yellow 0px;
                         height: 160px;
                         width: 40%;
-                        // object-fit: cover;
-                        // display: flex;
     
                         &:nth-child(2), &:nth-child(3) {
                             object-position: left;
                         } 
                     }
-    
-                    // img {
-                    //     height: 50%;
-                    //     width: 40%;
-                    //     object-fit: cover;
-                    //     display: flex;
-    
-                    //     &:nth-child(2), &:nth-child(3) {
-                    //         height: 50%;
-                    //         width: 60%;
-                    //         object-fit: cover;
-                    //     }
-                    // }
                 }
             }
-    
-            // .project-img-cntr {
-            //     height: 100%;
-            //     width: 40%;
-            //     margin: 0 0.625rem 0 0;
-    
-            //     img {
-            //         height: 100%;
-            //         width: 100%;
-            //         object-fit: cover;
-            //     }
-            // }
-            
+
         }
     }
 
 }
+
 
 
 /* Animations */
@@ -334,5 +204,7 @@
     transform: translateY(0);
 }
 
-
+.post {
+    cursor: pointer;
+}
 

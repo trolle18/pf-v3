@@ -27,8 +27,8 @@ export default function PostArticle( {post} ) {
             })
         }, 
         {
-            // rootMargin: "100px",
-            threshold: .5,
+            rootMargin: "100px",
+            // threshold: .5,
         }        
     )
     cards.forEach(card => {
@@ -38,7 +38,7 @@ export default function PostArticle( {post} ) {
    
     return (
         <>
-            <article key={post.id} className="project card" onClick={handleClick}>
+            <article key={post.id} className="project card post" onClick={handleClick}>
                 <div className="project-img-cntr">
                     <img src={getImg(post)} alt={post.title}/>  
                 </div>

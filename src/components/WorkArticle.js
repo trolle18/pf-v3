@@ -71,7 +71,7 @@ export default function WorkArticle( {article} ) {
    
     return (
         <>
-            <article key={article.id} className="project card">
+            <article key={article.id} className="project">
                 <div className="project-gallery-cntr">
                     <div className="project-gallery">
                         {article.imgs.map((imgs, imgId) => {

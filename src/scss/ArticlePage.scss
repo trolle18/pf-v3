@@ -8,6 +8,7 @@
 .article {
     height: 100%;
     width: 100%;
+    margin: 1em 0 0 0;
     display: flex;
     flex-direction: column;
 
@@ -38,22 +39,23 @@
                 display: flex;
                 flex-direction: row;
                 justify-content: space-between;
-                align-items: center;
+                align-items:flex-start;
 
-                .article-links {
+                h1 {
+                    height: 100%;
+                    margin: 0.625rem 0 0 0;
+                }
+
+                .date {
                     height: 100%;
                     width: auto;
 
-                    a {
-                        margin-left: .5em;
-                        text-decoration: none;
-                        color: $clr_l_grey;
-        
-                        svg {
-                            height: 20px;
-                            width: auto;
-                        }
-                    }  
+                    p {
+                        height: 100%;
+                        margin: 0.625rem 0;
+                        font-weight: 600;
+                    }
+                    
                 }
             }
 
@@ -108,7 +110,6 @@
                 height: 100%;
                 width: 100%;
                 object-fit: cover;
-                // filter: blur(.4px);
                 image-rendering: optimizeQuality;
             }
 
@@ -133,12 +134,14 @@
                 margin: auto auto;
                 padding: 0 0 .2em .8em;
             }
-        }
-
-   
+        }   
 
         .article-text-section {
             margin: .5em 0;
+
+            h4 {
+                color: $clr_white;
+            }
 
             p {
                 margin: 0 0 0.625em 0;

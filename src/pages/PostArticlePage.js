@@ -48,8 +48,8 @@ export default function PostArticlePage() {
                         <div className='article-title-box'>
                             <div className="article-title">
                                 <h1>{post?.title}</h1>
-                                <div className="article-links">
-                                    <span>{post.date}</span>
+                                <div className="date">
+                                    <p>{post.date}</p>
                                 </div>
                             </div>    
                             <div className='subtitle'><h3>{post?.subtitle}</h3></div>

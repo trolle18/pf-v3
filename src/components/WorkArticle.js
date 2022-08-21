@@ -91,7 +91,7 @@ export default function WorkArticle( {article} ) {
                             <h3>{article.title}</h3>
                             <div className="project-links">
                                 {getLink(article)}
-                                {getRepo(article)}
+                                {getRepo(article)} 
                             </div>
                         </div>
 

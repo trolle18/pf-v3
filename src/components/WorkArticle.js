@@ -76,7 +76,9 @@ export default function WorkArticle( {article} ) {
                     <div className="project-gallery">
                         {article.imgs.map((imgs, imgId) => {
                             return( 
-                                <img key={imgId} src={imgs.imgSrc} alt={imgs.ImgAlt}/> 
+                                <div className="img-cntr">
+                                    <img key={imgId} src={imgs.imgSrc} alt={imgs.ImgAlt}/> 
+                                </div>
                                 )
                         })}
                     </div>

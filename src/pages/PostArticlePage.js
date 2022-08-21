@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
+import { BiLeftArrowAlt } from 'react-icons/bi'
 import '../scss/ArticlePage.scss';
 
 export default function PostArticlePage() {
@@ -22,6 +23,8 @@ export default function PostArticlePage() {
         }
     }, [postId])
 
+
+    // Get first img
     function getImg(post) {
         if (post.imgs?.length >= 1) {
             return post.imgs[0]?.imgSrc;
@@ -33,9 +36,7 @@ export default function PostArticlePage() {
         <>
             <section className="page">
                 <div className="page-header">
-                    {/* <UseBackListener/> */}
-                    <h2>Article Page</h2>
-                    <span className="sub-title">Here is a subtitle</span>
+                    <Link to='/posts'><BiLeftArrowAlt/> Posts </Link>
                 </div>
 
                 <article  key={post?.id} className="article">
@@ -43,26 +44,21 @@ export default function PostArticlePage() {
                         <div className='header-img'>
                             <img src={getImg(post)} alt="" />
                         </div>  
-                        <div className="article-title">
-                            <h1>{post?.title}</h1>
-                            <div className="article-links">
-                                <span>{post.date}</span>
-                            </div>
-                        </div>                       
+
+                        <div className='article-title-box'>
+                            <div className="article-title">
+                                <h1>{post?.title}</h1>
+                                <div className="article-links">
+                                    <span>{post.date}</span>
+                                </div>
+                            </div>    
+                            <div className='subtitle'><h3>{post?.subtitle}</h3></div>
+                        </div>
+                        
                     </div>
 
-                    <div className="article-content">
-                        <span>{post?.desc} </span>
-                        {/* <div> */}
-                            {/* {article.imgs?.map((imgs) => (
-                                    <div className="img-cntr" key={imgs.imgId}>
-                                        <img alt={imgs.imgAlt} src={imgs.imgSrc}/>
-                                    </div>
-                                ))}                             */}
-                        {/* </div> */}
-                       
-                    </div>
-                   
+                    <div className="article-content" dangerouslySetInnerHTML={ {__html: post.descHtml} }></div>    
+                                                
                 </article>
 
             </section>

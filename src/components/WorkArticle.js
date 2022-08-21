@@ -60,8 +60,8 @@ export default function WorkArticle( {article} ) {
             })
         }, 
         {
-            // rootMargin: "100px",
-            threshold: .5,
+            rootMargin: "100px",
+            // threshold: 0,
         }        
     )
     cards.forEach(card => {

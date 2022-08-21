@@ -53,15 +53,7 @@ export default function ArticlePage() {
                     </div>
 
                     <div className="article-content">
-                        <span>{article?.desc} </span>
-                        {/* <div> */}
-                            {/* {article.imgs?.map((imgs) => (
-                                    <div className="img-cntr" key={imgs.imgId}>
-                                        <img alt={imgs.imgAlt} src={imgs.imgSrc}/>
-                                    </div>
-                                ))}                             */}
-                        {/* </div> */}
-                       
+                        <span>{article?.desc} </span>                       
                     </div>
                    
                 </article>

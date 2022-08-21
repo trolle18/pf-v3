@@ -87,7 +87,7 @@ export default function WorkArticle( {article} ) {
                 <div className="project-txt"> 
                     <div className="project-header">
 
-                        <div className="project-title item">
+                        <div className="project-title">
                             <h3>{article.title}</h3>
                             <div className="project-links">
                                 {getLink(article)}
@@ -95,12 +95,12 @@ export default function WorkArticle( {article} ) {
                             </div>
                         </div>
 
-                        <div className="project-build item">
+                        <div className="project-build">
                             {getBuild(article)}
                         </div> 
                     </div>
         
-                    <div className="project-desc item">
+                    <div className="project-desc">
                         <span dangerouslySetInnerHTML={ {__html: article.descHtml} }></span>
                     </div>
                 </div>

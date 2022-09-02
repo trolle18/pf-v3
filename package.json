@@ -1,5 +1,6 @@
 {
   "name": "pf-v3",
+  "homepage": "https://sofietrolle.dk",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

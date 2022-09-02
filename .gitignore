@@ -22,8 +22,5 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 /public/favicon/info.txt
-/src/firebase-config.js
-/src/pages/fireAuth
-/src/fireAuth
-/src/ex
-/public/data/projectsExtra.json
+/public/data/
+/src/subRoutes.js

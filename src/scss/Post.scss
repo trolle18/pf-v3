@@ -72,6 +72,10 @@
 
         .article-desc {
             padding: 0 .5rem;
+            display: -webkit-box;
+            -webkit-line-clamp: 4;
+            -webkit-box-orient: vertical;  
+            overflow: hidden;
         }  
 
         .article-img-cntr {
@@ -118,6 +122,7 @@
     
                     img {
                         height: 100%;
+                        max-height: 200px;
                         width: 100%;
                         object-fit: cover;
                     }

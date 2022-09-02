@@ -115,8 +115,8 @@ p, span {
     padding: 4em 0 0 0;
 
     .section {
-        margin: 1em 0;
-        padding: 2.5em 0 05em 0;
+        margin: 0 0 5em 0;
+        padding: 5em 0 .5em 0;
     }
 
     .page-header {
@@ -221,24 +221,23 @@ p, span {
             width: auto;
             display: flex;
             flex-direction: row;
-            row-gap: 10px;
+            column-gap: 12px;
             justify-content: space-between;
 
             a {
-                height: 2em;
-                width: 2em;
-                margin-left: 1em;
+                height: 1.5em;
+                width: 1.5em;
                 padding: 2px;
-                background-color: $clr_white;
+                background-color: $clr_l_grey;
                 border-radius: 150px;
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 vertical-align: middle;
-                font-family: $ff_mono;
-                text-decoration: none;
-                text-transform: uppercase;
-                color: $txt_light;
+                // font-family: $ff_mono;
+                // text-decoration: none;
+                // text-transform: uppercase;
+                // color: $txt_light;
                 transition: ease-in .02s;
 
                 &:hover {
@@ -246,7 +245,7 @@ p, span {
                 }
                 
                 svg {
-                    height: 100%;
+                    height: 90%;
                     width: auto;
                     color: $clr_black;
                 }

@@ -13,7 +13,7 @@ export default function Post( {post} ) {
 
     // Navigate to article page 
     function handleClick() {
-        navigate(`/posts/${post.id}`)
+        navigate(`/15082022/${post.id}`)
     }
 
 

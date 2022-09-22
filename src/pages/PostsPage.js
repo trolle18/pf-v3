@@ -26,7 +26,7 @@ export default function PostsPage() {
                     </div>
 
                     {posts
-                    .filter( (post) => post.online.includes('y'))
+                    // .filter( (post) => post.online.includes('y'))
                     .sort ( (a, b) => a.value < b.value ? 1 : -1)
                     .map( (post) => (
                         <Post post={post} key={post.id}/>

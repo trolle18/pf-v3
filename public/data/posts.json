@@ -94,16 +94,16 @@
     {
         "id": 837236,
         "lang": "da",
-        "online": "n",
+        "online": "y",
         "value": 3,
-        "title": "New title",
-        "subtitle": "Subtitle",
-        "date": "05/08/22",
-        "week": "Uge X & X",
+        "title": "projektarbejde",
+        "subtitle": "Uge 5 & 6",
+        "date": "16/09/22",
+        "week": "Uge 5 & 6",
         "desc": "Description",
-        "descHtml": "Description",
+        "descHtml": "<div class='article-content'> <div class='article-text-section'> <p> 5. og 6. uge af praktikken er nu kommet og gået, og vi er ved at være i slutspurten af vores intro-projekt. Jeg får lært en masse om Next JS, TypeScript og Chakra UI igennem en masse ''trial and error'', men ikke uden succes og gennembrud. </p> </div> <div class='article-text-section'> <h4>Uge 5</h4> <p> Det var meningen at denne uge skulle handle om backend-delen, men den developer som skulle give os introen og var den ugeansvarlige var desværre syg, og blev udskudt fra mandagen til senere på ugen. Vi fortsatte bare hvor vi slap ugen før, indtil vi fik en intro. Introen var dog ikke en dybtegående, men det overordnede som vi havde brug for at vide - Især for mig og min frontend-makker, da vi ikke skal arbejde med det, men forstå det godt nok til at kunne flette front- og backenden sammen. </p> <p> I denne uge stod det for mig mest på at få Next JS, TypeScript (TS) og Chakra UI til at spille. Next og TS har været meget lige til, uden for mange bump på vejen. Den store forskel fra React til Next, er at React er CSR (Client Side Rendering), som sender JavaScript af sted, der læses af klienten, og derefter renderes. Next er SSR (Server Side Rendering), hvor serveren læser JavaScripten, således det er klar til at renderes af klienten når siden tilgåes. </p> <p> Jeg har stået for en content-page, som skal vise diverse små cards/artikler og tekst om det fiktive firma 'Space Debris Inc' samt en sektion med firmaets medarbejdere. <br/> Derudover stod jeg også for en admin-page, hvor ad administrator kan se en oversigt over salg der foregår på hjemmesiden, samt nogle statistikker over det. Derudover kan administratoren se virksomhedens raketter, og diverse info om dem, så som deres current capacity, max capacity, available/unavailable, status, next launch, previous launch. Administratoren skal også gerne kunne redigere, tilføje nye eller slette raketter. </p> <p> Målet er at hele siden skal være headless, og kunne hentes fra en CMS, i dette tilfælde er det Umbraco der skal bruges, som vores backend developer står for. Vi vil få nogle endpoints, som vi så skal fetche dataen fra. Dataen vil komme til os og blive læst som JSON, så helt fremmed kommer det ikke til at være, at implementere (forhåbenligt!). </p> </div> <div class='article-text-section'> <h4>Uge 6</h4> <p> Uge 6 flød meget sammen med uge 5, da det stortset var det samme vi arbejde med. Jeg er stadigt i gang med både content og admin-siderne. <br/> Jeg har fået lavet noget mock-data, i form af en JSON-fil jeg har liggende lokalt, som jeg kan bruge til mine sider, indtil jeg får noget data fra backenden. Det var meningen at jeg gerne skulle have fået det i løbet af denne uge, men nogle af tingene tager desværre bare lidt længere tid og/eller driller - som kode jo har det med at gøre. <br/> Det meste af tiden bruger jeg på at få skabt et større kendskab til Chakra UI og TypeScript. Heldigvis er jeg lige så stille ved at føle mig mere komfortabel og sikker med Next JS. </p> <p> Jeg kan mærke at jeg så småt er begyndt at føle mig lidt stresset og presset, da det er torsdag i næste uge vi skal præsentere vores produkt for hele Aarhus kontoret + lidt folk fra København. Jeg havde håbet på at være tættere på noget færdigt og mere funtionelt end det er nu, da raket-siden under admin-siden er lidt svær at få skabt noget funtionalitet til med mock-dataen. Jeg forsøger at gøre brug af Next's API, men det er ikke noget jeg har brugt før, og indtil videre lidt svær at få op og køre, men forhåbenligt når jeg det, da jeg føler raket-siden er en essentiel del af admin-siden. </p> <p> Heldigvis er de omkring mig på kontoret søde til at sige at det er helt fint det ikke bliver helt færdigt, vi er trods alt kun 3 praktikanter, hvor backend developeren ikke har arbejdet med den slags kode før, jeg har kun brugt Next en lille smule før jeg startede (i selvstudiet), som gav mig et lille forspring, ellers er det nyt for min frontend-makker samt TypeScript og Chakra UI er nyt for os begge. </p> </div> </div>",
         "short": "Short",
-        "shortHtml": "Short",
+        "shortHtml": " <p>5. og 6. uge af praktikken er nu kommet og gået, og vi er ved at være i slutspurten af vores intro-projekt. Jeg får lært en masse om Next JS, TypeScript og Chakra UI igennem en masse ''trial and error'', men ikke uden succes og gennembrud. </p> ",
         "tags": [
             {"tag": null},
             {"tag": null}
@@ -111,7 +111,7 @@
         "imgs": [
             { 
                 "imgId": 768008,
-                "imgSrc": "/data/media/posts/code-cover1.png",
+                "imgSrc": "/data/media/posts/code-cover.png",
                 "imgAlt": "",
                 "imgDesc": ""
             },

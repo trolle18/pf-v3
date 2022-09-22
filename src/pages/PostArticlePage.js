@@ -36,7 +36,7 @@ export default function PostArticlePage() {
         <>
             <section className="page">
                 <div className="page-header">
-                    <Link to='/posts'><BiLeftArrowAlt/> Posts </Link>
+                    <Link to='/15082022'><BiLeftArrowAlt/> Posts </Link>
                 </div>
 
                 <article  key={post?.id} className="article">
@@ -59,76 +59,61 @@ export default function PostArticlePage() {
 
                     <div className="article-content" dangerouslySetInnerHTML={ {__html: post.descHtml} }></div>    
 
+                    {/* ----- template ----- */}
                     {/* <div class='article-content'>
                         <div class='article-text-section'>
-                            <p>Mandag d. 22 er starten på min 3. uge i praktikken, og jeg er så småt begyndt at føle jeg er faldet til, selvom jeg kan mærke jeg stadigt er meget genert blandt alle de nye mennesker, heldigvis er alle super søde, nede på jorden og gode til at joke med hinanden. Alt i alt er det et super dejligt kontor jeg er havnet i!</p>
                             <p>
-                                I denne uge kunne min projektgruppe og jeg endeligt gå i gang med design-delen af projektet Space Debris Inc. Vores forrige uge var meget mere løs og en general into, i denne uge har vi bestemt haft mere at se til, i form af skitser, mockups, moodboards, wireframes, mockups og logodesign.
-                                Vi har fået en ny "uge-ansvarlig", som i denne uge var Nicklas. Vi har en ny hver uge for at møde og arbejde med forskellige "team-leads", sidste uges uge-ansvarlige var Simon H.
-                            </p>
-                        
-                            </div>
-
-                        <div class='article-text-section'>
-                            <h4>Uge 3</h4>
-                            <p>
-                                I denne uge kunne min projektgruppe og jeg endeligt gå i gang med design-delen af projektet Space Debris Inc. Vores forrige uge var meget mere løs og en general into, i denne uge har vi bestemt haft mere at se til, i form af skitser, mockups, moodboards, wireframes, mockups og logodesign.
-                                Vi har fået en ny "uge-ansvarlig", som i denne uge var Nicklas. Vi har en ny hver uge for at møde og arbejde med forskellige "team-leads", sidste uges uge-ansvarlige var Simon H.
-                            </p>
-                            <p>
-                                Mandagen havde mig gruppe og jeg et møde sammen med vores uge-ansvarlige, Nicklas. Her snakkede vi om hvad vi havde lavet indtil videre, hvordan det gik, hvad vi skal i denne uge osv.
-                            </p>
-                            <p>
-                                Nicklas foreslog at ham og jeg kunne tage til København og se kontoret der ovre, samt give mig muligheden for at møde de andre praktikanter som jeg har arbejdet sammen med. Hos AKQA Denmark er det nemt at kunne rejse mellem de to kontorer for at arbejde, hvilket jeg synes er super fedt, da jeg kan forestille mig at det fremmer samarbejdet mellem kontorene en del.
-                            </p>
-
-                            <p>
-                                Nicklas fik arengeret turen til København, og tidligt onsdag morgen tog jeg afsted med toget fra Aarhus Hovedbanegård, med en dejlig plads i 1' klasse. Nicklas hoppede med på toget i Frederecia, og så gik turen ellers mod København. det var super fedt at få lov til at hilse på de andre praktikanter, men også at se kontoret i København, og bruge lidt tid der ovre.
-                            </p>
+                                5. og 6. uge af praktikken er nu kommet og gået, og vi er ved at være i slutspurten af vores intro-projekt. 
+                                Jeg får lært en masse om Next JS, TypeScript og Chakra UI igennem en masse "trial and error", men ikke uden succes og gennembrud.
+                            </p>                        
                         </div>
 
                         <div class='article-text-section'>
-                            <h4>Amsterdam</h4>
-                            <div class='img-cntr'>
-                                <img src='/data/media/posts/amsterdamhuse.jpg' alt='amsterdam huse'/>
-                            </div>
+                            <h4>Uge 5</h4>
                             <p>
-                                Uge 3 sluttede med en tur til Amsterdam, fra fredag d. 26 til søndag d. 28. Hvert år tager AKQA på en firmarejse i en weekend, sidste år var de f.eks. i Berlin. Jeg var så heldig at få lov til at komme med! De sørgede for fly og hotel, samt aftensmad lørdag aften.
+                                Det var meningen at denne uge skulle handle om backend-delen, men den developer som skulle give os introen og var den ugeansvarlige var desværre syg, og blev udskudt fra mandagen til senere på ugen.
+                                Vi fortsatte bare hvor vi slap ugen før, indtil vi fik en intro. Introen var dog ikke en dybtegående, men det overordnede som vi havde brug for at vide - Især for mig og min frontend-makker, 
+                                da vi ikke skal arbejde med det, men forstå det godt nok til at kunne flette front- og backenden sammen.
                             </p>
                             <p>
-                                Vi landede med flyet i Amsterdam omkring klokken 11, og var fremme ved hotellet ca. en time senere. Jeg havde forventet at jeg skulle dele værelse med nogen, men nej-nej, jeg fik mit eget med en stor lækker seng og lækkert badeværelse! 
+                                I denne uge stod det for mig mest på at få Next JS, TypeScript (TS) og Chakra UI til at spille. Next og TS har været meget lige til, uden for mange bump på vejen.
+                                Den store forskel fra React til Next, er at React er CSR (Client Side Rendering), som sender JavaScript af sted, der læses af klienten, og derefter renderes.
+                                Next er SSR (Server Side Rendering), hvor serveren læser JavaScripten, således det er klar til at renderes af klienten når siden tilgåes.
                             </p>
                             <p>
-                                Fredagen blev hovedsagligt brugt på at gå lidt rundt i området og se lidt af byen, nogen havde planer, selv skulle jeg i et escape room med nogle af de andre. Om aftenen var vi inviteret til fest ved noget der hed Waterkant, hvor der var fri bar til alle fra AKQA. 
+                                Jeg har stået for en content-page, som skal vise diverse små cards/artikler og tekst om det fiktive firma 'Space Debris Inc' samt en sektion med firmaets medarbejdere. <br/>
+                                Derudover stod jeg også for en admin-page, hvor ad administrator kan se en oversigt over salg der foregår på hjemmesiden, samt nogle statistikker over det. 
+                                Derudover kan administratoren se virksomhedens raketter, og diverse info om dem, så som deres current capacity, max capacity, available/unavailable, status, next launch, previous launch.
+                                Administratoren skal også gerne kunne redigere, tilføje nye eller slette raketter.
                             </p>
                             <p>
-                                Lørdag var endnu en rolig dag, den lignede meget dagen før. Om eftermiddagen tog jeg på museeum med en anden fra kontoret, hvilket var super fedt. Lørdag aften var der en firma-event i SkyLounge Amsterdam, det havde en fantastisk udsigt over Amsterdam! Det var meget fancy og exclusivt, så jeg følte mig en smule under-dressed i mine jeans, t-shirt og åbne skovmands-skjorte... Heldigvis så jeg hurtigt mange i lignende tøj, så helt ved siden af var jeg ikke!
+                                Målet er at hele siden skal være headless, og kunne hentes fra en CMS, i dette tilfælde er det Umbraco der skal bruges, som vores backend developer står for. 
+                                Vi vil få nogle endpoints, som vi så skal fetche dataen fra. Dataen vil komme til os og blive læst som JSON, så helt fremmed kommer det ikke til at være, at implementere (forhåbenligt!).
                             </p>
+
+                        </div>
+
+                        <div class='article-text-section'>
+                            <h4>Uge 6</h4>
+                          
+                            <p>
+                                Uge 6 flød meget sammen med uge 5, da det stortset var det samme vi arbejde med. Jeg er stadigt i gang med både content og admin-siderne. <br/>
+                                Jeg har fået lavet noget mock-data, i form af en JSON-fil jeg har liggende lokalt, som jeg kan bruge til mine sider, indtil jeg får noget data fra backenden. 
+                                Det var meningen at jeg gerne skulle have fået det i løbet af denne uge, men nogle af tingene tager desværre bare lidt længere tid og/eller driller - som kode jo har det med at gøre. <br/>
+                                Det meste af tiden bruger jeg på at få skabt et større kendskab til Chakra UI og TypeScript. Heldigvis er jeg lige så stille ved at føle mig mere komfortabel og sikker med Next JS.
+                            </p>
+                            <p>
+                                Jeg kan mærke at jeg så småt er begyndt at føle mig lidt stresset og presset, da det er torsdag i næste uge vi skal præsentere vores produkt for hele Aarhus kontoret + lidt folk fra København. <br/>
+                                Jeg havde håbet på at være tættere på noget færdigt og mere funtionelt end det er nu, da raket-siden under admin-siden er lidt svær at få skabt noget funtionalitet til, med mock-data, især
+                            </p>
+                           
                             <div class='img-cntr'>
                                 <img src='/data/media/posts/img_20220827_191229e.jpg' alt='skylounge amsterdam'/>
                             </div>
                         </div>
 
-                            
-
-                            <div class='article-text-section'>
-                                <h4>Uge 4</h4>
-                                <p>
-                                    Uge 4 startede vi op igen klar og friske (nogenlunde da) mandag morgen, hvor vi nu kunne få lov til at gå i gang med at kigge på noget programmering! Denne uges uge-ansvarlige er Simon (En anden Simon end den tidligere uge-ansvarlige).
-                                </p>
-                                <p>
-                                    Mandag gav Simon et hurtigt crash-course i Next bygget med TypeScript, da det er dét vi skal bruge til at lave vores projekt. Der var jeg glad for at jeg havde kigget på det i forvejen, for selvom det ligner React ret meget - da det er bygget på det, er der selvfølgeligt stadigt nogle ting som skal gøres anderledes.
-                                </p>
-                                <p>
-                                    Tirisdag gav Simon os et crash-course i Chakra UI, som til gengæld er noget helt nyt for mig. Det er et library som man kan bruge til React, til at style componenter og moduler nemt og hurtigt. <br/>
-                                    Onsdag kiggede på vi data-flow i Next, og hvordan man bedst binder det sammen med en REST API, og for det renderet bedst muligt.
-                                </p>
-                                <p>
-                                    Min multimediedesigner makker i gruppen havde haft mere besvær med Chakra UI end hvad var nyttigt, og havde desværre ikke haft oplevelsen af at det skulle gøre det nemmere og hurtigere at bygge web apps. Jeg har heldigvis været heldig, og siddet lige bag ved Simon, og derved haft let ved at søge hjælp. <br/>
-                                    Vi har derfor spurgt om lov til at få indkorporeret lidt sass i projektet, til at lette frustrationerne og få styr på stylingen.
-                                </p>
-                            </div>
                     </div> */}
+                    {/* ----- template ----- */}
                                                 
                 </article>
 

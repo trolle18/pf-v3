@@ -3,6 +3,20 @@ import '../scss/About.scss';
 
 export default function About() {
 
+    // Intersection observer
+    const secs = document.querySelectorAll(".sec")
+    const observe = new IntersectionObserver( 
+        entries => {
+            entries.forEach(entry => {
+                entry.target.classList.toggle("show", entry.isIntersecting)
+                if (entry.isIntersecting) observe.unobserve(entry.target)
+            })
+        }, 
+        { threshold: 0.5 }        
+    )
+    secs.forEach(sec => { observe.observe(sec) })
+    
+
     return (
         <>
             <section className="about-cntr section" id="about">
@@ -34,11 +48,16 @@ export default function About() {
                             <ul className="skill-list">
                             {/* // eslint-disable-next-line */}
                                 <li><span>HTML5 & CSS3</span></li>
-                                <li><span>React.JS</span></li>
-                                <li><span>JavaScript (ES6+)</span></li>
-                                <li><span>SCSS / Sass</span></li>
-                                <li><span>jQuery</span></li>
+                                <li><span>SCSS / Sass</span></li>                             
+                                <li><span>jQuery</span></li>                           
                                 <li><span>Firebase</span></li>
+                                <li><span>JavaScript (ES6+)</span></li>
+                                <li><span>React.JS</span></li>
+                                <li><span>TypeScript</span></li>
+                                <li><span>Next.JS</span></li>
+                                <li><span>Chakra UI</span></li>
+                                <li><span>Umbraco CMS</span></li>
+                               
                             </ul>
                     </div>
                 </div>

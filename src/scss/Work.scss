@@ -14,7 +14,7 @@
         border: solid rgba(0, 0, 0, 0) 1px;
         height: auto;
         width: 100%;
-        margin: 1em .2em 5em 0em;
+        margin: 5em .2em 5em 0em;
         display: flex;
         flex-direction: column;
 
@@ -119,7 +119,7 @@
     @media (min-width: 600px) {
         .project {
             height: auto;
-            margin: 1em .2em 6em 0em; 
+            margin: 5em .2em 6em 0em; 
             flex-direction: row;
 
             .project-gallery-cntr {
@@ -164,7 +164,7 @@
 
     @media (min-width: 992px) {
         .project {
-            margin: 1rem 0rem 6rem 0rem;
+            margin: 2rem 0rem 12rem 0rem;
             justify-content: space-between;
 
             .project-gallery-cntr {
@@ -210,4 +210,16 @@
         }
     }
 
+}
+
+/* Animations */
+.card {
+    opacity: 0;
+    transform: translateY(0px);
+    transition: ease-in-out .4s;
+}
+
+.card.show {
+    opacity: 1;
+    transform: translateY(0);
 }

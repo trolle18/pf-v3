@@ -1,6 +1,5 @@
 import { AiOutlineGithub, AiOutlineLink } from "react-icons/ai"
 
-
 export default function WorkArticle( {article} ) {
 
     // Only render link, if the article link excists
@@ -11,11 +10,7 @@ export default function WorkArticle( {article} ) {
                 <a href={article.link}> <AiOutlineLink/> </a>
             )
         }
-        else{
-            return(
-                null
-            )
-        }
+        else{ return(null) }
     }
 
     // Only render repo, if the article link excists
@@ -26,11 +21,7 @@ export default function WorkArticle( {article} ) {
                 <a href={article.repo}> <AiOutlineGithub/> </a>
             )
         }
-        else{
-            return(
-                null
-            )
-        }
+        else{ return(null) }
     }
 
     // Only render build, if the article link excists
@@ -43,11 +34,7 @@ export default function WorkArticle( {article} ) {
                 })
             )
         }
-        else{
-            return(
-                null
-            )
-        }
+        else{ return(null) }
     }
 
     // Intersection observer
@@ -59,25 +46,20 @@ export default function WorkArticle( {article} ) {
                 if (entry.isIntersecting) observer.unobserve(entry.target)
             })
         }, 
-        {
-            rootMargin: "100px",
-            // threshold: 0,
-        }        
+        { threshold: 0.5 }        
     )
-    cards.forEach(card => {
-        observer.observe(card)
-    })
+    cards.forEach(card => { observer.observe(card) })
 
    
     return (
         <>
-            <article key={article.id} className="project">
+            <article key={article.id} className="project card">
                 <div className="project-gallery-cntr">
                     <div className="project-gallery">
                         {article.imgs.map((imgs, imgId) => {
                             return( 
-                                <div className="img-cntr">
-                                    <img key={imgId} src={imgs.imgSrc} alt={imgs.ImgAlt}/> 
+                                <div className="img-cntr" key={imgId}>
+                                    <img src={imgs.imgSrc} alt={imgs.ImgAlt}/> 
                                 </div>
                                 )
                         })}

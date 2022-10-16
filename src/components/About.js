@@ -4,16 +4,17 @@ import '../scss/About.scss';
 
 export default function About() {
 
-    const [contents, setContents] = useState([]);
-    // Fetch content from JSON
-    useEffect(() => {
-        async function getData() {
-            const response = await fetch("/data/compData/projects.json");
-            const data = await response.json();
-            setContents(data);             
-        }       
-        getData();        
-    }, []);
+    // const [contents, setContents] = useState([]);
+    // // Fetch content from JSON
+    // useEffect(() => {
+    //     async function getData() {
+    //         const response = await fetch("/data/compData/projects.json");
+    //         const data = await response.json();
+    //         setContents(data);             
+    //     }       
+    //     getData();        
+    // }, []);
+
     // let secObserverOptions = {
     //     threshold: 0.25
     // };

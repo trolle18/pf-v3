@@ -3,19 +3,24 @@ import '../scss/About.scss';
 
 export default function About() {
 
-    // Intersection observer
-    const secs = document.querySelectorAll(".sec")
-    const observe = new IntersectionObserver( 
-        entries => {
-            entries.forEach(entry => {
-                entry.target.classList.toggle("show", entry.isIntersecting)
-                if (entry.isIntersecting) observe.unobserve(entry.target)
-            })
-        }, 
-        { threshold: 0.5 }        
-    )
-    secs.forEach(sec => { observe.observe(sec) })
-    
+    // let secObserverOptions = {
+    //     threshold: 0.25
+    // };
+    // var secObserver = new IntersectionObserver(secObserverCallback, secObserverOptions);
+    // function secObserverCallback(entries, observer) {
+    //     entries.forEach(entry => {
+    //         entry.target.classList.toggle("showing", entry.isIntersecting)
+    //         if (entry.isIntersecting) {
+    //             observer.unobserve(entry.target)
+    //         }
+    //     });
+    // };
+    // let secTarget = '.sec';
+    // document.querySelectorAll(secTarget).forEach((i) => {
+    //     if (i) {
+    //         secObserver.observe(i);
+    //     }
+    // });    
 
     return (
         <>

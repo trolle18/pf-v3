@@ -1,0 +1,31 @@
+[
+{
+    "id": 99821,
+    "lang": "da",
+    "online": "y",
+    "value": 1,
+    "heading": "About",
+    "text": "My name is Sofie, I am 25 years old, and I am studying multimedia design, specializing in frontend development, at Business Academy Aarhus. I am currently on my 4th semester, which I will be spending as an intern for AKQA in Aarhus. I have always loved creating, and exploring through different types of media. With multimedia designing, there are endless possibilities for me to explore and work through.",
+    "textHtml": "<p> My name is Sofie, I am 25 years old, and I am studying multimedia design, specializing in frontend development, at Business Academy Aarhus. I am currently on my 4th semester, which I will be spending as an intern for AKQA in Aarhus. </p> <p> I have always loved creating, and exploring through different types of media. With multimedia designing, there are endless possibilities for me to explore and work through. </p>",
+    "img": { 
+      "imgId": 197977,
+      "imgSrc": "/data/media/pf-g-iso.webp",
+      "imgAlt": "Sofie Trolle"
+    },
+    "list": {
+      "listHeading": "Some of the technologies I have been working with:",
+      "listItems": [
+          {"item": "HTML5 & CSS3"},
+          {"item": "SCSS / Sass"},
+          {"item": "jQuery"},
+          {"item": "Firebase"},
+          {"item": "JavaScript (ES6+)"},
+          {"item": "React.JS"},
+          {"item": "TypeScript"},
+          {"item": "Next.JS"},
+          {"item": "Chakra UI"},
+          {"item": "Umbraco CMS"}
+      ]
+    }
+  }
+]

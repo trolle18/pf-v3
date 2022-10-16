@@ -37,6 +37,7 @@ export default function WorkArticle( {article} ) {
         else{ return(null) }
     }
 
+    // Intersection observer
     let cardObserverOptions = {
         threshold: 0.25
     };

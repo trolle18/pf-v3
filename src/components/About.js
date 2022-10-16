@@ -1,15 +1,26 @@
+import { useEffect, useState } from "react";
 import PfImg from "../assets/pf-g-iso.webp";
 import '../scss/About.scss';
 
 export default function About() {
 
+    const [contents, setContents] = useState([]);
+    // Fetch content from JSON
+    useEffect(() => {
+        async function getData() {
+            const response = await fetch("/data/compData/projects.json");
+            const data = await response.json();
+            setContents(data);             
+        }       
+        getData();        
+    }, []);
     // let secObserverOptions = {
     //     threshold: 0.25
     // };
     // var secObserver = new IntersectionObserver(secObserverCallback, secObserverOptions);
     // function secObserverCallback(entries, observer) {
     //     entries.forEach(entry => {
-    //         entry.target.classList.toggle("showing", entry.isIntersecting)
+    //         entry.target.classList.toggle("secShow", entry.isIntersecting)
     //         if (entry.isIntersecting) {
     //             observer.unobserve(entry.target)
     //         }
@@ -19,6 +30,7 @@ export default function About() {
     // document.querySelectorAll(secTarget).forEach((i) => {
     //     if (i) {
     //         secObserver.observe(i);
+    //         console.log("observings")
     //     }
     // });    
 
@@ -29,6 +41,11 @@ export default function About() {
                 <div className="about-content">
                     <div className="about-txt">
                         <div className="txt-cnt">
+                            
+                {/* {contents
+                .map((content) => (
+                    <h2>{content.heading}</h2>
+                ))}       */}
                             <h2>About</h2>
                             <p>
                                 My name is Sofie, I am 25 years old, and I am studying multimedia design, 

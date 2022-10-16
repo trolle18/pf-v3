@@ -302,7 +302,12 @@
 //     }
 // }
 
-.section.sec.showing {
+.sec {
+    opacity: 0;
+    transform: translateY(0);
+}
+
+.sec.secShow {
     opacity: 1;
     transform: translateY(0);
     

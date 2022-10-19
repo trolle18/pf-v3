@@ -14,20 +14,20 @@ export default function Nav() {
     
     return (
         <>
-            <div className="nav-cntr" id="navBar">
-                <div className="nav-inner-cntr">
+        <nav className="nav-cntr" id="navBar">
+            <div className="nav-inner-cntr">
 
-                    <div className="nav-logo"> 
-                        <a href="/">Sofie Trolle</a> 
-                    </div>
-                    <div className="nav-links">
-                        <a href="#about"> About </a> 
-                        <a href="#work"> Work </a> 
-                        <a href="#contact"> Contact </a>                         
-                    </div>
-                    
+                <div className="nav-logo"> 
+                    <a href="/">Sofie Trolle</a> 
                 </div>
+                <div className="nav-links">
+                    <a href="#about"> About </a> 
+                    <a href="#work"> Work </a> 
+                    <a href="#contact"> Contact </a>                         
+                </div>
+                
             </div>
+        </nav>
         </>
     )
 };

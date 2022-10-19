@@ -164,8 +164,11 @@
 
     @media (min-width: 992px) {
         .project {
-            margin: 2rem 0rem 12rem 0rem;
+            margin: 2rem 0rem 10rem 0rem;
             justify-content: space-between;
+            &:last-child {
+                margin: 2rem 0rem 4rem 0rem;
+            }
 
             .project-gallery-cntr {
                 border: solid blue 0px;

@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+// import { useEffect, useState } from "react";
 import PfImg from "../assets/pf-g-iso.webp";
 import '../scss/About.scss';
 
@@ -42,11 +42,6 @@ export default function About() {
                 <div className="about-content">
                     <div className="about-txt">
                         <div className="txt-cnt">
-                            
-                {/* {contents
-                .map((content) => (
-                    <h2>{content.heading}</h2>
-                ))}       */}
                             <h2>About</h2>
                             <p>
                                 My name is Sofie, I am 25 years old, and I am studying multimedia design, 

@@ -85,7 +85,7 @@ export default function About() {
                     </div>
                 </div>
 
-                <div className="img-cntr">
+                <div className="img-cntr ">
                     <div className="img-box">
                         <img src={PfImg} className="pf-img" alt="Sofie Trolle"/>
                     </div>

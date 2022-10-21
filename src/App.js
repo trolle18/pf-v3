@@ -16,8 +16,6 @@ function App() {
             <Routes>
                 <Route path="/" element={ <HomePage/> } />
                 <Route path="*" element={ <Navigate to="/"/> } />
-                {/* <Route path="/15082022" element={ <PostsPage/> } />
-                <Route path="/15082022/:id" element={ <PostArticlePage/> } /> */}
             </Routes>
             <Footer/>
             <ScrollToTop/>     

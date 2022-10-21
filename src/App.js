@@ -4,9 +4,6 @@ import Nav from './components/Nav';
 import Footer from './components/Footer';
 import ScrollToTop from "./components/ScrollToTop";
 import HomePage from './pages/HomePage';
-import PostsPage from "./pages/PostsPage";
-import PostArticlePage from "./pages/PostArticlePage";
-
 
 function App() {
 

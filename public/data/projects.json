@@ -1,0 +1,168 @@
+[
+    {
+        "id": 24085003,
+        "value": 2,
+        "online": "y",
+        "title": "Be a hero",
+        "link": "https://beahero.dk/",
+        "repo": "https://github.com/trolle18/beahero",
+        "descHtml": "<span>For my 2nd semester exam project, I worked along side two fellow students, on a website for the coaching company ‘Be a hero’, created by Benthe. <br/>She needed a logo and a responsive website, that gives a quick overview of her business, its services, and who she is. </span><span>We came up with a simple design that is easy to navigate, it is build with HTML, CSS and Vanilla JS. <br/> The logo is simple, and comes in multiple versions for scalablility, in wordmark and as a symbol. The symbol I created, we refer to as a ‘cape’. The ‘cape’ is an organic and clean-cut shape, inspired by a lavender flowerpetal, and a superhero cape.</span>",
+        "EXdescHtml": "<span>For my 2nd semester exam project, I worked along side two fellow students, on the website for ‘Be a hero’. A coaching company started in September 2021, by Benthe, with years of experience in the field. <br/> She already has an established customer base, but needed a responsive website, that gives a quick overview of her, her business, and its services. Furthermore, she needed a logo, and a cover photo for her LinkedIn business page.</span> <span>We came up with a simple design that is easy to navigate, it is build with HTML, CSS and Vanilla JS. <br/> The logo is simple, and comes in multiple versions, for scalablility. To go with, I created what we refer to as a ‘cape’. The ‘cape’ is an organic, but clean-cut icon, inspired by a lavender flowerpetal, and a superhero cape.</span>",
+        "shortHtml": "<span>For my 2nd semester exam project, I worked along side two fellow students, on the website for ‘Be a hero’. A coaching company started in September 2021, by Benthe, with years of experience in the field. <br/> She already has an established customer base, but needed a responsive website, that gives a quick overview of her, her business, and its services...</span>",
+        "short": "For my 2nd semester exam project, I worked along side two fellow students, on the website for ‘Be a hero’. A coaching company started in September 2021, by Benthe, with years of experience in the field. <br/> She already has an established customer base, but needed a responsive website, that gives a quick overview of her, her business, and its services...",
+        "build": [
+            {"tech": "HTML/CSS"},
+            {"tech": "JavaScript"}
+        ],
+        "imgs": [
+            { 
+                "imgId": 39011715,
+                "imgSrc": "/data/media/beahero/headlogv2.png",
+                "imgAlt": "Be A Hero",
+                "imgDesc": "Image description..."
+            },
+            { 
+                "imgId": 48359891,
+                "imgSrc": "/data/media/beahero/mocklap.png",
+                "imgAlt": "Be A Hero",
+                "imgDesc": "Image description..."
+            },
+            { 
+                "imgId": 95462026,
+                "imgSrc": "/data/media/beahero/mockphone.png",
+                "imgAlt": "Be A Hero",
+                "imgDesc": "Image description..."
+            },
+            { 
+                "imgId": 68345316,
+                "imgSrc": "/data/media/beahero/log23v2.png",
+                "imgAlt": "Be A Hero",
+                "imgDesc": "Image description..."
+            }
+        ]
+
+    },
+
+    {
+        "id": 88656140,
+        "value": 1,
+        "online": "y",
+        "title": "TaskRoomies",
+        "link": null,
+        "repo": "https://github.com/trolle18/TaskRoomies",
+        "descHtml": "<span>TaskRoomies is a web app for roommates, dorms and other cohabitants. <br/> Its purpose is to provide a clear, easy overview of the shared household chores, and thus remove the stress and mental energy of keeping track of who does what when. <br/> It also comes with a personal list, to keep track of all your personal to-do's and chores.</span>",
+        "shortHtml": "<span>TaskRoomies is a web app for roommates, dorms and other cohabitants. <br/> Its purpose is to provide a clear, easy overview of the shared household chores, and thus remove the stress and mental energy of keeping track of who does what when. <br/> It also comes with a personal list, to keep track of all your personal to-do's and chores...</span>",
+        "short": "TaskRoomies is a web app for roommates, dorms and other cohabitants. <br/> Its purpose is to provide a clear, easy overview of the shared household chores, and thus remove the stress and mental energy of keeping track of who does what when. <br/> It also comes with a personal list, to keep track of all your personal to-do's and chores...",
+        "build": [
+            {"tech": "React.JS"},
+            {"tech": "Firebase"}
+        ],
+        "imgs": [
+            { 
+                "imgId": 12876935,
+                "imgSrc": "/data/media/taskroomies/task-mock.png",
+                "imgAlt": "Taskroomies",
+                "imgDesc": ""
+            },
+            { 
+                "imgId": 71512490,
+                "imgSrc": "/data/media/taskroomies/taskroomies-logo1.png",
+                "imgAlt": "Taskroomies",
+                "imgDesc": ""
+            },
+            { 
+                "imgId": 89077327,
+                "imgSrc": "/data/media/taskroomies/taskroomies-logo2.png",
+                "imgAlt": "Taskroomies",
+                "imgDesc": ""
+            },
+            { 
+                "imgId": 49672184,
+                "imgSrc": "/data/media/taskroomies/task-mock-b1.png",
+                "imgAlt": "Taskroomies",
+                "imgDesc": ""
+            }
+        ]
+    },
+
+    {
+        "id": 40637227,
+        "value": 3,
+        "online": "y",
+        "title": "Generaxion",
+        "link": null,
+        "repo": null,
+        "descHtml": "<span>During my 2nd semester at the business academy, we were given the task of creating and incorporating a job agent prototype, for Generaxions job site, for any interested job seekers to use and apply through, and be notified if an open position suiting them were to be published.</span> <span>Our goal were to make it easy, user-friendly and simple to use. We also needed to create some eye-catching branding for company’s social media platforms, to promote the job agent and reach possible job seekers.</span>",
+        "shortHtml": "<span>During my 2nd semester at the business academy, we were given the task ofcreating and incorporating a job agent prototype, for Generaxion’s job site, for any interested job seekers to use and apply through, and be notified if an open position suiting them were to be published...</span>",
+        "short": "During my 2nd semester at the business academy, we were given the task ofcreating and incorporating a job agent prototype, for Generaxion’s job site, for any interested job seekers to use and apply through, and be notified if an open position suiting them were to be published...",
+        "build": [
+            {"tech": "HTML/CSS"},
+            {"tech": "JavaScript"}
+        ],
+        "imgs": [
+            { 
+                "imgId": 75850956,
+                "imgSrc": "/data/media/generaxion/fbpost.png",
+                "imgAlt": "Generaxion",
+                "imgDesc": ""
+            },
+            { 
+                "imgId": 82281931,
+                "imgSrc": "/data/media/generaxion/fb-post-zen.png",
+                "imgAlt": "Generaxion",
+                "imgDesc": ""
+            },
+            { 
+                "imgId": 34696206,
+                "imgSrc": "/data/media/generaxion/generaxion-1.png",
+                "imgAlt": "Generaxion",
+                "imgDesc": ""
+            },
+            { 
+                "imgId": 68417484,
+                "imgSrc": "/data/media/generaxion/generaxion-3.png",
+                "imgAlt": "Generaxion",
+                "imgDesc": ""
+            }
+        ]
+    },
+
+    {
+        "id": 61037089,
+        "value": 4,
+        "online": "y",
+        "title": "Miscellaneous",
+        "link": null,
+        "repo": null,
+        "descHtml": "<span>Besides working on projects as a part of my education, I also experiment and do a lot of programming, designing or illustrating in my spare time, which also helps me learn and expand my knowledge.</span> <span>These are just a few examples of what I have been working on:<br> A Tic Tac Toe game, some vector illustrations made in illustrator, and an svg, which “draws” when you scroll.</span>",
+        "shortHtml": "<span>Besides working on projects as a part of my education, I also experiment and do a lot of programming, designing or illustrating in my spare time, which also helps me learn and expand my knowledge...</span>",
+        "short": "Besides working on projects as a part of my education, I also experiment and do a lot of programming, designing or illustrating in my spare time, which also helps me learn and expand my knowledge...",
+        "build": null,
+        "imgs": [
+            { 
+                "imgId": 59658383,
+                "imgSrc": "/data/media/miscellaneous/flat-animals.png",
+                "imgAlt": "Miscellaneous",
+                "imgDesc": ""
+            },
+            { 
+                "imgId": 51654751,
+                "imgSrc": "/data/media/miscellaneous/svgscroll.png",
+                "imgAlt": "Miscellaneous",
+                "imgDesc": ""
+            },
+            { 
+                "imgId": 65255951,
+                "imgSrc": "/data/media/miscellaneous/tictactoe-v1.png",
+                "imgAlt": "Miscellaneous",
+                "imgDesc": ""
+            },
+            { 
+                "imgId": 61674856,
+                "imgSrc": "/data/media/miscellaneous/illpf.png",
+                "imgAlt": "Miscellaneous",
+                "imgDesc": ""
+            }
+        ]
+    }
+  ]

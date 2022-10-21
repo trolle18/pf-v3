@@ -2,7 +2,6 @@ import { useState, useEffect } from "react";
 import '../scss/Work.scss';
 import WorkArticle from "./WorkArticle";
 
-
 export default function Work() {
     const [articles, setArticles] = useState([]);
 
@@ -16,7 +15,6 @@ export default function Work() {
         getData();        
     }, []);
 
-
     return (
         <>
             <section className="work-cntr section" id="work">
@@ -25,10 +23,11 @@ export default function Work() {
                     <p className="sub-title">Here is a few of the projects I have been working on</p>
                 </div>
 
-                {articles.map( (article ) => (
-                    <WorkArticle article={article} key={article.id} />
-                ))}
-                
+                {articles
+                .sort ((a, b) => a.value > b.value ? 1 : -1)
+                .map((article) => (
+                    <WorkArticle article={article} key={article.id}/>
+                ))}                
             </section>
         
         </>

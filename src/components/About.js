@@ -1,7 +1,39 @@
+// import { useEffect, useState } from "react";
 import PfImg from "../assets/pf-g-iso.webp";
 import '../scss/About.scss';
 
 export default function About() {
+
+    // const [contents, setContents] = useState([]);
+    // // Fetch content from JSON
+    // useEffect(() => {
+    //     async function getData() {
+    //         const response = await fetch("/data/compData/projects.json");
+    //         const data = await response.json();
+    //         setContents(data);             
+    //     }       
+    //     getData();        
+    // }, []);
+
+    // let secObserverOptions = {
+    //     threshold: 0.25
+    // };
+    // var secObserver = new IntersectionObserver(secObserverCallback, secObserverOptions);
+    // function secObserverCallback(entries, observer) {
+    //     entries.forEach(entry => {
+    //         entry.target.classList.toggle("secShow", entry.isIntersecting)
+    //         if (entry.isIntersecting) {
+    //             observer.unobserve(entry.target)
+    //         }
+    //     });
+    // };
+    // let secTarget = '.sec';
+    // document.querySelectorAll(secTarget).forEach((i) => {
+    //     if (i) {
+    //         secObserver.observe(i);
+    //         console.log("observings")
+    //     }
+    // });    
 
     return (
         <>
@@ -34,16 +66,21 @@ export default function About() {
                             <ul className="skill-list">
                             {/* // eslint-disable-next-line */}
                                 <li><span>HTML5 & CSS3</span></li>
-                                <li><span>React.JS</span></li>
-                                <li><span>JavaScript (ES6+)</span></li>
-                                <li><span>SCSS / Sass</span></li>
-                                <li><span>jQuery</span></li>
+                                <li><span>SCSS / Sass</span></li>                             
+                                <li><span>jQuery</span></li>                           
                                 <li><span>Firebase</span></li>
+                                <li><span>JavaScript (ES6+)</span></li>
+                                <li><span>React.JS</span></li>
+                                <li><span>TypeScript</span></li>
+                                <li><span>Next.JS</span></li>
+                                <li><span>Chakra UI</span></li>
+                                <li><span>Umbraco CMS</span></li>
+                               
                             </ul>
                     </div>
                 </div>
 
-                <div className="img-cntr">
+                <div className="img-cntr ">
                     <div className="img-box">
                         <img src={PfImg} className="pf-img" alt="Sofie Trolle"/>
                     </div>

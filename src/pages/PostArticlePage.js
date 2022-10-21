@@ -4,135 +4,202 @@ import { BiLeftArrowAlt } from 'react-icons/bi'
 import '../scss/ArticlePage.scss';
 
 export default function PostArticlePage() {
-    const [post, setPost] = useState({});
-    const params = useParams();
-    const postId = parseInt(params.id);
-    
+  const [post, setPost] = useState({});
+  const params = useParams();
+  const postId = parseInt(params.id);
+  
+  // Fetch and set article data
+  useEffect(() => {
+    async function getData() {
+      const response = await fetch("/data/posts.json"); // Fetch data from JSON
+      const data = await response.json();
 
-    // Fetch and set article data
-    useEffect(() => {
-        async function getData() {
-            const response = await fetch("/data/posts.json"); // Fetch data from JSON
-            const data = await response.json();
-
-            const postData = data.find(item => item.id === postId); // Get matching id
-            setPost(postData);
-        }
-        if (postId) { // If id is found, set data
-            getData();
-        }
-    }, [postId])
-
-
-    // Get first img
-    function getImg(post) {
-        if (post.imgs?.length >= 1) {
-            return post.imgs[0]?.imgSrc;
-        } 
-    };
+      const postData = data.find(item => item.id === postId); // Get matching id
+      setPost(postData);
+    }
+    if (postId) { // If id is found, get data
+      getData();
+    }
+  }, [postId])
 
 
-    return (
-        <>
-            <section className="page">
-                <div className="page-header">
-                    <Link to='/posts'><BiLeftArrowAlt/> Posts </Link>
-                </div>
+  // Get first img
+  function getImg(post) {
+    if (post.imgs?.length >= 1) {
+      return post.imgs[0]?.imgSrc;
+    } 
+  };
 
-                <article  key={post?.id} className="article">
-                    <div className="article-header">
-                        <div className='header-img'>
-                            <img src={getImg(post)} alt="" />
-                        </div>  
 
-                        <div className='article-title-box'>
-                            <div className="article-title">
-                                <h1>{post?.title}</h1>
-                                <div className="date">
-                                    <p>{post.date}</p>
-                                </div>
-                            </div>    
-                            <div className='subtitle'><h3>{post?.subtitle}</h3></div>
-                        </div>
-                        
-                    </div>
+  return (
+    <>
+      <section className="page">
+        <div className="page-header">
+            <Link to='/15082022'><BiLeftArrowAlt/> Posts </Link>
+        </div>
 
-                    <div className="article-content" dangerouslySetInnerHTML={ {__html: post.descHtml} }></div>    
+        <article  key={post?.id} className="article">
+          <div className="article-header">
+            <div className='header-img'>
+              <img src={getImg(post)} alt="" />
+            </div>  
 
-                    {/* <div class='article-content'>
-                        <div class='article-text-section'>
-                            <p>Mandag d. 22 er starten på min 3. uge i praktikken, og jeg er så småt begyndt at føle jeg er faldet til, selvom jeg kan mærke jeg stadigt er meget genert blandt alle de nye mennesker, heldigvis er alle super søde, nede på jorden og gode til at joke med hinanden. Alt i alt er det et super dejligt kontor jeg er havnet i!</p>
-                            <p>
-                                I denne uge kunne min projektgruppe og jeg endeligt gå i gang med design-delen af projektet Space Debris Inc. Vores forrige uge var meget mere løs og en general into, i denne uge har vi bestemt haft mere at se til, i form af skitser, mockups, moodboards, wireframes, mockups og logodesign.
-                                Vi har fået en ny "uge-ansvarlig", som i denne uge var Nicklas. Vi har en ny hver uge for at møde og arbejde med forskellige "team-leads", sidste uges uge-ansvarlige var Simon H.
-                            </p>
-                        
-                            </div>
+            <div className='article-title-box'>
+              <div className="article-title">
+                  <h1>{post?.title}</h1>
+                  <div className="date">
+                    <p>{post.date}</p>
+                  </div>
+              </div>    
+              <div className='subtitle'>
+                <h3>{post?.subtitle}</h3>
+              </div>
+            </div>
+          </div>
 
-                        <div class='article-text-section'>
-                            <h4>Uge 3</h4>
-                            <p>
-                                I denne uge kunne min projektgruppe og jeg endeligt gå i gang med design-delen af projektet Space Debris Inc. Vores forrige uge var meget mere løs og en general into, i denne uge har vi bestemt haft mere at se til, i form af skitser, mockups, moodboards, wireframes, mockups og logodesign.
-                                Vi har fået en ny "uge-ansvarlig", som i denne uge var Nicklas. Vi har en ny hver uge for at møde og arbejde med forskellige "team-leads", sidste uges uge-ansvarlige var Simon H.
-                            </p>
-                            <p>
-                                Mandagen havde mig gruppe og jeg et møde sammen med vores uge-ansvarlige, Nicklas. Her snakkede vi om hvad vi havde lavet indtil videre, hvordan det gik, hvad vi skal i denne uge osv.
-                            </p>
-                            <p>
-                                Nicklas foreslog at ham og jeg kunne tage til København og se kontoret der ovre, samt give mig muligheden for at møde de andre praktikanter som jeg har arbejdet sammen med. Hos AKQA Denmark er det nemt at kunne rejse mellem de to kontorer for at arbejde, hvilket jeg synes er super fedt, da jeg kan forestille mig at det fremmer samarbejdet mellem kontorene en del.
-                            </p>
+          <div className="article-content" dangerouslySetInnerHTML={ {__html: post.descHtml} }></div>    
 
-                            <p>
-                                Nicklas fik arengeret turen til København, og tidligt onsdag morgen tog jeg afsted med toget fra Aarhus Hovedbanegård, med en dejlig plads i 1' klasse. Nicklas hoppede med på toget i Frederecia, og så gik turen ellers mod København. det var super fedt at få lov til at hilse på de andre praktikanter, men også at se kontoret i København, og bruge lidt tid der ovre.
-                            </p>
-                        </div>
+          {/* ----- template ----- */}
+          {/* <div class='article-content'>
+            <div class='article-text-section'>
+              <p>
+                Uge 7 og 8 af mit praktikforløb vakker mod enden, vi har fået præsenteret vores intro-projekt, 
+                og jeg har endeligt kunne komme på nogle rigtige projekter!
+              </p>
+              <p>
+                Jeg har fundet ud af, hvad jeg (højest sandsyneligt) skal arbejde på til min hovedopgave, 
+                hvilket jeg er super spændt på! Der havde været lidt snak og overvejelser om, 
+                hvorvidt det ville blive Oister, Change Lingeri eller Carlsbergfondet, 
+                og det ser ud til at det bliver Carlsbergfondet. Det bliver helt sikkert en fed mulighed og oplevelse, 
+                at få lov til at være med på det projekt! <br/>
+                Det bliver umiddelbart først i min 9. uge, efter hovedopgavens kick-off, 
+                at jeg kommer i gang med Carlsbergfondet. Intil da, er jeg sat på andre projekter, så som Andelskassen.
+              </p>                        
+            </div>
+         
+            <div class='article-text-section'>
+              <h4>Uge 7</h4>
+              <div class='large-img-cntr'>
+                <img src='/data/media/posts/sdadminsales.png' alt='admin-sales-page'/>
+              </div>
+              <p>
+                I denne uge er vi i slutspurten af vores intro-projekt, og skal fremlægge det for kontoret på torsdag. 
+                Mandag bruger jeg på at arbejde videre på admin-siderne, og funtionaliteterne dertil.
+              </p>
+              <h5>Sales</h5>
+              <p>
+                Den første admin-side er godt og vel færdig, som er Sales. 
+                Denne side viser et overblik over virksomhedens antal kunder, 
+                profit og revenue inkl. en graf, over et døgn, en uge eller månedsvist.
+                Der er nogle mindre bugs hist og her som jeg skal have kigget på, 
+                men umiddelbart kommer den fint frem, og gør det den skal.
+              </p>
+              <p>
+                Dataen kommer som sagt fra noget mock-data, som i dette tilfælde er en lokal fil, med nogle arrays.
+                Der er en array til <span class='ital'>''day''</span>, <span class='ital'>''week''</span> og <span class='ital'>''month''</span> dataen, 
+                hvor hver af dem indeholder det tilhørende data for revenue, profit og costumers.
+              </p>
+              <p>
+                Jeg startede med at bygge mock-dataen op, fra bunden, jeg startede derfor med <span class='ital'>''day''</span>, altså et døgn. 
+                Hver time tilskrev jeg en værdi for revenue / profit / customers,
+                den sammenlagte værdi fra dette døgn, brugte jeg til at begynde at bygge på mock-dataen til for en uge, 
+                hvor <span class='ital'>''monday''</span> var lavet af det første døgns mock-data.
+                sådan fortsatte jeg til jeg havde bygget en hel uge op, og ud fra den samme model, byggede jeg månederne op.
+              </p>
+              <p>
+                Procenterne er også lavet ud fra mock-dataen. Her programmerede jeg en funktion, som tog hele f.eks. et døgn data, lagde sammen, 
+                og derefter udregnede gennemsnittet af dette. 
+                Gennemsnittet omregnede jeg til et procenttal. Dette tal er ikke ment til at være realistisk, eller præcist, 
+                men blot for visualiseringen.
+              </p>
 
-                        <div class='article-text-section'>
-                            <h4>Amsterdam</h4>
-                            <div class='img-cntr'>
-                                <img src='/data/media/posts/amsterdamhuse.jpg' alt='amsterdam huse'/>
-                            </div>
-                            <p>
-                                Uge 3 sluttede med en tur til Amsterdam, fra fredag d. 26 til søndag d. 28. Hvert år tager AKQA på en firmarejse i en weekend, sidste år var de f.eks. i Berlin. Jeg var så heldig at få lov til at komme med! De sørgede for fly og hotel, samt aftensmad lørdag aften.
-                            </p>
-                            <p>
-                                Vi landede med flyet i Amsterdam omkring klokken 11, og var fremme ved hotellet ca. en time senere. Jeg havde forventet at jeg skulle dele værelse med nogen, men nej-nej, jeg fik mit eget med en stor lækker seng og lækkert badeværelse! 
-                            </p>
-                            <p>
-                                Fredagen blev hovedsagligt brugt på at gå lidt rundt i området og se lidt af byen, nogen havde planer, selv skulle jeg i et escape room med nogle af de andre. Om aftenen var vi inviteret til fest ved noget der hed Waterkant, hvor der var fri bar til alle fra AKQA. 
-                            </p>
-                            <p>
-                                Lørdag var endnu en rolig dag, den lignede meget dagen før. Om eftermiddagen tog jeg på museeum med en anden fra kontoret, hvilket var super fedt. Lørdag aften var der en firma-event i SkyLounge Amsterdam, det havde en fantastisk udsigt over Amsterdam! Det var meget fancy og exclusivt, så jeg følte mig en smule under-dressed i mine jeans, t-shirt og åbne skovmands-skjorte... Heldigvis så jeg hurtigt mange i lignende tøj, så helt ved siden af var jeg ikke!
-                            </p>
-                            <div class='img-cntr'>
-                                <img src='/data/media/posts/img_20220827_191229e.jpg' alt='skylounge amsterdam'/>
-                            </div>
-                        </div>
+              <div class='large-img-cntr'>
+                <img src='/data/media/posts/adminpagerockets.png' alt='rockets page'/>
+              </div>
+              <h5>Rockets</h5>
+              <p>
+                I løbet af mandagen, følte jeg ikke længere at jeg kunne vente på at få raketterne op og køre fra vores backend/CMS'en.
+                Jeg endte derfor med at bygge raket-siden op, ved brug af Next's egen API, og mock-data fra en lokal fil med en array.
+              </p>
+              <p>
+                Next's API routes giver muligheden for at opbygge en API med Next. Inde i mappen <span class='ital'>''pages''</span>, findes alle fileren til appens sider, 
+                men også en mappe kaldet <span class='ital'>''api''</span>. Enhver fil i api-mappen, ligesom de der ligger i <span class='ital'>''pages''</span>, 
+                men de vil blive behandlet som en API-endpoint istedet for en side. 
+                De er <span class='ital'>''server-side only bundles''</span> og vil derfor ikke øge vores client-side bundle (Altså, vil det ikke tynge appen).
+              </p>
+              <p>
+                Ved at lave raket-siden med API'en, kan jeg også bygge nogle undersider op, 
+                f.eks. en side jeg kan komme til, ved at klikke på en raket fra raket-siden, 
+                og blive ført videre til en side hvor jeg kan redigere eller slette den specifikke raket.
+                Jeg lavede også en underside hvor jeg kunne lave nye raketter.
+              </p>
+              <div class='img-outer-cntr'>
+                <div class='sec-img-cntr'>
+                  <img src='/data/media/posts/admineditrocket.png' alt='edit rocket'/>
+                </div> 
+                <div class='sec-img-cntr'>
+                  <img src='/data/media/posts/c-adminpageaddrocket.png' alt='add rocket'/>
+                </div> 
+              </div>   
+            </div>
+             
 
-                            
+            <div class='article-text-section'>
+              <h4>Uge 8</h4>
+              <p>
+                I denne uge har jeg endeligt fået lov til at arbejde på nogle rigtige projekter. 
+                Jeg blev hurtigt sat på lidt forskellige projekter, 
+                som Andelskassen, Carlsberg Headless, og Carlsbergfondet.
+              </p>
 
-                            <div class='article-text-section'>
-                                <h4>Uge 4</h4>
-                                <p>
-                                    Uge 4 startede vi op igen klar og friske (nogenlunde da) mandag morgen, hvor vi nu kunne få lov til at gå i gang med at kigge på noget programmering! Denne uges uge-ansvarlige er Simon (En anden Simon end den tidligere uge-ansvarlige).
-                                </p>
-                                <p>
-                                    Mandag gav Simon et hurtigt crash-course i Next bygget med TypeScript, da det er dét vi skal bruge til at lave vores projekt. Der var jeg glad for at jeg havde kigget på det i forvejen, for selvom det ligner React ret meget - da det er bygget på det, er der selvfølgeligt stadigt nogle ting som skal gøres anderledes.
-                                </p>
-                                <p>
-                                    Tirisdag gav Simon os et crash-course i Chakra UI, som til gengæld er noget helt nyt for mig. Det er et library som man kan bruge til React, til at style componenter og moduler nemt og hurtigt. <br/>
-                                    Onsdag kiggede på vi data-flow i Next, og hvordan man bedst binder det sammen med en REST API, og for det renderet bedst muligt.
-                                </p>
-                                <p>
-                                    Min multimediedesigner makker i gruppen havde haft mere besvær med Chakra UI end hvad var nyttigt, og havde desværre ikke haft oplevelsen af at det skulle gøre det nemmere og hurtigere at bygge web apps. Jeg har heldigvis været heldig, og siddet lige bag ved Simon, og derved haft let ved at søge hjælp. <br/>
-                                    Vi har derfor spurgt om lov til at få indkorporeret lidt sass i projektet, til at lette frustrationerne og få styr på stylingen.
-                                </p>
-                            </div>
-                    </div> */}
-                                                
-                </article>
+              <h5>Andelskassen</h5>
+              <p>
+                Dette er et igangsværende projekt, for Andelskassen, som er en ny hjemmeside. 
+                Her arbejder jeg sammen med en blandet af nogle fra Aarhus kontoret, og nogle fra Københavns kontor. 
+                Projektet er lavet med JavaScript, Sass, #C og Umbraco som CMS. 
+                Projektet er allerede ret langt, og de fleste opgaver er derfor mindre opgaver, 
+                så som ting der skal rettes eller hvor der er brug for troubleshooting. 
+              </p>
+              <p>
+                En af de opgaver der skulle udføres, var nogle links, som var sorte. 
+                Problemet her, var at de altid var sorte, selv på mørke baggrunde, hvilket gjorde dem svære at læse. 
+                Opgaven var derfor at sørge for, at de var hvide, når de var på en mørkbaggrund. 
+                For at rette dette, skulle jeg finde de tilfælde hvor der var brug for at linksne var hvide, 
+                som var i nogle cards, der havde en mørk baggrund. 
+                Jeg kunne derfor finde den tilhørende Sass-fil, til de cards, og rette stylingen, 
+                således at de links som var inde i de cards ville være hvide.
+              </p>
+              <p>
+                En anden opgave jeg fik, var at sørge for at hvis der var en længere titel inde i en sektion, 
+                hvor et ord blev for langt, at de så ville blive brudt op de rigtige steder.
+                For at løse dette fandt jeg først den tilhørende Sass-fil, hvor jeg kunne ændre stylingen, 
+                så der kom en hyphen, når et ord blev brudt op, og fortsatte på næste linje.
+              </p>
+              <div class='img-outer-cntr'>
+                <div class='sec-img-cntr'>
+                  <img src='/data/media/posts/nohyphen.png' alt='edit rocket'/>
+                </div> 
+                <div class='sec-img-cntr'>
+                  <img src='/data/media/posts/whyphen.png' alt='add rocket'/>
+                </div> 
+              </div>   
+              <p>
+                Problemet med denne løsning var bare, at man ikke kunne regne med at ordet ville blive delt op, 
+                på en måde der var grammatisk korrekt. 
+                Jeg skulle derfor finde ud af en måde, vha. JavaScript, at støtte op om den måde, stylingen indsatte hyphens. 
+                Jeg fandt en package, kaldet <span class='ital'>''Hyphen''</span>, som jeg kunne tilføje og implementere. <br/>
+                Jeg kunne derfor, i min JavaScript, først specifisere hvad, jeg gerne ville have fat på fra html'en, 
+                i dette tilfælde var det titlen med en class kaldet <span class='ital'>''text-image__headline''</span>. 
+                Jeg kunne derefter, med Hyphen-packagen, lave en løsning, så den sørgede for at dette ord, 
+                blev delt op korrekt efter dansk grammatik. 
+              </p>               
+            </div>
+          </div> */}
+          {/* ----- template ----- */}
+                                        
+        </article>
 
-            </section>
-        </>
-    );
+      </section>
+    </>
+  );
 };

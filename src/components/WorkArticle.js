@@ -1,6 +1,5 @@
 import { AiOutlineGithub, AiOutlineLink } from "react-icons/ai"
 
-
 export default function WorkArticle( {article} ) {
 
     // Only render link, if the article link excists
@@ -8,14 +7,10 @@ export default function WorkArticle( {article} ) {
         const isLink = article.link;
         if(isLink) {
             return(
-                <a href={article.link}> <AiOutlineLink/> </a>
+                <a href={article.link} className="elem"> <AiOutlineLink/> </a>
             )
         }
-        else{
-            return(
-                null
-            )
-        }
+        else{ return(null) }
     }
 
     // Only render repo, if the article link excists
@@ -23,14 +18,10 @@ export default function WorkArticle( {article} ) {
         const isRepo = article.repo;
         if(isRepo) {
             return(
-                <a href={article.repo}> <AiOutlineGithub/> </a>
+                <a href={article.repo} className="elem"> <AiOutlineGithub/> </a>
             )
         }
-        else{
-            return(
-                null
-            )
-        }
+        else{ return(null) }
     }
 
     // Only render build, if the article link excists
@@ -39,56 +30,53 @@ export default function WorkArticle( {article} ) {
         if(isBuild) {
             return(
                 article.build.map((build, i) => {
-                    return( <span key={i}>{build.tech}</span> )
+                    return( <span key={i} className="elem">{build.tech}</span> )
                 })
             )
         }
-        else{
-            return(
-                null
-            )
-        }
+        else{ return(null) }
     }
 
-    // Intersection observer
-    const cards = document.querySelectorAll(".card")
-    const observer = new IntersectionObserver( 
-        entries => {
-            entries.forEach(entry => {
-                entry.target.classList.toggle("show", entry.isIntersecting)
-                if (entry.isIntersecting) observer.unobserve(entry.target)
-            })
-        }, 
-        {
-            rootMargin: "100px",
-            // threshold: 0,
-        }        
-    )
-    cards.forEach(card => {
-        observer.observe(card)
-    })
+    // // Intersection observer
+    // let cardObserverOptions = {
+    //     threshold: 0.25
+    // };
+    // var cardObserver = new IntersectionObserver(cardObserverCallback, cardObserverOptions);
+    // function cardObserverCallback(entries, observer) {
+    //     entries.forEach(entry => {
+    //         entry.target.classList.toggle("show", entry.isIntersecting)
+    //         if (entry.isIntersecting) {
+    //             observer.unobserve(entry.target)
+    //         }
+    //     });
+    // };
+    // let cardTarget = '.card';
+    // document.querySelectorAll(cardTarget).forEach((i) => {
+    //     if (i) {
+    //         cardObserver.observe(i);
+    //     }
+    // });
 
    
     return (
         <>
-            <article key={article.id} className="project">
+            <article key={article.id} className="project card">
                 <div className="project-gallery-cntr">
                     <div className="project-gallery">
                         {article.imgs.map((imgs, imgId) => {
                             return( 
-                                <div className="img-cntr">
-                                    <img key={imgId} src={imgs.imgSrc} alt={imgs.ImgAlt}/> 
+                                <div className="img-cntr" key={imgId}>
+                                    <img src={imgs.imgSrc} alt={imgs.ImgAlt} className="elem"/> 
                                 </div>
-                                )
+                            )
                         })}
                     </div>
                 </div>
 
                 <div className="project-txt"> 
                     <div className="project-header">
-
                         <div className="project-title">
-                            <h3>{article.title}</h3>
+                            <h3 className="elem">{article.title}</h3>
                             <div className="project-links">
                                 {getLink(article)}
                                 {getRepo(article)} 
@@ -101,7 +89,7 @@ export default function WorkArticle( {article} ) {
                     </div>
         
                     <div className="project-desc">
-                        <span dangerouslySetInnerHTML={ {__html: article.descHtml} }></span>
+                        <span className="elem" dangerouslySetInnerHTML={ {__html: article.descHtml} }></span>
                     </div>
                 </div>
             </article>

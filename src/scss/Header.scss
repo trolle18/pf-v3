@@ -19,10 +19,12 @@
         h1 {
             margin: .625rem 0;
             font-size: $fs_header;
+            animation: fadein 0.2s; 
         }
 
         span {
             font-family: $ff_mono;
+            animation: fadein 0.2s;
         }
     }
 
@@ -41,3 +43,13 @@
     }
 }
 
+@keyframes fadein {
+	0% {
+        opacity: 0; 
+        transform: translateY(0); 
+    }
+	100% { 
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}

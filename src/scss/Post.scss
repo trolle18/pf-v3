@@ -192,11 +192,11 @@
 
 
 
-/* Animations */
+// /* Animations */
 .card {
     opacity: 0;
     transform: translateY(0px);
-    transition: .2s;
+    transition: ease-in-out .4s;
 }
 
 .card.show {

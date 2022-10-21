@@ -48,12 +48,17 @@ h3 {
 
 h4 {
     font-size: $fs_ml;
+    text-transform: uppercase;
     margin-bottom: .625rem;
 }
 
 h5 {
     font-size: $fs_m;
-    margin-bottom: .625rem;
+    color: $txt_light;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: .2rem;
+    margin-top: 1rem;
 }
 
 p, span {
@@ -105,6 +110,33 @@ p, span {
     }
 }
 
+// /* Animations */
+// .card {
+//     opacity: 0;
+//     transform: translateY(0px);
+//     transition: ease-in-out .5s;
+// }
+
+// .card.show {
+//     opacity: 1;
+//     transform: translateY(0);
+
+//     .elem {
+//         transition: ease-in;
+//         animation: fade .25s;
+//     }
+// }
+
+// @keyframes fade {
+// 	0% {
+//         opacity: 0; 
+//         transform: translateY(0); 
+//     }
+// 	100% { 
+//         opacity: 1;
+//         transform: translateY(0%);
+//     }
+// }
 
 
 /* ---------- PAGE ---------- */
@@ -115,7 +147,7 @@ p, span {
     padding: 4em 0 0 0;
 
     .section {
-        margin: 0 0 5em 0;
+        margin: 2rem 0 10rem 0;
         padding: 5em 0 .5em 0;
     }
 

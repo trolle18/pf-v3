@@ -84,61 +84,6 @@ p, span {
     position: absolute;
 }
 
-
-/* ---------- SCROLL TO TOP BTN ---------- */
-.scrolltop-btn {
-    height: 25px;
-    width: 25px;
-    bottom: 15px;
-    right: 10px;
-    margin: 0 0;
-    padding: 0 0;
-    z-index: 99;
-    display: none;
-    position: fixed;
-    cursor: pointer;
-    background-color: rgba(0, 0, 0, .5);
-    border: solid $clr_l_grey 1px;
-    border-radius: 15px;
-
-    svg {
-        height: 12px;
-        width: auto;
-        margin: auto auto;
-        padding: 1px;
-        color: $clr_l_grey;
-    }
-}
-
-// /* Animations */
-// .card {
-//     opacity: 0;
-//     transform: translateY(0px);
-//     transition: ease-in-out .5s;
-// }
-
-// .card.show {
-//     opacity: 1;
-//     transform: translateY(0);
-
-//     .elem {
-//         transition: ease-in;
-//         animation: fade .25s;
-//     }
-// }
-
-// @keyframes fade {
-// 	0% {
-//         opacity: 0; 
-//         transform: translateY(0); 
-//     }
-// 	100% { 
-//         opacity: 1;
-//         transform: translateY(0%);
-//     }
-// }
-
-
 /* ---------- PAGE ---------- */
 .page {
     height: auto;

@@ -3,7 +3,6 @@ import { IoIosArrowUp } from "react-icons/io";
 import "../scss/ScrollToTop.scss";
 
 export default function ScrollToTop() {
-
     // Calls function watchScroll when page is scrolled
     useEffect(() => {
         window.onscroll = function () {
@@ -22,15 +21,16 @@ export default function ScrollToTop() {
 
     // Scrolls to 0 px from top, smooth-scroll
     function scrollToTop() {
-        window.scrollTo({
-            top: 0,
-            behavior: "smooth"
-        });
+        window.scrollTo({ top: 0, behavior: "smooth" });
     }
 
-
     return (
-        <button className="scrolltop-btn" id="scrollToTop" onClick={scrollToTop} title="Scroll to top">
+        <button 
+        className="scrolltop-btn"
+        id="scrollToTop"
+        title="Scroll to top"
+        onClick={scrollToTop}
+        >
             <IoIosArrowUp/>
         </button>
     );

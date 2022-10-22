@@ -83,12 +83,14 @@
 
             
             &__menu-btn {
-                height: auto;
+                height: 20px;
                 width: 20px;
-                border: none;
+                margin: auto 0;
+                border: solid red 0px;
                 text-transform: uppercase;
                 background-color: transparent;
                 cursor: pointer;
+                position: relative;
                 
                 svg {
                     height: 100%;
@@ -96,29 +98,51 @@
                     stroke-width: 1px;
                     stroke-linecap: round;
                     stroke: $txt_light;
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+
+                    :first-child {
+                        position: absolute;
+                        left: 0;
+                        transform: rotate(0deg);
+                        transition: .25s;           
+                    }
+                  
+                    :nth-child(2) {
+                        position: absolute;
+                        left: 0;
+                        opacity: 1;
+                        transform: translateX(0px);
+                        transition: .25s;
+                    }
+                    
+                    :nth-child(3) {
+                        position: absolute;
+                        transform: rotate(0deg);
+                        transition: .25s;
+                    }
                 }
             }
 
             // &__menu-btn.change {                
             //     svg {
             //         stroke: $clr_acc_yel;
-
-            //         :first-child { animation: lineOne; }
-            //         @keyframes lineOne {
-            //             from { transform: rotate(0) }
-            //             to { transform: rotate(45deg) }
+            
+            //         :first-child {
+            //             transform: rotate(35deg);
+            //             transition: .25s;
             //         }
                   
-            //         :nth-child(2) { animation: lineTwo; }
-            //         @keyframes lineTwo {
-            //             from { opacity: 1; transform: translateX(0px) }
-            //             to { opacity: 0; transform: translateX(20px) }
+            //         :nth-child(2) {
+            //             opacity: 0;
+            //             transform: translateX(20px);
+            //             transition: .25s;
             //         }
                     
-            //         :nth-child(3) { animation: lineThree; }
-            //         @keyframes lineThree {
-            //             from { transform: rotate(0deg) }
-            //             to { transform: rotate(-45deg) }
+            //         :nth-child(3) { 
+            //             transform: rotate(-35deg);
+            //             transition: .25s;
             //         }
             //     }
             // }

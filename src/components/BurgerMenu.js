@@ -43,11 +43,7 @@ const BurgerMenu = () => {
   return (
     <>
       <button onClick={openMenu} className="nav-mob-links__menu-btn" id="menu-btn" >
-        <svg viewBox="0 0 10 8">
-          <path d="M1 1h8M1 "/>
-          <path d="M1 4h 8M1"/>
-          <path d="M1 7h8"/>
-        </svg>
+        <svg viewBox="0 0 10 8"> <path d="M1 1h8M1"/> <path d="M1 4h 8M1"/> <path d="M1 7h8"/> </svg>
       </button>
       <div className={`nav-mob-links__dropdown hidden ${show && ''}`} id="dropdown" >
         <a href="#about"> About </a> 

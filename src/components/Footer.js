@@ -2,6 +2,7 @@ import React, {useState, useEffect} from 'react';
 import { AiOutlineGithub, AiOutlineCodepen } from "react-icons/ai";
 import { TiSocialLinkedin } from "react-icons/ti";import { AiOutlineCopyrightCircle } from "react-icons/ai";
 import { FiCoffee, FiHeart } from "react-icons/fi"
+import "../scss/Footer.scss";
 
 
 export default function Footer() {

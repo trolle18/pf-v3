@@ -12,6 +12,7 @@
     justify-content: space-between;
 
     .about-content {
+        margin-left: 10px;
         .about-txt {
             height: auto;
             width: 100%;
@@ -99,6 +100,7 @@
         .about-content {
             height: auto;
             width: 80%;
+            margin-left: 0px;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
@@ -192,6 +194,7 @@
         .about-content {
             height: auto;
             width: 80%;
+            margin-left: 0px;
             display: flex;
             flex-direction: column;
             justify-content: space-between;

@@ -9,6 +9,7 @@
 }
 
 #nav-cntr {
+    border: solid blue 0px;
     height: 2em;
     width: 100%;
     margin: 0 auto;
@@ -25,12 +26,14 @@
     .nav-inner-cntr {
         width: 98%;
         margin: 0 auto;
+        padding: 0px 0px 0px 10px;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
     
         .nav-logo {
             margin: auto 0;
+            border: solid red 0px;
 
             a {
                 font-family: $ff_sans;
@@ -47,27 +50,93 @@
         }
 
         .nav-links {
-            width: 180px;
-            margin: auto 0;
+            display: none;
+            // width: 180px;
+            // margin: auto 0;
+            // display: flex;
+            // flex-direction: row;
+            // justify-content: space-between;
+
+            // a {
+            //     font-family: $ff_sans;
+            //     font-size: $fs_xs;
+            //     text-decoration: none;
+            //     text-transform: uppercase;
+            //     color: $txt_light;
+            //     transition: ease-in .02s;
+
+            //     &:hover {
+            //         color: $clr_acc_yel;
+            //     }
+            // }
+        }
+        .nav-mob-links {
+            border: solid red 0px;
+            display: contents;
+            width: 80px;
+            margin-top: 0;
+            margin-bottom: 0;
+            padding: 0 0 2px 2px;
             display: flex;
             flex-direction: row;
-            justify-content: space-between;
+            justify-content: flex-end;
+            vertical-align: middle;
 
-            a {
-                font-family: $ff_sans;
-                font-size: $fs_xs;
-                text-decoration: none;
+            &__menu-btn {
+                height: auto;
+                width: 20px;
+                border: none;
                 text-transform: uppercase;
-                color: $txt_light;
-                transition: ease-in .02s;
-
-                &:hover {
-                    color: $clr_acc_yel;
+                background-color: transparent;
+                cursor: pointer;
+                
+                svg {
+                    height: 100%;
+                    width: 20px;
+                    stroke-width: 1px;
+                    stroke-linecap: round;
+                    stroke: $txt_light;
                 }
+            }
+
+            &__dropdown {
+                border: solid red 0px;
+                width: inherit;
+                padding: 0px 0px 0px 2px;
+                top: 40px;
+                background-color: rgba(0, 0, 0, 0.9);
+                position: absolute;
+                display: flex;
+                flex-direction: column;
+                column-gap: 10px;
+
+                a {
+                    padding-bottom: 10px;
+                    font-family: $ff_sans;
+                    font-size: $fs_xs;
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    color: $txt_light;
+                    transition: ease-in .02s;
+    
+                    &:hover {
+                        color: $clr_acc_yel;
+                    }
+                }                
+            }    
+            
+            &__dropdown.show {
+                display: block;
+            }
+
+            &__dropdown.hidden {
+                display: none;
             }
         }
     }
 }
+
+
 
 @media (min-width: 600px) {
     #nav-cntr {
@@ -75,7 +144,7 @@
 
         .nav-inner-cntr {
             width: 90%;
-
+            padding: 0px;
             
         .nav-logo {
             margin: auto 0;
@@ -94,26 +163,48 @@
             }
         }
 
-        .nav-links {
-            width: 15rem;
-            margin: auto 0;
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
+            .nav-links {
+                display: none;
+                width: 15rem;
+                margin: auto 0;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
 
-            a {
-                font-family: $ff_sans;
-                font-size: $fs_s;
-                text-decoration: none;
-                text-transform: uppercase;
-                color: $txt_light;
-                transition: ease-in .02s;
+                a {
+                    font-family: $ff_sans;
+                    font-size: $fs_s;
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    color: $txt_light;
+                    transition: ease-in .02s;
 
-                &:hover {
-                    color: $clr_acc_yel;
+                    &:hover {
+                        color: $clr_acc_yel;
+                    }
                 }
             }
-        }
+            .nav-mob-links {
+                display: none;
+                // width: 15rem;
+                // margin: auto 0;
+                // display: flex;
+                // flex-direction: row;
+                // justify-content: space-between;
+
+                // a {
+                //     font-family: $ff_sans;
+                //     font-size: $fs_s;
+                //     text-decoration: none;
+                //     text-transform: uppercase;
+                //     color: blue;
+                //     transition: ease-in .02s;
+
+                //     &:hover {
+                //         color: $clr_acc_yel;
+                //     }
+                // }
+            }
         }
     }
 }
@@ -125,6 +216,7 @@
         .nav-inner-cntr {
             width: 90%;
             max-width: 1200px;
+            padding: 0px;
                 
             .nav-logo {
                 margin: auto 0;
@@ -144,6 +236,7 @@
             }
 
             .nav-links {
+                display: contents;
                 width: 15rem;
                 margin: auto 0;
                 display: flex;
@@ -164,6 +257,9 @@
                     }
                 }
             }
+            .nav-mob-links {
+                display: none;
+            }
         }
     }
 }
@@ -180,4 +276,3 @@
         transition: top ease-out .5s;
     }
 }
-

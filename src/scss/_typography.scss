@@ -1,0 +1,35 @@
+// Imports
+@import "variables";
+
+/* ---------- TYPOGRAPHY ---------- */
+h2 {
+    font-size: $fs_xxl;
+    text-transform: uppercase;
+    margin: .625rem 0;
+}
+
+h3 {
+    font-size: $fs_l;
+    margin-bottom: .625rem;
+}
+
+h4 {
+    font-size: $fs_ml;
+    text-transform: uppercase;
+    margin-bottom: .625rem;
+}
+
+h5 {
+    font-size: $fs_m;
+    color: $txt_light;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: .2rem;
+    margin-top: 1rem;
+}
+
+p, span {
+    font-size: $fs_s;
+    margin-bottom: .625rem;
+}
+

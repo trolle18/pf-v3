@@ -216,30 +216,30 @@
 }
 
 
-/* Animations */
-.card {
-    opacity: 0;
-    transform: translateY(0px);
-    transition: ease-in-out .5s;
-}
+// /* Animations */
+// .card {
+//     opacity: 0;
+//     transform: translateY(0px);
+//     transition: ease-in-out .5s;
+// }
 
-.card.show {
-    opacity: 1;
-    transform: translateY(0);
+// .card.show {
+//     opacity: 1;
+//     transform: translateY(0);
 
-    .elem {
-        transition: ease-in;
-        animation: fade .25s;
-    }
-}
+//     .elem {
+//         transition: ease-in;
+//         animation: fade .25s;
+//     }
+// }
 
-@keyframes fade {
-	0% {
-        opacity: 0; 
-        transform: translateY(0); 
-    }
-	100% { 
-        opacity: 1;
-        transform: translateY(0%);
-    }
-}
+// @keyframes fade {
+// 	0% {
+//         opacity: 0; 
+//         transform: translateY(0); 
+//     }
+// 	100% { 
+//         opacity: 1;
+//         transform: translateY(0%);
+//     }
+// }

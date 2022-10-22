@@ -5,9 +5,10 @@
 
 /* ---------- NAV ---------- */
 #navBar {
-    transition: top 0.25s; 
+    transition: top .25s;
 }
-.nav-cntr {
+
+#nav-cntr {
     height: 2em;
     width: 100%;
     margin: 0 auto;
@@ -69,7 +70,7 @@
 }
 
 @media (min-width: 600px) {
-    .nav-cntr {
+    #nav-cntr {
         width: 100%;
 
         .nav-inner-cntr {
@@ -118,7 +119,7 @@
 }
 
 @media (min-width: 992px) {
-    .nav-cntr {
+    #nav-cntr {
         width: 100%;
 
         .nav-inner-cntr {
@@ -164,6 +165,19 @@
                 }
             }
         }
+    }
+}
+
+// Scroll - show/hide nav
+#nav-cntr {
+    &.active {
+        top: 0px;
+        transition: top ease-out .4s;
+    }
+
+    &.active.false {
+        top: -3em;
+        transition: top ease-out .5s;
     }
 }
 

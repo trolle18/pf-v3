@@ -39,9 +39,9 @@ const Nav = () => {
 
   return (
     <>
-    {sectionData.map((data) => (
       <nav className={`active ${show && ''}`} id="nav-cntr">
-          <div className="nav-inner-cntr">
+        {sectionData.map((data) => (
+          <div className="nav-inner-cntr" key={data.id}>
                 <div className="nav-logo"> 
                   {data?.logoLink.map((logoLink) => (
                     <a key={logoLink.id} href={logoLink.link}>
@@ -58,15 +58,12 @@ const Nav = () => {
                     ))}    
                 </div>
 
-                {/* {data?.navLinks.map((navLink) => ( */}
                 <div className="nav-mob-links">                 
                     <BurgerMenu data={data}/>               
-                </div>
-                {/* ))} */}
-                              
+                </div>                              
             </div>
+        ))}
       </nav>
-    ))}
     </>       
   );
 };

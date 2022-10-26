@@ -3,9 +3,9 @@ import '../scss/Nav.scss';
 import { useEffect, useState } from 'react';
 
 const BurgerMenu = () => {
-
   const [show, setShow] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
+  // const [data, setData] = useState([]);
 
   // HIDE DROPDOWN ON SCROLL
   const controlShow = () => {

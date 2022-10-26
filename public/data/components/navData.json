@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1566,
+    "online": "y",
+    "title": "Nav",
+    "desc": "Feel free to send an email, whether you have any questions or just to say hi, and I'll get back to you!",
+    "logoLink": [
+      {
+        "id": 132,
+        "linkTxt": "Sofie Trolle",
+        "link": "/"
+      }
+    ],
+    "navLinks": [
+      {
+        "id": 981,
+        "linkTxt": "About",
+        "link": "#about"
+      },
+      {
+        "id": 761,
+        "linkTxt": "Work",
+        "link": "#work"
+      },
+      {
+        "id": 812,
+        "linkTxt": "Contact",
+        "link": "#contact"
+      }
+    ]
+  }
+]

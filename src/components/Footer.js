@@ -1,41 +1,53 @@
 import React, {useState, useEffect} from 'react';
-import { AiOutlineGithub, AiOutlineCodepen } from "react-icons/ai";
-import { TiSocialLinkedin } from "react-icons/ti";import { AiOutlineCopyrightCircle } from "react-icons/ai";
-import { FiCoffee, FiHeart } from "react-icons/fi"
 import "../scss/Footer.scss";
 
 
 export default function Footer() {
+    const [sectionData, setSectionData] = useState([]);
     const [date , setDate] = useState();
+
     const getYear = () =>  setDate(new Date().getFullYear())
+    useEffect(() => { getYear() }, [])
 
+
+    // Fetch data from JSON
     useEffect(() => {
-        getYear();
-    }, [])
-
+        async function getData() {
+            const response = await fetch("/data/components/footerData.json");
+            const data = await response.json();
+            setSectionData(data);             
+        }       
+        getData();        
+    }, []);
 
     return (
         <>
-        <footer className="footer-cntr">
+        {sectionData.map((data) => (
+        <footer className="footer-cntr" key={data.id}>
             <div className="footer-top">
                 <div className="footer-l-col">
                     <div className="footer-logo"> 
-                        <a href="#home" className='logo-link'>Sofie Trolle</a> 
+                        <a href="#home" className='logo-link'>{data.title}</a> 
                     </div>
-                    <a className='mailto' href="mailto:sofietrolle@hotmail.com">sofietrolle@hotmail.com</a>
+                    {data.cta.map((cta) => (
+                        <a key={cta.id} className='mailto' href={cta.link}>
+                            {cta.linkTxt}
+                        </a>
+                    ))}    
+                    
                 </div>
                 <div className="footer-links">
-                    <a href="https://github.com/trolle18/" target="_blank" rel="noreferrer"> <AiOutlineGithub/> </a>
-                    <a href="https://codepen.io/sofietrolle/" target="_blank" rel="noreferrer"> <AiOutlineCodepen/> </a>
-                    <a href="https://www.linkedin.com/in/sofie-trolle/" target="_blank" rel="noreferrer"> <TiSocialLinkedin/> </a>
+                    {data.some.map((some) => (
+                        <a key={some.id} href={some.link} target="_blank" rel="noreferrer" dangerouslySetInnerHTML={{__html: some.svg}}></a>
+                    ))}    
                 </div>
             </div>
             <div className="footer-btm">
-                <span>Build with <FiHeart/> and <FiCoffee/> by Sofie Trolle </span>
-                <span className="copy"><AiOutlineCopyrightCircle/> {date}</span>
+                <span dangerouslySetInnerHTML={{__html: data.copy}}></span>
+                <span className="copy"><span dangerouslySetInnerHTML={{__html: data.copyIcon}}></span> {date}</span>
             </div>
         </footer>
-        
+        ))}                  
         </>
     )
 };

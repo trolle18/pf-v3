@@ -1,10 +1,11 @@
-import '../scss/Nav.scss'; 
 import React, { useState, useEffect } from 'react';
 import BurgerMenu from './BurgerMenu';
+import '../scss/Nav.scss'; 
 
 const Nav = () => {
   const [show, setShow] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
+  const [sectionData, setSectionData] = useState([]);
 
   // Hide navbar on scroll
   const controlNavbar = () => {
@@ -25,25 +26,46 @@ const Nav = () => {
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [lastScrollY]);
 
+  // Fetch data from JSON
+  useEffect(() => {
+    async function getData() {
+        const response = await fetch("/data/components/navData.json");
+        const data = await response.json();
+        setSectionData(data);             
+    }       
+      getData();        
+  }, []);
+
 
   return (
-        <nav className={`active ${show && ''}`} id="nav-cntr">
-            <div className="nav-inner-cntr">
-                  <div className="nav-logo"> 
-                      <a href="/">Sofie Trolle</a> 
-                  </div>
-                  <div className="nav-links">
-                      <a href="#about"> About </a> 
-                      <a href="#work"> Work </a> 
-                      <a href="#contact"> Contact </a>                         
-                  </div>
+    <>
+    {sectionData.map((data) => (
+      <nav className={`active ${show && ''}`} id="nav-cntr">
+          <div className="nav-inner-cntr">
+                <div className="nav-logo"> 
+                  {data?.logoLink.map((logoLink) => (
+                        <a key={logoLink.id} href={logoLink.link}>
+                            {logoLink.linkTxt}
+                        </a>
+                    ))}    
 
-                  <div className="nav-mob-links">
-                    <BurgerMenu/>                    
-                  </div>       
-                               
-             </div>
-        </nav>
+                </div>
+                <div className="nav-links">
+                  {data?.navLinks.map((navLink) => (
+                        <a key={navLink.id} href={navLink.link}>
+                            {navLink.linkTxt}
+                        </a>
+                    ))}    
+                </div>
+
+                <div className="nav-mob-links">
+                  <BurgerMenu/>                    
+                </div>       
+                              
+            </div>
+      </nav>
+    ))}
+    </>       
   );
 };
 

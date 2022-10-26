@@ -1,11 +1,9 @@
-/* eslint-disable react-hooks/exhaustive-deps */
 import '../scss/Nav.scss'; 
 import { useEffect, useState } from 'react';
 
-const BurgerMenu = () => {
+export default function BurgerMenu({data}) {
   const [show, setShow] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
-  // const [data, setData] = useState([]);
 
   // HIDE DROPDOWN ON SCROLL
   const controlShow = () => {
@@ -43,9 +41,14 @@ const BurgerMenu = () => {
   return (
     <>
       <button onClick={openMenu} className="nav-mob-links__menu-btn" id="menu-btn" >
-        <svg viewBox="0 0 10 8"> <path d="M1 1h8M1"/> <path d="M1 4h 8M1"/> <path d="M1 7h8"/> </svg>
+        <svg viewBox="0 0 10 8"><path d="M1 1h8M1 4h 8M1 7h8"/></svg>
       </button>
       <div className={`nav-mob-links__dropdown hidden ${show && ""}`} id="dropdown" >
+        {/* {data.navLinks.map((navLink) => (
+          <a key={navLink.id} href={navLink.link}>
+            {navLink.linkTxt}
+          </a>
+        ))}     */}
         <a href="#about"> About </a> 
         <a href="#work"> Work </a> 
         <a href="#contact"> Contact </a> 
@@ -53,5 +56,3 @@ const BurgerMenu = () => {
     </>
   );
 };
-
-export default BurgerMenu;

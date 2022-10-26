@@ -44,23 +44,25 @@ const Nav = () => {
           <div className="nav-inner-cntr">
                 <div className="nav-logo"> 
                   {data?.logoLink.map((logoLink) => (
-                        <a key={logoLink.id} href={logoLink.link}>
-                            {logoLink.linkTxt}
-                        </a>
+                    <a key={logoLink.id} href={logoLink.link}>
+                      {logoLink.linkTxt}
+                    </a>
                     ))}    
 
                 </div>
                 <div className="nav-links">
                   {data?.navLinks.map((navLink) => (
-                        <a key={navLink.id} href={navLink.link}>
-                            {navLink.linkTxt}
-                        </a>
+                    <a key={navLink.id} href={navLink.link}>
+                      {navLink.linkTxt}
+                    </a>
                     ))}    
                 </div>
 
-                <div className="nav-mob-links">
-                  <BurgerMenu/>                    
-                </div>       
+                {/* {data?.navLinks.map((navLink) => ( */}
+                <div className="nav-mob-links">                 
+                    <BurgerMenu data={data}/>               
+                </div>
+                {/* ))} */}
                               
             </div>
       </nav>

@@ -27,7 +27,7 @@ export default function Footer() {
             <div className="footer-top">
                 <div className="footer-l-col">
                     <div className="footer-logo"> 
-                        <a href="#home" className='logo-link'>{data.title}</a> 
+                        <a href="/" className='logo-link'>{data.title}</a> 
                     </div>
                     {data.cta.map((cta) => (
                         <a key={cta.id} className='mailto' href={cta.link}>

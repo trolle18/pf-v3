@@ -14,21 +14,43 @@ export default function About() {
         getData();        
     }, []);
 
+        // Intersection observer
+        let secObserverOptions = {
+            threshold: 0.25
+        };
+        var secObserver = new IntersectionObserver(secObserverCallback, secObserverOptions);
+        function secObserverCallback(entries, observer) {
+            entries.forEach(entry => {
+                entry.target.classList.toggle("show", entry.isIntersecting)
+                if (entry.isIntersecting) {
+                    observer.unobserve(entry.target)
+                }
+            });
+        };
+        let secTarget = '.sec';
+        document.querySelectorAll(secTarget).forEach((i) => {
+            if (i) {
+                secObserver.observe(i);
+            }
+        });
+
     return (
         <>
         {sectionData.map((data) => (
-            <section className="about-cntr section" id="about" key={data.id}>
+            <section className="about-cntr section sec" id="about" key={data.id}>
                
                 <div className="about-content">
                     <div className="about-txt">
                         <div className="txt-cnt">
-                            <h2>{data.title}</h2>
+                            <h2 className="elem">{data.title}</h2>
                             {data.desc.map((descData) => (
-                                <p key={descData.id}>{descData.txt}</p>
+                                <p key={descData.id} className="elem">
+                                    {descData.txt}
+                                </p>
                             ))}
                         </div>
 
-                        <div className="mob-img-cntr">
+                        <div className="mob-img-cntr elem">
                             <div className="mob-img-box">
                                 {data.img.map((img) => (
                                     <img key={img.imgId} src={img.imgUrl} className="mob-img" alt={img.imgAlt}/>
@@ -38,16 +60,16 @@ export default function About() {
                     </div>
 
                     <div className="skill-box">
-                        <span>{data.listTitle}</span>
-                        <ul className="skill-list">
+                        <span className="elem">{data.listTitle}</span>
+                        <ul className="skill-list elem">
                             {data.listItems.map((listItem) => (
-                                <li key={listItem.id}><span>{listItem.item}</span></li>
+                                <li key={listItem.id} className="elem"><span>{listItem.item}</span></li>
                             ))}
                         </ul>
                     </div>
                 </div>
 
-                <div className="img-cntr ">
+                <div className="img-cntr elem">
                     <div className="img-box">
                         {data.img.map((img) => (
                             <img key={img.imgId} src={img.imgUrl} className="pf-img" alt={img.imgAlt}/>

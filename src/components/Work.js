@@ -26,11 +26,51 @@ export default function Work() {
         getData();        
     }, []);
 
+    // Intersection observer
+    let cardObserverOptions = {
+        threshold: 0.25
+    };
+    var cardObserver = new IntersectionObserver(cardObserverCallback, cardObserverOptions);
+    function cardObserverCallback(entries, observer) {
+        entries.forEach(entry => {
+            entry.target.classList.toggle("show", entry.isIntersecting)
+            if (entry.isIntersecting) {
+                observer.unobserve(entry.target)
+            }
+        });
+    };
+    let cardTarget = '.card';
+    document.querySelectorAll(cardTarget).forEach((i) => {
+        if (i) {
+            cardObserver.observe(i);
+        }
+    });
+
+    // Intersection observer
+    let secObserverOptions = {
+        threshold: 0.25
+    };
+    var secObserver = new IntersectionObserver(secObserverCallback, secObserverOptions);
+    function secObserverCallback(entries, observer) {
+        entries.forEach(entry => {
+            entry.target.classList.toggle("show", entry.isIntersecting)
+            if (entry.isIntersecting) {
+                observer.unobserve(entry.target)
+            }
+        });
+    };
+    let secTarget = '.sec';
+    document.querySelectorAll(secTarget).forEach((i) => {
+        if (i) {
+            secObserver.observe(i);
+        }
+    });
+
     return (
         <>
             <section className="work-cntr section" id="work">
                 {sectionData.map((data) => (
-                    <div className="work-cntr-title" key={data.id}>
+                    <div className="work-cntr-title sec" key={data.id}>
                         <h2>{data.title}</h2>
                         <p className="sub-title">{data.desc}</p>
                     </div>

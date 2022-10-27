@@ -21,3 +21,22 @@ $fs_m: 1.000rem; // medium / h5
 $fs_s: 0.875rem; // small / p 
 $fs_xs: 0.750rem; // x-small
 $fs_xxs: 0.625rem; // xx-small
+
+// Ease in - sec
+$ease_in_10: ease-in 1s;
+$ease_in_75: ease-in .75s;
+$ease_in_50: ease-in .50s;
+$ease_in_25: ease-in .25s;
+$ease_in_10: ease-in .10s;
+
+// Opacity 
+$opacity_show: 1;
+$opacity_init: 0;
+
+// Translate Y
+$tl_Y_init: translateY(0px);
+$tl_Y_show: translateY(0px);
+
+// Translate X
+$tl_X_init: translateX(10px);
+$tl_X_show: translateX(0px);

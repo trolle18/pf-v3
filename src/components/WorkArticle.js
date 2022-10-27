@@ -37,26 +37,6 @@ export default function WorkArticle( {article} ) {
         else{ return(null) }
     }
 
-    // // Intersection observer
-    // let cardObserverOptions = {
-    //     threshold: 0.25
-    // };
-    // var cardObserver = new IntersectionObserver(cardObserverCallback, cardObserverOptions);
-    // function cardObserverCallback(entries, observer) {
-    //     entries.forEach(entry => {
-    //         entry.target.classList.toggle("show", entry.isIntersecting)
-    //         if (entry.isIntersecting) {
-    //             observer.unobserve(entry.target)
-    //         }
-    //     });
-    // };
-    // let cardTarget = '.card';
-    // document.querySelectorAll(cardTarget).forEach((i) => {
-    //     if (i) {
-    //         cardObserver.observe(i);
-    //     }
-    // });
-
    
     return (
         <>

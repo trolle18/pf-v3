@@ -87,7 +87,7 @@
     }
 
     .footer-btm {
-        margin: 4em auto 0 auto;
+        margin: 5em auto 0em auto;
         display: flex;
         flex-direction: column;
         font-family: $ff_mono;
@@ -96,10 +96,10 @@
             color: $clr_m_grey;
             text-align: center;
             vertical-align: middle;
+            font-size: $fs_xxs;
         }
 
         .copy {
-
             svg {
                 height: 14px;
                 width: auto;

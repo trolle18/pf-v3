@@ -8,8 +8,9 @@
     display: flex;
     flex-direction: column;
     text-align: center;
+    margin-left: 10px;
 
-    button, a {
+    a {
         width: max-content;
         margin: .5em auto;
         padding: 0.5em 1.5em;
@@ -28,3 +29,37 @@
     }
 }
 
+@media (min-width: 600px) {
+    .contact-cntr {
+        margin-left: 0px;
+    }
+}
+
+@media (min-width: 992px) {
+    .contact-cntr {
+        margin-left: 0px;
+    }
+}
+
+
+/* Animations */
+.sec {
+    opacity: $opacity_init;
+    transform: $tl_Y_init;
+    transition: $ease_in_50;
+    .elem {
+        opacity: $opacity_init;
+        transform: $tl_Y_init;
+        transition: $ease_in_50;
+    }
+}
+
+.sec.show {
+    opacity: $opacity_show;
+    transform: $tl_Y_show;
+
+    .elem {
+        opacity: $opacity_show;
+        transform: $tl_Y_show;
+    }
+}

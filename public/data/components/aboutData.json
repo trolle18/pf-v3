@@ -1,0 +1,77 @@
+[
+  {
+    "id": 1119,
+    "online": "y",
+    "title": "About",
+    "desc": [
+      {
+        "id": "11",
+        "txt": "My name is Sofie, I am 25 years old, and I am studying multimedia design, specializing in frontend development, at Business Academy Aarhus. I am currently on my 4th semester, which I will be spending as an intern for AKQA in Aarhus."
+      },
+      {
+        "id": "12",
+        "txt": "I have always loved creating, and exploring through different types of media. With multimedia designing, there are endless possibilities for me to explore and work through."
+      }
+    ],
+    "img": [
+      {
+        "imgId": 22276,
+        "imgUrl": "/data/media/pf-g-iso.webp",
+        "imgAlt": "Sofie Trolle"
+      }
+    ],
+    "listTitle": "Some of the technologies I have been working with:",
+    "listItems": [
+      { 
+        "online": "y",
+        "id": 87836,
+        "item": "HTML5 & CSS3"
+      },
+      { 
+        "online": "y",
+        "id": 21311,
+        "item": "jQuery"
+      },
+      { 
+        "online": "y",
+        "id": 19472,
+        "item": "JavaScript (ES6+)"
+      },
+      { 
+        "online": "y",
+        "id": 22941,
+        "item": "TypeScript"
+      },
+      { 
+        "online": "y",
+        "id": 51654751,
+        "item": "Chakra UI"
+      },
+      { 
+        "online": "y",
+        "id": 94651,
+        "item": "SCSS / Sass"
+      },
+      { 
+        "online": "y",
+        "id": 39724,
+        "item": "Firebase"
+      },
+      { 
+        "online": "y",
+        "id": 84752,
+        "item": "React.JS"
+      },
+      { 
+        "online": "y",
+        "id": 99142,
+        "item": "Next.JS"
+      },
+      { 
+        "online": "n",
+        "id": 12873,
+        "item": "Umbraco CMS"
+      }
+    ]
+  }
+]

@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import { BiLeftArrowAlt } from 'react-icons/bi'
-import '../scss/ArticlePage.scss';
+// import '../scss/ArticlePage.scss';
 
 export default function PostArticlePage() {
   const [post, setPost] = useState({});

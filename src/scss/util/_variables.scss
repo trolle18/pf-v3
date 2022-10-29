@@ -1,0 +1,42 @@
+$clr_black: #000;
+$clr_d_grey: #282828;
+$clr_m_grey: #6e6e6e;
+$clr_ml_grey: #9c9c9c;
+$clr_l_grey: #cecece;
+$clr_white: #f8f8f8;
+$clr_acc_yel: #fcb900;
+$clr_acc_gre: #153019;
+
+$txt_light: #f8f8f8;
+$txt_dark: #282828;
+
+$ff_sans: 'Montserrat', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+$ff_mono: 'JetBrains Mono', monospace;
+$fs_header: 3.750rem; // header
+$fs_xxl: 2.000rem; // xx-large / h1
+$fs_xl: 1.375rem; // x-large / h2
+$fs_l: 1.250rem;  // large / h3
+$fs_ml: 1.125rem; // medium-large / h4
+$fs_m: 1.000rem; // medium / h5
+$fs_s: 0.875rem; // small / p 
+$fs_xs: 0.750rem; // x-small
+$fs_xxs: 0.625rem; // xx-small
+
+// Ease in - sec
+$ease_in_10: ease-in 1s;
+$ease_in_75: ease-in .75s;
+$ease_in_50: ease-in .50s;
+$ease_in_25: ease-in .25s;
+$ease_in_10: ease-in .10s;
+
+// Opacity 
+$opacity_show: 1;
+$opacity_init: 0;
+
+// Translate Y
+$tl_Y_init: translateY(0px);
+$tl_Y_show: translateY(0px);
+
+// Translate X
+$tl_X_init: translateX(10px);
+$tl_X_show: translateX(0px);

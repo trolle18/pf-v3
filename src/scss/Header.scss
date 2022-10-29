@@ -15,6 +15,7 @@
         height: auto;
         width: 80%;
         margin: auto 0;
+        margin-left: 10px;
 
         h1 {
             margin: .625rem 0;
@@ -26,19 +27,25 @@
             font-family: $ff_mono;
             animation: fadein 0.2s;
         }
-    }
+    }    
+}
 
-    @media (min-width: 600px) {
+@media (min-width: 600px) {
+    .header-cntr {
         .header-txt {
             height: auto;
-            width: 60%;
+            width: 60%;    
+            margin-left: 0;
         }
     }
+}
 
-    @media (min-width: 992px) {
+@media (min-width: 992px) {
+    .header-cntr {
         .header-txt {
             height: auto;
             width: 50%;
+            margin-left: 0px;
         }
     }
 }

@@ -1,31 +1,32 @@
-import '../scss/Header.scss';
+import { useState, useEffect } from "react";
+// import '../scss/Header.scss';
 
 export default function Header() {
-    // var i = 0;
-    // var txt = "Sofie Trolle";
-    // var speed = 50;
-    
-    // function typeWriter() {
-    //   if (i < txt.length) {
-    //     document.getElementById("test").innerHTML += txt.charAt(i);
-    //     i++;
-    //     setTimeout(typeWriter, speed);
-    //   }
-    // }
+    const [sectionData, setSectionData] = useState([]);
 
+    // Fetch data from JSON
+    useEffect(() => {
+        async function getData() {
+            const response = await fetch("/data/components/headerData.json");
+            const data = await response.json();
+            setSectionData(data);             
+        }       
+        getData();        
+    }, []);
     return (
         <>
-            <section className="header-cntr">
+        {sectionData.map((data) => (
+            <section className="header-cntr" key={data.id}>
                 <div className="header-txt">
-                    <span>Hi! My name is</span>
-                    <h1 id="test">Sofie Trolle</h1>
+                    <span>{data.introDesc}</span>
+                    <h1 id="test">{data.title}</h1>
                     <span>
-                        I am a multimedia design student, at Business Academy Aarhus, 
-                        specializing in frontend development.
+                        {data.desc}
+                        
                     </span>
                 </div>
             </section>
-        
+        ))}   
         </>
     )
 };

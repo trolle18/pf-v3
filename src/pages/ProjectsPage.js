@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import WorkArticle from '../components/WorkArticle';
-import '../scss/App.scss';
+// import '../scss/App.scss';
 
 export default function ProjectsPage() {
     const [articles, setArticles] = useState([]);

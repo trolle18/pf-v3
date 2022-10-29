@@ -1,5 +1,6 @@
-// Imports
-@import "variables";
+// // Imports
+// @import "variables";
+// @import "typography";
 
 /* ---------- BASE ---------- */
 * {
@@ -7,12 +8,13 @@
     padding: 0;
 }
 
-body {
-    height: 100%;
+html, body {
+    height: 100vh;
     width: 100%;
-    margin: 0;
-    padding: 0;
-    font-family: $ff_sans, 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',sans-serif;
+}
+
+body {
+    font-family: $ff_sans;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     scroll-behavior: smooth;
@@ -21,36 +23,11 @@ body {
     background-color: $clr_black;
 }
 
-h1 {
-    font-size: $fs_xxl;
-    text-transform: uppercase;
-    margin: .625rem 0;
-}
-
-h2 {
-    font-size: $fs_xxl;
-    text-transform: uppercase;
-    margin: .625rem 0;
-}
-
-h3 {
-    font-size: $fs_l;
-    margin-bottom: .625rem;
-}
-
-h4 {
-    font-size: $fs_ml;
-    margin-bottom: .625rem;
-}
-
-h5 {
-    font-size: $fs_m;
-    margin-bottom: .625rem;
-}
-
-p, span {
-    font-size: $fs_m;
-    margin-bottom: .625rem;
+#root {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 
@@ -71,189 +48,56 @@ p, span {
     position: absolute;
 }
 
-
-/* ---------- SCROLL TO TOP BTN ---------- */
-.scrolltop-btn {
-    height: 25px;
-    width: 25px;
-    bottom: 15px;
-    right: 10px;
-    margin: 0 0;
-    padding: 0 0;
-    z-index: 99;
-    display: none;
-    position: fixed;
-    cursor: pointer;
-    background-color: rgba(0, 0, 0, .5);
-    border: solid $clr_l_grey 1px;
-    border-radius: 15px;
-
-    svg {
-        height: 12px;
-        width: auto;
-        margin: auto auto;
-        padding: 1px;
-        color: $clr_l_grey;
-        border: solid red 0px;
-        // background-color: rgba(0, 255, 0, .5);
-    }
-}
-
-
-
 /* ---------- PAGE ---------- */
 .page {
-    height: 100%;
-    width: 98%;
-    margin: 0 auto;
-
-    .section {
-        margin: 1em 0 0 0;
-        padding: 2.5em 0;
-    }
-}
-
-@media (min-width: 600px) {
-    .page {
-        width: 90%;
-    }
-}
-
-@media (min-width: 992px) {
-    .page {
-        width: 90%;
-        max-width: 1200px;
-    }
-}
-
-
-
-/* ---------- FOOTER ---------- */
-.footer-cntr {
-    // border: solid yellow 1px;;
     height: auto;
     width: 98%;
-    bottom: 0;
-    // margin: auto auto;
-    margin: 10em auto 5em auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    margin: 0 auto;
+    padding: 4em 0 0 0;
 
-    .footer-top {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
+    .section {
+        margin: 2rem 0 8rem 0;
+        padding: 5em 0 .5em 0;
+    }
 
-        .footer-l-col {
+    .page-header {
+        padding: 1em 0;
+
+        a {
+            text-decoration: none;
+            text-transform: uppercase;
+            color: $clr_white;
             display: flex;
-            flex-direction: column;
-            
-            .mailto {
-                margin: 1em 0;
-                font-family: $ff_sans;
-                text-decoration: none;
-                text-transform: uppercase;
-                color: $clr_l_grey;
-                font-size: $fs_s;
-                transition: ease-in .02s;
+            align-items: center;
+            transition: 0.25s ease;
 
-                &:hover {
+            svg {
+                margin: 0 .25em 0 0;
+                color: $clr_white;
+                transition: 0.2s ease;
+            }
+
+            &:hover {
+                color: $clr_acc_yel;
+
+                svg {
+                    margin: 0 0 0 .25em;
                     color: $clr_acc_yel;
                 }
             }
-        
-            .footer-logo {
-
-                .logo-link {
-                    font-family: $ff_sans;
-                    text-decoration: none;
-                    text-transform: uppercase;
-                    color: $txt_light;
-                    transition: ease-in .02s;
-
-                    &:hover {
-                        color: $clr_acc_yel;
-                    }
-                }
-            }
-
-            span {
-                margin: 0.625rem 0 ;
-            }
-        }
-
-        .footer-links {
-            border: solid green 0px;
-            width: auto;
-            display: flex;
-            flex-direction: row;
-            row-gap: 10px;
-            justify-content: space-between;
-
-            a {
-                height: 2em;
-                width: 2em;
-                margin-left: 1em;
-                padding: 2px;
-                background-color: $clr_white;
-                border-radius: 150px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                vertical-align: middle;
-                font-family: $ff_mono;
-                text-decoration: none;
-                text-transform: uppercase;
-                color: $txt_light;
-                transition: ease-in .02s;
-
-                &:hover {
-                    background-color: $clr_acc_yel;
-                }
-                
-                svg {
-                    border: solid blue 0px;
-                    height: 100%;
-                    width: auto;
-                    color: $clr_black;
-                }
-            }
-        }
-    }
-
-    .footer-btm {
-        margin: 2.5em auto 0 auto;
-        display: flex;
-        flex-direction: column;
-        font-family: $ff_mono;
-
-        span {
-            color: $clr_m_grey;
-            text-align: center;
-            vertical-align: middle;
-        }
-
-        .copy {
-
-            svg {
-                height: 14px;
-                width: auto;
-                vertical-align: middle;
-                display: inline-block;
-            }
         }
     }
 }
 
 @media (min-width: 600px) {
-    .footer-cntr {
+    .page {
         width: 90%;
     }
 }
 
 @media (min-width: 992px) {
-    .footer-cntr {
+    .page {
         width: 90%;
+        max-width: 1000px;
     }
 }

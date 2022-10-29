@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-// import '../scss/Contact.scss';
 
 export default function Contact() {
     const [sectionData, setSectionData] = useState([]);

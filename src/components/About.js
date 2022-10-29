@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-// import '../scss/About.scss';
 
 export default function About() {
     const [sectionData, setSectionData] = useState([]);

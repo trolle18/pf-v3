@@ -1,5 +1,4 @@
 import { AiOutlineGithub, AiOutlineLink } from "react-icons/ai"
-// import "../scss/WorkArticle.scss"
 
 export default function WorkArticle( {article} ) {
     // Only render link, if the article link excists

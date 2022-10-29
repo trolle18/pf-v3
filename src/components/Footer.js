@@ -1,6 +1,4 @@
 import React, {useState, useEffect} from 'react';
-// import "../scss/Footer.scss";
-
 
 export default function Footer() {
     const [sectionData, setSectionData] = useState([]);

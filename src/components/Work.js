@@ -58,8 +58,8 @@ export default function Work() {
             }
         });
     };
-    let secTarget = '.sec';
-    document.querySelectorAll(secTarget).forEach((i) => {
+    // let secTarget = '.sec';
+    document.querySelectorAll("sec").forEach((i) => {
         if (i) {
             secObserver.observe(i);
         }
@@ -67,9 +67,9 @@ export default function Work() {
 
     return (
         <>
-            <section className="work-cntr section" id="work">
+            <section className="work-cntr section sec" id="work">
                 {sectionData.map((data) => (
-                    <div className="work-cntr-title sec" key={data.id}>
+                    <div className="work-cntr-title" key={data.id}>
                         <h2>{data.title}</h2>
                         <p className="sub-title">{data.desc}</p>
                     </div>

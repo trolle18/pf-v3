@@ -46,7 +46,7 @@
     }
 }
 
-.header {
+.header-cntr {
     opacity: $opacity_init;
     transform: $tl_X_init;
     transition: $ease_in_25;
@@ -57,7 +57,7 @@
     }
 }
 
-.header.show {
+.header-cntr.show {
     opacity: $opacity_show;
     transform: $tl_X_show;
 

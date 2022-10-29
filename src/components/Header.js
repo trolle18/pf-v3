@@ -26,7 +26,7 @@ export default function Header() {
             }
         });
     };
-    let secTarget = '.header';
+    let secTarget = '.sec';
     document.querySelectorAll(secTarget).forEach((i) => {
         if (i) {
             secObserver.observe(i);
@@ -36,7 +36,7 @@ export default function Header() {
     return (
         <>
         {sectionData.map((data) => (
-            <section className="header-cntr header" key={data.id}>
+            <section className="header-cntr sec" key={data.id}>
                 <div className="header-txt">
                     <span>{data.introDesc}</span>
                     <h1>{data.title}</h1>

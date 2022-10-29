@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import BurgerMenu from './BurgerMenu';
-import '../scss/Nav.scss'; 
+// import '../scss/Nav.scss'; 
 
 const Nav = () => {
   const [show, setShow] = useState(true);

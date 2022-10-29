@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { AiOutlineGithub, AiOutlineLink } from "react-icons/ai"
-import '../scss/ArticlePage.scss';
+// import '../scss/ArticlePage.scss';
 
 export default function ArticlePage() {
     const [article, setArticle] = useState({});

@@ -67,8 +67,8 @@ export default function WorkArticle( {article} ) {
                         </div> 
                     </div>
         
-                    <div className="project-desc">
-                        <span className="elem" dangerouslySetInnerHTML={ {__html: article.descHtml} }></span>
+                    <div className="project-desc elem" dangerouslySetInnerHTML={ {__html: article.descHtml} }>
+                        {/* <span className="elem" dangerouslySetInnerHTML={ {__html: article.descHtml} }></span> */}
                     </div>
                 </div>
             </article>

@@ -1,5 +1,6 @@
 import { Routes, Route, Navigate } from "react-router-dom";
-import './scss/App.scss';
+// import './scss/App.scss';
+import './NewScss/main.scss';
 import Nav from './components/Nav';
 import Footer from './components/Footer';
 import ScrollToTop from "./components/ScrollToTop";

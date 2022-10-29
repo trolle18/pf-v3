@@ -1,0 +1,61 @@
+
+/* ---------- CONTACT SECTION ---------- */
+.contact-cntr {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-left: 10px;
+
+    a {
+        width: max-content;
+        margin: .5em auto;
+        padding: 0.5em 1.5em;
+        border: solid $clr_acc_yel 2px;
+        border-radius: 4px;
+        background-color: transparent;
+        color: $clr_acc_yel;
+        font-size: $fs_m;
+        text-decoration: none;
+        cursor: pointer;
+        transition: .2s;
+
+        &:hover {
+	        box-shadow: 0px 0px 4px 1px $clr_acc_yel;
+        }
+    }
+}
+
+@media (min-width: 600px) {
+    .contact-cntr {
+        margin-left: 0px;
+    }
+}
+
+@media (min-width: 992px) {
+    .contact-cntr {
+        margin-left: 0px;
+    }
+}
+
+
+/* Animations */
+.sec {
+    opacity: $opacity_init;
+    transform: $tl_Y_init;
+    transition: $ease_in_50;
+    .elem {
+        opacity: $opacity_init;
+        transform: $tl_Y_init;
+        transition: $ease_in_50;
+    }
+}
+
+.sec.show {
+    opacity: $opacity_show;
+    transform: $tl_Y_show;
+
+    .elem {
+        opacity: $opacity_show;
+        transform: $tl_Y_show;
+    }
+}

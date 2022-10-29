@@ -1,7 +1,5 @@
 import { useEffect, useState } from 'react';
 import Post from '../components/Post';
-// import '../scss/App.scss';
-// import '../scss/Post.scss';
 
 export default function PostsPage() {
     const [posts, setPosts] = useState([]);

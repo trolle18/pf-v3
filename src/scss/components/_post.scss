@@ -187,19 +187,19 @@
 
 
 
-// /* Animations */
-.card {
-    opacity: 0;
-    transform: translateY(0px);
-    transition: ease-in-out .4s;
-}
+// // /* Animations */
+// .card {
+//     opacity: 0;
+//     transform: translateY(0px);
+//     transition: ease-in-out .4s;
+// }
 
-.card.show {
-    opacity: 1;
-    transform: translateY(0);
-}
+// .card.show {
+//     opacity: 1;
+//     transform: translateY(0);
+// }
 
-.post {
-    cursor: pointer;
-}
+// .post {
+//     cursor: pointer;
+// }
 

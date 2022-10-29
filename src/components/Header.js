@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-// import '../scss/Header.scss';
 
 export default function Header() {
     const [sectionData, setSectionData] = useState([]);

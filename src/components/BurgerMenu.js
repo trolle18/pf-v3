@@ -1,5 +1,4 @@
 /* eslint-disable react-hooks/exhaustive-deps */
-// import '../scss/Nav.scss'; 
 import { useEffect, useState } from 'react';
 
 export default function BurgerMenu({data}) {

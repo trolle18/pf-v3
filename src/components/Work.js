@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-// import '../scss/Work.scss';
 import WorkArticle from "./WorkArticle";
 
 export default function Work() {

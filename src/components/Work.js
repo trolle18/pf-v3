@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import WorkArticle from "./WorkArticle";
 
+
 export default function Work() {
     const [sectionData, setSectionData] = useState([]);
     const [articles, setArticles] = useState([]);
@@ -26,28 +27,8 @@ export default function Work() {
     }, []);
 
     // Intersection observer
-    let cardObserverOptions = {
-        threshold: 0.25
-    };
-    var cardObserver = new IntersectionObserver(cardObserverCallback, cardObserverOptions);
-    function cardObserverCallback(entries, observer) {
-        entries.forEach(entry => {
-            entry.target.classList.toggle("show", entry.isIntersecting)
-            if (entry.isIntersecting) {
-                observer.unobserve(entry.target)
-            }
-        });
-    };
-    let cardTarget = '.card';
-    document.querySelectorAll(cardTarget).forEach((i) => {
-        if (i) {
-            cardObserver.observe(i);
-        }
-    });
-
-    // Intersection observer
     let secObserverOptions = {
-        threshold: 0.25
+        threshold: 0
     };
     var secObserver = new IntersectionObserver(secObserverCallback, secObserverOptions);
     function secObserverCallback(entries, observer) {
@@ -58,8 +39,7 @@ export default function Work() {
             }
         });
     };
-    // let secTarget = '.sec';
-    document.querySelectorAll("sec").forEach((i) => {
+    document.querySelectorAll(".work-cntr").forEach((i) => {
         if (i) {
             secObserver.observe(i);
         }

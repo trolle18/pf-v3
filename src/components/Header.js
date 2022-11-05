@@ -13,30 +13,10 @@ export default function Header() {
         getData();        
     }, []);
 
-    // Intersection observer
-    let secObserverOptions = {
-        threshold: 0
-    };
-    var secObserver = new IntersectionObserver(secObserverCallback, secObserverOptions);
-    function secObserverCallback(entries, observer) {
-        entries.forEach(entry => {
-            entry.target.classList.toggle("show", entry.isIntersecting)
-            if (entry.isIntersecting) {
-                observer.unobserve(entry.target)
-            }
-        });
-    };
-    let secTarget = '.sec';
-    document.querySelectorAll(secTarget).forEach((i) => {
-        if (i) {
-            secObserver.observe(i);
-        }
-    });
-
     return (
         <>
         {sectionData.map((data) => (
-            <section className="header-cntr sec" key={data.id}>
+            <section className="header-cntr" key={data.id}>
                 <div className="header-txt">
                     <span>{data.introDesc}</span>
                     <h1>{data.title}</h1>

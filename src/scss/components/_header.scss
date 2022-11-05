@@ -46,35 +46,35 @@
     }
 }
 
-.header-cntr {
-    opacity: $opacity_init;
-    transform: $tl_X_init;
-    transition: $ease_in_25;
-    .elem {
-        opacity: $opacity_init;
-        transform: $tl_X_init;
-        transition: $ease_in_25;
-    }
-}
+// .header-cntr {
+//     opacity: $opacity_init;
+//     transform: $tl_X_init;
+//     transition: $ease_in_25;
+//     .elem {
+//         opacity: $opacity_init;
+//         transform: $tl_X_init;
+//         transition: $ease_in_25;
+//     }
+// }
 
-.header-cntr.show {
-    opacity: $opacity_show;
-    transform: $tl_X_show;
+// .header-cntr.show {
+//     opacity: $opacity_show;
+//     transform: $tl_X_show;
 
-    .elem {
-        opacity: $opacity_show;
-        transform: $tl_X_show;
-    }
-}
+//     .elem {
+//         opacity: $opacity_show;
+//         transform: $tl_X_show;
+//     }
+// }
 
-@keyframes fadein {
-	0% {
-        opacity: 0; 
-        transform: translateY(0); 
-    }
-	100% { 
-        opacity: 1;
-        transform: translateY(0%);
-    }
-}
+// @keyframes fadein {
+// 	0% {
+//         opacity: 0; 
+//         transform: translateY(0); 
+//     }
+// 	100% { 
+//         opacity: 1;
+//         transform: translateY(0%);
+//     }
+// }
 

@@ -36,26 +36,3 @@
         margin-left: 0px;
     }
 }
-
-
-/* Animations */
-.contact-cntr {
-    opacity: $opacity_init;
-    transform: $tl_Y_init;
-    transition: $ease_in_50;
-    .elem {
-        opacity: $opacity_init;
-        transform: $tl_Y_init;
-        transition: $ease_in_50;
-    }
-}
-
-.contact-cntr.show {
-    opacity: $opacity_show;
-    transform: $tl_Y_show;
-
-    .elem {
-        opacity: $opacity_show;
-        transform: $tl_Y_show;
-    }
-}

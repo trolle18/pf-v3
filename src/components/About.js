@@ -61,7 +61,9 @@ export default function About() {
                     <div className="skill-box">
                         <span className="elem">{data.listTitle}</span>
                         <ul className="skill-list elem">
-                            {data.listItems.map((listItem) => (
+                            {data.listItems
+                            .filter((listItem) => listItem.online.includes('y'))
+                            .map((listItem) => (                                
                                 <li key={listItem.id} className="elem"><span>{listItem.item}</span></li>
                             ))}
                         </ul>

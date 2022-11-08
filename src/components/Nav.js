@@ -36,35 +36,35 @@ const Nav = () => {
   }, []);
 
 
-  return (
-    <>
-      <nav className={`active ${show && ''}`} id="nav-cntr">
-        {sectionData.map((data) => (
-          <div className="nav-inner-cntr" key={data.id}>
-                <div className="nav-logo"> 
-                  {data?.logoLink.map((logoLink) => (
-                    <a key={logoLink.id} href={logoLink.link}>
-                      {logoLink.linkTxt}
-                    </a>
-                    ))}    
+    return (
+        <>
+            <nav className={`active ${show && ''}`} id="nav">
+                {sectionData.map((data) => (
+                    <div className="nav-inner-cntr" key={data.id}>
+                        <div className="nav-inner-cntr__logo"> 
+                            {data?.logoLink.map((logoLink) => (
+                                <a key={logoLink.id} href={logoLink.link}>
+                                    {logoLink.linkTxt}
+                                </a>
+                            ))}    
 
-                </div>
-                <div className="nav-links">
-                  {data?.navLinks.map((navLink) => (
-                    <a key={navLink.id} href={navLink.link}>
-                      {navLink.linkTxt}
-                    </a>
-                    ))}    
-                </div>
+                        </div>
+                        <div className="nav-inner-cntr__links">
+                            {data?.navLinks.map((navLink) => (
+                                <a key={navLink.id} href={navLink.link}>
+                                    {navLink.linkTxt}
+                                </a>
+                            ))}    
+                        </div>
 
-                <div className="nav-mob-links">                 
-                    <BurgerMenu data={data}/>               
-                </div>                              
-            </div>
-        ))}
-      </nav>
-    </>       
-  );
+                        <div className="nav-mob-links">                 
+                            <BurgerMenu data={data}/>               
+                        </div>                              
+                    </div>
+                ))}
+            </nav>
+        </>       
+    );
 };
 
 export default Nav;

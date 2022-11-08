@@ -4,7 +4,7 @@
     transition: top .25s;
 }
 
-#nav-cntr {
+#nav {
     border: solid blue 0px;
     height: 2em;
     width: 100%;
@@ -27,7 +27,7 @@
         flex-direction: row;
         justify-content: space-between;
     
-        .nav-logo {
+        &__logo {
             margin: auto 0;
             border: solid red 0px;
 
@@ -45,7 +45,7 @@
             }
         }
 
-        .nav-links {
+        &__links{
             display: none;
             // width: 180px;
             // margin: auto 0;
@@ -183,14 +183,14 @@
 
 
 @media (min-width: 600px) {
-    #nav-cntr {
+    #nav {
         width: 100%;
 
         .nav-inner-cntr {
             width: 90%;
             padding: 0px;
             
-        .nav-logo {
+        &__logo {
             margin: auto 0;
 
             a {
@@ -207,7 +207,7 @@
             }
         }
 
-            .nav-links {
+            &__links {
                 display: none;
                 width: 15rem;
                 margin: auto 0;
@@ -254,7 +254,7 @@
 }
 
 @media (min-width: 992px) {
-    #nav-cntr {
+    #nav {
         width: 100%;
 
         .nav-inner-cntr {
@@ -262,7 +262,7 @@
             max-width: 1200px;
             padding: 0px;
                 
-            .nav-logo {
+            &__logo {
                 margin: auto 0;
 
                 a {
@@ -279,7 +279,7 @@
                 }
             }
 
-            .nav-links {
+            &__links {
                 display: contents;
                 width: 15rem;
                 margin: auto 0;
@@ -309,7 +309,7 @@
 }
 
 // Scroll - show/hide nav
-#nav-cntr {
+#nav {
     &.active {
         top: 0px;
         transition: top ease-out .4s;

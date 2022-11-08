@@ -27,7 +27,7 @@ export default function About() {
             }
         });
     };
-    document.querySelectorAll(".sec").forEach((i) => {
+    document.querySelectorAll(".about-cntr").forEach((i) => {
         if (i) {
             secObserver.observe(i);
         }
@@ -36,8 +36,7 @@ export default function About() {
     return (
         <>
         {sectionData.map((data) => (
-            <section className="about-cntr section sec" id="about" key={data.id}>
-               
+            <section className="about-cntr section sec" id="about" key={data.id}>               
                 <div className="about-cntr__content">
                     <div className="about-txt">
                         <div className="about-txt__txt">

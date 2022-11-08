@@ -26,7 +26,7 @@ export default function Header() {
             }
         });
     };
-    document.querySelectorAll(".sec").forEach((i) => {
+    document.querySelectorAll(".header-cntr").forEach((i) => {
         if (i) {
             secObserver.observe(i);
         }

@@ -15,7 +15,7 @@ export default function Header() {
 
     // Intersection observer
     let secObserverOptions = {
-        threshold: 0.2
+        threshold: 0
     };
     var secObserver = new IntersectionObserver(secObserverCallback, secObserverOptions);
     function secObserverCallback(entries, observer) {

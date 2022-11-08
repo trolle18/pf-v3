@@ -4,21 +4,25 @@
 
 // HEADER CNTR
 .header-cntr.sec {
-    opacity: $opacity_init;
-    transform: $tl_X_init;
-    transition: $ease_in_25;
-    .elem {
+    h1 {
         opacity: $opacity_init;
         transform: $tl_X_init;
+        transition: $ease_in_25;
+    }
+   
+    span {
+        opacity: $opacity_init;
+        transform: $tl_X_initSec;
         transition: $ease_in_25;
     }
 }
 
 .header-cntr.sec.show {
-    opacity: $opacity_show;
-    transform: $tl_X_show;
-
-    .elem {
+    h1 {
+        opacity: $opacity_show;
+        transform: $tl_X_show;
+    }
+    span {
         opacity: $opacity_show;
         transform: $tl_X_show;
     }

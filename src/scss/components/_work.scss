@@ -5,31 +5,31 @@
     flex-direction: column;
     column-gap: 500px;
 
-    .work-cntr-title {
+    &__title {
         margin-left: 10px;
         padding: 0 0 .5em 0;
     }
 
-    .sec {
-        opacity: $opacity_init;
-        transform: $tl_Y_init;
-        transition: $ease_in_50;
-        .elem {
-            opacity: $opacity_init;
-            transform: $tl_Y_init;
-            transition: $ease_in_50;
-        }
-    }
+    // .sec {
+    //     opacity: $opacity_init;
+    //     transform: $tl_Y_init;
+    //     transition: $ease_in_50;
+    //     .elem {
+    //         opacity: $opacity_init;
+    //         transform: $tl_Y_init;
+    //         transition: $ease_in_50;
+    //     }
+    // }
     
-    .sec.show {
-        opacity: $opacity_show;
-        transform: $tl_Y_show;
+    // .sec.show {
+    //     opacity: $opacity_show;
+    //     transform: $tl_Y_show;
     
-        .elem {
-            opacity: $opacity_show;
-            transform: $tl_Y_show;
-        }
-    }
+    //     .elem {
+    //         opacity: $opacity_show;
+    //         transform: $tl_Y_show;
+    //     }
+    // }
     
 }
 

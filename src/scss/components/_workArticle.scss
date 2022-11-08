@@ -19,12 +19,12 @@
         display: flex;
         flex-direction: column;
         
-        .project-gallery-cntr {
+        &__gallery-cntr {
             height: 100%;
             width: 100%;
             margin: 0 auto;
 
-            .project-gallery {
+            .gallery {
                 height: 100%;
                 width: 100%;
                 object-fit: cover;
@@ -55,7 +55,7 @@
             }
         }  
 
-        .project-txt {
+        &__txt {
             width: 100%;
             padding: .5rem 0;
             display: flex;
@@ -128,11 +128,11 @@
             margin: 5em .2em 6em 0em; 
             flex-direction: row;
 
-            .project-gallery-cntr {
+            &__gallery-cntr {
                 height: 100%;
                 width: 50%;
 
-                .project-gallery {
+                .gallery {
                     .img-cntr {
                         height: 160px;
                         width: 40%;
@@ -144,7 +144,7 @@
                 }
             } 
 
-            .project-txt {
+            &__txt {
                 width: 60%;
                 margin: auto 0;
 
@@ -179,11 +179,11 @@
                 margin: 2rem 0rem 4rem 0rem;
             }
 
-            .project-gallery-cntr {
+            &__gallery-cntr {
                 height: 100%;
                 width: 50%;
 
-                .project-gallery {
+                .gallery {
                     .img-cntr {
                         height: 160px;
                         width: 40%;
@@ -195,7 +195,7 @@
                 }
             }
 
-            .project-txt {
+            &__txt {
                 .project-header {
                     margin-bottom: .625em;
                 

@@ -7,7 +7,7 @@
     flex-direction: column;
     justify-content: space-between;
 
-    .about-content {
+    &__content {
         margin-left: 10px;
         .about-txt {
             height: auto;
@@ -16,7 +16,7 @@
             flex-direction: row;
             justify-content: space-between;
 
-            .txt-cnt {
+            &__txt {
                 height: auto;
                 width: 60%;
                 display: flex;
@@ -31,7 +31,7 @@
                 align-items: center;
                 justify-content: center;        
         
-                .mob-img-box {
+                &__img-inner-cntr {
                     height: auto;
                     width: auto;
                     display: flex;
@@ -46,12 +46,12 @@
         }   
     }
     
-    .skill-box {
+    .skills {
         span {
             font-weight: 600;
         }
     
-        .skill-list {
+        &__list {
             width: auto;
             margin: 0.200rem 0 0 1rem;
             display: grid;
@@ -71,13 +71,13 @@
         }
     }    
        
-    .img-cntr {
+    &__img-cntr {
         display: none;
 
-        .img-box {
+        .img-inner-cntr {
             display: none;
 
-            .pf-img {
+            &__img {
                 display: none;
             }
         }
@@ -93,7 +93,7 @@
         flex-direction: row;
         justify-content: space-between;
     
-        .about-content {
+        &__content {
             height: auto;
             width: 80%;
             margin-left: 0px;
@@ -107,7 +107,7 @@
                 display: flex;
                 justify-content: space-between;
         
-                .txt-cnt {
+                &__txt {
                     height: auto;
                     width: 100%;
                 }
@@ -115,7 +115,7 @@
                 .mob-img-cntr {
                     display: none;
             
-                    .mob-img-box {
+                    &__img-inner-cntr {
                         display: none;
             
                         .mob-img {
@@ -125,14 +125,14 @@
                 }                   
             } 
             
-            .skill-box {
+            .skills {
                 padding: 1.5rem 0 0 0;
 
                 span {
                     font-weight: 600;
                 }
             
-                .skill-list {
+                &__list {
                     margin: 0.200rem 0 0 2rem;
                     display: grid;
                     width: 100%;
@@ -153,7 +153,7 @@
             }
         }
 
-        .img-cntr {
+        &__img-cntr {
             height: 100%;
             width: auto;
             display: flex;
@@ -161,12 +161,12 @@
             justify-content: center;
     
     
-            .img-box {
+            .img-inner-cntr {
                 height: auto;
                 width: auto;
                 display: initial;
     
-                .pf-img {
+                &__img {
                     height: 100%;
                     max-height: 300px;
                     width: 100%;
@@ -187,7 +187,7 @@
         flex-direction: row;
         justify-content: space-evenly;
     
-        .about-content {
+        &__content {
             height: auto;
             width: 80%;
             margin-left: 0px;
@@ -201,7 +201,7 @@
                 display: flex;
                 justify-content: space-between;
         
-                .txt-cnt {
+                &__txt {
                     height: auto;
                     width: 100%;
                 }
@@ -209,7 +209,7 @@
                 .mob-img-cntr {
                     display: none;
             
-                    .mob-img-box {
+                    &__img-inner-cntr {
                         display: none;
             
                         .mob-img {
@@ -219,14 +219,14 @@
                 }                   
             } 
             
-            .skill-box {
+            .skills {
                 padding: 1.5rem 0 0 0;
 
                 span {
                     font-weight: 600;
                 }
             
-                .skill-list {
+                &__list {
                     margin: 0.200rem 0 0 2rem;
                     display: grid;
                     width: 100%;
@@ -247,7 +247,7 @@
             }
         }
 
-        .img-cntr {
+        &__img-cntr {
             height: 100%;
             width: auto;
             display: flex;
@@ -256,12 +256,12 @@
             transform: translate(0%, -10%);
     
     
-            .img-box {
+            .img-inner-cntr {
                 height: auto;
                 width: auto;
                 display: initial;
     
-                .pf-img {
+                &__img {
                     height: 100%;
                     max-height: 360px;
                     width: 100%;

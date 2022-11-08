@@ -58,8 +58,8 @@ export default function WorkArticle( {article} ) {
     return (
         <>
             <article key={article.id} className="project card">
-                <div className="project-gallery-cntr">
-                    <div className="project-gallery">
+                <div className="project__gallery-cntr">
+                    <div className="gallery">
                         {article.imgs.map((imgs, imgId) => {
                             return( 
                                 <div className="img-cntr" key={imgId}>
@@ -70,7 +70,7 @@ export default function WorkArticle( {article} ) {
                     </div>
                 </div>
 
-                <div className="project-txt"> 
+                <div className="project__txt"> 
                     <div className="project-header">
                         <div className="project-title">
                             <h3 className="elem">{article.title}</h3>
@@ -85,9 +85,7 @@ export default function WorkArticle( {article} ) {
                         </div> 
                     </div>
         
-                    <div className="project-desc elem" dangerouslySetInnerHTML={ {__html: article.descHtml} }>
-                        {/* <span className="elem" dangerouslySetInnerHTML={ {__html: article.descHtml} }></span> */}
-                    </div>
+                    <div className="project-desc elem" dangerouslySetInnerHTML={ {__html: article.descHtml} }></div>
                 </div>
             </article>
         </>

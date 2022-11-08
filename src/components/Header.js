@@ -37,7 +37,7 @@ export default function Header() {
         <>
         {sectionData.map((data) => (
             <section className="header-cntr sec" key={data.id}>
-                <div className="header-txt">
+                <div className="header-cntr__txt">
                     <span>{data.introDesc}</span>
                     <h1>{data.title}</h1>
                     <span>{data.desc}</span>

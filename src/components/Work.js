@@ -49,9 +49,9 @@ export default function Work() {
         <>
             <section className="work-cntr section sec" id="work">
                 {sectionData.map((data) => (
-                    <div className="work-cntr-title" key={data.id}>
+                    <div className="work-cntr__title" key={data.id}>
                         <h2>{data.title}</h2>
-                        <p className="sub-title">{data.desc}</p>
+                        <p>{data.desc}</p>
                     </div>
                 ))} 
 

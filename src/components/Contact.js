@@ -14,30 +14,30 @@ export default function Contact() {
         getData();        
     }, []);
 
-        // Intersection observer
-        let secObserverOptions = {
-            threshold: 0.2
-        };
-        var secObserver = new IntersectionObserver(secObserverCallback, secObserverOptions);
-        function secObserverCallback(entries, observer) {
-            entries.forEach(entry => {
-                entry.target.classList.toggle("show", entry.isIntersecting)
-                if (entry.isIntersecting) {
-                    observer.unobserve(entry.target)
-                }
-            });
-        };
-        document.querySelectorAll(".sec").forEach((i) => {
-            if (i) {
-                secObserver.observe(i);
-            }
-        });
+        // // Intersection observer
+        // let secObserverOptions = {
+        //     threshold: 0.2
+        // };
+        // var secObserver = new IntersectionObserver(secObserverCallback, secObserverOptions);
+        // function secObserverCallback(entries, observer) {
+        //     entries.forEach(entry => {
+        //         entry.target.classList.toggle("show", entry.isIntersecting)
+        //         if (entry.isIntersecting) {
+        //             observer.unobserve(entry.target)
+        //         }
+        //     });
+        // };
+        // document.querySelectorAll(".sec").forEach((i) => {
+        //     if (i) {
+        //         secObserver.observe(i);
+        //     }
+        // });
 
 
     return (
         <>
         {sectionData.map((data) => (
-            <section className="contact-cntr section sec" key={data.id}>
+            <section className="contact-cntr section" key={data.id}>
                 <h2 id="contact" className="elem">{data.title}</h2>
                 <p className="elem">{data.desc}</p>
                 {data.cta.map((cta) => (

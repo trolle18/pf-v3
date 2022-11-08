@@ -26,24 +26,24 @@ export default function Work() {
         getData();        
     }, []);
 
-    // Intersection observer
-    let secObserverOptions = {
-        threshold: 0
-    };
-    var secObserver = new IntersectionObserver(secObserverCallback, secObserverOptions);
-    function secObserverCallback(entries, observer) {
-        entries.forEach(entry => {
-            entry.target.classList.toggle("show", entry.isIntersecting)
-            if (entry.isIntersecting) {
-                observer.unobserve(entry.target)
-            }
-        });
-    };
-    document.querySelectorAll(".work-cntr").forEach((i) => {
-        if (i) {
-            secObserver.observe(i);
-        }
-    });
+    // // Intersection observer
+    // let secObserverOptions = {
+    //     threshold: 0
+    // };
+    // var secObserver = new IntersectionObserver(secObserverCallback, secObserverOptions);
+    // function secObserverCallback(entries, observer) {
+    //     entries.forEach(entry => {
+    //         entry.target.classList.toggle("show", entry.isIntersecting)
+    //         if (entry.isIntersecting) {
+    //             observer.unobserve(entry.target)
+    //         }
+    //     });
+    // };
+    // document.querySelectorAll(".work-cntr").forEach((i) => {
+    //     if (i) {
+    //         secObserver.observe(i);
+    //     }
+    // });
 
     return (
         <>

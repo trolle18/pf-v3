@@ -5,7 +5,6 @@
 }
 
 #nav {
-    border: solid blue 0px;
     height: 2em;
     width: 100%;
     margin: 0 auto;
@@ -16,7 +15,6 @@
     flex-direction: row;
     justify-content: space-between;
     background-color: $black_transparent;
-    // background: linear-gradient( rgba(0, 0, 0, .8) 60%, rgba(0, 0, 0, .8)100%);
     backdrop-filter: blur(4px);
     box-shadow: 0 4px 10px -10px $clr_black;
     z-index: 100;
@@ -31,7 +29,6 @@
     
         &__logo {
             margin: auto 0;
-            border: solid red 0px;
 
             a {
                 font-family: $ff_sans;
@@ -60,17 +57,16 @@
             flex-direction: row;
             justify-content: flex-end;
             vertical-align: middle;
-
             
             &__menu-btn {
                 height: 20px;
                 width: 20px;
                 margin: auto 0;
-                border: solid red 0px;
                 text-transform: uppercase;
                 background-color: transparent;
                 cursor: pointer;
                 position: relative;
+                border: none;
                 
                 svg {
                     height: 100%;
@@ -107,17 +103,25 @@
 
             &__dropdown {
                 border: none;
+                height: auto;
                 width: inherit;
-                padding: 0px 0px 0px 2px;
-                top: 40px;
-                background-color: rgba(0, 0, 0, 0.9);
+                padding: 0 0.6em 0.5em 0.6em;
+                top: 3em;
+                z-index: 99;
                 position: absolute;
                 display: flex;
+                justify-content: space-between;
                 flex-direction: column;
-                column-gap: 10px;
+                background-color: rgba(0,0,0,.8);
+                backdrop-filter: blur(100px);
+                box-shadow: 0 4px 5px -10px $clr_black;
+                border-radius: 0px 2px 2px 0px;
+                z-index: 100;
+                text-align: right;
 
                 a {
-                    padding-bottom: 10px;
+                    margin: 0 0;
+                    padding-bottom: .5em;
                     font-family: $ff_sans;
                     font-size: $fs_xs;
                     text-decoration: none;

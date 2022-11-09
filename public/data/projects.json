@@ -85,6 +85,48 @@
   },
 
   {
+    "id": 98120044,
+    "value": 1,
+    "online": "y",
+    "title": "Personal website v.3.2",
+    "link": "",
+    "repo": "",
+    "descHtml": "<span>My personal website/portfolio! This current version is v.3.2 of my portfolio website. The first version, v.1, were made with plain HTML/CSS and vanilla JavaScript. Then, I made v.2 using with WordPress, as an examproject during my 2. semester.</span> <span>Next, is v.3.1 which I made with React and regular CSS, I have since then updated it from CSS to use SCSS which then makes this version, v.3.2!</span> <span>I am almost always doing something to improve my portfolio, with additions, edits and tweaks. In the future, I plan on upgrading my portfolio, from React to Next.</span>",
+    "shortHtml": "<span></span>",
+    "short": "",
+    "build": [
+      {"tech": "React"},
+      {"tech": "SCSS"}
+    ],
+    "imgs": [
+      { 
+        "imgId": 39011715,
+        "imgSrc": "/data/media/placeholder.jpg",
+        "imgAlt": "placeholder",
+        "imgDesc": "Image description..."
+      },
+      { 
+        "imgId": 48359891,
+        "imgSrc": "/data/media/placeholder.jpg",
+        "imgAlt": "placeholder",
+        "imgDesc": "Image description..."
+      },
+      { 
+        "imgId": 95462026,
+        "imgSrc": "/data/media/placeholder.jpg",
+        "imgAlt": "placeholder",
+        "imgDesc": "Image description..."
+      },
+      { 
+        "imgId": 68345316,
+        "imgSrc": "/data/media/placeholder.jpg",
+        "imgAlt": "placeholder",
+        "imgDesc": "Image description..."
+      }
+    ]
+  },
+
+  {
     "id": 98882854,
     "value": 2,
     "online": "y",
@@ -97,7 +139,8 @@
     "build": [
       {"tech": "Next"},
       {"tech": "TypeScript"},
-      {"tech": "Umbraco CMS"}
+      {"tech": "Umbraco CMS"},
+      {"tech": "Chakra UI"}
     ],
     "imgs": [
       { 

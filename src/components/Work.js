@@ -26,6 +26,7 @@ export default function Work() {
         getData();        
     }, []);
 
+
     // // Intersection observer
     // let secObserverOptions = {
     //     threshold: 0
@@ -60,7 +61,9 @@ export default function Work() {
                 .sort ((a, b) => a.value > b.value ? 1 : -1)
                 .map((article) => (
                     <WorkArticle article={article} key={article.id}/>
-                ))}                
+                ))}   
+
+       
             </section>
         
         </>

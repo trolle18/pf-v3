@@ -94,6 +94,7 @@
                 padding: 0 .5rem;
                 display: flex;
                 flex-direction: row;
+                flex-wrap: wrap;
 
                 span {
                     margin-right: 2rem;
@@ -130,7 +131,7 @@
 
             &__gallery-cntr {
                 height: 100%;
-                width: 50%;
+                min-width: 50%;
 
                 .gallery {
                     .img-cntr {
@@ -145,7 +146,7 @@
             } 
 
             &__txt {
-                width: 60%;
+                width: auto;
                 margin: auto 0;
 
                 .project-header {
@@ -199,7 +200,7 @@
                 .project-header {
                     margin-bottom: .625em;
                 
-                    .project-title {
+                   .project-title {
                         padding: 0 0 0 .5rem;
 
                         h3 {

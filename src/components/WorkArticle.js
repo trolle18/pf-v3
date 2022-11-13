@@ -6,7 +6,7 @@ export default function WorkArticle( {article} ) {
         const isLink = article.link;
         if(isLink) {
             return(
-                <a href={article.link} className="elem"> <AiOutlineLink/> </a>
+                <a href={article.link} className="elem" target="_blank" rel="noreferrer"> <AiOutlineLink/> </a>
             )
         }
         else{ return(null) }
@@ -17,7 +17,7 @@ export default function WorkArticle( {article} ) {
         const isRepo = article.repo;
         if(isRepo) {
             return(
-                <a href={article.repo} className="elem"> <AiOutlineGithub/> </a>
+                <a href={article.repo} className="elem" target="_blank" rel="noreferrer"> <AiOutlineGithub/> </a>
             )
         }
         else{ return(null) }
@@ -31,6 +31,27 @@ export default function WorkArticle( {article} ) {
                 article.build.map((build, i) => {
                     return( <span key={i} className="elem">{build.tech}</span> )
                 })
+            )
+        }
+        else{ return(null) }
+    }
+
+    // Only render build, if the article link excists
+    function getGallery(article) {
+        const isImgs = article.imgs;
+        if(isImgs) {
+            return(
+                <div className="project__gallery-cntr">
+                    <div className="gallery">
+                        {article.imgs.map((imgs, imgId) => {
+                            return( 
+                                <div className="img-cntr" key={imgId}>
+                                    <img src={imgs.imgSrc} alt={imgs.ImgAlt} className="elem"/> 
+                                </div>
+                            )
+                        })}
+                    </div>
+                </div>
             )
         }
         else{ return(null) }
@@ -58,7 +79,8 @@ export default function WorkArticle( {article} ) {
     return (
         <>
             <article key={article.id} className="project card">
-                <div className="project__gallery-cntr">
+                {getGallery(article)}
+                {/* <div className="project__gallery-cntr">
                     <div className="gallery">
                         {article.imgs.map((imgs, imgId) => {
                             return( 
@@ -68,7 +90,7 @@ export default function WorkArticle( {article} ) {
                             )
                         })}
                     </div>
-                </div>
+                </div> */}
 
                 <div className="project__txt"> 
                     <div className="project-header">

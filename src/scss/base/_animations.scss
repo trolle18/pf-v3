@@ -1,49 +1,124 @@
+@import '../abstracts/variables';
 
 /* ---------- ANIMATIONS ---------- */
 
-// Section animations
-.sec {
-    opacity: $opacity_init;
-    transform: $tl_Y_init;
-    transition: $ease_in_50;
-    .elem {
-        opacity: $opacity_init;
-        transform: $tl_Y_init;
-        transition: $ease_in_50;
+// // HEADER CNTR
+// .header-cntr.sec {
+//     h1 {
+//         opacity: $opacity_init;
+//         transform: $tl_X_init;
+//         transition: $ease_in_25;
+//     }
+   
+//     span {
+//         opacity: $opacity_init;
+//         transform: $tl_X_initSec;
+//         transition: $ease_in_25;
+//     }
+// }
+
+// .header-cntr {
+//     h1 {
+//         opacity: $opacity_show;
+//         transform: $tl_X_show;
+//     }
+//     span {
+//         opacity: $opacity_show;
+//         transform: $tl_X_show;
+//     }
+// }
+
+// // ABOUT CNTR
+// .about-cntr.sec {
+//     opacity: $opacity_init;
+//     transform: $tl_Y_init;
+//     transition: $ease_in_50;
+//     .elem {
+//         opacity: $opacity_init;
+//         transform: $tl_Y_init;
+//         transition: $ease_in_50;
+//     }
+// }
+
+// .about-cntr.sec.show {
+//     opacity: $opacity_show;
+//     transform: $tl_Y_show;
+
+//     .elem {
+//         opacity: $opacity_show;
+//         transform: $tl_Y_show;
+//     }
+// }
+
+// // WORK CNTR
+// .work-cntr.sec {
+//     opacity: $opacity_init;
+//     transform: $tl_Y_init;
+//     transition: $ease_in_50;
+//     .elem {
+//         opacity: $opacity_init;
+//         transform: $tl_Y_init;
+//         transition: $ease_in_50;
+//     }
+// }
+
+// .work-cntr.sec.show {
+//     opacity: $opacity_show;
+//     transform: $tl_Y_show;
+
+//     .elem {
+//         opacity: $opacity_show;
+//         transform: $tl_Y_show;
+//     }
+// }
+
+// Work article / project
+// .project {
+//     opacity: 0;
+//     transform: translateY(0px);
+//     transition: ease-in-out .5s;
+// }
+
+// .project.show {
+//     opacity: 1;
+//     transform: translateY(0);
+
+//     .elem {
+//         transition: ease-in;
+//         animation: fade .25s;
+//     }
+// }
+
+// // CONTACT CNTR
+// .contact-cntr.sec {
+//     opacity: $opacity_init;
+//     transform: $tl_Y_init;
+//     transition: $ease_in_50;
+//     .elem {
+//         opacity: $opacity_init;
+//         transform: $tl_Y_init;
+//         transition: $ease_in_50;
+//     }
+// }
+
+// .contact-cntr.sec.show {
+//     opacity: $opacity_show;
+//     transform: $tl_Y_show;
+
+//     .elem {
+//         opacity: $opacity_show;
+//         transform: $tl_Y_show;
+//     }
+// }
+
+
+@keyframes fadein {
+	0% {
+        opacity: 0; 
+        transform: translateY(0); 
     }
-}
-
-.sec.show {
-    opacity: $opacity_show;
-    transform: $tl_Y_show;
-
-    .elem {
-        opacity: $opacity_show;
-        transform: $tl_Y_show;
-    }
-}
-
-// Card animations
-.card {
-    opacity: $opacity_init;
-    overflow: hidden;
-    transform: $tl_X_init;
-    transition: $ease_in_25;
-
-    .elem {
-        opacity: $opacity_init;
-        overflow: hidden;
-        transform: $tl_X_init;
-        transition: $ease_in_25;
-    }
-}
-
-.card.show {
-    opacity: $opacity_show;
-    transform: $tl_X_show;
-
-    .elem {
-        opacity: $opacity_show;
-        transform: $tl_X_show;
+	100% { 
+        opacity: 1;
+        transform: translateY(0%);
     }
 }

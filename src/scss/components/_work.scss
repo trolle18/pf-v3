@@ -5,11 +5,32 @@
     flex-direction: column;
     column-gap: 500px;
 
-    .work-cntr-title {
+    &__title {
         margin-left: 10px;
         padding: 0 0 .5em 0;
     }
 
+    // .sec {
+    //     opacity: $opacity_init;
+    //     transform: $tl_Y_init;
+    //     transition: $ease_in_50;
+    //     .elem {
+    //         opacity: $opacity_init;
+    //         transform: $tl_Y_init;
+    //         transition: $ease_in_50;
+    //     }
+    // }
+    
+    // .sec.show {
+    //     opacity: $opacity_show;
+    //     transform: $tl_Y_show;
+    
+    //     .elem {
+    //         opacity: $opacity_show;
+    //         transform: $tl_Y_show;
+    //     }
+    // }
+    
 }
 
 @media (min-width: 600px) {
@@ -27,51 +48,3 @@
         
     }
 }
-
-
-
-// // /* Animations */
-// .card {
-//     opacity: $opacity_init;
-//     overflow: hidden;
-//     transform: $tl_X_init;
-//     transition: $ease_in_25;
-
-//     .elem {
-//         opacity: $opacity_init;
-//         overflow: hidden;
-//         transform: $tl_X_init;
-//         transition: $ease_in_25;
-//     }
-// }
-
-// .card.show {
-//     opacity: $opacity_show;
-//     transform: $tl_X_show;
-
-//     .elem {
-//         opacity: $opacity_show;
-//         transform: $tl_X_show;
-//     }
-// }
-
-// .sec {
-//     opacity: $opacity_init;
-//     transform: $tl_Y_init;
-//     transition: $ease_in_50;
-//     .elem {
-//         opacity: $opacity_init;
-//         transform: $tl_Y_init;
-//         transition: $ease_in_50;
-//     }
-// }
-
-// .sec.show {
-//     opacity: $opacity_show;
-//     transform: $tl_Y_show;
-
-//     .elem {
-//         opacity: $opacity_show;
-//         transform: $tl_Y_show;
-//     }
-// }

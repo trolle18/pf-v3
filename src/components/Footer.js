@@ -23,7 +23,7 @@ export default function Footer() {
         {sectionData.map((data) => (
         <footer className="footer-cntr" key={data.id}>
             <div className="footer-top">
-                <div className="footer-l-col">
+                <div className="footer-top__l-col">
                     <div className="footer-logo"> 
                         <a href="/" className='logo-link'>{data.title}</a> 
                     </div>
@@ -34,7 +34,7 @@ export default function Footer() {
                     ))}    
                     
                 </div>
-                <div className="footer-links">
+                <div className="footer-top__links">
                     {data.some.map((some) => (
                         <a key={some.id} href={some.link} target="_blank" rel="noreferrer" dangerouslySetInnerHTML={{__html: some.svg}}></a>
                     ))}    

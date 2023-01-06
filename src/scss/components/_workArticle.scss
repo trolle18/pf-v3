@@ -19,12 +19,12 @@
         display: flex;
         flex-direction: column;
         
-        .project-gallery-cntr {
+        &__gallery-cntr {
             height: 100%;
             width: 100%;
             margin: 0 auto;
 
-            .project-gallery {
+            .gallery {
                 height: 100%;
                 width: 100%;
                 object-fit: cover;
@@ -55,7 +55,7 @@
             }
         }  
 
-        .project-txt {
+        &__txt {
             width: 100%;
             padding: .5rem 0;
             display: flex;
@@ -94,6 +94,7 @@
                 padding: 0 .5rem;
                 display: flex;
                 flex-direction: row;
+                flex-wrap: wrap;
 
                 span {
                     margin-right: 2rem;
@@ -108,6 +109,8 @@
 
             .project-desc {
                 padding: 0 .5rem;
+                display: flex;
+                flex-direction: column;
             } 
         }
         
@@ -126,11 +129,11 @@
             margin: 5em .2em 6em 0em; 
             flex-direction: row;
 
-            .project-gallery-cntr {
+            &__gallery-cntr {
                 height: 100%;
-                width: 50%;
+                min-width: 50%;
 
-                .project-gallery {
+                .gallery {
                     .img-cntr {
                         height: 160px;
                         width: 40%;
@@ -142,8 +145,8 @@
                 }
             } 
 
-            .project-txt {
-                width: 60%;
+            &__txt {
+                width: auto;
                 margin: auto 0;
 
                 .project-header {
@@ -177,11 +180,11 @@
                 margin: 2rem 0rem 4rem 0rem;
             }
 
-            .project-gallery-cntr {
+            &__gallery-cntr {
                 height: 100%;
                 width: 50%;
 
-                .project-gallery {
+                .gallery {
                     .img-cntr {
                         height: 160px;
                         width: 40%;
@@ -193,11 +196,11 @@
                 }
             }
 
-            .project-txt {
+            &__txt {
                 .project-header {
                     margin-bottom: .625em;
                 
-                    .project-title {
+                   .project-title {
                         padding: 0 0 0 .5rem;
 
                         h3 {
@@ -218,22 +221,3 @@
         }
     }
 }
-
-
-
-/* Animations */
-// .card {
-//     opacity: 0;
-//     transform: translateY(0px);
-//     transition: ease-in-out .5s;
-// }
-
-// .card.show {
-//     opacity: 1;
-//     transform: translateY(0);
-
-//     .elem {
-//         transition: ease-in;
-//         animation: fade .25s;
-//     }
-// }

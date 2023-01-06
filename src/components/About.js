@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import '../utils/IntersecObs';
 
 export default function About() {
     const [sectionData, setSectionData] = useState([]);
@@ -13,34 +14,32 @@ export default function About() {
         getData();        
     }, []);
 
-        // Intersection observer
-        let secObserverOptions = {
-            threshold: 0.25
-        };
-        var secObserver = new IntersectionObserver(secObserverCallback, secObserverOptions);
-        function secObserverCallback(entries, observer) {
-            entries.forEach(entry => {
-                entry.target.classList.toggle("show", entry.isIntersecting)
-                if (entry.isIntersecting) {
-                    observer.unobserve(entry.target)
-                }
-            });
-        };
-        let secTarget = '.sec';
-        document.querySelectorAll(secTarget).forEach((i) => {
-            if (i) {
-                secObserver.observe(i);
-            }
-        });
+    // // Intersection observer
+    // let secObserverOptions = {
+    //     threshold: 0.2
+    // };
+    // var secObserver = new IntersectionObserver(secObserverCallback, secObserverOptions);
+    // function secObserverCallback(entries, observer) {
+    //     entries.forEach(entry => {
+    //         entry.target.classList.toggle("show", entry.isIntersecting)
+    //         if (entry.isIntersecting) {
+    //             observer.unobserve(entry.target)
+    //         }
+    //     });
+    // };
+    // document.querySelectorAll(".about-cntr").forEach((i) => {
+    //     if (i) {
+    //         secObserver.observe(i);
+    //     }
+    // });
 
     return (
         <>
         {sectionData.map((data) => (
-            <section className="about-cntr section sec" id="about" key={data.id}>
-               
-                <div className="about-content">
+            <section className="about-cntr section" id="about" key={data.id}>               
+                <div className="about-cntr__content">
                     <div className="about-txt">
-                        <div className="txt-cnt">
+                        <div className="about-txt__txt">
                             <h2 className="elem">{data.title}</h2>
                             {data.desc.map((descData) => (
                                 <p key={descData.id} className="elem">
@@ -50,7 +49,7 @@ export default function About() {
                         </div>
 
                         <div className="mob-img-cntr elem">
-                            <div className="mob-img-box">
+                            <div className="mob-img-cntr__img-inner-cntr">
                                 {data.img.map((img) => (
                                     <img key={img.imgId} src={img.imgUrl} className="mob-img" alt={img.imgAlt}/>
                                 ))}                                    
@@ -58,20 +57,22 @@ export default function About() {
                         </div>
                     </div>
 
-                    <div className="skill-box">
+                    <div className="skills">
                         <span className="elem">{data.listTitle}</span>
-                        <ul className="skill-list elem">
-                            {data.listItems.map((listItem) => (
+                        <ul className="skills__list elem">
+                            {data.listItems
+                            .filter((listItem) => listItem.online.includes('y'))
+                            .map((listItem) => (                                
                                 <li key={listItem.id} className="elem"><span>{listItem.item}</span></li>
                             ))}
                         </ul>
                     </div>
                 </div>
 
-                <div className="img-cntr elem">
-                    <div className="img-box">
+                <div className="about-cntr__img-cntr elem">
+                    <div className="img-inner-cntr">
                         {data.img.map((img) => (
-                            <img key={img.imgId} src={img.imgUrl} className="pf-img" alt={img.imgAlt}/>
+                            <img key={img.imgId} src={img.imgUrl} className="img-inner-cntr__img" alt={img.imgAlt}/>
                         ))}                        
                     </div>
                 </div>

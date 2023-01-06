@@ -6,7 +6,7 @@ export default function WorkArticle( {article} ) {
         const isLink = article.link;
         if(isLink) {
             return(
-                <a href={article.link} className="elem"> <AiOutlineLink/> </a>
+                <a href={article.link} className="elem" target="_blank" rel="noreferrer"> <AiOutlineLink/> </a>
             )
         }
         else{ return(null) }
@@ -17,7 +17,7 @@ export default function WorkArticle( {article} ) {
         const isRepo = article.repo;
         if(isRepo) {
             return(
-                <a href={article.repo} className="elem"> <AiOutlineGithub/> </a>
+                <a href={article.repo} className="elem" target="_blank" rel="noreferrer"> <AiOutlineGithub/> </a>
             )
         }
         else{ return(null) }
@@ -36,12 +36,13 @@ export default function WorkArticle( {article} ) {
         else{ return(null) }
     }
 
-   
-    return (
-        <>
-            <article key={article.id} className="project card">
-                <div className="project-gallery-cntr">
-                    <div className="project-gallery">
+    // Only render build, if the article link excists
+    function getGallery(article) {
+        const isImgs = article.imgs;
+        if(isImgs) {
+            return(
+                <div className="project__gallery-cntr">
+                    <div className="gallery">
                         {article.imgs.map((imgs, imgId) => {
                             return( 
                                 <div className="img-cntr" key={imgId}>
@@ -51,8 +52,47 @@ export default function WorkArticle( {article} ) {
                         })}
                     </div>
                 </div>
+            )
+        }
+        else{ return(null) }
+    }
 
-                <div className="project-txt"> 
+        // // Intersection observer
+        // let secObserverOptions = {
+        //     threshold: 0.2
+        // };
+        // var secObserver = new IntersectionObserver(secObserverCallback, secObserverOptions);
+        // function secObserverCallback(entries, observer) {
+        //     entries.forEach(entry => {
+        //         entry.target.classList.toggle("show", entry.isIntersecting)
+        //         if (entry.isIntersecting) {
+        //             observer.unobserve(entry.target)
+        //         }
+        //     });
+        // };
+        // document.querySelectorAll(".card").forEach((i) => {
+        //     if (i) {
+        //         secObserver.observe(i);
+        //     }
+        // });
+   
+    return (
+        <>
+            <article key={article.id} className="project card">
+                {getGallery(article)}
+                {/* <div className="project__gallery-cntr">
+                    <div className="gallery">
+                        {article.imgs.map((imgs, imgId) => {
+                            return( 
+                                <div className="img-cntr" key={imgId}>
+                                    <img src={imgs.imgSrc} alt={imgs.ImgAlt} className="elem"/> 
+                                </div>
+                            )
+                        })}
+                    </div>
+                </div> */}
+
+                <div className="project__txt"> 
                     <div className="project-header">
                         <div className="project-title">
                             <h3 className="elem">{article.title}</h3>
@@ -67,9 +107,7 @@ export default function WorkArticle( {article} ) {
                         </div> 
                     </div>
         
-                    <div className="project-desc">
-                        <span className="elem" dangerouslySetInnerHTML={ {__html: article.descHtml} }></span>
-                    </div>
+                    <div className="project-desc elem" dangerouslySetInnerHTML={ {__html: article.descHtml} }></div>
                 </div>
             </article>
         </>

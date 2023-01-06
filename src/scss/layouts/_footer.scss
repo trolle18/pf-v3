@@ -15,7 +15,7 @@
         flex-direction: row;
         justify-content: space-between;
 
-        .footer-l-col {
+        &__l-col {
             display: flex;
             flex-direction: column;
             margin-left: 10px;
@@ -35,7 +35,6 @@
             }
         
             .footer-logo {
-
                 .logo-link {
                     font-family: $ff_sans;
                     text-decoration: none;
@@ -54,7 +53,7 @@
             }
         }
 
-        .footer-links {
+        &__links {
             width: auto;
             display: flex;
             flex-direction: row;
@@ -87,19 +86,19 @@
     }
 
     .footer-btm {
-        margin: 4em auto 0 auto;
+        margin: 5em auto 0em auto;
         display: flex;
         flex-direction: column;
         font-family: $ff_mono;
 
         span {
-            color: $clr_m_grey;
+            color: $clr_md_grey;
             text-align: center;
             vertical-align: middle;
+            font-size: $fs_xxs;
         }
 
         .copy {
-
             svg {
                 height: 14px;
                 width: auto;
@@ -115,7 +114,7 @@
         width: 90%;
 
         .footer-top {
-            .footer-l-col {
+            &__l-col {
                 margin-left: 0px;
             }
         }
@@ -128,7 +127,7 @@
         max-width: 1200px;
         
         .footer-top {
-            .footer-l-col {
+            &__l-col {
                 margin-left: 0px;
             }
         }

@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
-import '../utils/IntersecObs';
+import { motion } from "framer-motion";
+import { container, element } from "../utils/framerMotion";
 
 export default function Contact() {
     const [sectionData, setSectionData] = useState([]);
@@ -14,37 +15,34 @@ export default function Contact() {
         getData();        
     }, []);
 
-        // // Intersection observer
-        // let secObserverOptions = {
-        //     threshold: 0.2
-        // };
-        // var secObserver = new IntersectionObserver(secObserverCallback, secObserverOptions);
-        // function secObserverCallback(entries, observer) {
-        //     entries.forEach(entry => {
-        //         entry.target.classList.toggle("show", entry.isIntersecting)
-        //         if (entry.isIntersecting) {
-        //             observer.unobserve(entry.target)
-        //         }
-        //     });
-        // };
-        // document.querySelectorAll(".sec").forEach((i) => {
-        //     if (i) {
-        //         secObserver.observe(i);
-        //     }
-        // });
-
-
     return (
         <>
-        {sectionData.map((data) => (
-            <section className="contact-cntr section" key={data.id}>
-                <h2 id="contact" className="elem">{data.title}</h2>
-                <p className="elem">{data.desc}</p>
-                {data.cta.map((cta) => (
-                    <a key={cta.id} href={cta.link} className="elem">{cta.linkTxt}</a>
-                ))}      
-            </section>
-        ))}           
+            {sectionData.map((data) => (
+                <section key={data.id}>
+                    <motion.div
+                    className="contact-cntr section" 
+                    variants={container}
+                    initial="hidden"
+                    whileInView="show"
+                    viewport={{once: true}}
+                    >
+                        <motion.h2 id="contact" className="elem" variants={element}>
+                            {data.title}
+                        </motion.h2>
+
+                        <motion.p className="elem" variants={element}>
+                            {data.desc}
+                        </motion.p>
+
+                        {data.cta.map((cta) => (
+                            <motion.a key={cta.id} href={cta.link} className="elem" variants={element}>
+                                {cta.linkTxt}
+                            </motion.a>
+                        ))}  
+                    </motion.div>
+                        
+                </section>
+            ))}           
         </>
     )
 };

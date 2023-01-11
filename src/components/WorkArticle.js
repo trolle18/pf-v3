@@ -1,115 +1,104 @@
-import { AiOutlineGithub, AiOutlineLink } from "react-icons/ai"
+import { AiOutlineGithub, AiOutlineLink } from "react-icons/ai";
+import { motion } from "framer-motion";
+import { container, element } from "../utils/framerMotion";
 
-export default function WorkArticle( {article} ) {
-    // Only render link, if the article link excists
+export default function WorkArticle({ article }) {
+
+    // Check link
     function getLink(article) {
         const isLink = article.link;
         if(isLink) {
-            return(
-                <a href={article.link} className="elem" target="_blank" rel="noreferrer"> <AiOutlineLink/> </a>
+            return (
+                <motion.a 
+                href={article.link} 
+                className="elem" 
+                target="_blank" 
+                rel="noreferrer" 
+                variants={element}
+                >
+                    <AiOutlineLink/>
+                </motion.a>
             )
         }
-        else{ return(null) }
     }
 
-    // Only render repo, if the article link excists
+    // Check repo
     function getRepo(article) {
         const isRepo = article.repo;
         if(isRepo) {
-            return(
-                <a href={article.repo} className="elem" target="_blank" rel="noreferrer"> <AiOutlineGithub/> </a>
+            return (
+                <a
+                href={article.repo}
+                className="elem"
+                target="_blank"
+                rel="noreferrer"
+                >
+                    <AiOutlineGithub/>
+                </a>
             )
         }
-        else{ return(null) }
     }
 
-    // Only render build, if the article link excists
+    // Check Build
     function getBuild(article) {
         const isBuild = article.build;
         if(isBuild) {
-            return(
+            return (
                 article.build.map((build, i) => {
                     return( <span key={i} className="elem">{build.tech}</span> )
                 })
             )
         }
-        else{ return(null) }
     }
 
-    // Only render build, if the article link excists
+    // Check gallery
     function getGallery(article) {
         const isImgs = article.imgs;
         if(isImgs) {
-            return(
-                <div className="project__gallery-cntr">
+            return (
+                <motion.div className="project__gallery-cntr" variants={element}>
                     <div className="gallery">
-                        {article.imgs.map((imgs, imgId) => {
-                            return( 
-                                <div className="img-cntr" key={imgId}>
-                                    <img src={imgs.imgSrc} alt={imgs.ImgAlt} className="elem"/> 
+                        {article.imgs.map((img) => {
+                            return ( 
+                                <div className="img-cntr" key={img.id}>
+                                    <img src={img.src} alt={img.alt} className="elem"/> 
                                 </div>
                             )
                         })}
                     </div>
-                </div>
+                </motion.div>
             )
         }
-        else{ return(null) }
     }
-
-        // // Intersection observer
-        // let secObserverOptions = {
-        //     threshold: 0.2
-        // };
-        // var secObserver = new IntersectionObserver(secObserverCallback, secObserverOptions);
-        // function secObserverCallback(entries, observer) {
-        //     entries.forEach(entry => {
-        //         entry.target.classList.toggle("show", entry.isIntersecting)
-        //         if (entry.isIntersecting) {
-        //             observer.unobserve(entry.target)
-        //         }
-        //     });
-        // };
-        // document.querySelectorAll(".card").forEach((i) => {
-        //     if (i) {
-        //         secObserver.observe(i);
-        //     }
-        // });
    
     return (
         <>
-            <article key={article.id} className="project card">
+            <motion.article
+            key={article.id}
+            className="project card"
+            variants={container}
+            initial="hidden"
+            whileInView="show"
+            >
                 {getGallery(article)}
-                {/* <div className="project__gallery-cntr">
-                    <div className="gallery">
-                        {article.imgs.map((imgs, imgId) => {
-                            return( 
-                                <div className="img-cntr" key={imgId}>
-                                    <img src={imgs.imgSrc} alt={imgs.ImgAlt} className="elem"/> 
-                                </div>
-                            )
-                        })}
-                    </div>
-                </div> */}
-
                 <div className="project__txt"> 
                     <div className="project-header">
                         <div className="project-title">
-                            <h3 className="elem">{article.title}</h3>
-                            <div className="project-links">
+                            <motion.h3 className="elem" variants={element}>{article.title}</motion.h3>
+                            <motion.div className="project-links" variants={element}>
                                 {getLink(article)}
                                 {getRepo(article)} 
-                            </div>
+                            </motion.div>
                         </div>
 
-                        <div className="project-build">
+                        <motion.div className="project-build" variants={element}>
                             {getBuild(article)}
-                        </div> 
+                        </motion.div> 
                     </div>
         
-                    <div className="project-desc elem" dangerouslySetInnerHTML={ {__html: article.descHtml} }></div>
+                    <motion.div className="project-desc elem" variants={element} dangerouslySetInnerHTML={ {__html: article.descHtml} }></motion.div>
                 </div>
-            </article>
+            </motion.article>
         </>
     )
 };

@@ -1,4 +1,6 @@
 import { useState, useEffect } from "react";
+import { motion } from "framer-motion";
+import { container, elemFast } from "../utils/framerMotion";
 import WorkArticle from "./WorkArticle";
 
 
@@ -26,34 +28,21 @@ export default function Work() {
         getData();        
     }, []);
 
-
-    // // Intersection observer
-    // let secObserverOptions = {
-    //     threshold: 0
-    // };
-    // var secObserver = new IntersectionObserver(secObserverCallback, secObserverOptions);
-    // function secObserverCallback(entries, observer) {
-    //     entries.forEach(entry => {
-    //         entry.target.classList.toggle("show", entry.isIntersecting)
-    //         if (entry.isIntersecting) {
-    //             observer.unobserve(entry.target)
-    //         }
-    //     });
-    // };
-    // document.querySelectorAll(".work-cntr").forEach((i) => {
-    //     if (i) {
-    //         secObserver.observe(i);
-    //     }
-    // });
-
     return (
         <>
             <section className="work-cntr section" id="work">
                 {sectionData.map((data) => (
-                    <div className="work-cntr__title" key={data.id}>
-                        <h2>{data.title}</h2>
-                        <p>{data.desc}</p>
-                    </div>
+                    <motion.div 
+                    key={data.id}
+                    className="work-cntr__title"                    
+                    variants={container}
+                    initial="hidden"
+                    whileInView="showFast"
+                    viewport={{once: true}}
+                    >
+                        <motion.h2 variants={elemFast}>{data.title}</motion.h2>
+                        <motion.p variants={elemFast}>{data.desc}</motion.p>
+                    </motion.div>
                 ))} 
 
                 {articles
@@ -61,11 +50,8 @@ export default function Work() {
                 .sort ((a, b) => a.value > b.value ? 1 : -1)
                 .map((article) => (
                     <WorkArticle article={article} key={article.id}/>
-                ))}   
-
-       
+                ))}
             </section>
-        
         </>
     )
 };

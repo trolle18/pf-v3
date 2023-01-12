@@ -8,7 +8,7 @@ export default function Contact() {
     // Fetch data from JSON
     useEffect(() => {
         async function getData() {
-            const response = await fetch("/data/components/contactData.json");
+            const response = await fetch("/data/components/homepageData.json");
             const data = await response.json();
             setSectionData(data);             
         }       
@@ -18,29 +18,31 @@ export default function Contact() {
     return (
         <>
             {sectionData.map((data) => (
-                <section key={data.id}>
-                    <motion.div
-                    className="contact-cntr section" 
-                    variants={container}
-                    initial="hidden"
-                    whileInView="show"
-                    viewport={{once: true}}
-                    >
-                        <motion.h2 id="contact" className="elem" variants={element}>
-                            {data.title}
-                        </motion.h2>
+                <section key={data.id} id="contact">
+                    {data.contact.map((data) => (
+                        <motion.div
+                        key={data.id}
+                        className="contact-cntr section" 
+                        variants={container}
+                        initial="hidden"
+                        whileInView="show"
+                        viewport={{once: true}}
+                        >
+                            <motion.h2  className="elem" variants={element}>
+                                {data.title}
+                            </motion.h2>
 
-                        <motion.p className="elem" variants={element}>
-                            {data.desc}
-                        </motion.p>
+                            <motion.p className="elem" variants={element}>
+                                {data.desc}
+                            </motion.p>
 
-                        {data.link.map((link) => (
-                            <motion.a key={link.id} href={link.url} className="elem" variants={element}>
-                                {link.text}
-                            </motion.a>
-                        ))}  
-                    </motion.div>
-                        
+                            {data.link.map((link) => (
+                                <motion.a key={link.id} href={link.url} className="elem" variants={element}>
+                                    {link.text}
+                                </motion.a>
+                            ))}  
+                        </motion.div>
+                    ))} 
                 </section>
             ))}           
         </>

@@ -1,10 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import BurgerMenu from './BurgerMenu';
 
-const Nav = () => {
+const Nav = ({ globalData }) => {
   const [show, setShow] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
-  const [globalData, setGlobalData] = useState([]);
 
   // Hide navbar on scroll
   const controlNavbar = () => {
@@ -24,17 +23,6 @@ const Nav = () => {
     }
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [lastScrollY]);
-
-  // Fetch data from JSON
-  useEffect(() => {
-    async function getData() {
-      const response = await fetch("/data/components/globalData.json");
-      const data = await response.json();
-      setGlobalData(data);             
-    }       
-    getData();        
-  }, []);
-
 
     return (
       <>

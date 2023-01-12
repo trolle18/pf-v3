@@ -1,22 +1,10 @@
 import React, {useState, useEffect} from 'react';
 
-export default function Footer() {
-    const [globalData, setGlobalData] = useState([]);
+export default function Footer({ globalData }) {
     const [date , setDate] = useState();
 
     const getYear = () =>  setDate(new Date().getFullYear())
     useEffect(() => { getYear() }, [])
-
-
-    // Fetch data from JSON
-    useEffect(() => {
-        async function getData() {
-            const response = await fetch("/data/components/globalData.json");
-            const data = await response.json();
-            setGlobalData(data);
-        }
-        getData();
-    }, []);
 
     return (
         <>

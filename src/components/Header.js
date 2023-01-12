@@ -1,8 +1,10 @@
 import { useState, useEffect } from "react";
+import { motion } from "framer-motion";
+import { container, element } from "../utils/framerMotion";
 
 export default function Header() {
     const [sectionData, setSectionData] = useState([]);
-
+    
     // Fetch data from JSON
     useEffect(() => {
         async function getData() {
@@ -13,35 +15,31 @@ export default function Header() {
         getData();        
     }, []);
 
-    // Intersection observer
-    let secObserverOptions = {
-        threshold: 0
-    };
-    var secObserver = new IntersectionObserver(secObserverCallback, secObserverOptions);
-    function secObserverCallback(entries, observer) {
-        entries.forEach(entry => {
-            entry.target.classList.toggle("show", entry.isIntersecting)
-            if (entry.isIntersecting) {
-                observer.unobserve(entry.target)
-            }
-        });
-    };
-    document.querySelectorAll(".header-cntr").forEach((i) => {
-        if (i) {
-            secObserver.observe(i);
-        }
-    });
-
 
     return (
         <>
         {sectionData.map((data) => (
-            <section className="header-cntr sec" key={data.id}>
-                <div className="header-cntr__txt">
-                    <span>{data.introDesc}</span>
-                    <h1>{data.title}</h1>
-                    <span>{data.desc}</span>
-                </div>
+            <section key={data.id} className="header-cntr sec">
+                <motion.div 
+                className="header-cntr__txt"
+                variants={container}
+                initial="hidden"
+                whileInView="show"
+                viewport={{once: true}}
+                >
+                    <motion.span variants={element}>
+                        {data.introDesc}
+                    </motion.span>
+
+                    <motion.h1 variants={element}>
+                        {data.title}
+                    </motion.h1>
+
+                    <motion.span variants={element}>
+                        {data.desc}
+                    </motion.span>
+
+                </motion.div>
             </section>
         ))}   
         </>

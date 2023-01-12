@@ -1,9 +1,59 @@
 [
   {
-    "id": 1819,
+    "id": 1820,
     "online": "y",
     "title": "Sofie Trolle",
     "introDesc": "Hi! My name is",
-    "desc": "I am a multimedia designer, specializing in frontend development."
-    }
-  ]
+    "desc": "I am a multimedia designer, specializing in frontend development.",
+    "text": [
+      {
+        "id": 181910,
+        "value": 1,
+        "type": "text",
+        "text": "Hi! My name is"
+      },
+      {
+        "id": 181911,
+        "value": 2,
+        "type": "title",
+        "text": "Sofie Trolle"
+      },
+      {
+        "id": 181912,
+        "value": 3,
+        "type": "text",
+        "text": "I am a multimedia designer, specializing in frontend development."
+      }
+    ],
+
+  "header": [
+    {
+    "id": 1819,
+    "title": "Sofie Trolle",
+    "introDesc": "Hi! My name is",
+    "desc": "I am a multimedia designer, specializing in frontend development.",
+    "text": [
+      {
+        "id": 181910,
+        "value": 1,
+        "type": "text",
+        "text": "Hi! My name is"
+      },
+      {
+        "id": 181911,
+        "value": 2,
+        "type": "title",
+        "text": "Sofie Trolle"
+      },
+      {
+        "id": 181912,
+        "value": 3,
+        "type": "text",
+        "text": "I am a multimedia designer, specializing in frontend development."
+      }
+    ]
+  }
+]
+
+}
+]

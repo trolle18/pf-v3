@@ -7,9 +7,9 @@ const Nav = ({ globalData }) => {
 
   // Hide navbar on scroll
   const controlNavbar = () => {
-    if (typeof window !== 'undefined') { 
+    if (typeof window !== 'undefined') {
       if (window.scrollY > lastScrollY) { // if scroll down hide the navbar
-        setShow(false); 
+        setShow(false);
       } else { setShow(true) } // if scroll up show the navbar
       setLastScrollY(window.scrollY); // remember current page location to use in the next move
     }
@@ -24,51 +24,46 @@ const Nav = ({ globalData }) => {
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [lastScrollY]);
 
-    return (
-      <>
+  return (
+    <>
       <nav className={`active ${show && ''}`} id="nav">
-        
-        <div className={`backdrop hidden ${show && ''}`} id='backdrop'></div> 
-        
-        <div className="nav-cntr">
-          {globalData.map((data) => (
-            <div className="nav-inner-cntr" key={data.id}>
+        <div className={`backdrop hidden ${show && ''}`} id='backdrop'></div>
 
-              <div className="nav-inner-cntr__logo"> 
+        <div className="nav-cntr">
+          {globalData?.map((data) => (
+            <div className="nav-inner-cntr" key={data?.id}>
+
+              <div className="nav-inner-cntr__logo">
                 {data?.links
-                .filter((link) => link.type.includes("logo"))
-                .map((link) => (
-                  <a key={link.id} href={link.url}>
-                    {link.text}
+                ?.filter((link) => link?.type?.includes("logo"))
+                ?.map((link) => (
+                  <a key={link?.id} href={link?.url}>
+                    {link?.text}
                   </a>
                 ))}
               </div>
 
               <div className="nav-inner-cntr__links">
                 {data?.links
-                .filter((link) => link.type.includes("section"))
+                .filter((link) => link?.type?.includes("section"))
                 .map((link) => (
-                  <a key={link.id} href={link.url}>
-                    {link.text}
+                  <a key={link?.id} href={link?.url}>
+                    {link?.text}
                   </a>
-                ))}    
+                ))}
               </div>
 
-              <div className="nav-mob-links">                 
+              <div className="nav-mob-links">
                 <BurgerMenu data={data}/>
-              </div>     
-
+              </div>
             </div>
+            
           ))}
-         
-        </div> 
-        
-        
+        </div>
 
-        
-        </nav>
-      </>       
-    );
+      </nav>
+    </>
+  );
 };
 
 export default Nav;

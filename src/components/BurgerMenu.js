@@ -51,11 +51,11 @@ export default function BurgerMenu({ data }) {
       </button>
       <div className={`nav-mob-links__dropdown hidden ${show && ""}`} id="dropdown" >
 
-        {data.links
-        .filter((link) => link.type.includes("section"))
-        .map((link) => (
-          <a key={link.id} href={link.url}>
-            {link.text}
+        {data?.links
+        ?.filter((link) => link?.type?.includes("section"))
+        ?.map((link) => (
+          <a key={link?.id} href={link?.url}>
+            {link?.text}
           </a>
         ))}
       </div>

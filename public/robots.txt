@@ -1,6 +1,0 @@
-# https://www.robotstxt.org/robotstxt.html
-User-agent: *
-Disallow: /posts/
-Disallow: /data/media/posts/
-Disallow: /data/posts.json
-Disallow: /data/projects.json

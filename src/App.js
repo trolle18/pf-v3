@@ -11,7 +11,7 @@ function App() {
     // Fetch data from JSON
     useEffect(() => {
         async function getData() {
-            const response = await fetch("/data/components/globalData.json");
+            const response = await fetch("/data/globalData.json");
             const data = await response.json();
             setGlobalData(data);
         }
@@ -24,9 +24,9 @@ function App() {
             <Routes>
                 <Route path="/" element={ <HomePage/> } />
                 <Route path="*" element={ <Navigate to="/"/> } />
-            </Routes>
-            <Footer globalData={globalData}/>
+            </Routes>            
             <ScrollToTop/>     
+            <Footer globalData={globalData}/>
         </>
     );
 }

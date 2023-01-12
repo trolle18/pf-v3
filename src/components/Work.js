@@ -47,12 +47,16 @@ export default function Work() {
                     </motion.div>
                 ))} 
 
-                {articles
-                .filter((article) => article.online.includes("y" || "Y"))
-                .sort ((a, b) => a.value > b.value ? 1 : -1)
-                .map((article) => (
-                    <WorkArticle key={article.id} article={article}/>
-                ))}
+                <div className="projects-cntr">
+                    {articles
+                    .filter((article) => article.online.includes("y" || "Y"))
+                    .sort ((a, b) => a.value > b.value ? 1 : -1)
+                    .map((article) => (
+                        <WorkArticle key={article.id} article={article}/>
+                    ))}
+                </div>
+
+                
             </section>
         </>
     )

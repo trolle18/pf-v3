@@ -4,7 +4,7 @@ import { container, element } from "../utils/framerMotion";
 
 export default function Header() {
     const [sectionData, setSectionData] = useState([]);
-
+    
     // Fetch data from JSON
     useEffect(() => {
         async function getData() {

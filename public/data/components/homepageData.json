@@ -77,19 +77,19 @@
           {
             "id": 181910,
             "value": 1,
-            "type": "first",
+            "type": "text",
             "text": "Hi! My name is"
           },
           {
             "id": 181911,
             "value": 2,
-            "type": "second",
+            "type": "title",
             "text": "Sofie Trolle"
           },
           {
             "id": 181912,
             "value": 3,
-            "type": "last",
+            "type": "text",
             "text": "I am a multimedia designer, specializing in frontend development."
           }
         ]

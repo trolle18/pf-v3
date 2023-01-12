@@ -4,7 +4,7 @@ import BurgerMenu from './BurgerMenu';
 const Nav = () => {
   const [show, setShow] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
-  const [sectionData, setSectionData] = useState([]);
+  const [globalData, setGlobalData] = useState([]);
 
   // Hide navbar on scroll
   const controlNavbar = () => {
@@ -28,9 +28,9 @@ const Nav = () => {
   // Fetch data from JSON
   useEffect(() => {
     async function getData() {
-      const response = await fetch("/data/components/navData.json");
+      const response = await fetch("/data/components/globalData.json");
       const data = await response.json();
-      setSectionData(data);             
+      setGlobalData(data);             
     }       
     getData();        
   }, []);
@@ -39,21 +39,25 @@ const Nav = () => {
     return (
       <>
         <nav className={`active ${show && ''}`} id="nav">
-          {sectionData.map((data) => (
+          {globalData.map((data) => (
             <div className="nav-inner-cntr" key={data.id}>
 
               <div className="nav-inner-cntr__logo"> 
-                {data?.logoLink.map((logoLink) => (
-                  <a key={logoLink.id} href={logoLink.url}>
-                    {logoLink.text}
+                {data?.links
+                .filter((link) => link.type.includes("logo"))
+                .map((link) => (
+                  <a key={link.id} href={link.url}>
+                    {link.text}
                   </a>
                 ))}
               </div>
 
               <div className="nav-inner-cntr__links">
-                {data?.navLinks.map((navLink) => (
-                  <a key={navLink.id} href={navLink.url}>
-                    {navLink.text}
+                {data?.links
+                .filter((link) => link.type.includes("section"))
+                .map((link) => (
+                  <a key={link.id} href={link.url}>
+                    {link.text}
                   </a>
                 ))}    
               </div>

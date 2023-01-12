@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react';
 
 export default function Footer() {
-    const [sectionData, setSectionData] = useState([]);
+    const [globalData, setGlobalData] = useState([]);
     const [date , setDate] = useState();
 
     const getYear = () =>  setDate(new Date().getFullYear())
@@ -11,44 +11,53 @@ export default function Footer() {
     // Fetch data from JSON
     useEffect(() => {
         async function getData() {
-            const response = await fetch("/data/components/footerData.json");
+            const response = await fetch("/data/components/globalData.json");
             const data = await response.json();
-            setSectionData(data);             
-        }       
-        getData();        
+            setGlobalData(data);
+        }
+        getData();
     }, []);
 
     return (
         <>
-            {sectionData.map((data) => (
+            {globalData.map((data) => (
                 <footer className="footer-cntr" key={data.id}>
 
                     <div className="footer-top">
                         <div className="footer-top__l-col">
-                            <div className="footer-logo"> 
-                                <a href="/" className='logo-link'>{data.title}</a> 
+                            <div className="footer-logo">
+                                {data?.links
+                                .filter((link) => link.type.includes("logo"))
+                                .map((link) => (
+                                    <a key={link.id} href={link.url} className='logo-link'>
+                                        {link.text}
+                                    </a>
+                                ))}
                             </div>
-                            {data.link.map((link) => (
+
+                            {data.contact.map((link) => (
                                 <a key={link.id} className='mailto' href={link.url}>
                                     {link.text}
                                 </a>
-                            ))}    
-                            
+                            ))}
                         </div>
+
                         <div className="footer-top__links">
-                            {data.some.map((some) => (
-                                <a key={some.id} href={some.url} target="_blank" rel="noreferrer" dangerouslySetInnerHTML={{__html: some.svg}}></a>
-                            ))}    
+                            {data.socialMedia.map((link) => (
+                                <a key={link.id} href={link.url} target="_blank" rel="noreferrer" dangerouslySetInnerHTML={{__html: link.svg}}></a>
+                            ))}
                         </div>
                     </div>
 
-                    <div className="footer-btm">
-                        <span dangerouslySetInnerHTML={{__html: data.copy}}></span>
-                        <span className="copy"><span dangerouslySetInnerHTML={{__html: data.copyIcon}}></span> {date}</span>
-                    </div>
-                    
+                    {data.copyRight.map((link) => (
+                        <div className="footer-btm" key={link.id}>
+                            <span dangerouslySetInnerHTML={{__html: link.text}}></span>
+                            <span className="copy"><span dangerouslySetInnerHTML={{__html: link.icon}}></span> {date}</span>
+                        </div>
+                     ))}
+
                 </footer>
-            ))}                  
+            ))}
         </>
     )
 };

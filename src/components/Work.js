@@ -11,7 +11,7 @@ export default function Work() {
     // Fetch data from JSON
     useEffect(() => {
         async function getData() {
-            const response = await fetch("/data/components/workData.json");
+            const response = await fetch("/data/components/homepageData.json");
             const data = await response.json();
             setSectionData(data);             
         }       
@@ -34,17 +34,22 @@ export default function Work() {
         <>
             <section className="work-cntr section" id="work">
                 {sectionData.map((data) => (
-                    <motion.div 
-                    key={data.id}
-                    className="work-cntr__title"                    
-                    variants={container}
-                    initial="hidden"
-                    whileInView="showFast"
-                    viewport={{once: true}}
-                    >
-                        <motion.h2 variants={elemFast}>{data.title}</motion.h2>
-                        <motion.p variants={elemFast}>{data.desc}</motion.p>
-                    </motion.div>
+                    <>
+                       {data.work.map((data) => (
+                        <motion.div 
+                        key={data.id}
+                        className="work-cntr__title"                    
+                        variants={container}
+                        initial="hidden"
+                        whileInView="showFast"
+                        viewport={{once: true}}
+                        >
+                            <motion.h2 variants={elemFast}>{data.title}</motion.h2>
+                            <motion.p variants={elemFast}>{data.desc}</motion.p>
+                        </motion.div>
+                          ))} 
+                    </>
+                   
                 ))} 
 
                 <div className="projects-cntr">

@@ -3,6 +3,15 @@
     "id": 1219,
     "online": "y",
     "title": "Work",
-    "desc": "Here is a few of the projects I have been working on"
+    "desc": "Here is a few of the projects I have been working on",
+    
+    "work": [
+      {
+        "id": 1219,
+        "online": "y",
+        "title": "Work",
+        "desc": "Here is a few of the projects I have been working on"
+      }
+    ]
   }
 ]

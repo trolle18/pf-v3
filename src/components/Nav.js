@@ -26,7 +26,11 @@ const Nav = ({ globalData }) => {
 
     return (
       <>
-        <nav className={`active ${show && ''}`} id="nav">
+      <nav className={`active ${show && ''}`} id="nav">
+        
+        <div className={`backdrop hidden ${show && ''}`} id='backdrop'></div> 
+        
+        <div className="nav-cntr">
           {globalData.map((data) => (
             <div className="nav-inner-cntr" key={data.id}>
 
@@ -51,11 +55,17 @@ const Nav = ({ globalData }) => {
               </div>
 
               <div className="nav-mob-links">                 
-                <BurgerMenu data={data}/>               
+                <BurgerMenu data={data}/>
               </div>     
 
             </div>
           ))}
+         
+        </div> 
+        
+        
+
+        
         </nav>
       </>       
     );

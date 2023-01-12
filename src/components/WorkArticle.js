@@ -44,8 +44,8 @@ export default function WorkArticle({ article }) {
         const isBuild = article.build;
         if(isBuild) {
             return (
-                article.build.map((build, i) => {
-                    return( <span key={i} className="elem">{build.tech}</span> )
+                article.build.map((build) => {
+                    return( <span key={build.id} className="elem">{build.text}</span> )
                 })
             )
         }

@@ -1,7 +1,7 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import { useEffect, useState } from 'react';
 
-export default function BurgerMenu({data}) {
+export default function BurgerMenu({ data }) {
   const [show, setShow] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
 
@@ -44,9 +44,11 @@ export default function BurgerMenu({data}) {
         <svg viewBox="0 0 10 8"><path d="M1 1h8M1 4h 8M1 7h8"/></svg>
       </button>
       <div className={`nav-mob-links__dropdown hidden ${show && ""}`} id="dropdown" >
-        <a href="#about"> About </a> 
-        <a href="#work"> Work </a> 
-        <a href="#contact"> Contact </a> 
+        {data?.navLinks.map((navLink) => (
+          <a key={navLink.id} href={navLink.url}>
+            {navLink.text}
+          </a>
+        ))}    
       </div>
     </>
   );

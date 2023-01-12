@@ -7,25 +7,25 @@
     "logoLink": [
       {
         "id": 132,
-        "linkTxt": "Sofie Trolle",
-        "link": "/"
+        "text": "Sofie Trolle",
+        "url": "/"
       }
     ],
     "navLinks": [
       {
         "id": 981,
-        "linkTxt": "About",
-        "link": "#about"
+        "text": "About",
+        "url": "#about"
       },
       {
         "id": 761,
-        "linkTxt": "Work",
-        "link": "#work"
+        "text": "Work",
+        "url": "#work"
       },
       {
         "id": 812,
-        "linkTxt": "Contact",
-        "link": "#contact"
+        "text": "Contact",
+        "url": "#contact"
       }
     ]
   }

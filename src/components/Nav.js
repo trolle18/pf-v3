@@ -28,42 +28,44 @@ const Nav = () => {
   // Fetch data from JSON
   useEffect(() => {
     async function getData() {
-        const response = await fetch("/data/components/navData.json");
-        const data = await response.json();
-        setSectionData(data);             
+      const response = await fetch("/data/components/navData.json");
+      const data = await response.json();
+      setSectionData(data);             
     }       
-      getData();        
+    getData();        
   }, []);
 
 
     return (
-        <>
-            <nav className={`active ${show && ''}`} id="nav">
-                {sectionData.map((data) => (
-                    <div className="nav-inner-cntr" key={data.id}>
-                        <div className="nav-inner-cntr__logo"> 
-                            {data?.logoLink.map((logoLink) => (
-                                <a key={logoLink.id} href={logoLink.link}>
-                                    {logoLink.linkTxt}
-                                </a>
-                            ))}    
+      <>
+        <nav className={`active ${show && ''}`} id="nav">
+          {sectionData.map((data) => (
+            <div className="nav-inner-cntr" key={data.id}>
 
-                        </div>
-                        <div className="nav-inner-cntr__links">
-                            {data?.navLinks.map((navLink) => (
-                                <a key={navLink.id} href={navLink.link}>
-                                    {navLink.linkTxt}
-                                </a>
-                            ))}    
-                        </div>
-
-                        <div className="nav-mob-links">                 
-                            <BurgerMenu data={data}/>               
-                        </div>                              
-                    </div>
+              <div className="nav-inner-cntr__logo"> 
+                {data?.logoLink.map((logoLink) => (
+                  <a key={logoLink.id} href={logoLink.url}>
+                    {logoLink.text}
+                  </a>
                 ))}
-            </nav>
-        </>       
+              </div>
+
+              <div className="nav-inner-cntr__links">
+                {data?.navLinks.map((navLink) => (
+                  <a key={navLink.id} href={navLink.url}>
+                    {navLink.text}
+                  </a>
+                ))}    
+              </div>
+
+              <div className="nav-mob-links">                 
+                <BurgerMenu data={data}/>               
+              </div>     
+
+            </div>
+          ))}
+        </nav>
+      </>       
     );
 };
 

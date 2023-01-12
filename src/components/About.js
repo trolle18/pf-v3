@@ -35,7 +35,7 @@ export default function About() {
 
                             {data.desc.map((descData) => (
                                 <motion.p key={descData.id} className="elem" variants={element}>
-                                    {descData.txt}
+                                    {descData.text}
                                 </motion.p>
                             ))}
                         </motion.div>
@@ -48,13 +48,13 @@ export default function About() {
                         >
                             <motion.div className="mob-img-cntr__img-inner-cntr" variants={element}>
                                 {data.img.map((img) => (
-                                    <img key={img.imgId} src={img.imgUrl} className="mob-img" alt={img.imgAlt}/>
+                                    <img key={img.id} src={img.url} className="mob-img" alt={img.alt}/>
                                 ))}                                    
                             </motion.div>
                         </motion.div>
                     </div>
 
-                    <motion.div
+                    {/* <motion.div
                     className="skills"
                     variants={container}
                     initial="hidden"
@@ -80,7 +80,38 @@ export default function About() {
                                 </motion.li>
                             ))}
                         </motion.ul>
+                    </motion.div> */}
+
+                    {data.list.map((list) => (   
+                    <motion.div
+                    className="skills"
+                    variants={container}
+                    initial="hidden"
+                    whileInView="show"
+                    viewport={{once: true}}
+                    >
+                        <motion.span className="elem" variants={element} >
+                            {list.title}
+                        </motion.span>
+
+                        <motion.ul
+                        className="skills__list elem"
+                        variants={container}
+                        initial="hidden"
+                        whileInView="show"
+                        viewport={{once: true}}
+                        >
+                            {list.items
+                            .filter((items) => items.online.includes('y'))
+                            .map((item) => (                                
+                                <motion.li key={item.id} className="elem" variants={element}>
+                                    <span>{item.text}</span>
+                                </motion.li>
+                            ))}
+                        </motion.ul>
                     </motion.div>
+                    ))}
+
                 </div>
 
                 <motion.div 
@@ -92,7 +123,7 @@ export default function About() {
                 >
                     <motion.div className="img-inner-cntr" variants={element}>
                         {data.img.map((img) => (
-                            <img key={img.imgId} src={img.imgUrl} className="img-inner-cntr__img" alt={img.imgAlt}/>
+                            <img key={img.id} src={img.url} className="img-inner-cntr__img" alt={img.alt}/>
                         ))}                        
                     </motion.div>
                 </motion.div>

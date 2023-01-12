@@ -34,9 +34,9 @@ export default function Contact() {
                             {data.desc}
                         </motion.p>
 
-                        {data.cta.map((cta) => (
-                            <motion.a key={cta.id} href={cta.link} className="elem" variants={element}>
-                                {cta.linkTxt}
+                        {data.link.map((link) => (
+                            <motion.a key={link.id} href={link.url} className="elem" variants={element}>
+                                {link.text}
                             </motion.a>
                         ))}  
                     </motion.div>

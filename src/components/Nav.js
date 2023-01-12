@@ -31,25 +31,25 @@ const Nav = ({ globalData }) => {
         <div className={`backdrop hidden ${show && ''}`} id='backdrop'></div> 
         
         <div className="nav-cntr">
-          {globalData.map((data) => (
-            <div className="nav-inner-cntr" key={data.id}>
+          {globalData?.map((data) => (
+            <div className="nav-inner-cntr" key={data?.id}>
 
               <div className="nav-inner-cntr__logo"> 
                 {data?.links
-                .filter((link) => link.type.includes("logo"))
-                .map((link) => (
-                  <a key={link.id} href={link.url}>
-                    {link.text}
+                ?.filter((link) => link?.type?.includes("logo"))
+                ?.map((link) => (
+                  <a key={link?.id} href={link?.url}>
+                    {link?.text}
                   </a>
                 ))}
               </div>
 
               <div className="nav-inner-cntr__links">
                 {data?.links
-                .filter((link) => link.type.includes("section"))
+                .filter((link) => link?.type?.includes("section"))
                 .map((link) => (
-                  <a key={link.id} href={link.url}>
-                    {link.text}
+                  <a key={link?.id} href={link?.url}>
+                    {link?.text}
                   </a>
                 ))}    
               </div>

@@ -1,0 +1,162 @@
+[
+  {
+    "id": 1010,
+    "online": "y",
+    "title": "Homepage",
+
+
+    "header": [
+        {
+        "id": 1020,
+        "online": "y",
+        "title": "Sofie Trolle",
+        "text": [
+          {
+            "id": 10201,
+            "online": "y",
+            "value": 1,
+            "type": "text",
+            "text": "Hi! My name is"
+          },
+          {
+            "id": 10202,
+            "online": "y",
+            "value": 2,
+            "type": "title",
+            "text": "Sofie Trolle"
+          },
+          {
+            "id": 10203,
+            "online": "y",
+            "value": 3,
+            "type": "text",
+            "text": "I am a multimedia designer, specializing in frontend development."
+          }
+        ]
+      }
+    ],
+
+
+
+    "about": [
+      {
+        "id": 1030,
+        "online": "y",
+        "title": "About",
+        "desc": [
+          {
+            "id": 10301,
+            "online": "y",
+            "text": "My name is Sofie, I am 25 years old, and I am studying multimedia design, specializing in frontend development, at Business Academy Aarhus. I am currently on my 4th semester, which I will be spending as an intern for AKQA in Aarhus."
+          },
+          {
+            "id": 10302,
+            "online": "y",
+            "text": "I have always loved creating, and exploring through different types of media. With multimedia designing, there are endless possibilities for me to explore and work through."
+          }
+        ],
+        "img": [
+          {
+            "id": 10303,
+            "online": "y",
+            "url": "/data/media/c99-2022112.png",
+            "alt": "Sofie Trolle"
+          }
+        ],
+        "list": [
+          {
+            "id": 10304,
+            "online": "y",
+            "title": "Some of the technologies I have been working with:",
+            "items":    [
+              {
+                "id": 103041,
+                "online": "y",
+                "text": "HTML5 & CSS3"
+              },
+              {
+                "id": 103042,
+                "online": "y",
+                "text": "jQuery"
+              },
+              {
+                "id": 103043,
+                "online": "y",
+                "text": "JavaScript (ES6+)"
+              },
+              {
+                "id": 103044,
+                "online": "y",
+                "text": "TypeScript"
+              },
+              {
+                "id": 103045,
+                "online": "y",                
+                "text": "Chakra UI"
+              },
+              {
+                "id": 103046,
+                "online": "y",
+                "text": "SCSS / Sass"
+              },
+              {
+                "id": 103047,
+                "online": "y",
+                "text": "Firebase"
+              },
+              {
+                "id": 103048,
+                "online": "y",
+                "text": "React.JS"
+              },
+              {
+                "id": 103049,
+                "online": "y",
+                "text": "Next.JS"
+              },
+              {
+                "id": 103020,
+                "online": "n",
+                "text": "Umbraco CMS"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+
+
+
+    "work": [
+      {
+        "id": 1040,
+        "online": "y",
+        "title": "Work",
+        "text": "Here is a few of the projects I have been working on"
+      }
+    ],
+
+
+
+
+    "contact": [
+      {
+        "id": 1050,
+        "online": "y",
+        "title": "Contact",
+        "text": "Feel free to send an email, whether you have any questions or just to say hi, and I'll get back to you!",
+        "link": [
+          {
+            "id": 10501,
+            "online": "y",
+            "text": "Get in touch",
+            "url": "mailto:sofietrolle@hotmail.com"
+          }
+        ]
+      }
+    ]
+
+
+
+  }
+]

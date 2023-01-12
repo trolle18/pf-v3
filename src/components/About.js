@@ -1,26 +1,12 @@
-import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { container, element } from "../utils/framerMotion";
 
-export default function About() {
-  const [sectionData, setSectionData] = useState([]);
-
-  // Fetch data from JSON
-  useEffect(() => {
-    async function getData() {
-      const response = await fetch("/data/components/homepageData.json");
-      const data = await response.json();
-      setSectionData(data);
-    }
-    getData();
-  }, []);
+export default function About({ data }) {
 
   return (
     <>
-      {sectionData?.map((data) => (
-        <>
-        {data?.about.map((data) => (
-        <section className="about-cntr section" id="about" key={data.id}>
+      {data?.about?.map((data) => (
+        <section className="about-cntr section" id="about" key={data?.id}>
           <div className="about-cntr__content">
 
             <div className="about-txt">
@@ -32,11 +18,12 @@ export default function About() {
               viewport={{once: true}}
               >
                 <motion.h2 className="elem" variants={element}>
-                  {data.title}
+                  {data?.title}
                 </motion.h2>
-                {data.desc.map((descData) => (
-                  <motion.p key={descData.id} className="elem" variants={element}>
-                    {descData.text}
+
+                {data?.desc?.map((desc) => (
+                  <motion.p key={desc?.id} className="elem" variants={element}>
+                    {desc?.text}
                   </motion.p>
                 ))}
               </motion.div>
@@ -55,7 +42,7 @@ export default function About() {
               </motion.div>
             </div>
 
-            {data.list.map((list) => (
+            {data?.list?.map((list) => (
               <motion.div
               className="skills"
               variants={container}
@@ -64,7 +51,7 @@ export default function About() {
               viewport={{once: true}}
               >
                 <motion.span className="elem" variants={element}>
-                  {list.title}
+                  {list?.title}
                 </motion.span>
 
                 <motion.ul
@@ -74,11 +61,11 @@ export default function About() {
                 whileInView="show"
                 viewport={{once: true}}
                 >
-                  {list.items
-                  .filter((items) => items.online.includes('y'))
-                  .map((item) => (
-                    <motion.li key={item.id} className="elem" variants={element}>
-                      <span>{item.text}</span>
+                  {list?.items
+                  ?.filter((items) => items?.online.includes('y'))
+                  ?.map((item) => (
+                    <motion.li key={item?.id} className="elem" variants={element}>
+                      <span>{item?.text}</span>
                     </motion.li>
                   ))}
                 </motion.ul>
@@ -94,16 +81,14 @@ export default function About() {
           viewport={{once: true}}
           >
             <motion.div className="img-inner-cntr" variants={element}>
-              {data.img.map((img) => (
-                <img key={img.id} src={img.url} className="img-inner-cntr__img" alt={img.alt}/>
+              {data?.img?.map((img) => (
+                <img key={img?.id} src={img?.url} className="img-inner-cntr__img" alt={img?.alt}/>
               ))}
             </motion.div>
           </motion.div>
 
         </section>
-        ))}
-        </>
-    ))}
-  </>
+      ))}
+    </>
   )
 };

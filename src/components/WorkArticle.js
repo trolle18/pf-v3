@@ -6,11 +6,11 @@ export default function WorkArticle({ article }) {
 
     // Check link
     function getLink(article) {
-        const isLink = article.link;
+        const isLink = article?.link;
         if(isLink) {
             return (
                 <motion.a 
-                href={article.link} 
+                href={article?.link} 
                 className="elem" 
                 target="_blank" 
                 rel="noreferrer" 
@@ -24,11 +24,11 @@ export default function WorkArticle({ article }) {
 
     // Check repo
     function getRepo(article) {
-        const isRepo = article.repo;
+        const isRepo = article?.repo;
         if(isRepo) {
             return (
                 <a
-                href={article.repo}
+                href={article?.repo}
                 className="elem"
                 target="_blank"
                 rel="noreferrer"
@@ -41,11 +41,11 @@ export default function WorkArticle({ article }) {
 
     // Check Build
     function getBuild(article) {
-        const isBuild = article.build;
+        const isBuild = article?.build;
         if(isBuild) {
             return (
-                article.build.map((build) => {
-                    return( <span key={build.id} className="elem">{build.text}</span> )
+                article?.build?.map((build) => {
+                    return( <span key={build?.id} className="elem">{build?.text}</span> )
                 })
             )
         }
@@ -53,15 +53,15 @@ export default function WorkArticle({ article }) {
 
     // Check gallery
     function getGallery(article) {
-        const isImgs = article.imgs;
+        const isImgs = article?.imgs;
         if(isImgs) {
             return (
                 <motion.div className="project__gallery-cntr" variants={element}>
                     <div className="gallery">
-                        {article.imgs.map((img) => {
+                        {article?.imgs.map((img) => {
                             return ( 
-                                <div className="img-cntr" key={img.id}>
-                                    <img src={img.src} alt={img.alt} className="elem"/> 
+                                <div className="img-cntr" key={img?.id}>
+                                    <img src={img?.src} alt={img?.alt} className="elem"/> 
                                 </div>
                             )
                         })}
@@ -74,7 +74,7 @@ export default function WorkArticle({ article }) {
     return (
         <>
             <motion.article
-            key={article.id}
+            key={article?.id}
             className="project"
             variants={container}
             initial="hidden"
@@ -84,7 +84,7 @@ export default function WorkArticle({ article }) {
                 <div className="project__txt"> 
                     <div className="project-header">
                         <div className="project-title">
-                            <motion.h3 className="elem" variants={element}>{article.title}</motion.h3>
+                            <motion.h3 className="elem" variants={element}>{article?.title}</motion.h3>
                             <motion.div className="project-links" variants={element}>
                                 {getLink(article)}
                                 {getRepo(article)} 
@@ -96,7 +96,7 @@ export default function WorkArticle({ article }) {
                         </motion.div> 
                     </div>
         
-                    <motion.div className="project-desc elem" variants={element} dangerouslySetInnerHTML={ {__html: article.descHtml} }></motion.div>
+                    <motion.div className="project-desc elem" variants={element} dangerouslySetInnerHTML={ {__html: article?.descHtml} }></motion.div>
                 </div>
             </motion.article>
         </>

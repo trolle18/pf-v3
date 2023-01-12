@@ -1,51 +1,51 @@
-import React, {useState, useEffect} from 'react';
+import { useState, useEffect } from 'react';
 
 export default function Footer({ globalData }) {
-    const [date , setDate] = useState();
+    const [year , setYear] = useState();
 
-    const getYear = () =>  setDate(new Date().getFullYear())
+    const getYear = () =>  setYear(new Date().getFullYear())
     useEffect(() => { getYear() }, [])
 
     return (
-        <>
-            {globalData?.map((data) => (
-                <footer className="footer-cntr" key={data?.id}>
+      <>
+        {globalData?.map((data) => (
+          <footer className="footer-cntr" key={data?.id}>
 
-                    <div className="footer-top">
-                        <div className="footer-top__l-col">
-                            <div className="footer-logo">
-                                {data?.links
-                                ?.filter((link) => link?.type?.includes("logo"))
-                                ?.map((link) => (
-                                    <a key={link?.id} href={link?.url} className='logo-link'>
-                                        {link?.text}
-                                    </a>
-                                ))}
-                            </div>
+            <div className="footer-top">
+              <div className="footer-top__l-col">
+                <div className="footer-logo">
+                  {data?.links
+                  ?.filter((link) => link?.type?.includes("logo"))
+                  ?.map((link) => (
+                    <a key={link?.id} href={link?.url} className='logo-link'>
+                      {link?.text}
+                    </a>
+                  ))}
+                </div>
 
-                            {data?.contact?.map((link) => (
-                                <a key={link?.id} className='mailto' href={link?.url}>
-                                    {link?.text}
-                                </a>
-                            ))}
-                        </div>
+                {data?.contact?.map((link) => (
+                  <a key={link?.id} className='mailto' href={link?.url}>
+                    {link?.text}
+                  </a>
+                ))}
+              </div>
 
-                        <div className="footer-top__links">
-                            {data?.socialMedia?.map((link) => (
-                                <a key={link?.id} href={link?.url} target="_blank" rel="noreferrer" dangerouslySetInnerHTML={{__html: link?.svg}}></a>
-                            ))}
-                        </div>
-                    </div>
+              <div className="footer-top__links">
+                {data?.socialMedia?.map((link) => (
+                  <a key={link?.id} href={link?.url} target="_blank" rel="noreferrer" dangerouslySetInnerHTML={{__html: link?.svg}}></a>
+                ))}
+              </div>
+            </div>
 
-                    {data?.copyRight?.map((link) => (
-                        <div className="footer-btm" key={link?.id}>
-                            <span dangerouslySetInnerHTML={{__html: link?.text}}></span>
-                            <span className="copy"><span dangerouslySetInnerHTML={{__html: link?.icon}}></span> {date}</span>
-                        </div>
-                     ))}
-
-                </footer>
+            {data?.copyRight?.map((link) => (
+              <div className="footer-btm" key={link?.id}>
+                <span dangerouslySetInnerHTML={{__html: link?.text}}></span>
+                <span className="copy"><span dangerouslySetInnerHTML={{__html: link?.icon}}></span> {year}</span>
+              </div>
             ))}
-        </>
-    )
+
+        </footer>
+      ))}
+    </>
+  )
 };

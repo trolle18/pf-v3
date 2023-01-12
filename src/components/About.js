@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { container, element } from "../utils/framerMotion";
+import List from "./List";
 
 export default function About({ data }) {
 
@@ -43,33 +44,7 @@ export default function About({ data }) {
             </div>
 
             {data?.list?.map((list) => (
-              <motion.div
-              className="skills"
-              variants={container}
-              initial="hidden"
-              whileInView="show"
-              viewport={{once: true}}
-              >
-                <motion.span className="elem" variants={element}>
-                  {list?.title}
-                </motion.span>
-
-                <motion.ul
-                className="skills__list elem"
-                variants={container}
-                initial="hidden"
-                whileInView="show"
-                viewport={{once: true}}
-                >
-                  {list?.items
-                  ?.filter((items) => items?.online.includes('y'))
-                  ?.map((item) => (
-                    <motion.li key={item?.id} className="elem" variants={element}>
-                      <span>{item?.text}</span>
-                    </motion.li>
-                  ))}
-                </motion.ul>
-              </motion.div>
+              <List list={list} key={data?.id}/>
               ))}
           </div>
 

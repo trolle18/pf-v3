@@ -20,6 +20,90 @@
         "alt": "Sofie Trolle"
       }
     ],
+
+
+    "about": [
+      {
+        "id": 1119,
+        "online": "y",
+        "title": "About",
+        "desc": [
+          {
+            "id": "11",
+            "text": "My name is Sofie, I am 25 years old, and I am studying multimedia design, specializing in frontend development, at Business Academy Aarhus. I am currently on my 4th semester, which I will be spending as an intern for AKQA in Aarhus."
+          },
+          {
+            "id": "12",
+            "text": "I have always loved creating, and exploring through different types of media. With multimedia designing, there are endless possibilities for me to explore and work through."
+          }
+        ],
+        "img": [
+          {
+            "id": 22276,
+            "url": "/data/media/c99-2022112.png",
+            "alt": "Sofie Trolle"
+          }
+        ],
+        "list": [
+          {
+            "id": 3232,
+            "title": "Some of the technologies I have been working with:",
+            "items":    [
+              {
+                "id": 87836,
+                "online": "y",
+                "text": "HTML5 & CSS3"
+              },
+              {
+                "id": 21311,
+                "online": "y",
+                "text": "jQuery"
+              },
+              {
+                "id": 19472,
+                "online": "y",
+                "text": "JavaScript (ES6+)"
+              },
+              {
+                "id": 22941,
+                "online": "y",
+                "text": "TypeScript"
+              },
+              {
+                "online": "y",
+                "id": 51654751,
+                "text": "Chakra UI"
+              },
+              {
+                "id": 94651,
+                "online": "y",
+                "text": "SCSS / Sass"
+              },
+              {
+                "id": 39724,
+                "online": "y",
+                "text": "Firebase"
+              },
+              {
+                "id": 84752,
+                "online": "y",
+                "text": "React.JS"
+              },
+              {
+                "id": 99142,
+                "online": "y",
+                "text": "Next.JS"
+              },
+              {
+                "id": 12873,
+                "online": "n",
+                "text": "Umbraco CMS"
+              }
+            ]
+          }
+        ]
+      }
+    ],
     
 
 

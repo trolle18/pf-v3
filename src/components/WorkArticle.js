@@ -75,7 +75,7 @@ export default function WorkArticle({ article }) {
         <>
             <motion.article
             key={article.id}
-            className="project card"
+            className="project"
             variants={container}
             initial="hidden"
             whileInView="show"

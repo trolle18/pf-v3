@@ -23,25 +23,25 @@
     "imgs": [
       { 
         "id": 39011715,
-        "src": "/data/media/beahero/headlogv2.png",
+        "src": "/data/media/beahero/headlogv2.webp",
         "alt": "Be A Hero",
         "desc": "Image description..."
       },
       { 
         "id": 48359891,
-        "src": "/data/media/beahero/mocklap.png",
+        "src": "/data/media/beahero/mocklap.webp",
         "alt": "Be A Hero",
         "desc": "Image description..."
       },
       { 
         "id": 95462026,
-        "src": "/data/media/beahero/mockphone.png",
+        "src": "/data/media/beahero/mockphone.webp",
         "alt": "Be A Hero",
         "desc": "Image description..."
       },
       { 
         "id": 68345316,
-        "src": "/data/media/beahero/log23v2.png",
+        "src": "/data/media/beahero/log23v2.webp",
         "alt": "Be A Hero",
         "desc": "Image description..."
       }
@@ -71,25 +71,25 @@
     "imgs": [
       { 
         "id": 12876935,
-        "src": "/data/media/taskroomies/task-mock.png",
+        "src": "/data/media/taskroomies/task-mock.webp",
         "alt": "Taskroomies",
         "desc": ""
       },
       { 
         "id": 71512490,
-        "src": "/data/media/taskroomies/taskroomies-logo1.png",
+        "src": "/data/media/taskroomies/taskroomies-logo1.webp",
         "alt": "Taskroomies",
         "desc": ""
       },
       { 
         "id": 89077327,
-        "src": "/data/media/taskroomies/taskroomies-logo2.png",
+        "src": "/data/media/taskroomies/taskroomies-logo2.webp",
         "alt": "Taskroomies",
         "desc": ""
       },
       { 
         "id": 49672184,
-        "src": "/data/media/taskroomies/task-mock-b1.png",
+        "src": "/data/media/taskroomies/task-mock-b1.webp",
         "alt": "Taskroomies",
         "desc": ""
       }
@@ -158,19 +158,19 @@
       },
       { 
         "id": 10375927,
-        "src": "/data/media/sdinc/c-rocketcollage.png",
+        "src": "/data/media/sdinc/c-rocketcollage.webp",
         "alt": "Space Debris Inc",
         "desc": ""
       },
       { 
         "id": 11183628,
-        "src": "/data/media/sdinc/214758.png",
+        "src": "/data/media/sdinc/214758.webp",
         "alt": "Space Debris Inc",
         "desc": ""
       },
       { 
         "id": 29174713,
-        "src": "/data/media/sdinc/sdadminsales.png",
+        "src": "/data/media/sdinc/sdadminsales.webp",
         "alt": "Space Debris Inc",
         "desc": ""
       }
@@ -200,25 +200,25 @@
     "imgs": [
       { 
         "id": 75850956,
-        "src": "/data/media/generaxion/fbpost.png",
+        "src": "/data/media/generaxion/fbpost.webp",
         "alt": "Generaxion",
         "desc": ""
       },
       { 
         "id": 82281931,
-        "src": "/data/media/generaxion/fb-post-zen.png",
+        "src": "/data/media/generaxion/fb-post-zen.webp",
         "alt": "Generaxion",
         "desc": ""
       },
       { 
         "id": 34696206,
-        "src": "/data/media/generaxion/generaxion-1.png",
+        "src": "/data/media/generaxion/generaxion-1.webp",
         "alt": "Generaxion",
         "desc": ""
       },
       { 
         "id": 68417484,
-        "src": "/data/media/generaxion/generaxion-3.png",
+        "src": "/data/media/generaxion/generaxion-3.webp",
         "alt": "Generaxion",
         "desc": ""
       }
@@ -240,25 +240,25 @@
     "imgs": [
       { 
         "id": 59658383,
-        "src": "/data/media/miscellaneous/flat-animals.png",
+        "src": "/data/media/miscellaneous/flat-animals.webp",
         "alt": "Miscellaneous",
         "desc": ""
       },
       { 
         "id": 51654751,
-        "src": "/data/media/miscellaneous/svgscroll.png",
+        "src": "/data/media/miscellaneous/svgscroll.webp",
         "alt": "Miscellaneous",
         "desc": ""
       },
       { 
         "id": 65255951,
-        "src": "/data/media/miscellaneous/tictactoe-v1.png",
+        "src": "/data/media/miscellaneous/tictactoe-v1.webp",
         "alt": "Miscellaneous",
         "desc": ""
       },
       { 
         "id": 61674856,
-        "src": "/data/media/miscellaneous/illpf.png",
+        "src": "/data/media/miscellaneous/illpf.webp",
         "alt": "Miscellaneous",
         "desc": ""
       }

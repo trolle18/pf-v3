@@ -1,7 +1,7 @@
-import { useNavigate } from 'react-router-dom';
+// import { useNavigate } from 'react-router-dom';
 
 export default function Post( {post} ) {
-    const navigate = useNavigate();
+    // const navigate = useNavigate();
 
     // Fetch post imgs from JSON - If there is more than one, display only the first one
     function getImg(post) {
@@ -10,34 +10,18 @@ export default function Post( {post} ) {
         } 
     };
 
-    // Navigate to article page 
-    function handleClick() {
-        navigate(`/15082022/${post.id}`)
-    }
+    // // Navigate to article page 
+    // function handleClick() {
+    //     navigate(`/15082022/${post.id}`)
+    // }
 
-
-    // // Intersection observer
-    // const cards = document.querySelectorAll(".card")
-    // const observer = new IntersectionObserver( 
-    //     entries => {
-    //         entries.forEach(entry => {
-    //             entry.target.classList.toggle("show", entry.isIntersecting)
-    //             if (entry.isIntersecting) observer.unobserve(entry.target)
-    //         })
-    //     }, 
-    //     {
-    //         rootMargin: "100px",
-    //         // threshold: .5,
-    //     }        
-    // )
-    // cards.forEach(card => {
-    //     observer.observe(card)
-    // })
 
    
     return (
         <>
-            <article key={post.id} className="article post" onClick={handleClick}>
+            <article key={post.id} className="article post" 
+            // onClick={handleClick}
+            >
                 <div className="article-img-cntr">
                     <div className='article-img'>
                         <img src={getImg(post)} alt={post.title}/>  

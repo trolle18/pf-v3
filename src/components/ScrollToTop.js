@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import { IoIosArrowUp } from "react-icons/io";
 
 export default function ScrollToTop() {
+  
   // Calls function watchScroll when page is scrolled
   useEffect(() => {
     window.onscroll = function () {

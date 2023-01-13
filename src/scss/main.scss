@@ -1,37 +1,26 @@
 // STYLE IMPORTS
 
 // Abstracts
-// @import 'abstracts/_abstracts-dir';
 @import 'abstracts/breakpoints';
 @import 'abstracts/variables';
 
 // Base
-// @import 'base/_base-dir';
-// @import 'base/animations';
 @import 'base/resets';
 @import 'base/scrollbar';
 @import 'base/typography';
 
 // Components
-// @import 'components/_components-dir';
-// @import 'components/about';
-// @import 'components/contact';
-@import 'components/cta';
 @import 'components/flexRows';
 @import 'components/header';
 @import 'components/list';
-// @import 'components/post';
 @import 'components/scrollToTop';
 @import 'components/sectionCntr';
 @import 'components/workArticle';
 
 // Layouts
-// @import 'layouts/_layouts-dir';
 @import 'layouts/footer';
 @import 'layouts/nav';
 
 // Pages
-// @import 'pages/_pages-dir';
-// @import 'pages/articlePage';
 @import 'pages/page';
 

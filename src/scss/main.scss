@@ -14,13 +14,15 @@
 
 // Components
 // @import 'components/_components-dir';
-@import 'components/about';
-@import 'components/contact';
+// @import 'components/about';
+// @import 'components/contact';
+@import 'components/cta';
+@import 'components/flexRows';
 @import 'components/header';
-@import 'components/post';
+@import 'components/list';
+// @import 'components/post';
 @import 'components/scrollToTop';
 @import 'components/sectionCntr';
-@import 'components/work';
 @import 'components/workArticle';
 
 // Layouts
@@ -30,6 +32,6 @@
 
 // Pages
 // @import 'pages/_pages-dir';
-@import 'pages/articlePage';
+// @import 'pages/articlePage';
 @import 'pages/page';
 

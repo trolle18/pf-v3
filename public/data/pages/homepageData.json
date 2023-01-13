@@ -132,7 +132,20 @@
         "id": 1040,
         "online": "y",
         "title": "Work",
-        "text": "Here is a few of the projects I have been working on"
+        "desc": [
+          {
+            "id": 1041,
+            "text": "Here is a few of the projects I have been working on"
+          }
+        ],
+        "framer": [
+          {
+            "id": 1042,
+            "initial": "hidden",
+            "whileInView": "showFast",
+            "viewportOnce": true
+          }
+        ]
       }
     ],
 
@@ -144,7 +157,12 @@
         "id": 1050,
         "online": "y",
         "title": "Contact",
-        "text": "Feel free to send an email, whether you have any questions or just to say hi, and I'll get back to you!",
+        "desc": [
+          {
+            "id": 1051,
+            "text": "Feel free to send an email, whether you have any questions or just to say hi, and I'll get back to you!"
+          }
+        ],
         "link": [
           {
             "id": 10501,

@@ -1,38 +1,36 @@
 import { motion } from "framer-motion";
 import { container, element } from "../utils/framerMotion";
+import HeaderWText from "./HeaderWText";
 
 export default function Contact({ data }) {
 
   return (
-    <>
-      <section key={data?.id} id="contact">
-        {data?.contact.map((data) => (
-          
-          <motion.div
-          key={data?.id}
-          className="contact-cntr section"
-          variants={container}
-          initial="hidden"
-          whileInView="show"
-          viewport={{once: true}}
-          >
-            <motion.h2  className="elem" variants={element}>
-              {data?.title}
-            </motion.h2>
+    <>  {data?.contact.map((data) => (
+    <section className="section-cntr section" key={data?.id} id="contact">
+          <div className="section-cntr__content w100">
+           
+            <div className="flex-cntr center-text">
+              <HeaderWText data={data} key={data.id}/>
+            </div>
 
-            <motion.p className="elem" variants={element}>
-              {data?.text}
-            </motion.p>
+            <motion.div
+            key={data?.id}
+            className="cta-cntr center-spaced"
+            variants={container}
+            initial="hidden"
+            whileInView="show"
+            viewport={{once: true}}
+            >
+              {data?.link.map((link) => (
+                <motion.a key={link?.id} className="cta center-spaced" href={link?.url} variants={element}>
+                  {link?.text}
+                </motion.a>
+              ))}
+            </motion.div>
 
-            {data?.link.map((link) => (
-              <motion.a key={link?.id} href={link?.url} className="elem" variants={element}>
-                {link?.text}
-              </motion.a>
-            ))}
-          </motion.div>
-
-        ))}
+          </div>      
       </section>
+      ))}
     </>
   )
 };

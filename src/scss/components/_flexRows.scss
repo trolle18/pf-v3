@@ -1,0 +1,28 @@
+
+.articles-cntr {
+    border: solid red 1px;
+    display: flex;
+    flex-direction: column;
+    gap: 8em;
+}
+
+.flex-rows-cntr {
+    display: flex;
+    flex-direction: column;
+    gap: 8em;
+}
+
+
+@media (min-width: 600px) {
+    .flex-rows-cntr {
+        gap: 12em;
+    }
+}
+
+
+
+@media (min-width: 992px) {
+    .flex-rows-cntr {
+        gap: 14em;
+    }
+}

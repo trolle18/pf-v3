@@ -16,7 +16,7 @@ export default function Header({ data }) {
 
   return (
     <>
-      <section key={data?.id} className="header-cntr sec">
+      <section key={data?.id} className="header-cntr">
         {data?.header.map((data) => (
         <motion.div
         key={data?.id}

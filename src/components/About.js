@@ -7,29 +7,29 @@ export default function About({ data }) {
   return (
     <>
       {data?.about?.map((data) => (
-        <section className="about-cntr section" id="about" key={data?.id}>
-          <div className="about-cntr__content">
+        <section className="section-cntr section" id="about" key={data?.id}>
+          <div className="section-cntr__content">
 
-            <div className="about-txt">
+            <div className="flex-cntr">
               <motion.div
-              className="about-txt__txt"
+              className="text-cntr"
               variants={container}
               initial="hidden"
               whileInView="show"
               viewport={{once: true}}
               >
-                <motion.h2 className="elem" variants={element}>
+                <motion.h2 variants={element} className="text-cntr__header">
                   {data?.title}
                 </motion.h2>
 
                 {data?.desc?.map((desc) => (
-                  <motion.p key={desc?.id} className="elem" variants={element}>
+                  <motion.p key={desc?.id} variants={element} className="text-cntr__text">
                     {desc?.text}
                   </motion.p>
                 ))}
               </motion.div>
 
-              <motion.div className="mob-img-cntr elem"
+              <motion.div className="mob-img-cntr"
               variants={container}
               initial="hidden"
               whileInView="show"
@@ -37,7 +37,7 @@ export default function About({ data }) {
               >
                 <motion.div className="mob-img-cntr__img-inner-cntr" variants={element}>
                   {data.img.map((img) => (
-                    <img key={img.id} src={img.url} className="mob-img" alt={img.alt}/>
+                    <img key={img.id} src={img.url} className="img" alt={img.alt}/>
                   ))}
                 </motion.div>
               </motion.div>
@@ -49,7 +49,7 @@ export default function About({ data }) {
           </div>
 
           <motion.div
-          className="about-cntr__img-cntr elem"
+          className="section-cntr__img-cntr"
           variants={container}
           initial="hidden"
           whileInView="show"

@@ -1,34 +1,26 @@
 import { useEffect, useState } from 'react';
-import WorkArticle from '../components/WorkArticle';
+import Work from '../components/Work';
 
-export default function ProjectsPage() {
-    const [articles, setArticles] = useState([]);
+export default function HomePage() {
+    const [pageData, setPageData] = useState([]);
 
-    // Fetch projects from JSON
-    useEffect(() => {      
+    // Fetch data from JSON
+    useEffect(() => {
         async function getData() {
-            const response = await fetch("/data/projects.json");
+            const response = await fetch("/data/pages/homepageData.json");
             const data = await response.json();
-            setArticles(data); 
-            
-        }       
-        getData();        
+            setPageData(data);
+        }
+        getData();
     }, []);
 
     return (
         <>
-            <section className="page">
-                <section className="work-cntr section">
-                    <div className="work-cntr-title">
-                        <h2>Work</h2>
-                        <span className="sub-title">Here is a few of the projects I have been working on</span>
-                    </div>
-
-                    {articles.map( (article ) => (
-                        <WorkArticle article={article} key={article.id}/>
-                    ))}
+            {pageData?.map((data) => (
+                <section className="page" key={data?.id}>
+                    <Work data={data}/>
                 </section>
-            </section>
+            ))}
         </>
     );
 };

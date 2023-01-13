@@ -1,55 +1,53 @@
-
-/* ---------- PAGE ---------- */
 .page {
-    height: auto;
-    // width: auto;
-    // width: 98%;
-    margin: 0 auto;
-    padding: 4em 0 0 0;
+  height: auto;
+  margin: 0 auto;
+  padding: 4em 0 0 0;
 
-    .section {
-        margin: 2rem 0 8rem 0;
-        padding: 5em 0 .5em 0;
-    }
+  .section {
+    margin: 2rem 0 8rem 0;
+    padding: 5em 0 .5em 0;
+  }
 
-    .page-header {
-        padding: 1em 0;
+  .page-header {
+    padding: 1em 0;
 
-        a {
-            text-decoration: none;
-            text-transform: uppercase;
-            color: $clr_white;
-            display: flex;
-            align-items: center;
-            transition: 0.25s ease;
+    a {
+      text-decoration: none;
+      text-transform: uppercase;
+      color: $clr_white;
+      display: flex;
+      align-items: center;
+      transition: 0.25s ease;
 
-            svg {
-                margin: 0 .25em 0 0;
-                color: $clr_white;
-                transition: 0.2s ease;
-            }
+      svg {
+        margin: 0 .25em 0 0;
+        color: $clr_white;
+        transition: 0.2s ease;
+      }
 
-            &:hover {
-                color: $clr_acc_yel;
+      &:hover {
+        color: $clr_acc_yel;
 
-                svg {
-                    margin: 0 0 0 .25em;
-                    color: $clr_acc_yel;
-                }
-            }
+        svg {
+          margin: 0 0 0 .25em;
+          color: $clr_acc_yel;
         }
+      }
     }
+  }
 }
+
 
 @media (min-width: 600px) {
-    .page {
-        width: 90%;
-    }
+  .page {
+    width: 90%;
+  }
 }
 
+
 @media (min-width: 992px) {
-    .page {
-        width: 90%;
-        max-width: 1000px;
-    }
+  .page {
+    width: 90%;
+    max-width: 1000px;
+  }
 }

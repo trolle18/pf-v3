@@ -37,10 +37,10 @@ export default function Footer({ globalData }) {
               </div>
             </div>
 
-            {data?.copyRight?.map((link) => (
-              <div className="footer-btm" key={link?.id}>
-                <span dangerouslySetInnerHTML={{__html: link?.text}}></span>
-                <span className="copy"><span dangerouslySetInnerHTML={{__html: link?.icon}}></span> {year}</span>
+            {data?.copyRight?.map((copy) => (
+              <div className="footer-btm" key={copy?.id}>
+                <span dangerouslySetInnerHTML={{__html: copy?.text}}></span>
+                <span className="copy"><span dangerouslySetInnerHTML={{__html: copy?.icon}}></span> {year}</span>
               </div>
             ))}
 

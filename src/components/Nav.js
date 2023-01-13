@@ -57,7 +57,6 @@ const Nav = ({ globalData }) => {
                 <BurgerMenu data={data}/>
               </div>
             </div>
-            
           ))}
         </div>
 

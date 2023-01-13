@@ -24,3 +24,6 @@ yarn-error.log*
 /public/favicon/info.txt
 /dist
 /public/robots.txt
+/public/.htaccess
+/public/sitemap.xml
+/src/misc

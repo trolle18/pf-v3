@@ -6,16 +6,16 @@ export default function List({ list }) {
   return (
     <>
       <motion.div
-      className="skills"
+      className="list-cntr"
       variants={container}
       initial="hidden"
       whileInView="show"
       viewport={{once: true}}
       >
-        <motion.span className="elem" variants={element}> {list?.title} </motion.span>
+        <motion.span variants={element}> {list?.title} </motion.span>
 
         <motion.ul
-        className="skills__list elem"
+        className="list"
         variants={container}
         initial="hidden"
         whileInView="show"
@@ -25,7 +25,7 @@ export default function List({ list }) {
           {list?.items
           ?.filter((items) => items?.online.includes('y'))
           ?.map((item) => (
-            <motion.li key={item?.id} className="elem" variants={element}> <span>{item?.text}</span> </motion.li>
+            <motion.li key={item?.id} variants={element} className="list__item"> <span>{item?.text}</span> </motion.li>
           ))}
 
         </motion.ul>

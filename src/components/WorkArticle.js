@@ -9,12 +9,7 @@ export default function WorkArticle({ article }) {
     const isLink = article?.link;
     if(isLink) {
       return (
-        <a 
-        href={article?.link} 
-        className="elem" 
-        target="_blank" 
-        rel="noreferrer" 
-        >
+        <a  href={article?.link} className="elem" target="_blank" rel="noreferrer">
           <AiOutlineLink/>
         </a>
       )
@@ -26,12 +21,7 @@ export default function WorkArticle({ article }) {
     const isRepo = article?.repo;
     if(isRepo) {
       return (
-        <a
-        href={article?.repo}
-        className="elem"
-        target="_blank"
-        rel="noreferrer"
-        >
+        <a href={article?.repo} className="elem" target="_blank" rel="noreferrer">
           <AiOutlineGithub/>
         </a>
       )

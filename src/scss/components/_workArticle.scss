@@ -1,165 +1,164 @@
 .project {
-    padding: 0 0 0 .75em;
+  padding: 0 0 0 .75em;
+  display: flex;
+  flex-direction: column;
+
+  &__gallery-cntr {
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+
+    .gallery {
+      height: 280px;
+      width: 100%;
+      object-fit: cover;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+
+      .img-cntr {
+        height: calc(50% - .2em);
+        object-fit: cover;
+        display: flex;
+
+        img {
+          height: 100%;
+          width: 100%;
+          object-fit: cover;
+        }
+
+        &:first-child, &:last-child {
+          width: calc(40% - .1em);
+        }
+
+        &:nth-child(2), &:nth-child(3) {
+          width: calc(60% - .1em);
+        }
+      }
+    }
+  }
+
+  &__txt {
+    padding: .5rem 0;
     display: flex;
     flex-direction: column;
 
-    &__gallery-cntr {
+    .project-title {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+
+      h3 {
+        margin-top: 0;
+        font-size: $fs_m;
+        text-transform: uppercase;
+      }
+
+      .project-links {
         height: 100%;
-        width: 100%;
-        margin: 0 auto;
+        width: auto;
 
-        .gallery {
-            height: 280px;
-            width: 100%;
-            object-fit: cover;
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            align-items: center;
+        a {
+          margin-left: .5em;
+          text-decoration: none;
+          color: $clr_l_grey;
 
-            .img-cntr {
-                height: calc(50% - .2em);
-                object-fit: cover;
-                display: flex;
-
-                img {
-                    height: 100%;
-                    width: 100%;
-                    object-fit: cover;
-                }
-
-                &:first-child, &:last-child {
-                    width: calc(40% - .1em);
-                }
-
-                &:nth-child(2), &:nth-child(3) {
-                    width: calc(60% - .1em);
-                }
-            }
+          svg {
+            height: 20px;
+            width: auto;
+          }
         }
+      }
     }
 
-    &__txt {
-        padding: .5rem 0;
-        display: flex;
-        flex-direction: column;
+    .project-build {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      column-gap: 1.25em;
 
-        .project-title {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-
-            h3 {
-                margin-top: 0;
-                font-size: $fs_m;
-                text-transform: uppercase;
-            }
-
-            .project-links {
-                height: 100%;
-                width: auto;
-
-                a {
-                    margin-left: .5em;
-                    text-decoration: none;
-                    color: $clr_l_grey;
-
-                    svg {
-                        height: 20px;
-                        width: auto;
-                    }
-                }
-            }
-        }
-
-        .project-build {
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            column-gap: 1.25em;
-
-            span {
-                margin-bottom: 0;
-                color: $clr_acc_yel;
-                font-family: $ff_mono;
-                font-weight: 600;
-                font-size: $fs_s;
-                text-transform: uppercase;
-            }
-        }
-
-        .project-desc {
-            display: flex;
-            flex-direction: column;
-        }
+      span {
+        margin-bottom: 0;
+        color: $clr_acc_yel;
+        font-family: $ff_mono;
+        font-weight: 600;
+        font-size: $fs_s;
+        text-transform: uppercase;
+      }
     }
+
+    .project-desc {
+      display: flex;
+      flex-direction: column;
+    }
+  }
 
 }
 
 
 @media (min-width: 600px) {
-    .project {
-        height: auto;
-        padding: 0 0;
-        flex-direction: row;
+  .project {
+    height: auto;
+    padding: 0 0;
+    flex-direction: row;
 
-        &__gallery-cntr {
-            height: 100%;
-            min-width: 50%;
+    &__gallery-cntr {
+      height: 100%;
+      min-width: 50%;
 
-            .gallery {
-                height: 320px;
-            }
-        }
-
-        &__txt {
-            width: auto;
-            margin: auto 0;
-            padding: 0 0 0 .5rem;
-
-            .project-build {
-                column-gap: 1.25em;
-            }
-        }
+      .gallery {
+        height: 320px;
+      }
     }
+
+    &__txt {
+      width: auto;
+      margin: auto 0;
+      padding: 0 0 0 .5rem;
+
+      .project-build {
+        column-gap: 1.25em;
+      }
+    }
+  }
 }
 
 
 
 @media (min-width: 992px) {
-    .project {
-        justify-content: space-between;
+  .project {
+    justify-content: space-between;
 
-        &__gallery-cntr {
-            height: 100%;
-            width: 50%;
+    &__gallery-cntr {
+      height: 100%;
+      width: 50%;
 
-            .gallery {
-                .img-cntr {
-                    height: 160px;
-                    width: 40%;
+      .gallery {
+        .img-cntr {
+          height: 160px;
+          width: 40%;
 
-                    &:nth-child(2), &:nth-child(3) {
-                        object-position: left;
-                    }
-                }
-            }
+          &:nth-child(2), &:nth-child(3) {
+            object-position: left;
+          }
         }
-
-        &__txt {
-            padding: 0 0 0 .75rem;
-            .project-header {
-                margin-bottom: .625em;
-
-                .project-title {
-                    h3 {
-                        margin: 0 0 0.625em 0;
-                        font-size: $fs_l;
-                    }
-                }
-            }
-
-        }
+      }
     }
+
+    &__txt {
+      padding: 0 0 0 .75rem;
+      .project-header {
+        margin-bottom: .625em;
+
+        .project-title {
+          h3 {
+            margin: 0 0 0.625em 0;
+            font-size: $fs_l;
+          }
+        }
+      }
+    }
+  }
 }

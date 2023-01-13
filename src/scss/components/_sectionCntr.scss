@@ -8,7 +8,7 @@
 
   &__content {
     height: auto;
-    width: 100%;
+    width: auto;
     margin-left: 10px;
 
     .flex-cntr {
@@ -115,9 +115,9 @@
 }
 
 
-.w100 {
-  border: solid red 1px;
-  width: 100%;
+.w80 {
+  // border: solid red 1px;
+  max-width: 80%;
   margin: 0 auto;
 }
 

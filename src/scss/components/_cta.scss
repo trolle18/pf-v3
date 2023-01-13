@@ -1,16 +1,14 @@
 
 .cta-cntr {
 
-  // &.center-spaced {
+  &.center-spaced {
     width: 100%;
+    margin: 1em auto;
     display: flex;
     justify-content: center;
-    margin: 0 auto;
-
-  // }
+  }
 
   .cta {
-    // width: max-content;
     margin: .5em auto;
     padding: 0.5em 1.5em;
     border: solid $clr_acc_yel 2px;

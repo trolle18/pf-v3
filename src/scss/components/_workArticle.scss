@@ -28,18 +28,15 @@
           width: 100%;
           object-fit: cover;
         }
-
         &:first-child, &:last-child {
           width: calc(40% - .1em);
         }
-
         &:nth-child(2), &:nth-child(3) {
           width: calc(60% - .1em);
         }
       }
     }
   }
-
   &__txt {
     padding: .5rem 0;
     display: flex;
@@ -55,7 +52,6 @@
         font-size: $fs_m;
         text-transform: uppercase;
       }
-
       .project-links {
         height: 100%;
         width: auto;
@@ -72,7 +68,6 @@
         }
       }
     }
-
     .project-build {
       display: flex;
       flex-direction: row;
@@ -88,13 +83,11 @@
         text-transform: uppercase;
       }
     }
-
     .project-desc {
       display: flex;
       flex-direction: column;
     }
   }
-
 }
 
 
@@ -111,7 +104,6 @@
         height: 320px;
       }
     }
-
     &__txt {
       margin: auto 0;
       padding: 0 0 0 .5rem;

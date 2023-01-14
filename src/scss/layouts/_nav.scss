@@ -34,7 +34,7 @@
       text-decoration: none;
       text-transform: uppercase;
       color: $txt_light;
-      transition: ease-in .02s;
+      transition: $hover_ease_in_02;
 
       &:hover {
         color: $clr_acc_yel;
@@ -63,13 +63,11 @@
       vertical-align: middle;
 
       &__menu-btn {
-        // border: solid rgba(255, 0, 0, 0.442) 1px;
         height: 100%;
         width: 1em;
         margin: 1.2em 1em 1.2em auto;
         top: 0;
         right: 0;
-        // text-transform: uppercase;
         background-color: transparent;
         cursor: pointer;
         border: none;

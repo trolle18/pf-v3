@@ -1,24 +1,87 @@
-
-.scrolltop-btn {
-  height: 2em;
-  width: 2em;
-  bottom: 4em;
-  right: 1em;
-  margin: 0 0;
-  padding: 0 0;
+.scrolltop-cntr {
+  width: 100%;
+  bottom: 0;
+  margin: 0 auto;
   z-index: 99;
-  display: none;
   position: fixed;
-  cursor: pointer;
-  background-color: rgba(0, 0, 0, .8);
-  border: solid $clr_white 1px;
-  border-radius: 15px;
+  display: flex;
+  overflow: hidden;
 
-  svg {
-    height: 20px;
-    width: auto;
-    margin: auto auto;
-    padding: 2px;
-    color: $clr_white;
+  .scrolltop-btn {
+    height: 2.5em;
+    width: 2.5em;
+    bottom: 2em;
+    left: .75em;
+    margin: 0 .5em .5em .5em;
+    padding: 0;
+    display: none;
+    cursor: pointer;
+    border-radius: 50em;
+    border: solid $white_transparent_80 1px;
+    backdrop-filter: blur(2px);
+    background-color: $black_transparent_50;
+    box-shadow: 0 0 1em .2em rgba(0, 0, 0, .25);
+    transition: $hover_ease_in_02;
+
+    svg {
+      height: 1.5em;
+      width: auto;
+      margin: auto auto;
+      color: $white_transparent_80;
+    }
+
+    &:hover {
+      border: solid $clr_white 1px;
+      svg {
+        color: $clr_white;
+      }
+    }
+  }
+}
+
+
+@media (min-width: 600px) {
+  .scrolltop-cntr {
+    justify-content: flex-end;
+
+    .scrolltop-btn {
+      height: 3em;
+      width: 3em;
+      bottom: 1.75em;
+      left: auto;
+      right: .75em;
+      margin: 0 1em 1em 1em;
+    }
+  }
+}
+
+
+@media (min-width: 992px) {
+  .scrolltop-cntr {
+    width: 90%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+
+    .scrolltop-btn {
+      height: 3em;
+      width: 3em;
+      bottom: 1.75em;
+    }
+  }
+}
+
+
+@media (min-width: 1440px) {
+  .scrolltop-cntr {
+    max-width: 1600px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+
+    .scrolltop-btn {
+      height: 3em;
+      width: 3em;
+      bottom: 1.75em;
+      margin: 0 1em 1.75em 1em;
+    }
   }
 }

@@ -26,9 +26,12 @@ export default function ScrollToTop() {
 
   return (
     <>
-      <button className="scrolltop-btn" id="scrollToTop" title="Scroll to top" onClick={scrollToTop} >
+    <div className="scrolltop-cntr" >
+      <button className="scrolltop-btn" id="scrollToTop" title="Scroll to top" onClick={scrollToTop}>
         <IoIosArrowUp/>
       </button>
+    </div>
+      
     </>      
   )
 };

@@ -15,6 +15,10 @@ $txt_dark: #282828;
 
 // Transparent colors
 $black_transparent: rgba(0, 0, 0, .8);
+$black_transparent_50: rgba(0, 0, 0, .5);
+
+$white_transparent_80: rgba(255, 255, 255, 0.8);
+$white_transparent_50: rgba(255, 255, 255, 0.5);
 
 // Font-families
 $ff_sans: 'Montserrat', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
@@ -32,6 +36,7 @@ $fs_xs: 0.750rem; // x-small
 $fs_xxs: 0.625rem; // xx-small
 
 // Ease in - sec
+$hover_ease_in_02: ease-in .02s;
 $ease_in_10: ease-in 1s;
 $ease_in_75: ease-in .75s;
 $ease_in_50: ease-in .50s;

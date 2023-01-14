@@ -54,7 +54,7 @@ export default function BurgerMenu({ data }) {
         {data?.links
         ?.filter((link) => link?.type?.includes("section"))
         ?.map((link) => (
-          <a key={link?.id} href={link?.url}>
+          <a key={link?.id} href={link?.url} className="navlink">
             {link?.text}
           </a>
         ))}

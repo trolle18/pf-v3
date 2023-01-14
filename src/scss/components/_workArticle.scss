@@ -1,5 +1,5 @@
 .project {
-  padding: 0 0 0 .75em;
+  padding: 0 .5em;
   display: flex;
   flex-direction: column;
 
@@ -28,18 +28,15 @@
           width: 100%;
           object-fit: cover;
         }
-
         &:first-child, &:last-child {
           width: calc(40% - .1em);
         }
-
         &:nth-child(2), &:nth-child(3) {
           width: calc(60% - .1em);
         }
       }
     }
   }
-
   &__txt {
     padding: .5rem 0;
     display: flex;
@@ -55,7 +52,6 @@
         font-size: $fs_m;
         text-transform: uppercase;
       }
-
       .project-links {
         height: 100%;
         width: auto;
@@ -72,7 +68,6 @@
         }
       }
     }
-
     .project-build {
       display: flex;
       flex-direction: row;
@@ -88,13 +83,11 @@
         text-transform: uppercase;
       }
     }
-
     .project-desc {
       display: flex;
       flex-direction: column;
     }
   }
-
 }
 
 
@@ -105,22 +98,15 @@
     flex-direction: row;
 
     &__gallery-cntr {
-      height: 100%;
       min-width: 50%;
 
       .gallery {
         height: 320px;
       }
     }
-
     &__txt {
-      width: auto;
       margin: auto 0;
       padding: 0 0 0 .5rem;
-
-      .project-build {
-        column-gap: 1.25em;
-      }
     }
   }
 }
@@ -131,24 +117,7 @@
   .project {
     justify-content: space-between;
 
-    &__gallery-cntr {
-      height: 100%;
-      width: 50%;
-
-      .gallery {
-        .img-cntr {
-          height: 160px;
-          width: 40%;
-
-          &:nth-child(2), &:nth-child(3) {
-            object-position: left;
-          }
-        }
-      }
-    }
-
     &__txt {
-      padding: 0 0 0 .75rem;
       .project-header {
         margin-bottom: .625em;
 

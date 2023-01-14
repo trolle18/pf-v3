@@ -1,7 +1,3 @@
-
-#navBar {
-  transition: top .25s;
-}
 #nav {
   width: 100%;
   margin: 0 auto;
@@ -31,28 +27,28 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    z-index: 999999;
+    z-index: 999;
+
+    a.navlink {
+      font-size: $fs_s;
+      text-decoration: none;
+      text-transform: uppercase;
+      color: $txt_light;
+      transition: $hover_ease_in_02;
+
+      &:hover {
+        color: $clr_acc_yel;
+      }
+    }
 
     &__logo {
       margin: auto 0;
-
-      a {
-        font-family: $ff_sans;
-        font-size: $fs_s;
-        text-decoration: none;
-        text-transform: uppercase;
-        color: $txt_light;
-        transition: ease-in .02s;
-
-        &:hover {
-          color: $clr_acc_yel;
-        }
-      }
     }
 
     &__links{
       display: none;
     }
+
     .nav-mob-links {
       height: max-content;
       width: max-content;
@@ -67,12 +63,11 @@
       vertical-align: middle;
 
       &__menu-btn {
-        height: 20px;
-        width: 20px;
-        margin: 1em .5em 1em auto;
+        height: 100%;
+        width: 1em;
+        margin: 1.2em 1em 1.2em auto;
         top: 0;
         right: 0;
-        text-transform: uppercase;
         background-color: transparent;
         cursor: pointer;
         border: none;
@@ -86,64 +81,50 @@
           left: 0;
           top: 0;
 
-          :first-child {
-            position: absolute;
-            left: 0;
-            transform: rotate(0deg);
-            transition: .25s;
-          }
+          // :first-child {
+          //   position: absolute;
+          //   left: 0;
+          //   transform: rotate(0deg);
+          //   transition: .25s;
+          // }
 
-          :nth-child(2) {
-            position: absolute;
-            left: 0;
-            opacity: 1;
-            transform: translateX(0px);
-            transition: .25s;
-          }
+          // :nth-child(2) {
+          //   position: absolute;
+          //   left: 0;
+          //   opacity: 1;
+          //   transform: translateX(0px);
+          //   transition: .25s;
+          // }
 
-          :nth-child(3) {
-            position: absolute;
-            transform: rotate(0deg);
-            transition: .25s;
-          }
+          // :nth-child(3) {
+          //   position: absolute;
+          //   transform: rotate(0deg);
+          //   transition: .25s;
+          // }
         }
       }
 
       &__dropdown {
         height: max-content;
-        width: max-content;
-        padding: 0 0.6em 0.5em 0.6em;
-        top: 1px;
+        width: calc(33vw - 1em);
+        margin: .25em .5em;
+        top: 0;
         right: 0;
-        z-index: 999;
         position: relative;
         display: flex;
+        justify-content: space-between;
         flex-direction: column;
+        text-align: right;
+        overflow: hidden;
 
         a {
-          width: 100%;
           margin: 1em 0;
-          padding-bottom: .5em;
           display: block;
-          position: relative;
-          font-family: $ff_sans;
-          font-size: $fs_xs;
-          text-decoration: none;
-          text-transform: uppercase;
-          color: $txt_light;
-          transition: ease-in .02s;
-          z-index: 999;
-
-          &:hover {
-            color: $clr_acc_yel;
-          }
         }
       }
-
       &__dropdown.show {
         display: block;
       }
-
       &__dropdown.hidden {
         display: none;
       }
@@ -151,6 +132,23 @@
   }
 }
 
+@media (min-width: 425px) {
+  .nav-cntr{
+    .nav-inner-cntr {
+      &__links {
+        display: none;
+        width: 15rem;
+        margin: auto .5em auto 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+      .nav-mob-links {
+        display: none;
+      }
+    }
+  }
+}
 
 
 @media (min-width: 600px) {
@@ -163,19 +161,6 @@
 
       &__logo {
         margin: auto 0;
-
-        a {
-          font-family: $ff_sans;
-          font-size: $fs_s;
-          text-decoration: none;
-          text-transform: uppercase;
-          color: $txt_light;
-          transition: ease-in .02s;
-
-          &:hover {
-            color: $clr_acc_yel;
-          }
-        }
       }
 
       &__links {
@@ -185,19 +170,6 @@
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-
-        a {
-          font-family: $ff_sans;
-          font-size: $fs_s;
-          text-decoration: none;
-          text-transform: uppercase;
-          color: $txt_light;
-          transition: ease-in .02s;
-
-          &:hover {
-            color: $clr_acc_yel;
-          }
-        }
       }
       .nav-mob-links {
         display: none;
@@ -205,6 +177,7 @@
     }
   }
 }
+
 
 @media (min-width: 992px) {
   .nav-cntr {
@@ -217,19 +190,6 @@
 
       &__logo {
         margin: auto 0;
-
-        a {
-          font-family: $ff_sans;
-          font-size: $fs_s;
-          text-decoration: none;
-          text-transform: uppercase;
-          color: $txt_light;
-          transition: ease-in .02s;
-
-          &:hover {
-            color: $clr_acc_yel;
-          }
-        }
       }
 
       &__links {
@@ -239,19 +199,6 @@
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-
-        a {
-          font-family: $ff_sans;
-          font-size: $fs_s;
-          text-decoration: none;
-          text-transform: uppercase;
-          color: $txt_light;
-          transition: ease-in .02s;
-
-          &:hover {
-            color: $clr_acc_yel;
-          }
-        }
       }
       .nav-mob-links {
         display: none;
@@ -273,22 +220,24 @@
   }
 }
 
+// Dropdown backdrop
 .backdrop {
-  height: calc(100vh - 4em);
+  height: 100vh;
   width: 33vw;
   top: 0;
-  right: -.2em;
+  right: 0em;
   margin: 0 0 0 auto;
   position: relative;
   z-index: 0;
   background: $black_transparent;
   backdrop-filter: blur(2px);
   box-shadow: 0 0 .5em 1px rgba(0, 0, 0, .2);
-}
+  overflow: hidden;
 
-.backdrop.hidden {
-  display: none;
+  &.show {
+    display: block;
+  }
+  &.hidden {
+    display: none;
+  }
 }
-.backdrop.show {
-  display: block;
- }

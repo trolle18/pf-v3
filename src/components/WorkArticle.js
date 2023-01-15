@@ -1,6 +1,6 @@
 import { AiOutlineGithub, AiOutlineLink } from "react-icons/ai";
 import { motion } from "framer-motion";
-import { container, element } from "../utils/framerMotion";
+import { articleFramer, element } from "../utils/framerMotion";
 
 export default function WorkArticle({ article }) {
 
@@ -62,35 +62,33 @@ export default function WorkArticle({ article }) {
    
   return (
     <>
-      {/* <AnimatePresence> */}
-        <motion.article
-        key={article?.id}
-        className="project"
-        variants={container}
-        initial="hidden"
-        whileInView="show"
-        exit="hidden"
-        >
-          {getGallery(article)}
-          <div className="project__txt"> 
-            <div className="project-header">
-              <div className="project-title">
-                <motion.h3 className="elem" variants={element}>{article?.title}</motion.h3>
-                <motion.div className="project-links" variants={element}>
-                  {getLink(article)}
-                  {getRepo(article)} 
-                </motion.div>
-              </div>
-
-              <motion.div className="project-build" variants={element}>
-                {getBuild(article)}
-              </motion.div> 
+      <motion.article
+      key={article?.id}
+      className="project"
+      variants={articleFramer}
+      initial="hidden"
+      whileInView="show"
+      viewport={{ once: true, amount: 0.2 }}
+      >
+        {getGallery(article)}
+        <div className="project__txt"> 
+          <div className="project-header">
+            <div className="project-title">
+              <motion.h3 className="elem" variants={element}>{article?.title}</motion.h3>
+              <motion.div className="project-links" variants={element}>
+                {getLink(article)}
+                {getRepo(article)} 
+              </motion.div>
             </div>
 
-            <motion.div className="project-desc elem" variants={element} dangerouslySetInnerHTML={ {__html: article?.descHtml} }></motion.div>
+            <motion.div className="project-build" variants={element}>
+              {getBuild(article)}
+            </motion.div> 
           </div>
-        </motion.article>
-      {/* </AnimatePresence> */}
+
+          <motion.div className="project-desc elem" variants={element} dangerouslySetInnerHTML={ {__html: article?.descHtml} }></motion.div>
+        </div>
+      </motion.article>
     </>
   )
 };

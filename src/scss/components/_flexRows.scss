@@ -5,9 +5,11 @@
 }
 
 .flex-rows-cntr {
+  margin: 2em 0 0 0;
   display: flex;
   flex-direction: column;
   gap: 8em;
+  overflow: hidden;
 }
 
 

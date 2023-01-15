@@ -1,11 +1,11 @@
-import { motion } from "framer-motion";
+import { m } from "framer-motion";
 import { container, element } from "../utils/framerMotion";
 
 export default function Cta({ data }) {
 
   return (
     <>
-      <motion.div
+      <m.div
       key={data?.id}
       className="cta-cntr center-spaced"
       variants={container}
@@ -14,7 +14,7 @@ export default function Cta({ data }) {
       viewport={{once: true}}
       >
         {data?.link.map((link) => (
-          <motion.a
+          <m.a
           key={link?.id}
           className="cta center-spaced"
           aria-label={link.title}
@@ -22,9 +22,9 @@ export default function Cta({ data }) {
           variants={element}
           >
             {link?.text}
-          </motion.a>
+          </m.a>
         ))}
-      </motion.div>
+      </m.div>
     </>
   )
 };

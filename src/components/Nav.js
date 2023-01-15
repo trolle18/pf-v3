@@ -37,7 +37,7 @@ const Nav = ({ globalData }) => {
                 {data?.links
                 ?.filter((link) => link?.type?.includes("logo"))
                 ?.map((link) => (
-                  <a key={link?.id} href={link?.url} className="navlink">
+                  <a key={link?.id} href={link?.url} className="navlink" aria-label={link?.text}>
                     {link?.text}
                   </a>
                 ))}
@@ -47,7 +47,7 @@ const Nav = ({ globalData }) => {
                 {data?.links
                 .filter((link) => link?.type?.includes("section"))
                 .map((link) => (
-                  <a key={link?.id} href={link?.url} className="navlink">
+                  <a key={link?.id} href={link?.url} className="navlink" aria-label={link?.text}>
                     {link?.text}
                   </a>
                 ))}

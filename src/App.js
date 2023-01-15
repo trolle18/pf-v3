@@ -1,4 +1,5 @@
 import { Routes, Route, Navigate } from "react-router-dom";
+import { LazyMotion, domAnimation } from "framer-motion";
 import './scss/main.scss';
 import Nav from './components/Nav';
 import Footer from './components/Footer';
@@ -20,13 +21,15 @@ function App() {
 
     return (
         <>
-            <Nav globalData={globalData} />  
-            <Routes>
-                <Route path="/" element={ <HomePage/> } />
-                <Route path="*" element={ <Navigate to="/"/> } />
-            </Routes>            
-            <ScrollToTop/>     
-            <Footer globalData={globalData}/>
+            <LazyMotion features={domAnimation}>      
+                <Nav globalData={globalData} />  
+                <Routes>
+                    <Route path="/" element={ <HomePage/> } />
+                    <Route path="*" element={ <Navigate to="/"/> } />
+                </Routes>            
+                <ScrollToTop/>     
+                <Footer globalData={globalData}/>
+            </LazyMotion>
         </>
     );
 }

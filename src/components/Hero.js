@@ -1,7 +1,7 @@
 import { m } from "framer-motion";
 import { container, element } from "../utils/framerMotion";
 
-export default function Header({ data }) {
+export default function Hero({ data }) {
 
   function TextType(data, i) {
     const type = data?.type
@@ -16,11 +16,11 @@ export default function Header({ data }) {
 
   return (
     <>
-      <section key={data?.id} className="header-cntr">
-        {data?.header.map((data) => (
+      <section key={data?.id} className="hero-cntr">
+        {data?.hero.map((data) => (
         <m.div
         key={data?.id}
-        className="header-cntr__txt"
+        className="hero-cntr__txt"
         variants={container}
         initial="hidden"
         whileInView="show"

@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react';
-import About from '../components/About';
-import Contact from '../components/Contact';
-import Header from '../components/Header';
-import Work from '../components/Work';
+import Hero from '../components/Hero';
+import AboutSection from '../components/sections/AboutSection';
+import ContactSection from '../components/sections/ContactSection';
+import WorkSection from '../components/sections/WorkSection';
 
 export default function HomePage() {
     const [pageData, setPageData] = useState([]);
@@ -21,10 +21,10 @@ export default function HomePage() {
         <>
             {pageData?.map((data) => (
                 <section className="page" key={data?.id}>
-                    <Header data={data}/>
-                    <About data={data}/>
-                    <Work data={data}/>
-                    <Contact data={data}/>
+                    <Hero data={data}/>
+                    <AboutSection data={data}/>
+                    <WorkSection data={data} />
+                    <ContactSection data={data}/>
                 </section>
             ))}
         </>

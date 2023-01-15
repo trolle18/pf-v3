@@ -5,11 +5,12 @@
     "title": "Homepage",
 
 
-    "header": [
+    "hero": [
         {
         "id": 1020,
         "online": "y",
         "title": "Sofie Trolle",
+        "tag": "hero",
         "text": [
           {
             "id": 10201,

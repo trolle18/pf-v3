@@ -1,4 +1,4 @@
-.header-cntr {
+.hero-cntr {
   height: 100vh;
   width: 100%;
   margin: 0 0 1.625rem 0 ;
@@ -23,21 +23,19 @@
 }
 
 @media (min-width: 600px) {
-  .header-cntr {
+  .hero-cntr {
     &__txt {
-      height: auto;
+      // height: auto;
       width: 70%;
-      margin-left: 0;
+      // margin-left: 0;
     }
   }
 }
 
 @media (min-width: 992px) {
-  .header-cntr {
+  .hero-cntr {
     &__txt {
-      height: auto;
       width: 60%;
-      margin-left: 0px;
     }
   }
 }

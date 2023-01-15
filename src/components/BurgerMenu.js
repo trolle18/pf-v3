@@ -46,7 +46,7 @@ export default function BurgerMenu({ data }) {
 
   return (
     <>
-      <button onClick={openMenu} className="nav-mob-links__menu-btn" id="menu-btn" >
+      <button onClick={openMenu} className="nav-mob-links__menu-btn" id="menu-btn" aria-label="menu">
         <svg viewBox="0 0 10 8"><path d="M1 1h8M1 4h 8M1 7h8"/></svg>
       </button>
       <div className={`nav-mob-links__dropdown hidden ${show && ""}`} id="dropdown" >
@@ -54,7 +54,7 @@ export default function BurgerMenu({ data }) {
         {data?.links
         ?.filter((link) => link?.type?.includes("section"))
         ?.map((link) => (
-          <a key={link?.id} href={link?.url} className="navlink">
+          <a key={link?.id} href={link?.url} className="navlink" aria-label={link?.text}>
             {link?.text}
           </a>
         ))}

@@ -1,20 +1,20 @@
-import { motion } from "framer-motion";
+import { m } from "framer-motion";
 import { container, element } from "../utils/framerMotion";
 
 export default function List({ list }) {
 
   return (
     <>
-      <motion.div
+      <m.div
       className="list-cntr"
       variants={container}
       initial="hidden"
       whileInView="show"
       viewport={{once: true}}
       >
-        <motion.span variants={element}> {list?.title} </motion.span>
+        <m.span variants={element}> {list?.title} </m.span>
 
-        <motion.ul
+        <m.ul
         className="list"
         variants={container}
         initial="hidden"
@@ -25,11 +25,11 @@ export default function List({ list }) {
           {list?.items
           ?.filter((items) => items?.online.includes('y'))
           ?.map((item) => (
-            <motion.li key={item?.id} variants={element} className="list__item"> <span>{item?.text}</span> </motion.li>
+            <m.li key={item?.id} variants={element} className="list__item"> <span>{item?.text}</span> </m.li>
           ))}
 
-        </motion.ul>
-      </motion.div>
+        </m.ul>
+      </m.div>
     </>
   )
 };

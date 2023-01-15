@@ -1,4 +1,4 @@
-import { motion } from "framer-motion";
+import { m } from "framer-motion";
 import { container, element } from "../utils/framerMotion";
 
 export default function Header({ data }) {
@@ -18,7 +18,7 @@ export default function Header({ data }) {
     <>
       <section key={data?.id} className="header-cntr">
         {data?.header.map((data) => (
-        <motion.div
+        <m.div
         key={data?.id}
         className="header-cntr__txt"
         variants={container}
@@ -27,11 +27,11 @@ export default function Header({ data }) {
         viewport={{once: true}}
         >
           {data?.text.map((data) => (
-            <motion.div variants={element} key={data?.id}>
+            <m.div variants={element} key={data?.id}>
               {TextType(data)}
-            </motion.div>
+            </m.div>
           ))}
-        </motion.div>
+        </m.div>
         ))}
       </section>
     </>

@@ -1,4 +1,4 @@
-import { motion } from "framer-motion";
+import { m } from "framer-motion";
 import { container, element } from "../utils/framerMotion";
 
 export default function HeaderWText({ data }) {
@@ -6,7 +6,7 @@ export default function HeaderWText({ data }) {
   return (
     <>
 
-      <motion.div
+      <m.div
       key={data?.id}
       className="text-cntr"
       variants={container}
@@ -14,17 +14,17 @@ export default function HeaderWText({ data }) {
       whileInView="show"
       viewport={{once: true}}
       >
-        <motion.h2 variants={element} className="text-cntr__header">
+        <m.h2 variants={element} className="text-cntr__header">
           {data?.title}
-        </motion.h2>
+        </m.h2>
 
         {data?.desc?.map((desc) => (
-          <motion.p key={desc?.id} variants={element} className="text-cntr__text">
+          <m.p key={desc?.id} variants={element} className="text-cntr__text">
             {desc?.text}
-          </motion.p>
+          </m.p>
         ))}
 
-      </motion.div>
+      </m.div>
     </>
   )
 };

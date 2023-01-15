@@ -1,5 +1,5 @@
 import { AiOutlineGithub, AiOutlineLink } from "react-icons/ai";
-import { motion } from "framer-motion";
+import { m } from "framer-motion";
 import { articleFramer, element } from "../utils/framerMotion";
 
 export default function WorkArticle({ article }) {
@@ -45,7 +45,7 @@ export default function WorkArticle({ article }) {
     const isImgs = article?.imgs;
     if(isImgs) {
       return (
-        <motion.div className="project__gallery-cntr" variants={element}>
+        <m.div className="project__gallery-cntr" variants={element}>
           <div className="gallery">
             {article?.imgs.map((img) => {
               return ( 
@@ -55,14 +55,14 @@ export default function WorkArticle({ article }) {
               )
             })}
           </div>
-        </motion.div>
+        </m.div>
       )
     }
   }
    
   return (
     <>
-      <motion.article
+      <m.article
       key={article?.id}
       className="project"
       variants={articleFramer}
@@ -74,21 +74,21 @@ export default function WorkArticle({ article }) {
         <div className="project__txt"> 
           <div className="project-header">
             <div className="project-title">
-              <motion.h3 className="elem" variants={element}>{article?.title}</motion.h3>
-              <motion.div className="project-links" variants={element}>
+              <m.h3 className="elem" variants={element}>{article?.title}</m.h3>
+              <m.div className="project-links" variants={element}>
                 {getLink(article)}
                 {getRepo(article)} 
-              </motion.div>
+              </m.div>
             </div>
 
-            <motion.div className="project-build" variants={element}>
+            <m.div className="project-build" variants={element}>
               {getBuild(article)}
-            </motion.div> 
+            </m.div> 
           </div>
 
-          <motion.div className="project-desc elem" variants={element} dangerouslySetInnerHTML={ {__html: article?.descHtml} }></motion.div>
+          <m.div className="project-desc elem" variants={element} dangerouslySetInnerHTML={ {__html: article?.descHtml} }></m.div>
         </div>
-      </motion.article>
+      </m.article>
     </>
   )
 };

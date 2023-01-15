@@ -43,6 +43,8 @@
         "id": 1030,
         "online": "y",
         "title": "About",
+        "tag": "about",
+        "class": "row",
         "desc": [
           {
             "id": 10301,
@@ -132,6 +134,7 @@
         "id": 1040,
         "online": "y",
         "title": "Work",
+        "tag": "work",
         "desc": [
           {
             "id": 1041,
@@ -157,6 +160,7 @@
         "id": 1050,
         "online": "y",
         "title": "Contact",
+        "tag": "contact",
         "desc": [
           {
             "id": 1051,

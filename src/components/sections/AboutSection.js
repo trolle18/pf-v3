@@ -46,7 +46,7 @@ export default function AboutSection({ data }) {
               ))}
             </m.div>          
           </m.div>
-          
+
         </section>
       ))}
     </>

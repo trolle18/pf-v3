@@ -5,7 +5,6 @@ export default function HeaderWText({ data }) {
 
   return (
     <>
-
       <m.div
       key={data?.id}
       className="text-cntr"
@@ -18,12 +17,13 @@ export default function HeaderWText({ data }) {
           {data?.title}
         </m.h2>
 
-        {data?.desc?.map((desc) => (
+        {data?.desc
+        ?.filter((desc) => desc?.online.includes("y" || "Y"))
+        ?.map((desc) => (
           <m.p key={desc?.id} variants={element} className="text-cntr__text">
             {desc?.text}
           </m.p>
         ))}
-
       </m.div>
     </>
   )

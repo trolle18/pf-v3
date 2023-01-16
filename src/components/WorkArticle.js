@@ -9,7 +9,7 @@ export default function WorkArticle({ article }) {
     const isLink = article?.link;
     if(isLink) {
       return (
-        <a  href={article?.link} className="elem" target="_blank" rel="noreferrer">
+        <a  href={article?.link} target="_blank" rel="noreferrer">
           <AiOutlineLink/>
         </a>
       )
@@ -21,7 +21,7 @@ export default function WorkArticle({ article }) {
     const isRepo = article?.repo;
     if(isRepo) {
       return (
-        <a href={article?.repo} className="elem" target="_blank" rel="noreferrer">
+        <a href={article?.repo} target="_blank" rel="noreferrer">
           <AiOutlineGithub/>
         </a>
       )
@@ -34,7 +34,7 @@ export default function WorkArticle({ article }) {
     if(isBuild) {
       return (
         article?.build?.map((build) => {
-          return( <span key={build?.id} className="elem">{build?.text}</span> )
+          return( <span key={build?.id}>{build?.text}</span> )
         })
       )
     }
@@ -45,12 +45,12 @@ export default function WorkArticle({ article }) {
     const isImgs = article?.imgs;
     if(isImgs) {
       return (
-        <m.div className="project__gallery-cntr" variants={element}>
+        <m.div className="article__gallery-cntr" variants={element}>
           <div className="gallery">
             {article?.imgs.map((img) => {
               return ( 
                 <div className="img-cntr" key={img?.id}>
-                  <img src={img?.src} alt={img?.alt} className="elem"/> 
+                  <img src={img?.src} alt={img?.alt}/> 
                 </div>
               )
             })}
@@ -64,29 +64,29 @@ export default function WorkArticle({ article }) {
     <>
       <m.article
       key={article?.id}
-      className="project"
+      className="article"
       variants={articleFramer}
       initial="hidden"
       whileInView="show"
       viewport={{ once: true, amount: 0.2 }}
       >
         {getGallery(article)}
-        <div className="project__txt"> 
-          <div className="project-header">
-            <div className="project-title">
-              <m.h3 className="elem" variants={element}>{article?.title}</m.h3>
-              <m.div className="project-links" variants={element}>
+        <div className="article__txt"> 
+          <div className="article-header">
+            <div className="article-title">
+              <m.h3 variants={element}>{article?.title}</m.h3>
+              <m.div className="article-links" variants={element}>
                 {getLink(article)}
                 {getRepo(article)} 
               </m.div>
             </div>
 
-            <m.div className="project-build" variants={element}>
+            <m.div className="article-build" variants={element}>
               {getBuild(article)}
             </m.div> 
           </div>
 
-          <m.div className="project-desc elem" variants={element} dangerouslySetInnerHTML={ {__html: article?.descHtml} }></m.div>
+          <m.div className="article-desc elem" variants={element} dangerouslySetInnerHTML={ {__html: article?.descHtml} }></m.div>
         </div>
       </m.article>
     </>

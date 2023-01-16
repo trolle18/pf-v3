@@ -11,16 +11,16 @@
 
 // Components
 @import 'components/cta';
-@import 'components/flexRows';
+@import 'components/footer';
 @import 'components/hero';
 @import 'components/list';
+@import 'components/nav';
 @import 'components/scrollToTop';
-@import 'components/sectionCntr';
 @import 'components/workArticle';
 
 // Layouts
-@import 'layouts/footer';
-@import 'layouts/nav';
+@import 'layouts/flexRows';
+@import 'layouts/sectionCntr';
 
 // Pages
 @import 'pages/page';

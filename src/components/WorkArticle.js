@@ -34,7 +34,7 @@ export default function WorkArticle({ article }) {
     if(isBuild) {
       return (
         article?.build?.map((build) => ( 
-          <span key={build?.id}>{build?.text}</span>
+          <h3 key={build?.id} className="text">{build?.text}</h3>
         ))
       )
     }

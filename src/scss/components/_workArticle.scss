@@ -74,14 +74,17 @@
       flex-wrap: wrap;
       column-gap: 1.25em;
 
-      span {
-        margin-bottom: 0;
-        color: $clr_acc_yel;
+      .text {
+        margin: 0;
         font-family: $ff_mono;
-        font-weight: 600;
         font-size: $fs_s;
+        font-weight: 600;
+        color: $clr_acc_yel;
+        word-spacing: 1px;
+        letter-spacing: 0.25px;
         text-transform: uppercase;
       }
+      
     }
     .article-desc {
       display: flex;

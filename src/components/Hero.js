@@ -7,9 +7,13 @@ export default function Hero({ data }) {
     const type = data?.type
     if(type) {
       if(type === "title") {
-        return <h1 variants={element}>{data?.text}</h1>
+        return <h1 variants={element} className="title">{data?.text}</h1>
       } else {
-        return <span>{data?.text}</span>
+        return (
+          // <h2>
+            <h2 className="text">{data?.text}</h2>
+          // </h2>
+        )
       }
     }
   }

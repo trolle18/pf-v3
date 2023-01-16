@@ -6,7 +6,6 @@ import List from "./List";
 
 export default function TextImageList({ data }) {
   // const { height, width } = useWindowDimensions();
-
   // function MobileImg({data}) {
   //   if(width < 600) {
   //     return (  )

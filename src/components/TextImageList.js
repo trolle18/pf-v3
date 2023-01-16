@@ -53,8 +53,7 @@ export default function TextImageList({ data }) {
             {data?.img?.map((img) => (
               <img key={img?.id} src={img?.url} className="img-inner-cntr__img" alt={img?.alt}/>
             ))}
-          </div>
-          
+          </div>          
         </m.div>
 
         </section>

@@ -5,15 +5,8 @@ export default function List({ list }) {
 
   return (
     <>
-      <div
-      className="list-cntr"
-      // variants={container}
-      // initial="hidden"
-      // whileInView="show"
-      // viewport={{ once: true, amount: 0.1 }}     
-      >
+      <div className="list-cntr">
         <m.span 
-        // variants={element}
         variants={container}
         initial="hidden"
         whileInView="show"

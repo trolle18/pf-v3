@@ -4,16 +4,8 @@ import { container } from "../utils/framerMotion";
 export default function HeaderWText({ data }) {
   return (
     <>
-      <div
-      key={data?.id}
-      className="text-cntr"
-      // variants={container}
-      // initial="hidden"
-      // whileInView="show"
-      // viewport={{ once: true, amount: 0.2 }}
-      >
+      <div key={data?.id} className="text-cntr">
         <m.h2 
-        // variants={element} 
         variants={container}
         initial="hidden"
         whileInView="show"
@@ -29,7 +21,6 @@ export default function HeaderWText({ data }) {
           initial="hidden"
           whileInView="show"
           viewport={{ once: true, amount: 0 }}
-          // variants={element} 
           className="text-cntr__text"
           >
             {text}

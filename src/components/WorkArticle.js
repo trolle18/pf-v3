@@ -33,9 +33,9 @@ export default function WorkArticle({ article }) {
     const isBuild = article?.build;
     if(isBuild) {
       return (
-        article?.build?.map((build) => {
-          return( <span key={build?.id}>{build?.text}</span> )
-        })
+        article?.build?.map((build) => ( 
+          <span key={build?.id}>{build?.text}</span>
+        ))
       )
     }
   }
@@ -43,17 +43,16 @@ export default function WorkArticle({ article }) {
   // Check gallery
   function getGallery(article) {
     const isImgs = article?.imgs;
+    
     if(isImgs) {
       return (
         <m.div className="article__gallery-cntr" variants={element}>
           <div className="gallery">
-            {article?.imgs.map((img) => {
-              return ( 
+            {article?.imgs.map((img) =>  ( 
                 <div className="img-cntr" key={img?.id}>
                   <img src={img?.src} alt={img?.alt}/> 
                 </div>
-              )
-            })}
+              ))}
           </div>
         </m.div>
       )
@@ -86,7 +85,11 @@ export default function WorkArticle({ article }) {
             </m.div> 
           </div>
 
-          <m.div className="article-desc elem" variants={element} dangerouslySetInnerHTML={ {__html: article?.descHtml} }></m.div>
+          <m.div className="article-desc" variants={element} >
+            {article?.descText?.map((text, i) => (
+              <span key={i}> {text} </span>
+            ))}
+          </m.div>
         </div>
       </m.article>
     </>

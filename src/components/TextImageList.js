@@ -7,28 +7,9 @@ import List from "./List";
 export default function TextImageList({ data }) {
   // const { height, width } = useWindowDimensions();
 
-
   // function MobileImg({data}) {
   //   if(width < 600) {
-  //     return (
-  //      <m.div className="mob-img-cntr__img-inner-cntr" variants={element}>
-  //       {data?.img.map((img) => (
-  //         <img key={img.id} src={img?.url} className="img" alt={img?.alt}/>
-  //       ))}
-  //     </m.div>
-  //     )
-  //   }
-  // }
-
-  // function DeskImg({data}) {
-  //   if(width > 600) {
-  //     return (
-  //        <m.div className="img-inner-cntr" variants={element}>
-  //         {data?.img?.map((img) => (
-  //           <img key={img?.id} src={img?.url} className="img-inner-cntr__img" alt={img?.alt}/>
-  //         ))}
-  //       </m.div>
-  //     )
+  //     return (  )
   //   }
   // }
 
@@ -47,7 +28,6 @@ export default function TextImageList({ data }) {
               whileInView="show"
               viewport={{once: true}}
               >
-                {/* <MobileImg data={data} /> */}
                 <m.div className="mob-img-cntr__img-inner-cntr" variants={element}>
                   {data?.img.map((img) => (
                     <img key={img.id} src={img?.url} className="img" alt={img?.alt}/>
@@ -69,7 +49,6 @@ export default function TextImageList({ data }) {
         whileInView="show"
         viewport={{once: true}}
         >
-          {/* <DeskImg data={data} /> */}
           <m.div className="img-inner-cntr" variants={element}>
             {data?.img?.map((img) => (
               <img key={img?.id} src={img?.url} className="img-inner-cntr__img" alt={img?.alt}/>

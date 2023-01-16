@@ -11,7 +11,7 @@ export default function Cta({ data }) {
       variants={container}
       initial="hidden"
       whileInView="show"
-      viewport={{once: true}}
+      viewport={{ once: true, amount: 0.1 }}
       >
         {data?.link.map((link) => (
           <m.a

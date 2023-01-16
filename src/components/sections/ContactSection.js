@@ -2,7 +2,6 @@ import Cta from "../Cta";
 import HeaderWText from "../HeaderWText";
 
 export default function ContactSection({ data }) {
-  
   return (
     <>
       {data?.contact.map((data) => (

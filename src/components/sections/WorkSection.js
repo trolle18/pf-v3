@@ -13,7 +13,7 @@ export default function WorkSection({ data }) {
             </div>
           </div>         
           <ArticlesCntr/>
-          
+
         </section>
       ))}
     </>

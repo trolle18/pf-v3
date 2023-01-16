@@ -31,7 +31,9 @@
             "online": "y",
             "value": 3,
             "type": "text",
-            "text": "I am a multimedia designer, specializing in frontend development."
+            "text": "I am a frontend developer, building and designing things for the web",
+            "textDepr": "I am a multimedia designer, specializing in frontend development."
+
           }
         ]
       }

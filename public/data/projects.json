@@ -1,100 +1,92 @@
 [
   {
     "id": 910010,
-    "value": 2,
+    "value": 3,
     "online": "y",
     "title": "Be a hero",
-    "link": "https://beahero.dk/",
+    "link": "",
     "repo": "https://github.com/trolle18/beahero",
-    "descHtml": "<span>For my 2nd semester exam project, I worked along side two fellow students, on a website for the coaching company ‘Be a hero’, created by Benthe.</span> <span>She needed a logo and a responsive website, that gives a quick overview of her business, its services, and who she is. </span><span>We came up with a simple design that is easy to navigate, it is build with HTML, CSS and Vanilla JS.</span> <span>The logo is simple, and comes in multiple versions for scalablility, in wordmark and as a symbol. The symbol I created, we refer to as a ‘cape’. The ‘cape’ is an organic and clean-cut shape, inspired by a lavender flowerpetal, and a superhero cape.</span>",
-    "EXdescHtml": "<span>For my 2nd semester exam project, I worked along side two fellow students, on the website for ‘Be a hero’. A coaching company started in September 2021, by Benthe, with years of experience in the field.</span> <span>She already has an established customer base, but needed a responsive website, that gives a quick overview of her, her business, and its services. Furthermore, she needed a logo, and a cover photo for her LinkedIn business page.</span> <span>We came up with a simple design that is easy to navigate, it is build with HTML, CSS and Vanilla JS.</span> <span>The logo is simple, and comes in multiple versions, for scalablility. To go with, I created what we refer to as a ‘cape’. The ‘cape’ is an organic, but clean-cut icon, inspired by a lavender flowerpetal, and a superhero cape.</span>",
-    "shortHtml": "<span>For my 2nd semester exam project, I worked along side two fellow students, on the website for ‘Be a hero’. A coaching company started in September 2021, by Benthe, with years of experience in the field.</span> <span>She already has an established customer base, but needed a responsive website, that gives a quick overview of her, her business, and its services...</span>",
-    "short": "For my 2nd semester exam project, I worked along side two fellow students, on the website for ‘Be a hero’. A coaching company started in September 2021, by Benthe, with years of experience in the field.</span> <span>She already has an established customer base, but needed a responsive website, that gives a quick overview of her, her business, and its services...",
+    "descHtml": "<span></span>",
+    "descText": [ 
+      "For my 2nd semester exam project, I worked along side two fellow students, on a website for the coaching company ‘Be a hero’, created by Benthe.",
+      "She needed a logo and a responsive website, that gives a quick overview of her business, its services, and who she is.",
+      "We came up with a simple design that is easy to navigate, it is build with HTML, CSS and Vanilla JS.",
+      "The logo is simple, and comes in multiple versions for scalablility, in wordmark and as a symbol. The symbol I created, we refer to as a ‘cape’. The ‘cape’ is an organic and clean-cut shape, inspired by a lavender flowerpetal, and a superhero cape."
+    ],
     "build": [
-      {
-        "id": 1010,
-        "type": "HTML/CSS"
-      },
-      {
-        "id": 1011,
-        "type": "JavaScript"
-      }
+      { "id": 1011, "text": "HTML/CSS" },
+      { "id": 1012, "text": "JavaScript" }
     ],
     "imgs": [
       { 
         "id": 39011715,
         "src": "/data/media/beahero/headlogv2.webp",
-        "alt": "Be A Hero",
-        "desc": "Image description..."
+        "alt": "Be A Hero"
       },
       { 
         "id": 48359891,
         "src": "/data/media/beahero/mocklap.webp",
-        "alt": "Be A Hero",
-        "desc": "Image description..."
+        "alt": "Be A Hero"
       },
       { 
         "id": 95462026,
         "src": "/data/media/beahero/mockphone.webp",
-        "alt": "Be A Hero",
-        "desc": "Image description..."
+        "alt": "Be A Hero"
       },
       { 
         "id": 68345316,
         "src": "/data/media/beahero/log23v2.webp",
-        "alt": "Be A Hero",
-        "desc": "Image description..."
+        "alt": "Be A Hero"
       }
     ]
   },
 
+
+  
+
   {
     "id": 910020,
     "value": 1,
-    "online": "n",
+    "online": "y",
     "title": "Recipes",
     "link": "",
     "repo": "https://github.com/trolle18/recipe-chakra-ui",
-    "descHtml": "<span>TaskRoomies is a web app for roommates, dorms and other cohabitants.</span> <span>Its purpose is to provide a clear, easy overview of the shared household chores, and thus remove the stress and mental energy of keeping track of who does what when.</span> <span>It also comes with a personal list, to keep track of all your personal to-do's and chores.</span>",
-    "shortHtml": "<span>TaskRoomies is a web app for roommates, dorms and other cohabitants.</span> <span>Its purpose is to provide a clear, easy overview of the shared household chores, and thus remove the stress and mental energy of keeping track of who does what when.</span> <span>It also comes with a personal list, to keep track of all your personal to-do's and chores...</span>",
-    "short": "TaskRoomies is a web app for roommates, dorms and other cohabitants.</span> <span>Its purpose is to provide a clear, easy overview of the shared household chores, and thus remove the stress and mental energy of keeping track of who does what when.</span> <span>It also comes with a personal list, to keep track of all your personal to-do's and chores...",
+    "descHtml": "<span></span>",
+    "descText": [
+      "A recipe app build with React, and Chakra UI.",
+      "Using Spoonaculars API, I can fetch different kinds of recipes, sorting them into different categories and cuisines, such as 'vegetarian', 'Italian' and so on.",
+      "It also has a 'Favorites' page, so you can save the recipes you like, by clicking the heart button on the recipe cards."
+    ],
     "build": [
-      {
-        "id": 1020,
-        "text": "React"
-      },
-      {
-        "id": 1021,
-        "text": "Chakra UI"
-      }
+      { "id": 1020, "text": "React" },
+      { "id": 1021, "text": "Chakra UI" }
     ],
     "imgs": [
       { 
         "id": 12876935,
-        "src": "/data/media/recipes/recipe-homepage.webp",
-        "alt": "Recipes",
-        "desc": ""
+        "src": "/data/media/recipes/recipe-hero.webp", 
+        "alt": "Recipes"
       },
       { 
         "id": 71512490,
-        "src": "/data/media/recipes/recipe-veg-slider.webp",
-        "alt": "Recipes",
-        "desc": ""
+        "src": "/data/media/recipes/recipe-italian.webp",
+        "alt": "Recipes"
       },
       { 
-        "id": 89077327,
-        "src": "/data/media/recipes/recipe-favs.webp",
-        "alt": "Recipes",
-        "desc": ""
+        "id": 89077327, 
+        "src":"/data/media/recipes/recipe-page.webp",
+        "alt": "Recipes"
       },
       { 
         "id": 49672184,
-        "src": "/data/media/recipes/recipe-page.webp",
-        "alt": "Recipes",
-        "desc": ""
+        "src": "/data/media/recipes/recipe-sliders.webp",
+        "alt": "Recipes"
       }
     ]
   },
+
+
+
 
   {
     "id": 910030,
@@ -103,70 +95,65 @@
     "title": "TaskRoomies",
     "link": "",
     "repo": "https://github.com/trolle18/TaskRoomies",
-    "descHtml": "<span>TaskRoomies is a web app for roommates, dorms and other cohabitants.</span> <span>Its purpose is to provide a clear, easy overview of the shared household chores, and thus remove the stress and mental energy of keeping track of who does what when.</span> <span>It also comes with a personal list, to keep track of all your personal to-do's and chores.</span>",
-    "shortHtml": "<span>TaskRoomies is a web app for roommates, dorms and other cohabitants.</span> <span>Its purpose is to provide a clear, easy overview of the shared household chores, and thus remove the stress and mental energy of keeping track of who does what when.</span> <span>It also comes with a personal list, to keep track of all your personal to-do's and chores...</span>",
-    "short": "TaskRoomies is a web app for roommates, dorms and other cohabitants.</span> <span>Its purpose is to provide a clear, easy overview of the shared household chores, and thus remove the stress and mental energy of keeping track of who does what when.</span> <span>It also comes with a personal list, to keep track of all your personal to-do's and chores...",
+    "descHtml": "<span></span>",
+    "descText": [
+      "TaskRoomies is a web app for roommates, dorms and other cohabitants.",
+      "Its purpose is to provide a clear, easy overview of the shared household chores, and thus remove the stress and mental energy of keeping track of who does what when.",
+      "It also comes with a personal list, to keep track of all your personal to-do's and chores."
+    ],
     "build": [
-      {
-        "id": 1020,
-        "text": "React"
-      },
-      {
-        "id": 1021,
-        "text": "Firebase"
-      }
+      { "id": 1020, "text": "React" },
+      { "id": 1021, "text": "Firebase" }
     ],
     "imgs": [
       { 
         "id": 12876935,
         "src": "/data/media/taskroomies/task-mock.webp",
-        "alt": "Taskroomies",
-        "desc": ""
+        "alt": "Taskroomies"
       },
       { 
         "id": 71512490,
         "src": "/data/media/taskroomies/taskroomies-logo1.webp",
-        "alt": "Taskroomies",
-        "desc": ""
+        "alt": "Taskroomies"
       },
       { 
         "id": 89077327,
         "src": "/data/media/taskroomies/taskroomies-logo2.webp",
-        "alt": "Taskroomies",
-        "desc": ""
+        "alt": "Taskroomies"
       },
       { 
         "id": 49672184,
         "src": "/data/media/taskroomies/task-mock-b1.webp",
-        "alt": "Taskroomies",
-        "desc": ""
+        "alt": "Taskroomies"
       }
     ]
   },
 
+
+
+
   {
     "id": 910040,
-    "value": 1,
+    "value": 2,
     "online": "n",
     "type": "mini",
     "title": "Personal website v.3.2",    
     "link": "",
     "repo": "",
-    "descHtml": "<span>My personal website/portfolio! This current version is v.3.2 of my portfolio website. The first version, v.1, were made with plain HTML/CSS and vanilla JavaScript. Then, I made v.2 using with WordPress, as an examproject during my 2. semester.</span> <span>Next, is v.3.1 which I made with React and regular CSS, I have since then updated it from CSS to use SCSS which then makes this version, v.3.2!</span> <span>I am almost always doing something to improve my portfolio, with additions, edits and tweaks. In the future, I plan on upgrading my portfolio, from React to Next.</span>",
-    "shortHtml": "<span></span>",
-    "short": "",
+    "descHtml": "<span></span>",
+    "descText": [
+      "My personal website/portfolio! This current version is v.3.2 of my portfolio website. The first version, v.1, were made with plain HTML/CSS and vanilla JavaScript. Then, I made v.2 using with WordPress, as an examproject during my 2. semester.",
+      "Next, is v.3.1 which I made with React and regular CSS, I have since then updated it from CSS to use SCSS which then makes this version, v.3.2!",
+      "I am almost always doing something to improve my portfolio, with additions, edits and tweaks. In the future, I plan on upgrading my portfolio, from React to Next."
+    ],
     "build": [
-      {
-        "id": 1030,
-        "text": "React"
-      },
-      {
-        "id": 1031,
-        "text": "SCSS"
-      }
+      { "id": 1030, "text": "React" },
+      { "id": 1031, "text": "SCSS" }
     ],
     "imgs": ""
   },
+
+
 
 
   {
@@ -176,54 +163,46 @@
     "title": "Space Debris Inc",
     "link": "",
     "repo": "",
-    "descHtml": "<span>Space Debris Inc is a project i work on as an intern at AKQA, alongside two other fellow interns, as a part of our intro.</span> <span>Space Debris Inc is a futuristic company, handling waste disposal by launching waste into space, with rockets.</span> <span>It consists of a website with info about the company, including a webshop to order trash pick-ups.</span> <span>It also includes admin-functionality to create or edit rockets as well as launch them according to a time-schedule, as well as a dashboard to view sales-statistics over a day, month or year.</span>",
-    "shortHtml": "<span>TaskRoomies is a web app for roommates, dorms and other cohabitants.</span> <span>Its purpose is to provide a clear, easy overview of the shared household chores, and thus remove the stress and mental energy of keeping track of who does what when.</span> <span>It also comes with a personal list, to keep track of all your personal to-do's and chores...</span>",
-    "short": "TaskRoomies is a web app for roommates, dorms and other cohabitants.</span> <span>Its purpose is to provide a clear, easy overview of the shared household chores, and thus remove the stress and mental energy of keeping track of who does what when.</span> <span>It also comes with a personal list, to keep track of all your personal to-do's and chores...",
+    "descHtml": "<span></span>",
+    "descText": [
+      "Space Debris Inc is a project i work on as an intern at AKQA, alongside two other fellow interns, as a part of our intro.",
+      "Space Debris Inc is a futuristic company, handling waste disposal by launching waste into space, with rockets.",
+      "It also comes with a personal list, to keep track of all your personal to-do's and chores.",
+      "It consists of a website with info about the company, including a webshop to order trash pick-ups.",
+      "It also includes admin-functionality to create or edit rockets as well as launch them according to a time-schedule, as well as a dashboard to view sales-statistics over a day, month or year."
+    ],
     "build": [
-      {
-        "id": 1040,
-        "text": "Next"
-      },
-      {
-        "id": 1041,
-        "text": "TypeScript"
-      },
-      {
-        "id": 1042,
-        "text": "Umbraco"
-      },
-      {
-        "id": 1043,
-        "text": "Chakra UI"
-      }
+      { "id": 1040, "text": "Next" },
+      { "id": 1041, "text": "TypeScript" },
+      { "id": 1042, "text": "Umbraco" },
+      { "id": 1043, "text": "Chakra UI" }
     ],
     "imgs": [
       { 
         "id": 12873518,
         "src": "/data/media/sdinc/SDinc-logo_Small.svg",
-        "alt": "Space Debris Inc",
-        "desc": ""
+        "alt": "Space Debris Inc"
       },
       { 
         "id": 10375927,
         "src": "/data/media/sdinc/c-rocketcollage.webp",
-        "alt": "Space Debris Inc",
-        "desc": ""
+        "alt": "Space Debris Inc"
       },
       { 
         "id": 11183628,
         "src": "/data/media/sdinc/214758.webp",
-        "alt": "Space Debris Inc",
-        "desc": ""
+        "alt": "Space Debris Inc"
       },
       { 
         "id": 29174713,
         "src": "/data/media/sdinc/sdadminsales.webp",
-        "alt": "Space Debris Inc",
-        "desc": ""
+        "alt": "Space Debris Inc"
       }
     ]
   },
+
+
+
 
   {
     "id": 910060,
@@ -232,46 +211,40 @@
     "title": "Generaxion",
     "link": "",
     "repo": "",
-    "descHtml": "<span>During my 2nd semester at the business academy, we were given the task of creating and incorporating a job agent prototype, for Generaxions job site, for any interested job seekers to use and apply through, and be notified if an open position suiting them were to be published.</span> <span>Our goal were to make it easy, user-friendly and simple to use. We also needed to create some eye-catching branding for company’s social media platforms, to promote the job agent and reach possible job seekers.</span>",
-    "shortHtml": "<span>During my 2nd semester at the business academy, we were given the task ofcreating and incorporating a job agent prototype, for Generaxion’s job site, for any interested job seekers to use and apply through, and be notified if an open position suiting them were to be published...</span>",
-    "short": "During my 2nd semester at the business academy, we were given the task ofcreating and incorporating a job agent prototype, for Generaxion’s job site, for any interested job seekers to use and apply through, and be notified if an open position suiting them were to be published...",
+    "descHtml": "<span></span>",
+    "descText": [
+      "During my 2nd semester at the business academy, we were given the task of creating and incorporating a job agent prototype, for Generaxions job site, for any interested job seekers to use and apply through, and be notified if an open position suiting them were to be published.",
+      "Our goal were to make it easy, user-friendly and simple to use. We also needed to create some eye-catching branding for company’s social media platforms, to promote the job agent and reach possible job seekers."
+    ],
     "build": [
-      {
-        "id": 1050,
-        "text": "HTML/CSS"
-      },
-      {
-        "id": 1051,
-        "text": "JavaScript"
-      }
+      { "id": 1050, "text": "HTML/CSS" },
+      { "id": 1051, "text": "JavaScript" }
     ],
     "imgs": [
       { 
         "id": 75850956,
         "src": "/data/media/generaxion/fbpost.webp",
-        "alt": "Generaxion",
-        "desc": ""
+        "alt": "Generaxion"
       },
       { 
         "id": 82281931,
         "src": "/data/media/generaxion/fb-post-zen.webp",
-        "alt": "Generaxion",
-        "desc": ""
+        "alt": "Generaxion"
       },
       { 
         "id": 34696206,
         "src": "/data/media/generaxion/generaxion-1.webp",
-        "alt": "Generaxion",
-        "desc": ""
+        "alt": "Generaxion"
       },
       { 
         "id": 68417484,
         "src": "/data/media/generaxion/generaxion-3.webp",
-        "alt": "Generaxion",
-        "desc": ""
+        "alt": "Generaxion"
       }
     ]
   },
+
+
 
 
   {
@@ -281,34 +254,32 @@
     "title": "Miscellaneous",
     "link": "",
     "repo": "",
-    "descHtml": "<span>Besides working on projects as a part of my education, I also experiment and do a lot of programming, designing or illustrating in my spare time, which also helps me learn and expand my knowledge.</span> <span>These are just a few examples of what I have been working on:<br> A Tic Tac Toe game, some vector illustrations made in illustrator, and an svg, which “draws” when you scroll.</span>",
-    "shortHtml": "<span>Besides working on projects as a part of my education, I also experiment and do a lot of programming, designing or illustrating in my spare time, which also helps me learn and expand my knowledge...</span>",
-    "short": "Besides working on projects as a part of my education, I also experiment and do a lot of programming, designing or illustrating in my spare time, which also helps me learn and expand my knowledge...",
+    "descHtml": "<span></span>",
+    "descText": [
+      "Besides working on projects as a part of my education, I also experiment and do a lot of programming, designing or illustrating in my spare time, which also helps me learn and expand my knowledge.",
+      "These are just a few examples of what I have been working on: A Tic Tac Toe game, some vector illustrations made in illustrator, and an svg, which “draws” when you scroll."
+    ],    
     "build": "",
     "imgs": [
       { 
         "id": 59658383,
         "src": "/data/media/miscellaneous/flat-animals.webp",
-        "alt": "Miscellaneous",
-        "desc": ""
+        "alt": "Miscellaneous"
       },
       { 
         "id": 51654751,
         "src": "/data/media/miscellaneous/svgscroll.webp",
-        "alt": "Miscellaneous",
-        "desc": ""
+        "alt": "Miscellaneous"
       },
       { 
         "id": 65255951,
         "src": "/data/media/miscellaneous/tictactoe-v1.webp",
-        "alt": "Miscellaneous",
-        "desc": ""
+        "alt": "Miscellaneous"
       },
       { 
         "id": 61674856,
         "src": "/data/media/miscellaneous/illpf.webp",
-        "alt": "Miscellaneous",
-        "desc": ""
+        "alt": "Miscellaneous"
       }
     ]
   }

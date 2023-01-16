@@ -21,9 +21,10 @@ export default function HomePage() {
         <>
             {pageData?.map((data) => (
                 <section className="page" key={data?.id}>
+                    <WorkSection data={data} />
                     <Hero data={data}/>
                     <AboutSection data={data}/>
-                    <WorkSection data={data} />
+                   
                     <ContactSection data={data}/>
                 </section>
             ))}

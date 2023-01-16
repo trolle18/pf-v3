@@ -18,7 +18,7 @@ export default function AboutSection({ data }) {
               variants={container}
               initial="hidden"
               whileInView="show"
-              viewport={{once: true}}
+              viewport={{ once: true, amount: 0.1 }}
               >
                 <m.div className="mob-img-cntr__img-inner-cntr" variants={element}>
                   {data?.img.map((img) => (
@@ -38,7 +38,7 @@ export default function AboutSection({ data }) {
           variants={container}
           initial="hidden"
           whileInView="show"
-          viewport={{once: true}}
+          viewport={{ once: true, amount: 0.1 }}
           >
             <m.div className="img-inner-cntr" variants={element}>
               {data?.img?.map((img) => (

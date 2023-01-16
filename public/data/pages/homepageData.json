@@ -46,38 +46,10 @@
         "title": "About",
         "tag": "about",
         "class": "row",
-        "desc": [
-          {
-            "id": 10301,
-            "online": "y",
-            "text": "I am a passionate and ambitious frontend developer, with a creative flair. "
-          },
-          {
-            "id": 10302,
-            "online": "y",
-            "text": "Through my education in multimediadesign and frontend development, along with my education in arts and design, I have acuired a wide range of skills as well as knowledge, that I utilize when creating websites and apps ."
-          },
-          {
-            "id": 10303,
-            "online": "y",
-            "text": "Frontend development contains the things I am most passionate about: Problem solving and creativity. I love being able to develop solutions to problems through coding, as well as learning and exploring the best possible ways to do it."
-          },
-          {
-            "id": 10304,
-            "online": "n",
-            "text": "I have always loved creating, and exploring through different types of media. Through frontend development, there are endless possibilities for me to explore and work through."
-          },
-
-          {
-            "id": 110301,
-            "online": "n",
-            "text": "My name is Sofie, I am 25 years old, and I am studying multimedia design, specializing in frontend development, at Business Academy Aarhus. I am currently on my 4th semester, which I will be spending as an intern for AKQA in Aarhus."
-          },
-          {
-            "id": 110302,
-            "online": "n",
-            "text": "I have always loved creating, and exploring through different types of media. With multimedia designing, there are endless possibilities for me to explore and work through."
-          }
+        "descText": [
+          "I am a passionate and ambitious frontend developer, with a creative flair. ",
+          "Through my education in multimediadesign and frontend development, along with my education in arts and design, I have acuired a wide range of skills as well as knowledge, that I utilize when creating websites and apps .",
+          "Frontend development contains the things I am most passionate about: Problem solving and creativity. I love being able to develop solutions to problems through coding, as well as learning and exploring the best possible ways to do it."
         ],
         "img": [
           {
@@ -92,62 +64,17 @@
             "id": 10304,
             "online": "y",
             "title": "Some of the technologies I have been working with:",
-            "items":    [
-              {
-                "id": 103041,
-                "online": "y",
-                "text": "HTML5 & CSS3"
-              },
-              {
-                "id": 103042,
-                "online": "y",
-                "text": "JavaScript (ES6+)"
-              },
-              {
-                "id": 103043,
-                "online": "y",
-                "text": "jQuery"
-              },
-              {
-                "id": 103044,
-                "online": "y",
-                "text": "TypeScript"
-              },
-              {
-                "id": 103045,
-                "online": "y",                
-                "text": "Firebase"
-              },
-              {
-                "id": 103046,
-                "online": "y",
-                "text": "React.JS"
-              },
-              {
-                "id": 103047,
-                "online": "y",
-                "text": "Chakra UI"
-              },
-              {
-                "id": 103048,
-                "online": "y",
-                "text": "Next.JS"                
-              },
-              {
-                "id": 103049,
-                "online": "y",
-                "text": "SCSS / Sass"
-              },
-              {
-                "id": 103050,
-                "online": "y",
-                "text": "Styled components"
-              },
-              {
-                "id": 103020,
-                "online": "n",
-                "text": "Umbraco CMS"
-              }
+            "listItems": [
+              "HTML5 & CSS3",
+              "JavaScript (ES6+)",
+              "jQuery",
+              "TypeScript",
+              "Firebase",
+              "React.JS",
+              "Chakra UI",
+              "Next.JS",
+              "SCSS / Sass",
+              "Styled components"
             ]
           }
         ]
@@ -162,13 +89,7 @@
         "online": "y",
         "title": "Work",
         "tag": "work",
-        "desc": [
-          {
-            "id": 1041,
-            "online": "y",
-            "text": "Here is a few of the projects I have been working on"
-          }
-        ],
+        "descText": [ "Here is a few of the projects I have been working on" ],
         "framer": [
           {
             "id": 1042,
@@ -189,13 +110,7 @@
         "online": "y",
         "title": "Contact",
         "tag": "contact",
-        "desc": [
-          {
-            "id": 1051,
-            "online": "y",
-            "text": "Feel free to send an email, whether you have any questions or just to say hi, and I'll get back to you!"
-          }
-        ],
+        "descText": [ "Feel free to send an email, whether you have any questions or just to say hi, and I'll get back to you!" ],
         "link": [
           {
             "id": 10501,

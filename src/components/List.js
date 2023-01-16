@@ -10,7 +10,7 @@ export default function List({ list }) {
       variants={container}
       initial="hidden"
       whileInView="show"
-      viewport={{once: true}}
+      viewport={{ once: true, amount: 0.1 }}     
       >
         <m.span variants={element}> {list?.title} </m.span>
 
@@ -19,15 +19,13 @@ export default function List({ list }) {
         variants={container}
         initial="hidden"
         whileInView="show"
-        viewport={{once: true}}
+        viewport={{ once: true, amount: 0.1 }}
         >
-
-          {list?.items
-          ?.filter((items) => items?.online.includes('y'))
-          ?.map((item) => (
-            <m.li key={item?.id} variants={element} className="list__item"> <span>{item?.text}</span> </m.li>
+          {list?.listItems?.map((item, i) => (
+            <m.li key={i} variants={element}   className="list__item">
+              <span>{item}</span>
+            </m.li>
           ))}
-
         </m.ul>
       </m.div>
     </>

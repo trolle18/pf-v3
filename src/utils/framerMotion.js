@@ -9,6 +9,9 @@ export const container = {
     show: {
         opacity: 1,
         transition: {
+            bounce: 0,
+            duration: 0.4,
+            delayChildren: .05,
             staggerChildren: 0.02
         },       
     }

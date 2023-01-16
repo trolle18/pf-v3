@@ -1,12 +1,11 @@
 import { m } from "framer-motion";
-import { container, element } from "../utils/framerMotion";
+import { container } from "../utils/framerMotion";
 // import useWindowDimensions from "../utils/useWindowDimentions";
 import HeaderWText from "./HeaderWText";
 import List from "./List";
 
 export default function TextImageList({ data }) {
   // const { height, width } = useWindowDimensions();
-
   // function MobileImg({data}) {
   //   if(width < 600) {
   //     return (  )
@@ -28,11 +27,11 @@ export default function TextImageList({ data }) {
               whileInView="show"
               viewport={{once: true}}
               >
-                <m.div className="mob-img-cntr__img-inner-cntr" variants={element}>
+                <div className="mob-img-cntr__img-inner-cntr">
                   {data?.img.map((img) => (
                     <img key={img.id} src={img?.url} className="img" alt={img?.alt}/>
                   ))}
-                </m.div>
+                </div>
 
               </m.div>
             </div>
@@ -49,12 +48,11 @@ export default function TextImageList({ data }) {
         whileInView="show"
         viewport={{once: true}}
         >
-          <m.div className="img-inner-cntr" variants={element}>
+          <div className="img-inner-cntr">
             {data?.img?.map((img) => (
               <img key={img?.id} src={img?.url} className="img-inner-cntr__img" alt={img?.alt}/>
             ))}
-          </m.div>
-          
+          </div>          
         </m.div>
 
         </section>

@@ -1,5 +1,5 @@
 import { m } from "framer-motion";
-import { container, element } from "../utils/framerMotion";
+import { container } from "../utils/framerMotion";
 
 export default function Cta({ data }) {
 
@@ -14,15 +14,14 @@ export default function Cta({ data }) {
       viewport={{ once: true, amount: 0.1 }}
       >
         {data?.link.map((link) => (
-          <m.a
+          <a
           key={link?.id}
           className="cta center-spaced"
           aria-label={link.title}
           href={link?.url}
-          variants={element}
           >
             {link?.text}
-          </m.a>
+          </a>
         ))}
       </m.div>
     </>

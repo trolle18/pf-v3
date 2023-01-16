@@ -1,6 +1,6 @@
 [
   {
-    "id": 24085003,
+    "id": 910010,
     "value": 2,
     "online": "y",
     "title": "Be a hero",
@@ -49,7 +49,55 @@
   },
 
   {
-    "id": 88656140,
+    "id": 910020,
+    "value": 1,
+    "online": "n",
+    "title": "Recipes",
+    "link": "",
+    "repo": "https://github.com/trolle18/recipe-chakra-ui",
+    "descHtml": "<span>TaskRoomies is a web app for roommates, dorms and other cohabitants.</span> <span>Its purpose is to provide a clear, easy overview of the shared household chores, and thus remove the stress and mental energy of keeping track of who does what when.</span> <span>It also comes with a personal list, to keep track of all your personal to-do's and chores.</span>",
+    "shortHtml": "<span>TaskRoomies is a web app for roommates, dorms and other cohabitants.</span> <span>Its purpose is to provide a clear, easy overview of the shared household chores, and thus remove the stress and mental energy of keeping track of who does what when.</span> <span>It also comes with a personal list, to keep track of all your personal to-do's and chores...</span>",
+    "short": "TaskRoomies is a web app for roommates, dorms and other cohabitants.</span> <span>Its purpose is to provide a clear, easy overview of the shared household chores, and thus remove the stress and mental energy of keeping track of who does what when.</span> <span>It also comes with a personal list, to keep track of all your personal to-do's and chores...",
+    "build": [
+      {
+        "id": 1020,
+        "text": "React"
+      },
+      {
+        "id": 1021,
+        "text": "Chakra UI"
+      }
+    ],
+    "imgs": [
+      { 
+        "id": 12876935,
+        "src": "/data/media/recipes/recipe-homepage.webp",
+        "alt": "Recipes",
+        "desc": ""
+      },
+      { 
+        "id": 71512490,
+        "src": "/data/media/recipes/recipe-veg-slider.webp",
+        "alt": "Recipes",
+        "desc": ""
+      },
+      { 
+        "id": 89077327,
+        "src": "/data/media/recipes/recipe-favs.webp",
+        "alt": "Recipes",
+        "desc": ""
+      },
+      { 
+        "id": 49672184,
+        "src": "/data/media/recipes/recipe-page.webp",
+        "alt": "Recipes",
+        "desc": ""
+      }
+    ]
+  },
+
+  {
+    "id": 910030,
     "value": 1,
     "online": "y",
     "title": "TaskRoomies",
@@ -97,7 +145,7 @@
   },
 
   {
-    "id": 98120044,
+    "id": 910040,
     "value": 1,
     "online": "n",
     "type": "mini",
@@ -122,7 +170,7 @@
 
 
   {
-    "id": 98882854,
+    "id": 910050,
     "value": 2,
     "online": "y",
     "title": "Space Debris Inc",
@@ -178,7 +226,7 @@
   },
 
   {
-    "id": 40637227,
+    "id": 910060,
     "value": 3,
     "online": "y",
     "title": "Generaxion",
@@ -227,7 +275,7 @@
 
 
   {
-    "id": 61037089,
+    "id": 910070,
     "value": 4,
     "online": "y",
     "title": "Miscellaneous",

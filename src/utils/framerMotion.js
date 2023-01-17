@@ -13,7 +13,7 @@ export const container = {
       duration: .4,
       delayChildren: .05,
       staggerChildren: .02
-    },       
+    },
   }
 }
 
@@ -27,13 +27,13 @@ export const hero = {
       duration: .5,
       delayChildren: .1,
       staggerChildren: .2
-    },       
+    },
   }
 }
 
 
 export const articleFramer = {
-  hidden: { 
+  hidden: {
     opacity: 0,
     x: 10
   },
@@ -45,6 +45,6 @@ export const articleFramer = {
       duration: .4,
       delayChildren: .05,
       staggerChildren: .02
-    },       
+    },
   }
 }

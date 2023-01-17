@@ -1,5 +1,5 @@
 import { m } from "framer-motion";
-import { container, element, hero } from "../utils/framerMotion";
+import { element, hero } from "../utils/framerMotion";
 
 export default function Hero({ data }) {
 

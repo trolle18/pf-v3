@@ -53,7 +53,7 @@ const Nav = ({ globalData }) => {
                 ))}
               </div>
 
-              <div className="nav-mob-links">
+              <div className="burger-menu">
                 <BurgerMenu data={data}/>
               </div>
             </div>

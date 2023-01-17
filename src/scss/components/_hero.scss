@@ -16,8 +16,14 @@
       font-size: $fs_header;
     }
 
-    span {
+    .text {
+      margin-bottom: 0.625rem;
       font-family: $ff_mono;
+      font-size: $fs_s;
+      font-weight: 400;
+      text-transform: none;
+      word-spacing: 1px;
+      letter-spacing: 0.25px;
     }
   }
 }

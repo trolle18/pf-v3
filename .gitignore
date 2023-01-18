@@ -27,3 +27,4 @@ yarn-error.log*
 /public/.htaccess
 /public/sitemap.xml
 /src/misc
+/src/misc/Translation

@@ -10,7 +10,7 @@ export default function HomePage() {
     // Fetch data from JSON
     useEffect(() => {
         async function getData() {
-            const response = await fetch("/data/pages/homepageData.json");
+            const response = await fetch("/data/EN/homepageData.json");
             const data = await response.json();
             setPageData(data);
         }

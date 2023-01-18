@@ -8,7 +8,7 @@ export default function ArticlesCntr() {
   // Fetch projects from JSON
   useEffect(() => {
     async function getData() {
-      const response = await fetch("/data/projects.json");
+      const response = await fetch("/data/EN/projects.json");
       const data = await response.json();
       setArticles(data);
     }

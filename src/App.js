@@ -12,7 +12,7 @@ function App() {
     // Fetch data from JSON
     useEffect(() => {
         async function getData() {
-            const response = await fetch("/data/globalData.json");
+            const response = await fetch("/data/EN/globalData.json");
             const data = await response.json();
             setGlobalData(data);
         }

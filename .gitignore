@@ -28,3 +28,5 @@ yarn-error.log*
 /public/sitemap.xml
 /src/misc
 /src/misc/Translation
+/public/media
+/public/data

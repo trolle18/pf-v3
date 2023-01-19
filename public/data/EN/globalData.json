@@ -31,6 +31,12 @@
         "type": "section",
         "url": "#contact",
         "text": "Contact"
+      },
+      {
+        "id": 812,
+        "type": "nav",
+        "url": "/data/media/files/cv-web-en.pdf",
+        "text": "CV"
       }
     ],
 

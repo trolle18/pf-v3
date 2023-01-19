@@ -52,7 +52,7 @@ export default function BurgerMenu({ data }) {
       <div className={`burger-menu__dropdown hidden ${show && ""}`} id="dropdown" >
 
         {data?.links
-        ?.filter((link) => link?.type?.includes("section"))
+        ?.filter((link) => link?.type?.includes("section") || link?.type?.includes("navlink"))
         ?.map((link) => (
           <a key={link?.id} href={link?.url} className="navlink" aria-label={link?.text}>
             {link?.text}

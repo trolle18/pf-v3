@@ -24,6 +24,13 @@ const Nav = ({ globalData }) => {
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [lastScrollY]);
 
+  function setLinkTarget(link) {
+    const linkTarget = link.target
+    if(linkTarget) {
+      return (linkTarget)
+    }
+  }
+
   return (
     <>
       <nav className={`active ${show && ''}`} id="nav">
@@ -45,12 +52,13 @@ const Nav = ({ globalData }) => {
 
               <div className="nav-inner-cntr__links">
                 {data?.links
-                .filter((link) => link?.type?.includes("section"))
+                .filter((link) => link?.type?.includes("section") || link?.type?.includes("navlink"))
                 .map((link) => (
-                  <a key={link?.id} href={link?.url} className="navlink" aria-label={link?.text}>
+                  <a key={link?.id} href={link?.url} className="navlink" aria-label={link?.text} target={setLinkTarget(link)}>
                     {link?.text}
                   </a>
                 ))}
+       
               </div>
 
               <div className="burger-menu">

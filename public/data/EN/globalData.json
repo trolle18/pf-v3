@@ -12,25 +12,36 @@
         "id": 132,
         "type": "logo",
         "url": "/",
-        "text": "Sofie Trolle"
+        "text": "Sofie Trolle",
+        "target":""
       },
       {
         "id": 981,
         "type": "section",
         "url": "#about",
-        "text": "About"
+        "text": "About",
+        "target":""
       },
       {
         "id": 761,
         "type": "section",
         "url": "#work",
-        "text": "Work"
+        "text": "Work",
+        "target":""
       },
       {
         "id": 812,
         "type": "section",
         "url": "#contact",
-        "text": "Contact"
+        "text": "Contact",
+        "target":""
+      },
+      {
+        "id": 910,
+        "type": "navlink",
+        "url": "/data/media/files/cv-web-en.pdf",
+        "text": "CV",
+        "target":"_blank"
       }
     ],
 

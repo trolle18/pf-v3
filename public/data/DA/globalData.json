@@ -31,6 +31,13 @@
         "type": "section",
         "url": "#contact",
         "text": "Kontakt"
+      },
+      {
+        "id": 910,
+        "type": "navlink",
+        "url": "/media/files/cv-web-en.pdf",
+        "text": "CV",
+        "target":"_blank"
       }
     ],
 

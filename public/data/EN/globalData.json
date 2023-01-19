@@ -39,7 +39,7 @@
       {
         "id": 910,
         "type": "navlink",
-        "url": "/data/media/files/cv-web-en.pdf",
+        "url": "/media/files/cv-web-en.pdf",
         "text": "CV",
         "target":"_blank"
       }

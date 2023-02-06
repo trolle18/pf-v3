@@ -30,6 +30,7 @@ export default function WorkSection({ data }) {
           <div className="flex-col-cntr">
             {articles
             ?.filter((article) => article?.online.includes("y" || "Y"))
+            ?.filter((article) => article?.type.includes("feature"))
             ?.sort ((a, b) => a.value > b.value ? 1 : -1)
             ?.map((article) => (
               <WorkArticle key={article?.id} article={article}/>
@@ -39,6 +40,7 @@ export default function WorkSection({ data }) {
           <div className="flex-rows">
             {articles
             ?.filter((article) => article?.online.includes("y" || "Y"))
+            ?.filter((article) => article?.type !== ("feature"))
             ?.sort ((a, b) => a.value > b.value ? 1 : -1)
             ?.map((article) => (
               <ArticleMini key={article.id} article={article} />

@@ -147,8 +147,8 @@
   padding: 1em .5em;
   display: flex;
   flex-direction: column;
-  // border: solid $clr_l_grey 1px;
-  background-color: rgba(110, 110, 110, 0.25);
+  border: solid $clr_m_grey 1px;
+  // background-color: rgba(110, 110, 110, 0.25);
   border-radius: .25em;
 
   &__txt {

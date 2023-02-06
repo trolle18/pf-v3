@@ -11,17 +11,41 @@
   gap: 8em;
   overflow: hidden;
 }
-
-
 @media (min-width: 600px) {
   .flex-rows-cntr {
     gap: 12em;
   }
 }
-
-
 @media (min-width: 992px) {
   .flex-rows-cntr {
+    gap: 14em;
+  }
+}
+
+.flex-rows {
+  margin: 4em 0 2em 0;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  row-gap: 1.5em;
+}
+
+
+.flex-col-cntr {
+  margin: 2em 0 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8em;
+  overflow: hidden;
+}
+@media (min-width: 600px) {
+  .flex-col-cntr {
+    gap: 12em;
+  }
+}
+@media (min-width: 992px) {
+  .flex-col-cntr {
     gap: 14em;
   }
 }

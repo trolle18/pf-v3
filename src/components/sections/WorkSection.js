@@ -1,4 +1,3 @@
-import ArticleMini from "../ArticleMini";
 import ArticlesCntr from "../ArticlesCntr";
 import HeaderWText from "../HeaderWText";
 
@@ -13,7 +12,6 @@ export default function WorkSection({ data }) {
               <HeaderWText data={data} key={data.id}/>            
             </div>
           </div>         
-          {/* <ArticleMini/> */}
           <ArticlesCntr/>
 
         </section>

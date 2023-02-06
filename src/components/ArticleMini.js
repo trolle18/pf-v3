@@ -1,20 +1,20 @@
 import { AiOutlineGithub, AiOutlineLink } from "react-icons/ai";
 import { m } from "framer-motion";
 import { articleFramer, element } from "../utils/framerMotion";
-import { useEffect, useState } from "react";
+// import { useEffect, useState } from "react";
 
-export default function ArticleMini() {
-  const [articles, setArticles] = useState([]);
+export default function ArticleMini({article}) {
+  // const [articles, setArticles] = useState([]);
 
-  // Fetch projects from JSON
-  useEffect(() => {
-    async function getData() {
-      const response = await fetch("/data/EN/projects.json");
-      const data = await response.json();
-      setArticles(data);
-    }
-    getData();
-  }, []);
+  // // Fetch projects from JSON
+  // useEffect(() => {
+  //   async function getData() {
+  //     const response = await fetch("/data/EN/projects.json");
+  //     const data = await response.json();
+  //     setArticles(data);
+  //   }
+  //   getData();
+  // }, []);
 
   // Check link
   function getLink(article) {
@@ -55,11 +55,11 @@ export default function ArticleMini() {
    
   return (
     <>
-      <div className="flex-rows-cntr">
+      {/* <div className="flex-rows-cntr">
         {articles
         ?.filter((article) => article?.online.includes("y" || "Y"))
         ?.sort ((a, b) => a.value > b.value ? 1 : -1)
-        ?.map((article) => (
+        ?.map((article) => ( */}
 
           <m.article
           key={article?.id}
@@ -69,9 +69,9 @@ export default function ArticleMini() {
           whileInView="show"
           viewport={{ once: true, amount: 0.2 }}
           >
-            <div className="article-mini__txt"> 
+            <div className="article-mini__txt article__txt"> 
               <div className="article-mini-header">
-                <div className="article-mini-title">
+                <div className="article-mini-title article-title">
                   <m.h3 variants={element}>{article?.title}</m.h3>
                   <m.div className="article-links" variants={element}>
                     {getLink(article)}
@@ -83,7 +83,7 @@ export default function ArticleMini() {
                 </m.div> 
               </div>
 
-              <m.div className="article-mini-desc" variants={element} >
+              <m.div className="article-mini-desc article-desc" variants={element} >
                 {article?.shortText?.map((text, i) => (
                   <span key={i}> {text}</span>
                 ))}
@@ -91,9 +91,9 @@ export default function ArticleMini() {
 
             </div>
           </m.article>
-
+{/* 
         ))}
-      </div>
+      </div> */}
     </>
   )
 };

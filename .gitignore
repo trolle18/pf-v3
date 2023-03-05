@@ -30,3 +30,4 @@ yarn-error.log*
 /src/misc/Translation
 /public/data/DA/da.json
 /public/data/EN/en.json
+/public/media/files

@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import WorkArticle from "../WorkArticle";
-import ArticleMini from "../ArticleMini";
+// import ArticleMini from "../ArticleMini";
 import HeaderWText from "../HeaderWText";
 
 export default function WorkSection({ data }) {
@@ -37,7 +37,7 @@ export default function WorkSection({ data }) {
             ))}
           </div>    
 
-          <div className="flex-rows">
+          {/* <div className="flex-rows">
             {articles
             ?.filter((article) => article?.online.includes("y" || "Y"))
             ?.filter((article) => article?.type !== ("feature"))
@@ -45,7 +45,7 @@ export default function WorkSection({ data }) {
             ?.map((article) => (
               <ArticleMini key={article.id} article={article} />
             ))}
-          </div>
+          </div> */}
 
         </section>
       ))}

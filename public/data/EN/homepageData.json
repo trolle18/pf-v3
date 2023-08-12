@@ -1,134 +1,109 @@
-[
-  {
-    "id": 1010,
+[{
+  "id": 1010,
+  "online": "y",
+  "title": "Homepage",
+  "langName": "English",
+  "langCode": "en",
+  "hero": [{
+    "id": 1020,
     "online": "y",
-    "title": "Homepage",
-    "langName": "English",
-    "langCode": "en",
-
-
-    "hero": [
-        {
-        "id": 1020,
+    "title": "Sofie Trolle",
+    "tag": "hero",
+    "text": [
+      {
+        "id": 10201,
         "online": "y",
-        "title": "Sofie Trolle",
-        "tag": "hero",
-        "text": [
-          {
-            "id": 10201,
-            "online": "y",
-            "value": 1,
-            "type": "text",
-            "text": "Hi! My name is"
-          },
-          {
-            "id": 10202,
-            "online": "y",
-            "value": 2,
-            "type": "title",
-            "text": "Sofie Trolle"
-          },
-          {
-            "id": 10203,
-            "online": "y",
-            "value": 3,
-            "type": "text",
-            "text": "I am a frontend developer, building and designing apps and websites",
-            "textDepr": "I am a multimedia designer, specializing in frontend development."
+        "value": 1,
+        "type": "text",
+        "text": "Hi! My name is"
+      },
+      {
+        "id": 10202,
+        "online": "y",
+        "value": 2,
+        "type": "title",
+        "text": "Sofie Trolle"
+      },
+      {
+        "id": 10203,
+        "online": "y",
+        "value": 3,
+        "type": "text",
+        "text": "I am a frontend developer, building and designing apps and websites",
+        "textDepr": "I am a multimedia designer, specializing in frontend development."
 
-          }
-        ]
+      }
+    ]
+  }],
+  "about": [{
+    "id": 1030,
+    "online": "y",
+    "title": "About",
+    "tag": "about",
+    "class": "row",
+    "descText": [
+      "I am a passionate and ambitious frontend developer, with a creative flair. ",
+      "I work as a frontend developer at Wise Home, creating and developing apps, were I in a team of skilled developers, develop solutions to handle utility measurements for rental properties and creating distribution statements.",
+      "Frontend development contains the things I am most passionate about: Problem solving and creativity. I love being able to develop solutions to problems through coding, as well as learning and exploring the best possible ways to do it."
+    ],
+    "img": [
+      {
+        "id": 10303,
+        "online": "y",
+        "url": "/media/c99-2022112.webp",
+        "alt": "Sofie Trolle"
       }
     ],
-
-
-
-    "about": [
+    "list": [
       {
-        "id": 1030,
+        "id": 10304,
         "online": "y",
-        "title": "About",
-        "tag": "about",
-        "class": "row",
-        "descText": [
-          "I am a passionate and ambitious frontend developer, with a creative flair. ",
-          "I work as a frontend developer at Wise Home, creating and developing apps, were I in a team of skilled developers, develop solutions to handle utility measurements for rental properties and creating distribution statements.",
-          "Frontend development contains the things I am most passionate about: Problem solving and creativity. I love being able to develop solutions to problems through coding, as well as learning and exploring the best possible ways to do it."
-        ],
-        "img": [
-          {
-            "id": 10303,
-            "online": "y",
-            "url": "/media/c99-2022112.webp",
-            "alt": "Sofie Trolle"
-          }
-        ],
-        "list": [
-          {
-            "id": 10304,
-            "online": "y",
-            "title": "Some of the technologies I have been working with:",
-            "listItems": [
-              "HTML5 & CSS3",
-              "JavaScript",
-              "jQuery",
-              "TypeScript",
-              "Firebase",
-              "React Native",
-              "Chakra UI",
-              "React.JS",
-              "SCSS / Sass",
-              "Next.JS",
-              "Styled components"
-            ]
-          }
-        ]
-      }
-    ],
-
-
-
-    "work": [
-      {
-        "id": 1040,
-        "online": "y",
-        "title": "Work",
-        "tag": "work",
-        "descText": [ "Here is a few of the projects I have been working on" ],
-        "framer": [
-          {
-            "id": 1042,
-            "initial": "hidden",
-            "whileInView": "showFast",
-            "viewportOnce": true
-          }
-        ]
-      }
-    ],
-
-
-
-
-    "contact": [
-      {
-        "id": 1050,
-        "online": "y",
-        "title": "Contact",
-        "tag": "contact",
-        "descText": [ "Feel free to send an email, whether you have any questions or just to say hi, and I'll get back to you!" ],
-        "link": [
-          {
-            "id": 10501,
-            "online": "y",
-            "title": "email",
-            "text": "Get in touch",
-            "url": "mailto:sofietrolle@hotmail.com"
-          }
+        "title": "Some of the technologies I have been working with:",
+        "listItems": [
+          "HTML5 & CSS3",
+          "JavaScript",
+          "jQuery",
+          "TypeScript",
+          "Firebase",
+          "React Native",
+          "Chakra UI",
+          "React.JS",
+          "SCSS / Sass",
+          "Next.JS",
+          "Styled components"
         ]
       }
     ]
-
-
-
-  }
-]
+  }],
+  "work": [{
+    "id": 1040,
+    "online": "y",
+    "title": "Work",
+    "tag": "work",
+    "descText": [ "Here is a few of the projects I have been working on" ],
+    "framer": [
+      {
+        "id": 1042,
+        "initial": "hidden",
+        "whileInView": "showFast",
+        "viewportOnce": true
+      }
+    ]
+  }],
+  "contact": [{
+    "id": 1050,
+    "online": "y",
+    "title": "Contact",
+    "tag": "contact",
+    "descText": [ "Feel free to send an email, whether you have any questions or just to say hi, and I'll get back to you!" ],
+    "link": [
+      {
+        "id": 10501,
+        "online": "y",
+        "title": "email",
+        "text": "Get in touch",
+        "url": "mailto:sofietrolle@hotmail.com"
+      }
+    ]
+  }]
+}]

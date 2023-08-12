@@ -33,7 +33,7 @@
             "online": "y",
             "value": 3,
             "type": "text",
-            "text": "I am a frontend developer, building and designing things for the web",
+            "text": "I am a frontend developer, building and designing apps and websites",
             "textDepr": "I am a multimedia designer, specializing in frontend development."
 
           }
@@ -52,7 +52,7 @@
         "class": "row",
         "descText": [
           "I am a passionate and ambitious frontend developer, with a creative flair. ",
-          "Through my education in multimediadesign and frontend development, along with my education in arts and design, I have acuired a wide range of skills as well as knowledge, that I utilize when creating websites and apps .",
+          "I work as a frontend developer at Wise Home, creating and developing apps, were I in a team of skilled developers, develop solutions to handle utility measurements for rental properties and creating distribution statements.",
           "Frontend development contains the things I am most passionate about: Problem solving and creativity. I love being able to develop solutions to problems through coding, as well as learning and exploring the best possible ways to do it."
         ],
         "img": [
@@ -70,14 +70,15 @@
             "title": "Some of the technologies I have been working with:",
             "listItems": [
               "HTML5 & CSS3",
-              "JavaScript (ES6+)",
+              "JavaScript",
               "jQuery",
               "TypeScript",
               "Firebase",
-              "React.JS",
+              "React Native",
               "Chakra UI",
-              "Next.JS",
+              "React.JS",
               "SCSS / Sass",
+              "Next.JS",
               "Styled components"
             ]
           }
